@@ -7,7 +7,7 @@ const WorkingProcess: React.FC = () => {
     
    
     return (
-        <div id="working-process" className="td-process-area pt-[130px] pb-[160px] w-[90%] mx-auto">
+        <div id="working-process" className="td-process-area py-[80px] lg:pt-[130px] lg:pb-[160px] w-[90%] mx-auto">
             <div className="container mx-auto">
                 <div className="flex flex-wrap">
                     <div className="w-full">

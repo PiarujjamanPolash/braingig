@@ -30,7 +30,7 @@ const AboutUs: React.FC = () => {
           <div className="lg:col-span-8">
             <div className="td-about-content mb-[30px]">
               <h2 className="td-testimonial-title mb-[30px] td-text-invert">
-                Grow your brand with <span>BrainGig</span>
+                Grow your brand with <span className="inline-block">BrainGig</span>
               </h2>
               <p className="mb-[45px]">
                 We are a visionary marketing and web design agency known for pushing boundaries. Our passion lies in blending innovation with strategy, delivering professional website design and custom website development 

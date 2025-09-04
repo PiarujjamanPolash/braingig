@@ -10,7 +10,7 @@ import Brands from "@/components/shared/Brands";
 const Testimonial: React.FC = () => {
 
     return (
-        <div className="td-testimonial-area grey-bg-2 pt-[155px] pb-[80px] lg:pb-[120px]">
+        <div className="td-testimonial-area grey-bg-2 lg:pt-[155px] py-[80px] lg:pb-[120px]">
             <div className="container w-[90%] mx-auto">
                 <div className="flex flex-wrap">
                     {/* Left Section */}
@@ -32,9 +32,9 @@ const Testimonial: React.FC = () => {
                     {/* Right Section */}
                     <div className="w-full md:w-8/12 lg:w-9/12">
                         <div
-                            className="td-testimonial-content lg:ml-20 mb-12"
+                            className="td-testimonial-content mb-0 lg:ml-20"
                         >
-                            <h2 className="td-testimonial-title mb-16 td-text-invert">
+                            <h2 className="td-testimonial-title mb-[16px] td-text-invert">
                                 What Our Clients
                                 <br /> <span>Say About Us</span>
                             </h2>
@@ -46,7 +46,7 @@ const Testimonial: React.FC = () => {
                                             prevEl: ".td-testimonial-prev",
                                             nextEl: ".td-testimonial-next",
                                         }}
-                                        className="td-testimonial-slider mb-28"
+                                        className="td-testimonial-slider lg:mb-[28px]"
                                     >
                                         {testimonialsData.map((item, index) => (
                                             <SwiperSlide key={index}>

@@ -7430,7 +7430,7 @@ textarea {
 }
 .td-footer-3-menu ul li {
   display: inline-block;
-  margin-right: 44px;
+  /* margin-right: 44px; */
 }
 .td-footer-3-menu ul li a {
   font-weight: 500;

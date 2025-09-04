@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
 
     return (
         <div className="td-portfolio-filter-area td-portfolio-filter-three">
-            <div className="container-fluid container-1830">
+            <div className="container-fluid container-1830 mx-auto">
                 <div className="">
                     <div
                         className="col-lg-12 mb-[50px] wow fadeInUp"

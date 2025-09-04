@@ -7,7 +7,7 @@ const MainArea: React.FC = () => {
     return (
         <div className="w-[90%] mx-auto">
             {/* td-contact-main-area */}
-            <div className="td-contact-main pt-[155px] pb-[120px]">
+            <div className="td-contact-main pt-[100px] lg:pt-[155px] pb-[60px] lg:pb-[120px]">
                 <div className="container mx-auto">
                     <div className="flex flex-wrap">
                         {/* Left Column */}
@@ -18,7 +18,7 @@ const MainArea: React.FC = () => {
                                 data-wow-duration="1s"
                             >
                                 <h2 className="td-contact-main-title">
-                                    Let’s talk for<br />
+                                    Let’s talk for <br />
                                     better <span>result</span>
                                 </h2>
                             </div>

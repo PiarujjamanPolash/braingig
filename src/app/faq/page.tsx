@@ -29,7 +29,7 @@ const FAQ = () => {
                     description="Parody dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
                 />
 
-                <div className="td-faq-2-area pb-32 md:pb-40 lg:pb-[130px]">
+                <div className="td-faq-2-area pb-[32px] md:pb-[40px] lg:pb-[130px]">
                     <div className="container mx-auto px-4">
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                             {/* Left image + form */}

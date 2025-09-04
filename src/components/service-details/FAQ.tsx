@@ -6,7 +6,7 @@ import Image from "next/image";
 const FAQ: React.FC = () => {
     
     return (
-        <div className="w-[90%] mx-auto">
+        <div className="w-[90%] mx-auto mb-[80px]">
             {/* td-faq-2-area-start */}
             <div className="td-faq-2-area">
                 <div className="container mx-auto px-4">

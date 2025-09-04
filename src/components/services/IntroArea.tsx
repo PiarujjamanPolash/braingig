@@ -19,7 +19,7 @@ const IntroArea: React.FC = () => {
                     <div className="flex flex-wrap justify-center">
                         <div className="w-full lg:w-9/12">
                             <div
-                                className="td-service-main-content text-center pt-[140px] mb-[60px] wow fadeInUp"
+                                className="td-service-main-content text-center pt-[80px] lg:pt-[140px] mb-[30px] lg:mb-[60px] wow fadeInUp"
                                 data-wow-delay=".5s"
                                 data-wow-duration="1s"
                             >
