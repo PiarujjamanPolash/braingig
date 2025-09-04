@@ -29,7 +29,7 @@ export const servicesData: Services[] = [
     description: "Professional, conversion-focused websites that build trust and grow your brand online.",
     path: "/services/business-website-development",
     slug: "business-website-development",
-    img: "/images/services/thumb-1.jpg",
+    img: "/images/services/business.webp",
     features: [
       "Responsive & Mobile-friendly",
       "Custom Design",
@@ -51,7 +51,7 @@ export const servicesData: Services[] = [
     description: "Custom online stores designed to sell your products and scale with your business.",
     path: "/services/ecommerce-website-development",
     slug: "ecommerce-website-development",
-    img: "/images/services/thumb-2.jpg",
+    img: "/images/services/ecommerce.webp",
     features: [
       "Secure Payment Integration",
       "Inventory Management",
@@ -73,7 +73,7 @@ export const servicesData: Services[] = [
     description: "Smart, searchable directories built for usability, monetization, and growth.",
     path: "/services/directory-listing-website-development",
     slug: "directory-listing-website-development",
-    img: "/images/services/thumb-3.jpg",
+    img: "/images/services/directory.webp",
     features: [
       "Advanced Search & Filters",
       "Monetization Options",
@@ -94,7 +94,7 @@ export const servicesData: Services[] = [
     description: "Rank higher, load faster, and get found by the right audience with our expert SEO services.",
     path: "/services/seo-website-optimization",
     slug: "seo-website-optimization",
-    img: "/images/services/thumb-1.jpg",
+    img: "/images/services/seo.webp",
     features: [
       "Keyword Research",
       "Performance Optimization",
@@ -116,7 +116,7 @@ export const servicesData: Services[] = [
     description: "From logos to UI/UX, we create visuals that speak your brand’s language.",
     path: "/services/graphic-brand-design",
     slug: "graphic-brand-design",
-    img: "/images/services/thumb-2.jpg",
+    img: "/images/services/uiux.webp",
     features: [
       "UI/UX Design",
       "Logo & Branding",
@@ -137,7 +137,7 @@ export const servicesData: Services[] = [
     description: "Targeted campaigns and data-driven growth strategies to get your business in front of the right people.",
     path: "/services/digital-marketing-strategy",
     slug: "digital-marketing-strategy",
-    img: "/images/services/thumb-3.jpg",
+    img: "/images/services/marketing.webp",
     features: [
       "Social Media Marketing",
       "Email Campaigns",
