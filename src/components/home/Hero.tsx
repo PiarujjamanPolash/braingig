@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
                     width={231}
                     height={100}
                   />{" "}
-                  Makes <span>Your Dream </span><br> Work</br>
+                  Makes <span>Your Dream </span> <br/>Work
                 </h2>
               </div>
             </div>
