@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useRef } from "react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { RiTwitterXFill } from "react-icons/ri";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import TextFadeInUp from "../animations/TextFadeInUp";
