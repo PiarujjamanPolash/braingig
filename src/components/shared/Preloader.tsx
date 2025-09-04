@@ -1,0 +1,61 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+
+const Preloader: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [loading, setLoading] = useState(true);
+  const pathname = usePathname(); // detects route changes
+
+  useEffect(() => {
+    // Show loader for 600ms whenever pathname changes
+    setLoading(true);
+    const timer = setTimeout(() => setLoading(false), 600);
+
+    return () => clearTimeout(timer);
+  }, [pathname]);
+
+  return (
+    <>
+      {loading && (
+        <div id="preloader" className="preloader">
+          <div className="animation-preloader">
+            <div className="spinner"></div>
+            <div className="txt-loading">
+              <span data-text-preloader="P" className="letters-loading">P</span>
+              <span data-text-preloader="A" className="letters-loading">A</span>
+              <span data-text-preloader="R" className="letters-loading">R</span>
+              <span data-text-preloader="O" className="letters-loading">O</span>
+              <span data-text-preloader="D" className="letters-loading">D</span>
+              <span data-text-preloader="Y" className="letters-loading">Y</span>
+            </div>
+            <p className="text-center">Loading</p>
+          </div>
+
+          <div className="loader">
+            {/* Bootstrap row -> Tailwind flex */}
+            <div className="flex w-full">
+              {/* Bootstrap col-3 -> Tailwind w-1/4 */}
+              <div className="w-1/4 loader-section section-left">
+                <div className="bg"></div>
+              </div>
+              <div className="w-1/4 loader-section section-left">
+                <div className="bg"></div>
+              </div>
+              <div className="w-1/4 loader-section section-right">
+                <div className="bg"></div>
+              </div>
+              <div className="w-1/4 loader-section section-right">
+                <div className="bg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {!loading && children}
+    </>
+  );
+};
+
+export default Preloader;

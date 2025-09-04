@@ -1,0 +1,61 @@
+import type { Metadata } from "next";
+import { Bebas_Neue, DM_Serif_Display, Geist, Geist_Mono, Inter, Plus_Jakarta_Sans } from "next/font/google";
+import "./globals.css";
+import "@/assets/css/main.css"
+import Header from "@/components/shared/Header";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const bebas = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-bebas",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+});
+const dmSerif = DM_Serif_Display({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--td-ff-dm",
+});
+
+export const metadata: Metadata = {
+  title: "Brain Gig LLC",
+  description: "We welcome you to the world of braingig. Where we build what your business needs.",
+  keywords: "braingig, business website, seo, graphics design, brand design, wordpress, shopify, webflow, ecommerce website, directory listing",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body
+        className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} ${bebas.variable} ${plusJakarta.variable} ${dmSerif.variable} antialiased`}
+      >
+        <Header />
+        {children}        
+      </body>
+    </html>
+  );
+}
