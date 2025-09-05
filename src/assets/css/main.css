@@ -8880,7 +8880,7 @@ textarea {
 }
 @media (max-width: 575px) {
   .td-awards-5-list-item {
-    padding: 17px 0px;
+    padding: 17px 8px;
   }
 }
 .td-awards-5-list-item::before {
@@ -9842,7 +9842,7 @@ textarea {
   font-weight: 400;
 }
 .td-contact-branch-name {
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: -0.03em;
 }
 @media (max-width: 575px) {

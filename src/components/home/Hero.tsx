@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
                   width={200}
                   height={200}
                 />
-                <h2 className="td-hero-5-title">
+                <h2 className="td-hero-5-title text-center lg:text-start">
                   Our Team Work{" "}
                   <Image
                     className="hidden lg:inline-block"
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Right Button */}
-            <div className="w-full xl:w-2/12 pt-[30px]">
+            <div className="w-full xl:w-2/12 pt-[30px] flex justify-center lg:justify-start">
               <div className="td-hero-5-btn mb-[30px] xl:text-right td-btn-bounce">
                 <Link href="/services" className="td-btn-7 flex flex-col gap-2 items-center">
                   Our Services

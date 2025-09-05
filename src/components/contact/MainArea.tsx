@@ -17,7 +17,7 @@ const MainArea: React.FC = () => {
                                 data-wow-delay=".5s"
                                 data-wow-duration="1s"
                             >
-                                <h2 className="td-contact-main-title">
+                                <h2 className="td-contact-main-title text-center lg:text-start">
                                     Let’s talk for <br />
                                     better <span>result</span>
                                 </h2>
@@ -62,7 +62,7 @@ const MainArea: React.FC = () => {
                                             ></textarea>
                                         </div>
 
-                                        <div className="w-full px-2">
+                                        <div className="w-full px-2 flex justify-center lg:justify-start">
                                             <button type="submit" className="td-btn-group">
                                                 <Link href={''} className="td-btn-circle">
                                                     <FaArrowRight />

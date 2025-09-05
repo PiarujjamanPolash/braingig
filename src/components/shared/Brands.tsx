@@ -13,7 +13,7 @@ const Brands: React.FC = () => {
                         key={id}
                         src={img}
                         alt="company logo"
-                        className="w-56 sm:w-44 mx-4 object-contain"
+                        className="w-56 h-[60px] sm:w-44 mx-4 object-contain"
                     />
                 ))}
             </Marquee>
