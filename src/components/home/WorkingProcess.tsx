@@ -25,7 +25,7 @@ const WorkingProcess: React.FC = () => {
                         {/* Left Image */}
                         <div className="lg:col-span-3 col-span-12 mr-3">
                             <div className="td-process-thumb pt-[80px] pb-[80px] td-fixed-thumb td-scroll-pin">
-                                <Image width={280} height={320} src="/images/all_images/image-7.jpg" alt="" />
+                                <Image width={280} height={320} className="w-full lg:w-[280px]" src="/images/all_images/image-7.jpg" alt="" />
                             </div>
                         </div>
 
@@ -44,7 +44,7 @@ const WorkingProcess: React.FC = () => {
                                     <div className="lg:col-span-6 md:col-span-4 col-span-9">
                                         <div className={`td-process-title ${index === workProcessData.length - 1 ? "no-border" : ""}`}>
                                             <h3 className="mb-0">
-                                                {item.title.split(" & ")[0]} <br /> <span>{item.title.split(" & ")[1] || ""}</span>
+                                                {item.title.split(" & ")[0]} <br className="hidden lg:block" /> <span>{item.title.split(" & ")[1] || ""}</span>
                                             </h3>
                                         </div>
                                     </div>

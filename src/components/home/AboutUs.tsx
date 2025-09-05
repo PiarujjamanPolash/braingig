@@ -14,13 +14,13 @@ const AboutUs: React.FC = () => {
             <div className="td-about-left mb-[30px]">
               <span>WHO WE ARE</span>
               <div className="td-about-left-thumb ml-[60px] fix td-rounded-10">
-                <Image
+                <img
                 data-speed='.9'
                   src="/images/all_images/image-10.jpg"
                   alt="About Thumbnail"
                   width={280}
                   height={280}
-                  className="rounded-[10px]"
+                  className="rounded-[10px] w-full md:w-[280px]"
                 />
               </div>
             </div>

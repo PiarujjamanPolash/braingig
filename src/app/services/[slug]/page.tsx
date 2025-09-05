@@ -23,9 +23,6 @@ const ServicesPage = async ({
 }) => {
     const { slug } = await params
     const service = servicesData.find(s => s.slug === slug);
-
-    console.log(service)
-
     if (!service) return <p>Service not found</p>;
 
     return (

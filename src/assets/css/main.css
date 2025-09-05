@@ -5196,7 +5196,7 @@ textarea {
 }
 @media (max-width: 575px) {
   .td-service-6-item {
-    padding: 43px 20px 20px 20px;
+    padding: 20px 0px;
   }
   .td-service-6-item .td-service-6-item-title h3 {
     font-size: 23px;

@@ -37,7 +37,7 @@ const Services: React.FC = () => {
                                     
                                     <div className="lg:w-5/12 w-full">
                                         <div className="td-service-6-item-title mb-[15px] flex items-center">
-                                            <span className="mr-20">{service.id}</span>
+                                            <span className="mr-5 md:mr-20">{service.id}</span>
                                             <h3>
                                                 {service.title}
                                                 <br />
