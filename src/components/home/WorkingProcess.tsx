@@ -32,16 +32,16 @@ const WorkingProcess: React.FC = () => {
                         {/* Right Content */}
                         <div className="lg:col-span-9 col-span-12">
                             {workProcessData.map((item, index) => (
-                                <div key={item.id} className="grid lg:grid-cols-12 md:grid-cols-12 grid-cols-12">
+                                <div key={item.id} className="grid lg:grid-cols-12 md:grid-cols-12 grid-cols-9">
                                     {/* Step Number */}
-                                    <div className="lg:col-span-1 md:col-span-3 col-span-3">
+                                    <div className="lg:col-span-1 md:col-span-3 col-span-1">
                                         <div className={`td-process-count ${index === workProcessData.length - 1 ? "no-border" : ""}`}>
                                             <span>{String(item.id).padStart(2, "0")}</span>
                                         </div>
                                     </div>
 
                                     {/* Step Title */}
-                                    <div className="lg:col-span-6 md:col-span-4 col-span-9">
+                                    <div className="lg:col-span-6 md:col-span-4 col-span-8 ml-5 md:ml-0">
                                         <div className={`td-process-title ${index === workProcessData.length - 1 ? "no-border" : ""}`}>
                                             <h3 className="mb-0">
                                                 {item.title.split(" & ")[0]} <br className="hidden lg:block" /> <span>{item.title.split(" & ")[1] || ""}</span>
