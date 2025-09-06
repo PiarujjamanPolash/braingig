@@ -4364,19 +4364,19 @@ textarea {
   top: 50%;
   transform: translateY(-50%);
 }
-.td-hero-5-bottom-thumb {
+/* .td-hero-5-bottom-thumb {
   height: 640px !important;
   overflow: hidden;
   overflow: hidden;
   position: relative;
   width: auto;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
+} */
+/* @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
   .td-hero-5-bottom-thumb {
-    height: 440px !important; 
+    height: 500px !important; 
   }
-}
-@media (max-width: 575px) {
+} */
+/* @media (max-width: 575px) {
   .td-hero-5-bottom-thumb {
     height: 285px !important;
   }
@@ -4384,7 +4384,7 @@ textarea {
     height: 400px !important;
     object-fit: cover;
   }
-}
+} */
 .td-hero-6-title {
   font-family: var(--td-ff-rethink);
   font-weight: 800;

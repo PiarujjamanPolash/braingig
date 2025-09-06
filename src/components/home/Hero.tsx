@@ -49,13 +49,12 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Bottom Thumb */}
-      <div className="td-hero-5-bottom-thumb overflow-hidden">
-        <Image
+      <div className="td-hero-5-bottom-thumb overflow-hidden h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] 2xl:!h-[1100px]">
+        <img
           data-speed="0.6"
-          className="w-full rounded-2xl object-cover"
-          src="/images/all_images/image-6.jpg"
+          className="w-full rounded-2xl object-contain sm:object-cover"
+          src="/images/all_images/image-20.jpg"
           alt="Hero Thumb"
-          fill
         />
       </div>
     </div>
