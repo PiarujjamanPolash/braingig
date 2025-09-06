@@ -9,7 +9,7 @@ import TextFadeInUp from "../animations/TextFadeInUp";
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer: React.FC = () => {
-    const textRef = useRef<HTMLHeadingElement>(null);
+  const textRef = useRef<HTMLHeadingElement>(null);
 
   return (
     <footer className="">
@@ -18,9 +18,9 @@ const Footer: React.FC = () => {
           <div className="flex flex-wrap -mx-4">
             {/* Left Section */}
             <div className="w-full lg:w-1/2 px-4 mb-[30px]">
-            <TextFadeInUp textRef={textRef} />
+              <TextFadeInUp textRef={textRef} />
               <div ref={textRef} className="td-footer-3-widget footer-anim">
-                <h2  className="td-footer-3-bigtitle text-center lg:text-start">
+                <h2 className="td-footer-3-bigtitle text-center lg:text-start">
                   We Build Websites<br /> that <span>Works!</span>
                 </h2>
               </div>
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
                 <div className="td-footer-3-social flex space-x-4 flex justify-center md:justify-start">
                   <Link href="https://www.facebook.com/braingigllc" target="_blank"><FaFacebookF /></Link>
                   <Link href="https://www.linkedin.com/company/99014556" target="_blank"><FaLinkedinIn /></Link>
-                  <Link href="https://www.instagram.com/braingigllc/" target="_blank"><FaInstagram  /></Link>
+                  <Link href="https://www.instagram.com/braingigllc/" target="_blank"><FaInstagram /></Link>
                 </div>
               </div>
             </div>

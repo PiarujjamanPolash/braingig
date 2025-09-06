@@ -33,9 +33,7 @@ const Awards: React.FC = () => {
 
                     <div className="flex flex-wrap">
                         <div
-                            className="w-full lg:w-1/2 wow fadeInLeft"
-                            data-wow-delay=".5s"
-                            data-wow-duration="1s"
+                            className="w-full lg:w-1/2"
                         >
                             <div className="td-awards-5-thumb text-center pt-[70px] mb-7 lg:mb-30">
                                 <Image width={305} height={209} src="/images/about/about_page_award.png" alt="" />

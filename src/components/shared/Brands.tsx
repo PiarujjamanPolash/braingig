@@ -1,5 +1,4 @@
 "use client"
-
 import { clientLogoData } from "@/utils/fakeData/clientLogoData";
 import Marquee from "react-fast-marquee";
 

@@ -10,7 +10,6 @@ const ScrollPinAnimation = () => {
     let triggers: ScrollTrigger[] = [];
 
     const initPins = () => {
-      // Kill previous triggers
       triggers.forEach((t) => t.kill());
       triggers = [];
 
@@ -30,13 +29,10 @@ const ScrollPinAnimation = () => {
       }
     };
 
-    // Run after page load
-    window.addEventListener("load", initPins);
-    // Run on resize
+    initPins();
     window.addEventListener("resize", initPins);
 
     return () => {
-      // Cleanup triggers and listeners
       triggers.forEach((t) => t.kill());
       window.removeEventListener("load", initPins);
       window.removeEventListener("resize", initPins);

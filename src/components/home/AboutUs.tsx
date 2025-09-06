@@ -16,7 +16,7 @@ const AboutUs: React.FC = () => {
               <div className="td-about-left-thumb ml-[60px] fix td-rounded-10">
                 <img
                 data-speed='.9'
-                  src="/images/all_images/image-10.jpg"
+                  src="/images/about/about-sec-thumb1.jpg"
                   alt="About Thumbnail"
                   width={280}
                   height={280}
@@ -65,7 +65,7 @@ const AboutUs: React.FC = () => {
                 <div className="td-about-thumb fix td-rounded-10">
                   <Image
                     data-speed='.9'
-                    src="/images/all_images/image-11.jpg"
+                    src="/images/about/about-sec-thumb2.jpg"
                     alt="About Thumbnail 2"
                     width={220}
                     height={308}

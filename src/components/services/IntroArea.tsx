@@ -10,7 +10,7 @@ const IntroArea: React.FC = () => {
                     <div className="flex flex-wrap">
                         <div className="w-full">
                             <div className="td-service-main-bigthumb fix td-rounded-10 h-[274px] md:h-[350px] lg:h-[700px]">
-                                <img className="w-full h-full object-cover" data-speed=".9" src="/images/all_images/image-13.jpg" alt="" />
+                                <img className="w-full h-full object-cover" data-speed=".9" src="/images/services/thumb.jpg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -45,9 +45,7 @@ const IntroArea: React.FC = () => {
                             <div className="td-service-main-strategy-wrap lg:ml-[50px]">
                                 <div className="flex flex-wrap">
                                     <div
-                                        className="w-full md:w-6/12 wow fadeInUp"
-                                        data-wow-delay=".6s"
-                                        data-wow-duration="1s"
+                                        className="w-full md:w-6/12"
                                     >
                                         <div className="td-service-main-strategy mb-[40px] text-center md:text-start">
                                             <h3 className="title mb-[20px]">Brand strategy</h3>
@@ -59,9 +57,7 @@ const IntroArea: React.FC = () => {
                                     </div>
 
                                     <div
-                                        className="w-full md:w-6/12 wow fadeInUp"
-                                        data-wow-delay=".8s"
-                                        data-wow-duration="1s"
+                                        className="w-full md:w-6/12"
                                     >
                                         <div className="td-service-main-strategy mb-[40px] text-center md:text-start">
                                             <h3 className="title mb-[20px]">Make it creative</h3>
@@ -73,9 +69,7 @@ const IntroArea: React.FC = () => {
                                     </div>
 
                                     <div
-                                        className="w-full wow fadeInUp"
-                                        data-wow-delay=".9s"
-                                        data-wow-duration="1s"
+                                        className="w-full"
                                     >
                                         <div className="td-service-main-strategy text-center md:text-start">
                                             <p className="text">

@@ -21,7 +21,6 @@ const About = () => {
             <Testimonial />
             <Features />
             <Team />
-            <Awards />
         </ClientWrapper>
     );
 };

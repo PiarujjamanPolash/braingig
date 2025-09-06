@@ -8,21 +8,14 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Projects: React.FC = () => {
     const [filter, setFilter] = useState<string>("*");
-    const [visibleCount, setVisibleCount] = useState(6); // initially 6 projects
+    const [visibleCount, setVisibleCount] = useState(6);
 
-
-    // Function to filter items based on category
     const filteredData =
         filter === "*"
             ? portfolioData
             : portfolioData.filter((item) =>
                 item.category.some((cat) => cat.toLowerCase() === filter)
             );
-
-    // List of unique categories for buttons
-    // const categories = Array.from(
-    //     new Set(portfolioData.flatMap((item) => item.category.map((c) => c.toLowerCase())))
-    // );
     const categories = ["business", "ecommerce", "directory", "graphics"];
     useEffect(() => {
         setVisibleCount(6);
@@ -33,9 +26,7 @@ const Projects: React.FC = () => {
             <div className="container-fluid container-1830 mx-auto">
                 <div className="">
                     <div
-                        className="col-lg-12 mb-[50px] wow fadeInUp"
-                        data-wow-delay=".5s"
-                        data-wow-duration="1s"
+                        className="col-lg-12 mb-[50px]"
                     >
                         <div className="td-portfolio-filter-btn text-center masonary-menu">
                             <button
@@ -79,29 +70,6 @@ const Projects: React.FC = () => {
                         </div>
                     ))}
                 </div>
-                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
-                    {filteredData.slice(0, visibleCount).map((item) => (
-                        <div
-                            key={item.id}
-                            className={`grid-item ${item.category.map(() => "prof").join(" ")}`}
-                        >
-                            <div className="td-portfolio-filter-wrapper relative overflow-hidden rounded-[6px]">
-                                <div className="td-portfolio-filter-thumb">
-                                    <img className="w-full aspect-[3/2] object-cover" src={item.img} alt={item.title} />
-                                </div>
-                                <div className="td-portfolio-filter-content mt-3">
-                                    <span className="mb-2 block">{item.category.join(", ")}</span>
-                                    <h3 className="titles font-semibold">
-                                        <Link href={item.link} target="_blank" rel="noopener noreferrer">
-                                            {item.title}
-                                        </Link>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div> */}
-
                 {visibleCount < filteredData.length && (
                     <div className="w-full">
                         <div className="flex justify-center mt-12">

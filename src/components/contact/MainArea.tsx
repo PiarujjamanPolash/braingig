@@ -6,16 +6,13 @@ const MainArea: React.FC = () => {
 
     return (
         <div className="w-[90%] mx-auto">
-            {/* td-contact-main-area */}
             <div className="td-contact-main pt-[100px] lg:pt-[155px] pb-[60px] lg:pb-[120px]">
                 <div className="container mx-auto">
                     <div className="flex flex-wrap">
                         {/* Left Column */}
                         <div className="w-full lg:w-5/12">
                             <div
-                                className="td-contact-title-wrap mb-[30px] wow fadeInLeft"
-                                data-wow-delay=".5s"
-                                data-wow-duration="1s"
+                                className="td-contact-title-wrap mb-[30px]"
                             >
                                 <h2 className="td-contact-main-title text-center lg:text-start">
                                     Let’s talk for <br />
@@ -81,8 +78,6 @@ const MainArea: React.FC = () => {
                     </div>
                 </div>
             </div>
-            {/* td-contact-main-end */}
-
         </div>
     );
 };

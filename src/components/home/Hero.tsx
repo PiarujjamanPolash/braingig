@@ -11,9 +11,7 @@ const Hero: React.FC = () => {
             {/* Left Content */}
             <div className="w-full xl:w-10/12">
               <div
-                className="td-hero-5-title-wrap relative z-[1] wow fadeInUp"
-                data-wow-delay=".5s"
-                data-wow-duration="1s"
+                className="td-hero-5-title-wrap relative z-[1]"
               >
                 <Image
                   className="td-hero-5-shape hidden xl:block"
@@ -49,11 +47,11 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Bottom Thumb */}
-      <div className="td-hero-5-bottom-thumb overflow-hidden h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] 2xl:!h-[1100px]">
+      <div className="td-hero-5-bottom-thumb overflow-hidden h-[200px] sm:h-[400px] md:h-[500px] lg:h-[700px] 2xl:!h-[1100px]">
         <img
           data-speed="0.6"
-          className="w-full rounded-2xl object-contain sm:object-cover"
-          src="/images/all_images/image-20.jpg"
+          className="w-full rounded-2xl object-cover"
+          src="/images/hero/thumb.jpg"
           alt="Hero Thumb"
         />
       </div>

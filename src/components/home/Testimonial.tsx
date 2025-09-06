@@ -126,8 +126,6 @@ const Testimonial: React.FC = () => {
                             </div>
                         </div>
                     </div>
-
-                    {/* Brand Section */}
                      <Brands />
                 </div>
             </div>

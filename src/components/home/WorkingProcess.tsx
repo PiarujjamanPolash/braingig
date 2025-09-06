@@ -25,7 +25,7 @@ const WorkingProcess: React.FC = () => {
                         {/* Left Image */}
                         <div className="lg:col-span-3 col-span-12 mr-3">
                             <div className="td-process-thumb pt-[80px] pb-[80px] td-fixed-thumb td-scroll-pin">
-                                <Image width={280} height={320} className="w-full lg:w-[280px]" src="/images/all_images/image-7.jpg" alt="" />
+                                <Image width={280} height={320} className="w-full lg:w-[280px]" src="/images/working-process/thumb.jpg" alt="" />
                             </div>
                         </div>
 
@@ -33,14 +33,11 @@ const WorkingProcess: React.FC = () => {
                         <div className="lg:col-span-9 col-span-12">
                             {workProcessData.map((item, index) => (
                                 <div key={item.id} className="grid lg:grid-cols-12 md:grid-cols-12 grid-cols-9">
-                                    {/* Step Number */}
                                     <div className="lg:col-span-1 md:col-span-3 col-span-1">
                                         <div className={`td-process-count ${index === workProcessData.length - 1 ? "no-border" : ""}`}>
                                             <span>{String(item.id).padStart(2, "0")}</span>
                                         </div>
                                     </div>
-
-                                    {/* Step Title */}
                                     <div className="lg:col-span-6 md:col-span-4 col-span-8 ml-5 md:ml-0">
                                         <div className={`td-process-title ${index === workProcessData.length - 1 ? "no-border" : ""}`}>
                                             <h3 className="mb-0">
@@ -48,8 +45,6 @@ const WorkingProcess: React.FC = () => {
                                             </h3>
                                         </div>
                                     </div>
-
-                                    {/* Step Description */}
                                     <div className="lg:col-span-5 md:col-span-5 col-span-12">
                                         <div className={`td-process-list ${index === workProcessData.length - 1 ? "no-border" : ""}`}>
                                             <ul>

@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
                                 width={532}
                                 height={519}
                                 className="w-full td-rounded-10"
-                                src="/images/all_images/image-14.jpg"
+                                src="/images/about/hero-thumb.jpg"
                                 alt=""
                             />
                         </div>

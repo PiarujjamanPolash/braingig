@@ -5,16 +5,12 @@ const BranchArea: React.FC = () => {
 
     return (
         <div className="w-[90%] mx-auto">
-            {/* td-contact-branch-area-start */}
             <div className="td-contact-branch-area pb-[80px] lg:pb-[140px]">
                 <div className="container mx-auto">
                     <div className="flex flex-wrap">
-                        {/* Section Title */}
                         <div className="w-full">
                             <div
-                                className="text-center wow fadeInUp"
-                                data-wow-delay=".5s"
-                                data-wow-duration="1s"
+                                className="text-center"
                             >
                                 <h2 className="td-section-page-title mb-[40px] md:mb-[105px]">
                                     Our Branch <span>Office</span>
@@ -24,7 +20,6 @@ const BranchArea: React.FC = () => {
 
                         {/* Branch Items */}
                         <div className="w-full">
-                            {/* First Branch */}
                             <div
                                 className="mb-6 md:mb-13">
                                 <div className="flex flex-wrap -mx-2">
@@ -64,10 +59,7 @@ const BranchArea: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div
-                                className="wow fadeInUp"
-                                data-wow-delay=".5s"
-                                data-wow-duration="1s">
+                            <div>
                                 <div className="flex flex-wrap -mx-2">
                                     <div className="w-full sm:w-1/2 lg:w-3/12 px-2">
                                         <h3 className="td-contact-branch-name mb-[20px]">United States of America</h3>
@@ -110,8 +102,6 @@ const BranchArea: React.FC = () => {
                     </div>
                 </div>
             </div>
-            {/* td-contact-branch-area-end */}
-
         </div>
     );
 };

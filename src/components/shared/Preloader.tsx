@@ -8,7 +8,6 @@ const Preloader: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pathname = usePathname(); // detects route changes
 
   useEffect(() => {
-    // Show loader for 600ms whenever pathname changes
     setLoading(true);
     const timer = setTimeout(() => setLoading(false), 600);
 
@@ -33,9 +32,7 @@ const Preloader: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           </div>
 
           <div className="loader">
-            {/* Bootstrap row -> Tailwind flex */}
             <div className="flex w-full">
-              {/* Bootstrap col-3 -> Tailwind w-1/4 */}
               <div className="w-1/4 loader-section section-left">
                 <div className="bg"></div>
               </div>

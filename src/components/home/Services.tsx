@@ -40,8 +40,6 @@ const Services: React.FC = () => {
                                             <span className="mr-5 md:mr-20">{service.id}</span>
                                             <h3>
                                                 {service.title}
-                                                <br />
-                                                {/* {service.subtitle} */}
                                             </h3>
                                         </div>
                                     </div>
@@ -53,7 +51,7 @@ const Services: React.FC = () => {
                                     </div>
 
                                     <div className="lg:w-2/12 w-full">
-                                        <div className="td-service-6-btn flex justify-start lg:justify-center items-center mb-[15px]">
+                                        <div className="td-service-6-btn flex justify-start lg:justify-center items-center mb-0 md:mb-[15px]">
                                             <Link href={service.path} className="flex items-center justify-center">
                                                 <svg
                                                     width="14"
