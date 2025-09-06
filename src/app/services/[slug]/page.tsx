@@ -10,7 +10,6 @@ import Projects from "@/components/service-details/Projects";
 import ClientWrapper from "@/components/wrappers/ClientWrapper";
 import { servicesData } from "@/utils/fakeData/servicesData";
 
-// Return a list of `params` to populate the [slug] dynamic segment
 export async function generateStaticParams() {
     return servicesData.map(service => ({
         slug: service.slug,
@@ -23,9 +22,6 @@ const ServicesPage = async ({
 }) => {
     const { slug } = await params
     const service = servicesData.find(s => s.slug === slug);
-
-    console.log(service)
-
     if (!service) return <p>Service not found</p>;
 
     return (

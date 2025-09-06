@@ -3,21 +3,31 @@ import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import Link from "next/link";
-import { portfolioData } from "@/utils/fakeData/portfolioData";
 import { Services } from "@/utils/fakeData/servicesData";
 
 type ProjectsProps = {
-    service: Services;
+  service: Services;
+};
+
+const shuffleArray = <T,>(array: T[]): T[] => {
+  return [...array].sort(() => Math.random() - 0.5);
 };
 const Projects: React.FC<ProjectsProps> = ({ service }) => {
+  const shuffledProjects = shuffleArray(service.projects || []);
+
+  const half = Math.ceil(shuffledProjects.length / 2);
+  const firstSliderProjects = shuffledProjects.slice(0, half);
+  const secondSliderProjects = shuffledProjects.slice(half);
+
+  const firstSliderShuffled = shuffleArray(firstSliderProjects);
+  const secondSliderShuffled = shuffleArray(secondSliderProjects);
   return (
     <div className="td-portfolio-area pt-[125px]">
       <h2 className="td-services-project-bigtitle td-split-text td-split-in-right">{service.projectsTitle}</h2>
 
-      {/* First Slider */}
-      <div  id="recent-works-swiper-1" className="td-portfolio-2-slider-wrap mb-[20px]">
+      <div id="recent-works-swiper-1" className="td-portfolio-2-slider-wrap mb-[20px]">
         <Swiper
-        modules={[ Autoplay, FreeMode]}
+          modules={[Autoplay, FreeMode]}
           spaceBetween={15}
           slidesPerView="auto"
           loop={true}
@@ -26,10 +36,10 @@ const Projects: React.FC<ProjectsProps> = ({ service }) => {
             delay: 0,
             disableOnInteraction: false,
           }}
-        className="td-portfolio-2-slider">
-          {portfolioData.map((item) => (
+          className="td-portfolio-2-slider">
+          {firstSliderShuffled.map((item) => (
             <SwiperSlide className="!w-auto"
-             key={item.id}>
+              key={item.id}>
               <div className="td-portfolio-2-item relative h-full">
                 <div className="td-portfolio-2-thumb overflow-hidden h-full">
                   <img className="h-full" width={550} src={item.img} alt={item.title} />
@@ -48,10 +58,9 @@ const Projects: React.FC<ProjectsProps> = ({ service }) => {
         </Swiper>
       </div>
 
-      {/* Second Slider */}
       <div className="td-portfolio-2-slider-wrap">
         <Swiper id="recent-works-swiper-2"
-        modules={[Autoplay, FreeMode]}
+          modules={[Autoplay, FreeMode]}
           spaceBetween={15}
           slidesPerView="auto"
           loop={true}
@@ -60,8 +69,8 @@ const Projects: React.FC<ProjectsProps> = ({ service }) => {
             delay: 0,
             disableOnInteraction: false,
           }}
-        className="td-portfolio-2-slider-2" dir="rtl">
-          {portfolioData.map((item) => (
+          className="td-portfolio-2-slider-2" dir="rtl">
+          {secondSliderShuffled.map((item) => (
             <SwiperSlide className="!w-auto" key={item.id}>
               <div className="td-portfolio-2-item relative h-full">
                 <div className="td-portfolio-2-thumb overflow-hidden h-full">

@@ -18,8 +18,6 @@ const ServicesPage = () => {
                 <AnimateFadeInLeft />
                 <ScrollPinAnimation />
                 <ServicesPinAnimation />
-                {/* <Hero />
-                <Projects /> */}
                 <Breadcrumb
                     subtitle="BEST SERVICE PROVIDE"
                     title={

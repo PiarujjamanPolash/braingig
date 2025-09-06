@@ -19,7 +19,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
   const paraRef = useRef<HTMLParagraphElement>(null);
 
   return (
-    <div className="pt-[150px] lg:pt-[215px] lg:mb-[75px]">
+    <div className="pt-[150px] lg:pt-[215px] mb-[40px] lg:mb-[75px]">
       <AnimateBreadcrumb
         subtitleRef={subtitleRef as React.RefObject<HTMLElement>}
         titleRef={titleRef as React.RefObject<HTMLElement>}

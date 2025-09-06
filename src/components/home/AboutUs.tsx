@@ -14,13 +14,13 @@ const AboutUs: React.FC = () => {
             <div className="td-about-left mb-[30px]">
               <span>WHO WE ARE</span>
               <div className="td-about-left-thumb ml-[60px] fix td-rounded-10">
-                <Image
+                <img
                 data-speed='.9'
-                  src="/images/all_images/image-10.jpg"
+                  src="/images/about/about-sec-thumb1.jpg"
                   alt="About Thumbnail"
                   width={280}
                   height={280}
-                  className="rounded-[10px]"
+                  className="rounded-[10px] w-full md:w-[280px]"
                 />
               </div>
             </div>
@@ -30,7 +30,7 @@ const AboutUs: React.FC = () => {
           <div className="lg:col-span-8">
             <div className="td-about-content mb-[30px]">
               <h2 className="td-testimonial-title mb-[30px] td-text-invert">
-                Grow your brand with <span>BrainGig</span>
+                Grow your brand with <span className="inline-block">BrainGig</span>
               </h2>
               <p className="mb-[45px]">
                 We are a visionary marketing and web design agency known for pushing boundaries. Our passion lies in blending innovation with strategy, delivering professional website design and custom website development 
@@ -65,7 +65,7 @@ const AboutUs: React.FC = () => {
                 <div className="td-about-thumb fix td-rounded-10">
                   <Image
                     data-speed='.9'
-                    src="/images/all_images/image-11.jpg"
+                    src="/images/about/about-sec-thumb2.jpg"
                     alt="About Thumbnail 2"
                     width={220}
                     height={308}

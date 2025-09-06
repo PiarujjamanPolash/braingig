@@ -28,11 +28,9 @@ const Header: React.FC = () => {
 
             const computedStyle = window.getComputedStyle(element);
             const display = computedStyle.height;
-            console.log({ display })
 
             // Show the element if hidden
             if (display === "0px") {
-                console.log('coming here')
                 element.style.removeProperty('display');
                 const height = element.scrollHeight + "px";
                 element.style.height = "0";

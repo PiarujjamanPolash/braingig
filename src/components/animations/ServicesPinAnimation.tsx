@@ -10,9 +10,7 @@ const ServicesPinAnimation: React.FC = () => {
   useEffect(() => {
     const mm = gsap.matchMedia();
 
-    // Only for large screens
     mm.add("(min-width: 991px)", () => {
-      // Use GSAP context to scope selectors
       const ctx = gsap.context(() => {
         const projectPanels = document.querySelectorAll(".td-service-pin-item-panel");
 
@@ -25,20 +23,20 @@ const ServicesPinAnimation: React.FC = () => {
               start: "top top",
               end: "bottom 100%",
               endTrigger: ".td-service-pin-items",
-              pinSpacing: false, // prevents extra space
+              pinSpacing: false, 
               markers: false,
             },
           });
         });
       });
 
-      return () => ctx.revert(); // cleanup
+      return () => ctx.revert(); 
     });
 
-    return () => mm.revert(); // cleanup matchMedia
+    return () => mm.revert(); 
   }, []);
 
-  return null; // This component doesn't render anything
+  return null; 
 };
 
 export default ServicesPinAnimation;

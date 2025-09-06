@@ -9,7 +9,7 @@ import ClientWrapper from "@/components/wrappers/ClientWrapper";
 const ContactPage = () => {
     return (
         <ClientWrapper>
-            <div className="">
+            <div>
                 <Breadcrumb
                     subtitle="Contact Us"
                     title={

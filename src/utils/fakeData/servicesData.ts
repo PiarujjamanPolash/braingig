@@ -6,6 +6,7 @@ export type Projects = {
   link: string;
   id: number;
   year: string;
+  category: string[];
 };
 
 export type Services = {
@@ -16,9 +17,9 @@ export type Services = {
   path: string;
   slug: string;
   img?: string;
-  features?: string[]; // 6 features per service
-  projects?: Projects[]; // Related projects
-  projectsTitle?: string; // Heading for the project section
+  features?: string[]; 
+  projects?: Projects[]; 
+  projectsTitle?: string; 
 };
 
 export const servicesData: Services[] = [
@@ -40,9 +41,8 @@ export const servicesData: Services[] = [
     ],
     projectsTitle: "Business",
     projects: (portfolioData
-      // .filter(p => p.category.includes("Business Website"))
-      .filter(p => p.category.some(c => c.includes("Business Website")))
-      .map(({ title, img, link, id, year }) => ({ title, img, link, id, year })) || [])
+      .filter(p => p.category.some(c => c.includes("Business")))
+      .map(({ title, img, link, id, year, category }) => ({ title, img, link, id, year,category })) || [])
   },
   {
     id: 2,
@@ -62,9 +62,8 @@ export const servicesData: Services[] = [
     ],
     projectsTitle: "eCommerce",
     projects: (portfolioData
-      // .filter(p => p.category.includes("eCommerce"))
       .filter(p => p.category.some(c => c.includes("eCommerce")))
-      .map(({ title, img, link, id, year }) => ({ title, img, link, id, year })) || [])
+      .map(({ title, img, link, id, year, category }) => ({ title, img, link, id, year, category })) || [])
   },
   {
     id: 3,
@@ -85,7 +84,7 @@ export const servicesData: Services[] = [
     projectsTitle: "Directory",
     projects: (portfolioData
       .filter(p => p.category.some(c => c.includes("Directory")))
-      .map(({ title, img, link, id, year }) => ({ title, img, link, id, year })) || [])
+      .map(({ title, img, link, id, year, category }) => ({ title, img, link, id, year, category })) || [])
   },
   {
     id: 4,
@@ -94,7 +93,7 @@ export const servicesData: Services[] = [
     description: "Rank higher, load faster, and get found by the right audience with our expert SEO services.",
     path: "/services/seo-website-optimization",
     slug: "seo-website-optimization",
-    img: "/images/services/seo.webp",
+    img: "/images/services/thumb-1.jpg",
     features: [
       "Keyword Research",
       "Performance Optimization",
@@ -104,10 +103,10 @@ export const servicesData: Services[] = [
       "Analytics & Reporting"
     ],
     projectsTitle: "SEO",
-    projects: (portfolioData
-      // .filter(p => p.category.includes("SEO"))
-      .filter(p => p.category.some(c => c.includes("SEO")))
-      .map(({ title, img, link, id, year }) => ({ title, img, link, id, year })) || [])
+    projects: portfolioData
+      .sort(() => 0.5 - Math.random()) 
+      .slice(0, 8) 
+      .map(({ title, img, link, id, year,category }) => ({ title, img, link, id, year,category }))
   },
   {
     id: 5,
@@ -116,7 +115,7 @@ export const servicesData: Services[] = [
     description: "From logos to UI/UX, we create visuals that speak your brand’s language.",
     path: "/services/graphic-brand-design",
     slug: "graphic-brand-design",
-    img: "/images/services/uiux.webp",
+    img: "/images/services/thumb-2.jpg",
     features: [
       "UI/UX Design",
       "Logo & Branding",
@@ -127,8 +126,8 @@ export const servicesData: Services[] = [
     ],
     projectsTitle: "Design",
     projects: (portfolioData
-      .filter(p => p.category.some(c => c.includes("Graphic")))
-      .map(({ title, img, link, id, year }) => ({ title, img, link, id, year })) || [])
+      .filter(p => p.category.some(c => c.includes("Graphics")))
+      .map(({ title, img, link, id, year, category }) => ({ title, img, link, id, year, category })) || [])
   },
   {
     id: 6,
@@ -137,7 +136,7 @@ export const servicesData: Services[] = [
     description: "Targeted campaigns and data-driven growth strategies to get your business in front of the right people.",
     path: "/services/digital-marketing-strategy",
     slug: "digital-marketing-strategy",
-    img: "/images/services/marketing.webp",
+    img: "/images/services/thumb-3.jpg",
     features: [
       "Social Media Marketing",
       "Email Campaigns",
@@ -147,8 +146,9 @@ export const servicesData: Services[] = [
       "Lead Generation Strategy"
     ],
     projectsTitle: "Marketing",
-    projects: (portfolioData
-      .filter(p => p.category.some(c => c.includes("Marketing")))
-      .map(({ title, img, link, id, year }) => ({ title, img, link, id, year })) || [])
+    projects: portfolioData
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 8) 
+      .map(({ title, img, link, id, year, category }) => ({ title, img, link, id, year, category }))
   }
 ];

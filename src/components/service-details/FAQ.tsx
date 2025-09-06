@@ -4,10 +4,8 @@ import Image from "next/image";
 
 
 const FAQ: React.FC = () => {
-    
     return (
-        <div className="w-[90%] mx-auto">
-            {/* td-faq-2-area-start */}
+        <div className="w-[90%] mx-auto mb-[80px]">
             <div className="td-faq-2-area">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -20,7 +18,7 @@ const FAQ: React.FC = () => {
                                     height={747}
                                     data-speed=".9"
                                     className="td-rounded-10"
-                                    src="/images/all_images/image-17.jpg"
+                                    src="/images/service-details/faq-thumb.jpg"
                                     alt=""
                                 />
                             </div>
@@ -40,8 +38,6 @@ const FAQ: React.FC = () => {
                     </div>
                 </div>
             </div>
-            {/* td-faq-2-area-end */}
-
         </div>
     );
 };

@@ -10,7 +10,7 @@ const IntroArea: React.FC = () => {
                     <div className="flex flex-wrap">
                         <div className="w-full">
                             <div className="td-service-main-bigthumb fix td-rounded-10 h-[274px] md:h-[350px] lg:h-[700px]">
-                                <img className="w-full h-full object-cover" data-speed=".9" src="/images/all_images/image-13.jpg" alt="" />
+                                <img className="w-full h-full object-cover" data-speed=".9" src="/images/services/thumb.jpg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -19,9 +19,7 @@ const IntroArea: React.FC = () => {
                     <div className="flex flex-wrap justify-center">
                         <div className="w-full lg:w-9/12">
                             <div
-                                className="td-service-main-content text-center pt-[140px] mb-[60px] wow fadeInUp"
-                                data-wow-delay=".5s"
-                                data-wow-duration="1s"
+                                className="td-service-main-content text-center pt-[80px] lg:pt-[140px] mb-[30px] lg:mb-[60px]"
                             >
                                 <span className="mb-[25px] inline-block">Who we are</span>
                                 <h2>
@@ -36,9 +34,7 @@ const IntroArea: React.FC = () => {
                     <div className="flex flex-wrap">
                         <div className="w-full lg:w-4/12">
                             <div
-                                className="td-service-main-expreance mb-[30px] wow fadeInUp"
-                                data-wow-delay=".4s"
-                                data-wow-duration="1s"
+                                className="td-service-main-expreance mb-[30px] text-center md:text-start"
                             >
                                 <h2 className="expreance mb-0">5</h2>
                                 <span className="year">YEARS OF WORK EXPERIENCE</span>
@@ -49,11 +45,9 @@ const IntroArea: React.FC = () => {
                             <div className="td-service-main-strategy-wrap lg:ml-[50px]">
                                 <div className="flex flex-wrap">
                                     <div
-                                        className="w-full md:w-6/12 wow fadeInUp"
-                                        data-wow-delay=".6s"
-                                        data-wow-duration="1s"
+                                        className="w-full md:w-6/12"
                                     >
-                                        <div className="td-service-main-strategy mb-[40px]">
+                                        <div className="td-service-main-strategy mb-[40px] text-center md:text-start">
                                             <h3 className="title mb-[20px]">Brand strategy</h3>
                                             <p className="text">
                                                 Some definitions of marketing highlight marketing&apos;s ability to
@@ -63,11 +57,9 @@ const IntroArea: React.FC = () => {
                                     </div>
 
                                     <div
-                                        className="w-full md:w-6/12 wow fadeInUp"
-                                        data-wow-delay=".8s"
-                                        data-wow-duration="1s"
+                                        className="w-full md:w-6/12"
                                     >
-                                        <div className="td-service-main-strategy mb-[40px]">
+                                        <div className="td-service-main-strategy mb-[40px] text-center md:text-start">
                                             <h3 className="title mb-[20px]">Make it creative</h3>
                                             <p className="text">
                                                 Some definitions of marketing highlight marketing&apos;s ability to
@@ -77,11 +69,9 @@ const IntroArea: React.FC = () => {
                                     </div>
 
                                     <div
-                                        className="w-full wow fadeInUp"
-                                        data-wow-delay=".9s"
-                                        data-wow-duration="1s"
+                                        className="w-full"
                                     >
-                                        <div className="td-service-main-strategy">
+                                        <div className="td-service-main-strategy text-center md:text-start">
                                             <p className="text">
                                                 Some definitions of marketing highlight marketing&apos;s ability to
                                                 produce value to shareholders of the firm as well. In this

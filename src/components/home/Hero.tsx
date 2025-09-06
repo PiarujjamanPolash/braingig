@@ -11,9 +11,7 @@ const Hero: React.FC = () => {
             {/* Left Content */}
             <div className="w-full xl:w-10/12">
               <div
-                className="td-hero-5-title-wrap relative z-[1] wow fadeInUp"
-                data-wow-delay=".5s"
-                data-wow-duration="1s"
+                className="td-hero-5-title-wrap relative z-[1]"
               >
                 <Image
                   className="td-hero-5-shape hidden xl:block"
@@ -22,7 +20,7 @@ const Hero: React.FC = () => {
                   width={200}
                   height={200}
                 />
-                <h2 className="td-hero-5-title">
+                <h2 className="td-hero-5-title text-center lg:text-start">
                   Our Team Work{" "}
                   <Image
                     className="hidden lg:inline-block"
@@ -37,7 +35,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Right Button */}
-            <div className="w-full xl:w-2/12 pt-[30px]">
+            <div className="w-full xl:w-2/12 pt-[30px] flex justify-center lg:justify-start">
               <div className="td-hero-5-btn mb-[30px] xl:text-right td-btn-bounce">
                 <Link href="/services" className="td-btn-7 flex flex-col gap-2 items-center">
                   Our Services
@@ -49,13 +47,12 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Bottom Thumb */}
-      <div className="td-hero-5-bottom-thumb overflow-hidden">
-        <Image
+      <div className="td-hero-5-bottom-thumb overflow-hidden h-[200px] sm:h-[400px] md:h-[500px] lg:h-[700px] 2xl:!h-[1100px]">
+        <img
           data-speed="0.6"
           className="w-full rounded-2xl object-cover"
-          src="/images/all_images/image-6.jpg"
+          src="/images/hero/thumb.jpg"
           alt="Hero Thumb"
-          fill
         />
       </div>
     </div>

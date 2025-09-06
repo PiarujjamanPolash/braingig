@@ -6,7 +6,7 @@ const FaqSearch: React.FC = () => {
 
     return (
         <div className="td-faq-2-thumb td-faq-main-thumb mt-10 lg:mt-16 lg:mr-28 mb-8">
-            <Image width={420} height={240} className="td-rounded-10 w-full" src="/images/all_images/image-15.jpg" alt="faq" />
+            <Image width={420} height={240} className="td-rounded-10 w-full" src="/images/faq/thumb.jpg" alt="faq" />
             <div className="td-faq-main-form pt-12">
                 <form action="#" className="relative">
                     <input

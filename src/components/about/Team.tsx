@@ -73,7 +73,7 @@ const Team: React.FC = () => {
                     {teamData.map((member) => (
                         <div
                             key={member.id}
-                            className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-6"
+                            className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-[40px] md:mb-[80px]"
                         >
                             <div className="td-team-4-wrap p-relative">
                                 <div className="td-team-4-thumb">
