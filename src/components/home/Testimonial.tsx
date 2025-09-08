@@ -59,7 +59,7 @@ const Testimonial: React.FC = () => {
                                                         </div>
                                                         {/* Navigation */}
                                                         <div className="td-testimonial-navigation mt-4 mb-7">
-                                                            <span className="td-testimonial-prev inline-block">
+                                                            <span className="td-testimonial-prev inline-block cursor-pointer">
                                                                 <svg
                                                                     width="31"
                                                                     height="24"
@@ -88,7 +88,7 @@ const Testimonial: React.FC = () => {
                                                                 </svg>
                                                             </span>
 
-                                                            <span className="td-testimonial-next ml-4 inline-block">
+                                                            <span className="td-testimonial-next ml-4 inline-block cursor-pointer">
                                                                 <svg
                                                                     width="31"
                                                                     height="24"

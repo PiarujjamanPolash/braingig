@@ -61,11 +61,11 @@ const Hero: React.FC = () => {
                                             redefine the possibilities of the digital realm, we approach every project with a 
                                             forward-thinking vision. Join us in shaping the future of digital excellence. </p>
                                         <div className="td-btn-group !w-full flex justify-center md:justify-start">
-                                            <Link className="td-btn-circle" href="contact.html">
+                                            <Link className="td-btn-circle" href="/contact">
                                                 <FaArrowRight />
                                             </Link>
                                             <Link className="td-btn-2 td-btn-primary" href="/contact">EXPLORE MORE</Link>
-                                            <Link className="td-btn-circle" href="contact.html">
+                                            <Link className="td-btn-circle" href="">
                                                 <FaArrowRight />
                                             </Link>
                                         </div>

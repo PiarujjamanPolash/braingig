@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import { FaAngleRight, FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaXmark, FaYoutube } from "react-icons/fa6";
+import { FaAngleRight, FaFacebook, FaInstagram, FaLinkedin, FaXmark } from "react-icons/fa6";
 import { menuList } from "@/utils/fakeData/menuList";
 import { usePathname } from "next/navigation";
 

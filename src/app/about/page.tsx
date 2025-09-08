@@ -1,6 +1,4 @@
 "use client";
-
-import Awards from "@/components/about/Awards";
 import Features from "@/components/about/Features";
 import Hero from "@/components/about/Hero";
 import Team from "@/components/about/Team";

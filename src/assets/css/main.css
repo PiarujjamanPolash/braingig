@@ -3484,7 +3484,8 @@ textarea {
   transition: all 0.3s ease-out 0s;
   -webkit-box-shadow: 0px 30px 70px 0px rgba(137, 139, 142, 0.15);
   -moz-box-shadow: 0px 30px 70px 0px rgba(137, 139, 142, 0.15);
-  box-shadow: 0px 30px 70px 0px rgba(137, 139, 142, 0.15);
+  /* box-shadow: 0px 30px 70px 0px rgba(137, 139, 142, 0.15); */
+  box-shadow: 0px 10px 5px 0px rgba(137, 139, 142, 0.15);
   border-radius: 0;
   padding: 18px 0;
   display: block;
