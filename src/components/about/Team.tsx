@@ -77,7 +77,7 @@ const Team: React.FC = () => {
                         >
                             <div className="td-team-4-wrap p-relative">
                                 <div className="td-team-4-thumb">
-                                    <Image width={350} height={445} className="w-full" src={member.img} alt={member.name} />
+                                    <Image width={350} height={445} className="w-full h-[445px] object-cover" src={member.img} alt={member.name} />
                                 </div>
                                 <div className="td-team-4-content text-center">
                                     <span className="td-team-4-subtitle">{member.role}</span>

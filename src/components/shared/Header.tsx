@@ -212,12 +212,12 @@ const Header: React.FC = () => {
                                                     <li
                                                         key={menu.id}
                                                         className={`${menu.children ? "menu-item-has-children" : ""} ${menu.path === "/"
-                                                                ? pathname === "/" 
-                                                                    ? "active"
-                                                                    : ""
-                                                                : pathname.startsWith(menu.path) 
-                                                                    ? "active"
-                                                                    : ""
+                                                            ? pathname === "/"
+                                                                ? "active"
+                                                                : ""
+                                                            : pathname.startsWith(menu.path)
+                                                                ? "active"
+                                                                : ""
                                                             }`}
                                                     >
                                                         <Link href={menu.path}>{menu.label}</Link>
@@ -266,7 +266,7 @@ const Header: React.FC = () => {
 
                         {/* Logo */}
                         <div className="nav-logo">
-                            <Link href="index.html">
+                            <Link href="/">
                                 <Image width={110} height={30} src="/images/logos/logo.png" alt="logo" />
                             </Link>
                         </div>
@@ -300,23 +300,26 @@ const Header: React.FC = () => {
 
                         {/* Contact Button */}
                         <div className="mt-7 mx-6">
-                            <div
+                            <Link href='/contact'
+                                onClick={() => {
+                                    document.body.classList.remove("mobile-menu-visible");
+                                }}
                                 className="td-btn td-btn-menu-black w-full inline-block td-btn-switch-animation ml-2.5"
                             >
                                 <span className="flex items-center justify-center">
-                                    <Link href='/contact' className="btn-text">Contact Us</Link>
-                                    <Link href='/contact' className="btn-icon">
+                                    <span className="btn-text">Contact Us</span>
+                                    <span className="btn-icon">
                                         <FaAngleRight />
-                                    </Link>
-                                    <Link href='/contact' className="btn-icon">
+                                    </span>
+                                    <span className="btn-icon">
                                         <FaAngleRight />
-                                    </Link>
+                                    </span>
                                 </span>
-                            </div>
+                            </Link>
                         </div>
 
                         {/* Social Links */}
-                        <div className="social-links">
+                        <div className="social-links flex justify-center">
                             <ul className="list-wrap">
                                 <li>
                                     <Link href="https://www.facebook.com/braingigllc" target="_blank">
