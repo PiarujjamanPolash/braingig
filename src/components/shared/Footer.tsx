@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Middle Title */}
-        <div className="container-fluid">
+        <div className="">
           <div className="flex justify-center">
             <div className="w-full lg:w-12/12">
               <div className="text-center pt-[20px]">

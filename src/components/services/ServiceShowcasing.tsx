@@ -8,7 +8,7 @@ const ServiceShowcasing: React.FC = () => {
     return (
         <div className="">
             <div className="td-service-pin-item td-service-pin-items overflow-hidden">
-                <div className="container-fluid p-0">
+                <div className="p-0">
                     {servicesData.map((service) => (
                         <div key={service.id} className="black-bg td-service-pin-item-panel">
                             <div className="flex flex-wrap items-center">

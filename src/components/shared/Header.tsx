@@ -183,7 +183,7 @@ const Header: React.FC = () => {
                     id="header-sticky"
                     className="td-header__area td-header-spacing td-header-2-wrapper td-header-3-wrapper td-header-5-wrapper p-relative z-index-1"
                 >
-                    <div className="container-fluid container-1750 mx-auto">
+                    <div className="container-1750 mx-auto">
                         <div className="flex flex-wrap items-center">
                             {/* Logo */}
                             <div className="xl:w-2/12 w-4/12">

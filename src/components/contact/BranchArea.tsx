@@ -22,7 +22,7 @@ const BranchArea: React.FC = () => {
                         {/* Branch Items */}
                         <div className="w-full">
                             <div
-                                className="mb-6 md:mb-13">
+                                className="td-contact-branch-border">
                                 <div className="flex flex-wrap -mx-2">
                                     <div className="w-full sm:w-1/2 lg:w-3/12 px-2">
                                         <h3 className="td-contact-branch-name mb-[20px]">Bangladesh</h3>

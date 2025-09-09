@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 export type TeamType = {
     id: number;
@@ -12,9 +13,9 @@ export type TeamType = {
 export const teamData: TeamType[] = [
     {
         id: 1,
-        name: "PITTERSON",
-        role: "Developer",
-        img: "/images/about/member_1.jpg",
+        name: "Nusrat Jahan",
+        role: "Junior Frontend Developer",
+        img: "/images/about/nova.jpg",
     },
     {
         id: 2,
@@ -53,25 +54,26 @@ const Team: React.FC = () => {
 
     return (
         <div className="td-team-area td-team-about-wrap">
-            <div className="container-fluid mx-auto">
-                <Swiper
-                    modules={[]}
+            <div className="2xl:container 2xl:mx-auto mb-[40px] md:mb-[80px]">
+                <Swiper id="team-swiper"
+                    modules={[Navigation]}
                     autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    navigation={true}
                     spaceBetween={30}
                     breakpoints={{
+                        // 430: { slidesPerView: 1.5 },
                         640: { slidesPerView: 2 },
                         1024: { slidesPerView: 4 },
+                        // 1700: { slidesPerView: 5 },
                     }}
                 >
                     {teamData.map((member) => (
                         <SwiperSlide key={member.id}>
-                            <div className="w-full mb-[40px] md:mb-[80px]">
-                                <div className="td-team-4-wrap p-relative">
-                                    <div className="td-team-4-thumb">
-                                        <Image
-                                            width={350}
-                                            height={445}
-                                            className="w-full h-[445px] object-cover"
+                            <div className="w-full h-full">
+                                <div className="td-team-4-wrap p-relative h-full">
+                                    <div className="td-team-4-thumb h-full">
+                                        <img
+                                            className="w-full h-full object-cover"
                                             src={member.img}
                                             alt={member.name}
                                         />
@@ -79,7 +81,7 @@ const Team: React.FC = () => {
                                     <div className="td-team-4-content text-center">
                                         <span className="td-team-4-subtitle">{member.role}</span>
                                         <h3 className="td-team-4-title">
-                                            <Link href="team-details.html">{member.name}</Link>
+                                            {member.name}
                                         </h3>
                                     </div>
                                 </div>

@@ -5195,6 +5195,11 @@ textarea {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 991px) and (min-width: 576px) {
+  .td-service-6-item {
+    padding: 30px 0px 20px 30px; 
+  }
+}
 @media (max-width: 575px) {
   .td-service-6-item {
     padding: 20px 0px 20px 15px;

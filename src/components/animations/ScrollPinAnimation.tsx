@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -7,24 +8,24 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ScrollPinAnimation = () => {
   useEffect(() => {
-    let triggers: ScrollTrigger[] = [];
+    let ctx: gsap.Context;
 
     const initPins = () => {
-      triggers.forEach((t) => t.kill());
-      triggers = [];
+      // Kill previous context before re-initializing
+      ctx?.revert();
 
       if (window.innerWidth >= 1024) {
-        const pinSections = document.querySelectorAll(".td-scroll-pin");
-        pinSections.forEach((section) => {
-          triggers.push(
+        ctx = gsap.context(() => {
+          const pinSections = document.querySelectorAll(".td-scroll-pin");
+          pinSections.forEach((section) => {
             ScrollTrigger.create({
               trigger: section,
               pin: true,
               start: "top top",
               end: "+=280",
               markers: false,
-            })
-          );
+            });
+          });
         });
       }
     };
@@ -33,8 +34,7 @@ const ScrollPinAnimation = () => {
     window.addEventListener("resize", initPins);
 
     return () => {
-      triggers.forEach((t) => t.kill());
-      window.removeEventListener("load", initPins);
+      ctx?.revert(); // cleanup on unmount
       window.removeEventListener("resize", initPins);
     };
   }, []);
