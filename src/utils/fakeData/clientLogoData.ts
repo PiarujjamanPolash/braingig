@@ -1,6 +1,7 @@
 type DataType = {
     id: number
     img: string,
+    isLight?: boolean,
 }[]
 export const clientLogoData: DataType = [
     {
@@ -10,6 +11,7 @@ export const clientLogoData: DataType = [
     {
         id: 2,
         img: "/images/company-logo/company2.svg",
+        isLight: true
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ export const clientLogoData: DataType = [
     {
         id: 5,
         img: "/images/company-logo/company5.png",
+        isLight: true
     },
     {
         id: 6,
@@ -34,6 +37,7 @@ export const clientLogoData: DataType = [
     {
         id: 8,
         img: "/images/company-logo/company8.png",
+        isLight: true
     },
     {
         id: 9,
