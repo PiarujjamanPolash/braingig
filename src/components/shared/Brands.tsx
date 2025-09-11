@@ -1,18 +1,20 @@
-"use client"
+"use client";
 import { clientLogoData } from "@/utils/fakeData/clientLogoData";
 import Marquee from "react-fast-marquee";
-
-const Brands: React.FC = () => {
-
+type BrandsProps = {
+  customClass?: string;
+};
+const Brands = ({ customClass = "p-10" }: BrandsProps) => {
     return (
-        <div className="w-full overflow-hidden">
+        <div className={`w-full overflow-hidden ${customClass}`}>
             <Marquee gradient={false} speed={50}>
-                {clientLogoData.map(({ id, img }) => (
+                {clientLogoData.map(({ id, img, isLight }) => (
                     <img
                         key={id}
                         src={img}
                         alt="company logo"
-                        className="w-56 h-[60px] sm:w-44 mx-4 object-contain"
+                        className={`w-56 sm:w-44 mx-4 object-contain ${isLight ? "filter brightness-[60%]" : ""
+                            }`}
                     />
                 ))}
             </Marquee>

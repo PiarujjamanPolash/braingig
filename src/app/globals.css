@@ -45,3 +45,15 @@ body {
     transition-timing-function: linear !important;
   }
 
+#team-swiper .swiper-slide { 
+    height: auto;
+}
+/* globals.css or component css */
+@media (min-width: 640px) {
+  #team-swiper .swiper-button-next,
+  #team-swiper .swiper-button-prev {
+    display: none;
+  }
+}
+
+

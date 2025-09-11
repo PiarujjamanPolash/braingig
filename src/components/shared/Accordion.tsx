@@ -18,7 +18,7 @@ const Accordion: React.FC = () => {
                         <div key={item.id} className="accordion-items border-b border-gray-200">
                             <h2 className="accordion-header">
                                 <button
-                                    className={`accordion-buttons w-full text-left py-[px] flex justify-between items-center ${isOpen ? "" : "collapsed"
+                                    className={`accordion-buttons w-full text-left py-[px] flex justify-between items-center   cursor-pointer ${isOpen ? "" : "collapsed"
                                         }`}
                                     type="button"
                                     onClick={() => toggleFAQ(item.id)}

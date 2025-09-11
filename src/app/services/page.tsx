@@ -4,7 +4,7 @@ import AnimateFadeInLeft from "@/components/animations/AnimateFadeInLeft";
 import ScrollPinAnimation from "@/components/animations/ScrollPinAnimation";
 import ServicesPinAnimation from "@/components/animations/ServicesPinAnimation";
 import TextLineAnimation from "@/components/animations/TextLineAnimation";
-import Brands from "@/components/services/Brands";
+import Brands from "@/components/shared/Brands";
 import IntroArea from "@/components/services/IntroArea";
 import ServiceShowcasing from "@/components/services/ServiceShowcasing";
 import Breadcrumb from "@/components/shared/Breadcrumb";

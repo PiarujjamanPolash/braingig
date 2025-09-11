@@ -1,14 +1,14 @@
 "use client"
 
 import { servicesData } from "@/utils/fakeData/servicesData";
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 
 const ServiceShowcasing: React.FC = () => {
-
     return (
         <div className="">
             <div className="td-service-pin-item td-service-pin-items overflow-hidden">
-                <div className="container-fluid p-0">
+                <div className="p-0">
                     {servicesData.map((service) => (
                         <div key={service.id} className="black-bg td-service-pin-item-panel">
                             <div className="flex flex-wrap items-center">
@@ -54,17 +54,17 @@ const ServiceShowcasing: React.FC = () => {
 
                                             {/* Buttons */}
                                             <div className="td-btn-group td-btn-group-border pt-[50px]">
-                                                <a className="td-btn-circle" href={service.path}>
+                                                <Link className="td-btn-circle" href={service.path}>
                                                     <FaArrowRight />
 
-                                                </a>
-                                                <a className="td-btn-2 td-btn-primary" href={service.path}>
+                                                </Link>
+                                                <Link className="td-btn-2 td-btn-primary" href={service.path}>
                                                     VIEW DETAILS
-                                                </a>
-                                                <a className="td-btn-circle" href={service.path}>
+                                                </Link>
+                                                <Link className="td-btn-circle" href={service.path}>
                                                     <FaArrowRight />
 
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

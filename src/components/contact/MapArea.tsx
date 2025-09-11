@@ -7,7 +7,7 @@ const MapArea: React.FC = () => {
     return (
         <div className="">
             <div className="td-contact-map-area">
-                <div className="container-fluid p-0">
+                <div className="p-0">
                     <div className="flex flex-wrap">
                         <div className="w-full">
                             <div className="td-contact-map relative">

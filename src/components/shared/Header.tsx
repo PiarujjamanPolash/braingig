@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import { FaAngleRight, FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaXmark, FaYoutube } from "react-icons/fa6";
+import { FaAngleRight, FaFacebook, FaInstagram, FaLinkedin, FaXmark } from "react-icons/fa6";
 import { menuList } from "@/utils/fakeData/menuList";
 import { usePathname } from "next/navigation";
 
@@ -183,7 +183,7 @@ const Header: React.FC = () => {
                     id="header-sticky"
                     className="td-header__area td-header-spacing td-header-2-wrapper td-header-3-wrapper td-header-5-wrapper p-relative z-index-1"
                 >
-                    <div className="container-fluid container-1750 mx-auto">
+                    <div className="container-1750 mx-auto">
                         <div className="flex flex-wrap items-center">
                             {/* Logo */}
                             <div className="xl:w-2/12 w-4/12">
@@ -212,12 +212,12 @@ const Header: React.FC = () => {
                                                     <li
                                                         key={menu.id}
                                                         className={`${menu.children ? "menu-item-has-children" : ""} ${menu.path === "/"
-                                                                ? pathname === "/" 
-                                                                    ? "active"
-                                                                    : ""
-                                                                : pathname.startsWith(menu.path) 
-                                                                    ? "active"
-                                                                    : ""
+                                                            ? pathname === "/"
+                                                                ? "active"
+                                                                : ""
+                                                            : pathname.startsWith(menu.path)
+                                                                ? "active"
+                                                                : ""
                                                             }`}
                                                     >
                                                         <Link href={menu.path}>{menu.label}</Link>
@@ -266,7 +266,7 @@ const Header: React.FC = () => {
 
                         {/* Logo */}
                         <div className="nav-logo">
-                            <Link href="index.html">
+                            <Link href="/">
                                 <Image width={110} height={30} src="/images/logos/logo.png" alt="logo" />
                             </Link>
                         </div>
@@ -300,23 +300,26 @@ const Header: React.FC = () => {
 
                         {/* Contact Button */}
                         <div className="mt-7 mx-6">
-                            <div
+                            <Link href='/contact'
+                                onClick={() => {
+                                    document.body.classList.remove("mobile-menu-visible");
+                                }}
                                 className="td-btn td-btn-menu-black w-full inline-block td-btn-switch-animation ml-2.5"
                             >
                                 <span className="flex items-center justify-center">
-                                    <Link href='/contact' className="btn-text">Contact Us</Link>
-                                    <Link href='/contact' className="btn-icon">
+                                    <span className="btn-text">Contact Us</span>
+                                    <span className="btn-icon">
                                         <FaAngleRight />
-                                    </Link>
-                                    <Link href='/contact' className="btn-icon">
+                                    </span>
+                                    <span className="btn-icon">
                                         <FaAngleRight />
-                                    </Link>
+                                    </span>
                                 </span>
-                            </div>
+                            </Link>
                         </div>
 
                         {/* Social Links */}
-                        <div className="social-links">
+                        <div className="social-links flex justify-center">
                             <ul className="list-wrap">
                                 <li>
                                     <Link href="https://www.facebook.com/braingigllc" target="_blank">

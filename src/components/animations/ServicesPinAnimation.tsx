@@ -23,20 +23,38 @@ const ServicesPinAnimation: React.FC = () => {
               start: "top top",
               end: "bottom 100%",
               endTrigger: ".td-service-pin-items",
-              pinSpacing: false, 
+              pinSpacing: false,
               markers: false,
             },
           });
         });
       });
 
-      return () => ctx.revert(); 
+      const images = document.querySelectorAll(".td-service-pin-thumb img");
+      if (images.length === 0) {
+        ScrollTrigger.refresh();
+      } else {
+        let loaded = 0;
+        images.forEach((img) => {
+          if ((img as HTMLImageElement).complete) {
+            loaded++;
+            if (loaded === images.length) ScrollTrigger.refresh();
+          } else {
+            img.addEventListener("load", () => {
+              loaded++;
+              if (loaded === images.length) ScrollTrigger.refresh();
+            });
+          }
+        });
+      }
+
+      return () => ctx.revert();
     });
 
-    return () => mm.revert(); 
+    return () => mm.revert();
   }, []);
 
-  return null; 
+  return null;
 };
 
 export default ServicesPinAnimation;

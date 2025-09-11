@@ -4,8 +4,8 @@ import "swiper/css/navigation";
 import { Navigation} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { testimonialsData } from "@/utils/fakeData/testimonialsData";
-import Image from "next/image";
-import Brands from "@/components/shared/Brands";
+import Brands from "../shared/Brands";
+// import Brands from "@/components/shared/Brands";
 
 const Testimonial: React.FC = () => {
 
@@ -59,7 +59,7 @@ const Testimonial: React.FC = () => {
                                                         </div>
                                                         {/* Navigation */}
                                                         <div className="td-testimonial-navigation mt-4 mb-7">
-                                                            <span className="td-testimonial-prev inline-block">
+                                                            <span className="td-testimonial-prev inline-block cursor-pointer">
                                                                 <svg
                                                                     width="31"
                                                                     height="24"
@@ -88,7 +88,7 @@ const Testimonial: React.FC = () => {
                                                                 </svg>
                                                             </span>
 
-                                                            <span className="td-testimonial-next ml-4 inline-block">
+                                                            <span className="td-testimonial-next ml-4 inline-block cursor-pointer">
                                                                 <svg
                                                                     width="31"
                                                                     height="24"
@@ -126,7 +126,7 @@ const Testimonial: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                     <Brands />
+                     <Brands customClass="p-0" />
                 </div>
             </div>
         </div>

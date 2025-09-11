@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 
 const Awards: React.FC = () => {
 
@@ -13,9 +14,9 @@ const Awards: React.FC = () => {
                                 <h2 className="td-testimonial-title mb-6 td-text-invert">
                                     Honorable <span>awards</span>
                                 </h2>
-                                <a className="td-awards-5-btn" href="#">
+                                <Link className="td-awards-5-btn" href="#">
                                     Direct from the heart
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div
