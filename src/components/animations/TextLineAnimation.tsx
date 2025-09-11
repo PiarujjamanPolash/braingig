@@ -15,7 +15,6 @@ const TextLineAnimation = () => {
     let ctx: gsap.Context | null = null;
     let split: SplitText | null = null;
 
-    // Delay until DOM is painted
     const id = requestAnimationFrame(() => {
       ctx = gsap.context(() => {
         split = new SplitText(".td-text-invert, .td-text-opacity", {

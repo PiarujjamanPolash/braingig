@@ -11,7 +11,6 @@ const ScrollPinAnimation = () => {
     let ctx: gsap.Context;
 
     const initPins = () => {
-      // Kill previous context before re-initializing
       ctx?.revert();
 
       if (window.innerWidth >= 1024) {
@@ -34,7 +33,7 @@ const ScrollPinAnimation = () => {
     window.addEventListener("resize", initPins);
 
     return () => {
-      ctx?.revert(); // cleanup on unmount
+      ctx?.revert(); 
       window.removeEventListener("resize", initPins);
     };
   }, []);

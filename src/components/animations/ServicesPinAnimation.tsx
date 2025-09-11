@@ -30,7 +30,6 @@ const ServicesPinAnimation: React.FC = () => {
         });
       });
 
-      // ✅ Refresh ScrollTrigger after all images are loaded
       const images = document.querySelectorAll(".td-service-pin-thumb img");
       if (images.length === 0) {
         ScrollTrigger.refresh();
