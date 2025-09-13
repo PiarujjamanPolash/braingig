@@ -58,10 +58,10 @@ const Team: React.FC = () => {
                     navigation={true}
                     spaceBetween={30}
                     breakpoints={{
-                        430: { slidesPerView: 1.5 },
+                       // 430: { slidesPerView: 1.5 },
                         640: { slidesPerView: 2 },
                         1024: { slidesPerView: 4 },
-                        1700: { slidesPerView: 5 },
+                        // 1700: { slidesPerView: 4 },
                     }}
                 >
                     {teamData.map((member) => (
