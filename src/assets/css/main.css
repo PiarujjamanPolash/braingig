@@ -1157,7 +1157,7 @@ textarea {
   color: var(--td-common-white);
 }
 .offCanvas__logo img {
-  max-height: 34px;
+  max-height: 100%;
 }
 .offCanvas__side-info {
   border-top: 1px solid var(--td-border-1);
