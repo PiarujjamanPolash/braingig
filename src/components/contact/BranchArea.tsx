@@ -40,7 +40,7 @@ const BranchArea: React.FC = () => {
                                         <div className="td-contact-branch-lucation ml-[40px] mb-[20px]">
                                             <h5 className="td-contact-branch-lucation-title pb-5">Rajshahi Office</h5>
                                             <Link className="lucation mb-[110px] block" href="#">
-                                                4th Floor of NRB Bank Building, Station Rd, Rajshahi 6100
+                                                166(4th floor), Alokar Mor, Rajshahi 6100, Station Rd, Rajshahi 6100
                                             </Link>
                                             <Link className="map" href="https://maps.app.goo.gl/EDwHCwumzbPajhRw6" target="_blank">
                                                 Google Maps

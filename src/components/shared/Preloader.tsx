@@ -21,12 +21,14 @@ const Preloader: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           <div className="animation-preloader">
             <div className="spinner"></div>
             <div className="txt-loading">
-              <span data-text-preloader="P" className="letters-loading">P</span>
-              <span data-text-preloader="A" className="letters-loading">A</span>
-              <span data-text-preloader="R" className="letters-loading">R</span>
-              <span data-text-preloader="O" className="letters-loading">O</span>
-              <span data-text-preloader="D" className="letters-loading">D</span>
-              <span data-text-preloader="Y" className="letters-loading">Y</span>
+              <span data-text-preloader="P" className="letters-loading">B</span>
+              <span data-text-preloader="A" className="letters-loading">R</span>
+              <span data-text-preloader="R" className="letters-loading">A</span>
+              <span data-text-preloader="O" className="letters-loading">I</span>
+              <span data-text-preloader="D" className="letters-loading">N</span>
+              <span data-text-preloader="Y" className="letters-loading">G</span>
+              <span data-text-preloader="Y" className="letters-loading">I</span>
+              <span data-text-preloader="Y" className="letters-loading">G</span>
             </div>
             <p className="text-center">Loading</p>
           </div>

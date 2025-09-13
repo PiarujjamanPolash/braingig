@@ -280,7 +280,7 @@ const Header: React.FC = () => {
                                 <h4>Office Address</h4>
                                 <h5 className="mt-7">Bangladesh</h5>
                                 <p>
-                                    4th Floor of NRB Bank Building, Station Rd, Rajshahi 6100
+                                    166(4th floor), Alokar Mor, Rajshahi 6100, Station Rd, Rajshahi 6100
                                 </p>
 
                                 <h5 className="mt-5">Sheridan</h5>

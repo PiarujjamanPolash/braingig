@@ -82,7 +82,7 @@ const Projects: React.FC<ProjectsProps> = ({ service }) => {
                     <span className="dot"></span>
                     <span>{item.category}</span>
                   </div>
-                  <Link className="title" href={item.link}>{item.title}</Link>
+                  <Link className="title" href={item.link} target="_blank">{item.title}</Link>
                 </div>
               </div>
             </SwiperSlide>
