@@ -31,7 +31,7 @@ const BranchArea: React.FC = () => {
                                         <div className="td-contact-branch-thumb mb-[20px]">
                                             <Image width={300} height={250}
                                                 className="w-full td-rounded-10"
-                                                src="/images/offices/thumb.jpg"
+                                                src="/images/offices/bd.jpg"
                                                 alt=""
                                             />
                                         </div>
@@ -69,7 +69,7 @@ const BranchArea: React.FC = () => {
                                         <div className="td-contact-branch-thumb mb-[20px]">
                                             <Image width={300} height={250}
                                                 className="w-full td-rounded-10"
-                                                src="/images/offices/thumb.jpg"
+                                                src="/images/offices/usa.jpg"
                                                 alt=""
                                             />
                                         </div>
