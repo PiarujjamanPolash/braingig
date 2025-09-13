@@ -25,7 +25,7 @@ const MapArea: React.FC = () => {
                                         braingigllc@gmail.com
                                     </Link>
                                     <Link href="#" className="block">
-                                        4th Floor of NRB Bank Building, Station Rd, Rajshahi 6100
+                                                166(4th floor), Alokar Mor, Rajshahi 6100, Station Rd, Rajshahi 6100
                                     </Link>
                                 </div>
 
