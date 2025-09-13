@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Services } from "@/utils/fakeData/servicesData";
 import Image from "next/image";
