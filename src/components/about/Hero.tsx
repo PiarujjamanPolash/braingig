@@ -19,8 +19,7 @@ const Hero: React.FC = () => {
                     <div className="w-full px-4">
                         <div className="td-about-main-wrapper pb-[90px]">
                             <h2 className="td-section-page-title td-title-anim text-center">
-                                At <span>BrainGig,</span> we envision a digital landscape where every brand 
-                                            thrives with an impactful online presence.<br></br>
+                                Driving <span>innovation </span> through <span>strategic consulting </span>
                             </h2>
                         </div>
                     </div>
@@ -44,7 +43,8 @@ const Hero: React.FC = () => {
                         <div ref={contentRef}
                             className="td-about-main-content lg:ml-[110px] mb-10 lg:mb-0"
                         >
-                            <h3 className="td-about-main-title mb-5 lg:mb-5 text-center md:text-start">Driving innovation through strategic consulting</h3>
+                            <h3 className="td-about-main-title mb-5 lg:mb-5 text-center md:text-start">At <span>BrainGig,</span> we envision a digital landscape where every brand 
+                                            thrives with an impactful online presence.</h3>
 
                             <div className="flex flex-col md:flex-row -mx-4">
                                 <div className="w-full md:w-5/12 px-4">
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
                                     </div>
                                 </div>
 
-                                <div className="w-full md:w-7/12 px-4">
+                                <div className="w-full md:w-12/12 px-4">
                                     <div className="td-about-main-text mt-7 text-center md:text-start">
                                         <p className="mb-7">
                                             Fueled by our commitment to 
