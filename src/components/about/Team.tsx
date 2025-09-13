@@ -54,14 +54,14 @@ const Team: React.FC = () => {
             <div className="2xl:container 2xl:mx-auto mb-[40px] md:mb-[80px]">
                 <Swiper id="team-swiper"
                     modules={[Navigation]}
-                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    autoplay={{ delay: 500, disableOnInteraction: true }}
                     navigation={true}
                     spaceBetween={30}
                     breakpoints={{
-                       // 430: { slidesPerView: 1.5 },
-                        640: { slidesPerView: 2 },
-                        1024: { slidesPerView: 4 },
-                        // 1700: { slidesPerView: 4 },
+                        //430: { slidesPerView: 1.5 },
+                        640: { slidesPerView: 1 },
+                        1024: { slidesPerView: 3 },
+                        //1700: { slidesPerView: 4 },
                     }}
                 >
                     {teamData.map((member) => (
