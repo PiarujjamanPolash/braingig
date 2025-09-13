@@ -10,41 +10,41 @@ export type TeamType = {
 export const teamData: TeamType[] = [
     {
         id: 1,
-        name: "Nusrat Jahan",
-        role: "Junior Frontend Developer",
-        img: "/images/about/nova.jpg",
+        name: "Piarujjaman Polash",
+        role: "Founder & CEO",
+        img: "/images/about/polash.jpeg",
     },
     {
         id: 2,
-        name: "JOTIN",
-        role: "Developer",
-        img: "/images/about/member_1.jpg",
+        name: "Fahad Al Faisal",
+        role: "Co-Founder & COO",
+        img: "/images/about/fahad.jpeg",
     },
     {
         id: 3,
-        name: "DANDU",
-        role: "Developer",
-        img: "/images/about/member_1.jpg",
+        name: "Sadman Sakib",
+        role: "SEO & Marketing",
+        img: "/images/about/Sadman.jpeg",
 
 
     },
     {
         id: 4,
-        name: "SAMIR",
-        role: "Developer",
-        img: "/images/about/member_1.jpg",
+        name: "Shahriar Karim",
+        role: "UI/UX Desinger",
+        img: "/images/about/Korim.jpeg",
     },
     {
-        id: 4,
-        name: "SAMIR",
-        role: "Developer",
-        img: "/images/about/member_1.jpg",
+        id: 5,
+        name: "Nusrat Nova",
+        role: "Frontend Developer",
+        img: "/images/about/nova.jpeg",
     },
     {
-        id: 4,
-        name: "SAMIR",
+        id: 6,
+        name: "Mahathir Gunjon",
         role: "Developer",
-        img: "/images/about/member_1.jpg",
+        img: "/images/about/gunjan.jpeg",
     },
 ];
 const Team: React.FC = () => {
@@ -58,10 +58,10 @@ const Team: React.FC = () => {
                     navigation={true}
                     spaceBetween={30}
                     breakpoints={{
-                        // 430: { slidesPerView: 1.5 },
+                        430: { slidesPerView: 1.5 },
                         640: { slidesPerView: 2 },
                         1024: { slidesPerView: 4 },
-                        // 1700: { slidesPerView: 5 },
+                        1700: { slidesPerView: 5 },
                     }}
                 >
                     {teamData.map((member) => (
