@@ -3,6 +3,8 @@
 import { Services } from "@/utils/fakeData/servicesData";
 import Image from "next/image";
 import AnimateFadeInLeft from "../animations/AnimateFadeInLeft";
+import thumb1 from "../../../public/images/service-details/thumb-1.jpg"
+import thumb2 from "../../../public/images/service-details/thumb-2.jpg"
 type HeroProps = {
     service: Services;
 };
@@ -21,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({ service }) => {
                                     </h2>
                                 </AnimateFadeInLeft>
                                 <div className="td-service-hero-thumb-2 fix td-rounded-10 pt-[60px] lg:pt-[105px] mb-7.5">
-                                    <Image width={563} height={690} data-speed=".9" className="td-rounded-10 object-cover" src="/images/service-details/thumb-2.jpg" alt="" />
+                                    <Image width={563} height={690} priority data-speed=".9" className="td-rounded-10 object-cover" src={thumb2} alt="thumb 2" />
                                 </div>
                             </div>
                         </div>
@@ -41,7 +43,7 @@ const Hero: React.FC<HeroProps> = ({ service }) => {
                                     </div>
                                 </div>
                                 <div className="td-service-hero-thumb fix td-rounded-10 pt-[200px]">
-                                    <Image width={645} height={430} data-speed=".9" className="td-rounded-10" src="/images/service-details/thumb-1.jpg" alt="" />
+                                    <Image width={645} height={430} priority data-speed=".9" className="td-rounded-10" src={thumb1} alt="thumb 1" />
                                 </div>
                             </div>
                         </div>

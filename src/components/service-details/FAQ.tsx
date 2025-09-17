@@ -1,7 +1,7 @@
 "use client"
 import Accordion from "@/components/shared/Accordion";
 import Image from "next/image";
-
+import thumb from "../../../public/images/service-details/faq-thumb.jpg"
 
 const FAQ: React.FC = () => {
     return (
@@ -16,10 +16,11 @@ const FAQ: React.FC = () => {
                                 <Image
                                     width={533}
                                     height={747}
+                                    priority
                                     data-speed=".9"
                                     className="td-rounded-10"
-                                    src="/images/service-details/faq-thumb.jpg"
-                                    alt=""
+                                    src={thumb}
+                                    alt="thumb"
                                 />
                             </div>
                         </div>

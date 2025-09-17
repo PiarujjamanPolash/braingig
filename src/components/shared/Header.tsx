@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 import { FaAngleRight, FaFacebook, FaInstagram, FaLinkedin, FaXmark } from "react-icons/fa6";
 import { menuList } from "@/utils/fakeData/menuList";
 import { usePathname } from "next/navigation";
+import logo from '../../../public/images/logos/logo.png'
 
 const Header: React.FC = () => {
     const pathname = usePathname();
@@ -192,7 +193,8 @@ const Header: React.FC = () => {
                                         <Image
                                             width="150"
                                             height="96"
-                                            src="/images/logos/logo.png"
+                                            priority
+                                            src={logo}
                                             alt="Logo"
                                         />
                                     </Link>
@@ -267,7 +269,7 @@ const Header: React.FC = () => {
                         {/* Logo */}
                         <div className="nav-logo">
                             <Link href="/">
-                                <Image width={110} height={30} src="/images/logos/logo.png" alt="logo" />
+                                <Image priority width={110} height={30} src={logo} alt="logo" />
                             </Link>
                         </div>
 

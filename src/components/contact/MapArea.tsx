@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
+import logo from "../../../public/images/logos/logo.png"
 const MapArea: React.FC = () => {
 
     return (
@@ -17,7 +17,7 @@ const MapArea: React.FC = () => {
                                         width={259}
                                         height={71}
                                         className="mb-[100px]"
-                                        src="/images/logos/logo.png"
+                                        src={logo}
                                         alt=""
                                     />
                                     <h6 className="mb-[25px]">Contact info:</h6>
@@ -36,7 +36,6 @@ const MapArea: React.FC = () => {
                                         width="300"
                                         height="250"
                                         style={{ border: 0 }}
-                                        loading="lazy"
                                         referrerPolicy="no-referrer-when-downgrade"
                                     ></iframe>
                                 </div>

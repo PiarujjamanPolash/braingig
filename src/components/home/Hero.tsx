@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-
+import leafShape from "../../../public/images/hero/shape.png"
+import eyeShape from "../../../public/images/hero/eye.svg"
+import heroThumb from "../../../public/images/hero/thumb.jpg"
 const Hero: React.FC = () => {
   return (
     <div className="td-hero-area pt-[150px] lg:pt-[215px] mb-[80px] md:mb-[140px] td-btn-trigger bg-[#D8D9D5]">
@@ -15,19 +17,21 @@ const Hero: React.FC = () => {
               >
                 <Image
                   className="td-hero-5-shape hidden xl:block"
-                  src="/images/hero/shape.png"
-                  alt="Shape"
+                  src={leafShape}
+                  alt="leaf Shape"
                   width={200}
                   height={200}
+                  priority
                 />
                 <h2 className="td-hero-5-title text-center lg:text-start">
                   Our Team Work{" "}
                   <Image
                     className="hidden lg:inline-block"
-                    src="/images/hero/eye.svg"
+                    src={eyeShape}
                     alt="Eye Shape"
                     width={231}
                     height={100}
+                    priority
                   />{" "}
                   Makes <span>Your Dream </span>Work
                 </h2>
@@ -49,11 +53,12 @@ const Hero: React.FC = () => {
       {/* Bottom Thumb */}
       <div className="td-hero-5-bottom-thumb overflow-hidden h-[200px] sm:h-[400px] md:h-[500px] lg:h-[700px] 2xl:!h-[1100px]">
         <Image
-          width={1520}
-          height={506}
+          width={heroThumb.width}
+          height={heroThumb.height}
+          priority
           data-speed="0.6"
           className="w-full rounded-2xl object-cover"
-          src="/images/hero/thumb.jpg"
+          src={heroThumb}
           alt="Hero Thumb"
         />
       </div>

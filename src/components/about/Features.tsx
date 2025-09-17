@@ -1,7 +1,7 @@
 "use client"
 import { featuresData } from "@/utils/fakeData/featuresData";
 import Image from "next/image";
-
+import shape from "../../../public/images/about/about_page_shape.png"
 const Features: React.FC = () => {
 
     return (
@@ -22,7 +22,7 @@ const Features: React.FC = () => {
                             <div className="flex flex-wrap -mx-4">
                                 <div className="hidden md:block lg:w-5/12 px-4">
                                     <div className="td-about-main-feature-shape text-center ml-[70px] mb-[40px]">
-                                        <Image width={82} height={87} src="/images/about/about_page_shape.png" alt="" />
+                                        <Image width={82} height={87} src={shape} alt="shape" />
                                     </div>
                                 </div>
 

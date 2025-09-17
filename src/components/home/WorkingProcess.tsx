@@ -3,9 +3,9 @@
 import { workProcessData } from "@/utils/fakeData/workProcessData";
 import Image from "next/image";
 import ScrollPinAnimation from "../animations/ScrollPinAnimation";
+import thumb from "../../../public/images/working-process/thumb.jpg"
 
 const WorkingProcess: React.FC = () => {
-
     return (
         <div id="working-process" className="td-process-area py-[80px] lg:pt-[130px] lg:pb-[160px] w-[90%] mx-auto">
             <div className="container mx-auto">
@@ -26,7 +26,7 @@ const WorkingProcess: React.FC = () => {
                         <div className="lg:col-span-3 col-span-12 mr-3">
                             <ScrollPinAnimation>
                                 <div className="td-process-thumb pt-[80px] pb-[80px] td-fixed-thumb">
-                                    <Image width={280} height={320} className="w-full lg:w-[280px]" src="/images/working-process/thumb.jpg" alt="" />
+                                    <Image width={280} height={320} priority className="w-full lg:w-[280px]" src={thumb} alt="thumb" />
                                 </div>
                             </ScrollPinAnimation>
                         </div>

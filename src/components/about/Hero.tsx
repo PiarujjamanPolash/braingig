@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import AnimateTwoContent from "@/components/animations/AnimateTwoContent";
 import Link from "next/link";
-
+import thumb from "../../../public/images/about/hero-thumb.jpg"
 const Hero: React.FC = () => {
     const thumbRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -32,9 +32,10 @@ const Hero: React.FC = () => {
                                 data-speed=".9"
                                 width={532}
                                 height={519}
+                                priority
                                 className="w-full td-rounded-10"
-                                src="/images/about/hero-thumb.jpg"
-                                alt=""
+                                src={thumb}
+                                alt="thumb"
                             />
                         </div>
                     </div>

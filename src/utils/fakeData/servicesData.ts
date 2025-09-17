@@ -16,7 +16,7 @@ export type Services = {
   description: string;
   path: string;
   slug: string;
-  img?: string;
+  img: string;
   features?: string[]; 
   projects?: Projects[]; 
   projectsTitle?: string; 

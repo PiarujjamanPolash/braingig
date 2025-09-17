@@ -56,7 +56,7 @@ const Team: React.FC = () => {
                         <div key={member.id} className="w-full h-full">
                             <div className="td-team-4-wrap p-relative h-full">
                                 <div className="td-team-4-thumb h-full">
-                                    <Image width={490} height={490}
+                                    <Image width={490} height={490} priority
                                         className="w-full h-full object-cover"
                                         src={member.img}
                                         alt={member.name}

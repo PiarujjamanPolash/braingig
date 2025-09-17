@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-
+import bdOfficeImg from  "../../../public/images/offices/bd.jpg"
+import USAOfficeImg from  "../../../public/images/offices/usa.jpg"
 const BranchArea: React.FC = () => {
-
     return (
         <div className="w-[90%] mx-auto">
             <div className="td-contact-branch-area pb-[80px] lg:pb-[140px]">
@@ -31,8 +31,8 @@ const BranchArea: React.FC = () => {
                                         <div className="td-contact-branch-thumb mb-[20px]">
                                             <Image width={300} height={250}
                                                 className="w-full td-rounded-10"
-                                                src="/images/offices/bd.jpg"
-                                                alt=""
+                                                src={bdOfficeImg}
+                                                alt="BD Office"
                                             />
                                         </div>
                                     </div>
@@ -69,8 +69,8 @@ const BranchArea: React.FC = () => {
                                         <div className="td-contact-branch-thumb mb-[20px]">
                                             <Image width={300} height={250}
                                                 className="w-full td-rounded-10"
-                                                src="/images/offices/usa.jpg"
-                                                alt=""
+                                                src={USAOfficeImg}
+                                                alt="USA Office"
                                             />
                                         </div>
                                     </div>

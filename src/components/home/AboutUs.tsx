@@ -2,6 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
+import thumb1 from "../../../public/images/about/about-sec-thumb1.jpg"
+import thumb2 from "../../../public/images/about/about-sec-thumb2.jpg"
+import shape from "../../../public/images/about/shape.png"
 
 const AboutUs: React.FC = () => {
   
@@ -16,7 +19,7 @@ const AboutUs: React.FC = () => {
               <div className="td-about-left-thumb ml-[60px] fix td-rounded-10">
                 <Image
                 data-speed='.9'
-                  src="/images/about/about-sec-thumb1.jpg"
+                  src={thumb1}
                   alt="About Thumbnail"
                   width={280}
                   height={280}
@@ -55,7 +58,7 @@ const AboutUs: React.FC = () => {
               <div className="td-about-thumb-wrap flex items-center justify-end gap-12">
                 <div className="mr-[150px] td-about-shape">
                   <Image
-                    src="/images/about/shape.png"
+                    src={shape}
                     alt="About Shape"
                     width={150}
                     height={150}
@@ -65,7 +68,7 @@ const AboutUs: React.FC = () => {
                 <div className="td-about-thumb fix td-rounded-10">
                   <Image
                     data-speed='.9'
-                    src="/images/about/about-sec-thumb2.jpg"
+                    src={thumb2}
                     alt="About Thumbnail 2"
                     width={220}
                     height={308}

@@ -7,8 +7,7 @@ import { testimonialsData } from "@/utils/fakeData/testimonialsData";
 import Brands from "../shared/Brands";
 import ScrollRevealLeft from "../animations/ScrollRevealLeft";
 import Image from "next/image";
-// import Brands from "@/components/shared/Brands";
-
+import userImage from "../../../public/images/testimonials/user.png"
 const Testimonial: React.FC = () => {
 
     return (
@@ -24,7 +23,7 @@ const Testimonial: React.FC = () => {
                             <span className="td-section-subtitle mb-[185px] inline-block">
                                 CLIENTS FEEDBACK
                             </span>
-                            <Image width={177} height={60} className="mb-5" src="/images/testimonials/user.png" alt="" />
+                            <Image width={177} height={60} className="mb-5" src={userImage} alt="user Image" />
                             <p>
                                 Top companies trust us 
                                 <br /> with their websites

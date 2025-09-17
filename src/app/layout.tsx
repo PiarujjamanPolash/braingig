@@ -1,29 +1,13 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, DM_Serif_Display, Geist, Geist_Mono, Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Bebas_Neue, DM_Serif_Display, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import "@/assets/css/main.css"
+import "@/assets/css/main.min.css"
 import Header from "@/components/shared/Header";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const bebas = Bebas_Neue({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-bebas",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-body",
-  display: "swap",
 });
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -51,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} ${bebas.variable} ${plusJakarta.variable} ${dmSerif.variable} antialiased`}
+        className={`${bebas.variable} ${plusJakarta.variable} ${dmSerif.variable} antialiased`}
       >
         <Header />
         {children}        

@@ -18,7 +18,7 @@ const ServiceShowcasing: React.FC = () => {
                                     <div className="td-service-pin-thumb h-full">
                                         <Image width={745} height={722}
                                             className="w-full h-full"
-                                            src={service.img || "/images/default.jpg"} // fallback if no img
+                                            src={service.img}
                                             alt={service.title}
                                         />
                                     </div>
