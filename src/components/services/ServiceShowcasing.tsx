@@ -1,6 +1,7 @@
 "use client"
 
 import { servicesData } from "@/utils/fakeData/servicesData";
+import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 
@@ -15,7 +16,7 @@ const ServiceShowcasing: React.FC = () => {
                                 {/* Left Image */}
                                 <div className="w-full lg:w-6/12 h-full">
                                     <div className="td-service-pin-thumb h-full">
-                                        <img
+                                        <Image width={745} height={722}
                                             className="w-full h-full"
                                             src={service.img || "/images/default.jpg"} // fallback if no img
                                             alt={service.title}

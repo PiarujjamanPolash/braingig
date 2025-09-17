@@ -8,15 +8,11 @@ import Services from "@/components/home/Services";
 import AboutUs from "@/components/home/AboutUs";
 import ClientWrapper from "@/components/wrappers/ClientWrapper";
 import TextLineAnimation from "@/components/animations/TextLineAnimation";
-import ScrollRevealLeft from "@/components/animations/ScrollRevealLeft";
-import ScrollPinAnimation from "@/components/animations/ScrollPinAnimation";
 
 const HomePage = () => {
   return (
     <ClientWrapper>
       <TextLineAnimation />
-      <ScrollRevealLeft />
-      <ScrollPinAnimation />
       <Hero />
       <AboutUs />
       <Testimonial />

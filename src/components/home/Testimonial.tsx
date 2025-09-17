@@ -5,6 +5,8 @@ import { Navigation} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { testimonialsData } from "@/utils/fakeData/testimonialsData";
 import Brands from "../shared/Brands";
+import ScrollRevealLeft from "../animations/ScrollRevealLeft";
+import Image from "next/image";
 // import Brands from "@/components/shared/Brands";
 
 const Testimonial: React.FC = () => {
@@ -15,18 +17,20 @@ const Testimonial: React.FC = () => {
                 <div className="flex flex-wrap">
                     {/* Left Section */}
                     <div className="w-full md:w-4/12 lg:w-3/12">
-                        <div
+                        <ScrollRevealLeft>
+                            <div
                             className="td-testimonial-left mb-10 scroll-reveal-left"
                         >
                             <span className="td-section-subtitle mb-[185px] inline-block">
                                 CLIENTS FEEDBACK
                             </span>
-                            <img className="mb-5" src="/images/testimonials/user.png" alt="" />
+                            <Image width={177} height={60} className="mb-5" src="/images/testimonials/user.png" alt="" />
                             <p>
                                 Top companies trust us 
                                 <br /> with their websites
                             </p>
                         </div>
+                        </ScrollRevealLeft>
                     </div>
 
                     {/* Right Section */}

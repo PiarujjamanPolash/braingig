@@ -6,18 +6,17 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/all";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const TextLineAnimation = () => {
   const pathname = usePathname();
 
   useLayoutEffect(() => {
-    let ctx: gsap.Context | null = null;
-    let split: SplitText | null = null;
+    let ctx = gsap.context(() => {}); 
 
-    const id = requestAnimationFrame(() => {
+    const animationTimeout = setTimeout(() => {
       ctx = gsap.context(() => {
-        split = new SplitText(".td-text-invert, .td-text-opacity", {
+        const split = new SplitText(".td-text-invert, .td-text-opacity", {
           type: "lines",
         });
 
@@ -40,13 +39,11 @@ const TextLineAnimation = () => {
 
         ScrollTrigger.refresh();
       });
-    });
+    }, 100); 
 
     return () => {
-      cancelAnimationFrame(id);
-      if (split) split.revert();
-      ScrollTrigger.getAll().forEach((st) => st.kill());
-      ctx?.revert();
+      clearTimeout(animationTimeout); 
+      ctx.revert();
     };
   }, [pathname]);
 

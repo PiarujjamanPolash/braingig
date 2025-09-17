@@ -31,7 +31,7 @@ const VisionsVoices: React.FC = () => {
                         <div className="col-span-12 lg:col-span-8">
                             <div className="td-service-replace-content">
                                 <div className="td-service-replace-thumb mb-[50px]">
-                                    <img
+                                    <Image width={1170} height={700}
                                         className="td-rounded-10 w-full h-[400px] lg:h-[700px]"
                                         src="/images/all_images/image-4.jpg"
                                         alt=""

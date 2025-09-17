@@ -14,7 +14,7 @@ const AboutUs: React.FC = () => {
             <div className="td-about-left mb-[30px]">
               <span>WHO WE ARE</span>
               <div className="td-about-left-thumb ml-[60px] fix td-rounded-10">
-                <img
+                <Image
                 data-speed='.9'
                   src="/images/about/about-sec-thumb1.jpg"
                   alt="About Thumbnail"

@@ -1,6 +1,4 @@
 
-import AnimateFadeInLeft from "@/components/animations/AnimateFadeInLeft";
-import ScrollPinAnimation from "@/components/animations/ScrollPinAnimation";
 import TextLineAnimation from "@/components/animations/TextLineAnimation";
 import WorkingProcess from "@/components/home/WorkingProcess";
 import FAQ from "@/components/service-details/FAQ";
@@ -28,8 +26,6 @@ const ServicesPage = async ({
         <ClientWrapper>
             <div>
                 <TextLineAnimation />
-                <AnimateFadeInLeft />
-                <ScrollPinAnimation />
                 <Hero service={service} />
                 <Projects service={service} />
                 <Partners />

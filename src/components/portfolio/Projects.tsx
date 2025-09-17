@@ -1,6 +1,7 @@
 "use client"
 
 import { portfolioData } from "@/utils/fakeData/portfolioData";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
@@ -56,7 +57,7 @@ const Projects: React.FC = () => {
                         >
                             <div className="td-portfolio-2-item relative h-full">
                                 <div className="td-portfolio-2-thumb overflow-hidden h-full !rounded-none">
-                                    <img className="!w-full aspect-[3/2] object-cover !rounded-none" src={item.img} alt={item.title} />
+                                    <Image width={488} height={274} className="!w-full aspect-[3/2] object-cover !rounded-none" src={item.img} alt={item.title} />
                                 </div>
                                 <div className="td-portfolio-2-content">
                                     <span className="mb-2 block text-white ">{item.category.join(", ")}</span>

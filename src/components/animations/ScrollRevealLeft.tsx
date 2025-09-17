@@ -1,19 +1,27 @@
 "use client";
 
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const AnimateFadeInLeft = () => {
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      const elements = document.querySelectorAll(".scroll-reveal-left");
+type ScrollRevealLeftProps = {
+  children: React.ReactNode;
+};
 
-      elements.forEach((el) => {
+const ScrollRevealLeft: React.FC<ScrollRevealLeftProps> = ({ children }) => {
+  const animRef = useRef<HTMLDivElement | null>(null);
+  const pathname = usePathname();
+
+  useLayoutEffect(() => {
+    if (!animRef.current) return;
+
+    const timeoutId = setTimeout(() => {
+      const ctx = gsap.context(() => {
         gsap.fromTo(
-          el,
+          animRef.current,
           { x: -50, opacity: 0 },
           {
             x: 0,
@@ -21,20 +29,26 @@ const AnimateFadeInLeft = () => {
             duration: 1,
             ease: "power3.out",
             scrollTrigger: {
-              trigger: el,
+              trigger: animRef.current,
               start: "top 85%",
               end: "bottom center",
               toggleActions: "play none none reverse",
             },
           }
         );
-      });
-    });
+        ScrollTrigger.refresh();
+      }, animRef);
+      
+      return () => {
+        ctx.revert();
+      };
+    }, 100); 
 
-    return () => ctx.revert(); 
-  }, []);
+    return () => clearTimeout(timeoutId);
 
-  return null; 
+  }, [pathname]);
+
+  return <div ref={animRef}>{children}</div>;
 };
 
-export default AnimateFadeInLeft;
+export default ScrollRevealLeft;

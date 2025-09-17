@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import Link from "next/link";
 import { Services } from "@/utils/fakeData/servicesData";
+import Image from "next/image";
 
 type ProjectsProps = {
   service: Services;
@@ -43,7 +44,7 @@ const Projects: React.FC<ProjectsProps> = ({ service }) => {
               key={item.id}>
               <div className="td-portfolio-2-item relative h-full">
                 <div className="td-portfolio-2-thumb overflow-hidden h-full">
-                  <img className="h-full" width={550} src={item.img} alt={item.title} />
+                  <Image width={550} height={309} className="h-full" src={item.img} alt={item.title} />
                 </div>
                 <div className="td-portfolio-2-content">
                   <div className="dates mb-[10px] flex items-center gap-2">
@@ -75,7 +76,7 @@ const Projects: React.FC<ProjectsProps> = ({ service }) => {
             <SwiperSlide className="!w-auto" key={item.id}>
               <div className="td-portfolio-2-item relative h-full">
                 <div className="td-portfolio-2-thumb overflow-hidden h-full">
-                  <img className="h-full" width={550} src={item.img} alt={item.title} />
+                  <Image width={550} height={309} className="h-full" src={item.img} alt={item.title} />
                 </div>
                 <div className="td-portfolio-2-content">
                   <div className="dates mb-[10px] flex items-center gap-2">

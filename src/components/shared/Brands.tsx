@@ -1,5 +1,6 @@
 "use client";
 import { clientLogoData } from "@/utils/fakeData/clientLogoData";
+import Image from "next/image";
 import Marquee from "react-fast-marquee";
 type BrandsProps = {
   customClass?: string;
@@ -9,7 +10,7 @@ const Brands = ({ customClass = "p-10" }: BrandsProps) => {
         <div className={`w-full overflow-hidden ${customClass}`}>
             <Marquee gradient={false} speed={50}>
                 {clientLogoData.map(({ id, img, isLight }) => (
-                    <img
+                    <Image width={110} height={44}
                         key={id}
                         src={img}
                         alt="company logo"

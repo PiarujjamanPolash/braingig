@@ -2,6 +2,7 @@
 
 import { Services } from "@/utils/fakeData/servicesData";
 import Image from "next/image";
+import AnimateFadeInLeft from "../animations/AnimateFadeInLeft";
 type HeroProps = {
     service: Services;
 };
@@ -14,9 +15,11 @@ const Hero: React.FC<HeroProps> = ({ service }) => {
                     <div className="flex flex-wrap -mx-4">
                         <div className="w-full lg:w-1/2 px-4">
                             <div className="td-breadcrumb-wrap">
-                                <h2 className="td-section-page-title mb-9 fade-in-left">
-                                    {service.title} <span>{service.highlight}</span>
-                                </h2>
+                                <AnimateFadeInLeft>
+                                    <h2 className="td-section-page-title mb-9">
+                                        {service.title} <span>{service.highlight}</span>
+                                    </h2>
+                                </AnimateFadeInLeft>
                                 <div className="td-service-hero-thumb-2 fix td-rounded-10 pt-[60px] lg:pt-[105px] mb-7.5">
                                     <Image width={563} height={690} data-speed=".9" className="td-rounded-10 object-cover" src="/images/service-details/thumb-2.jpg" alt="" />
                                 </div>

@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import Link from "next/link";
 import { portfolioData } from "@/utils/fakeData/portfolioData";
+import Image from "next/image";
 const shuffleArray = <T,>(array: T[]): T[] => [...array].sort(() => Math.random() - 0.5);
 
 const RecentWorks: React.FC = () => {
@@ -33,7 +34,7 @@ const RecentWorks: React.FC = () => {
               key={item.id}>
               <div className="td-portfolio-2-item relative h-full">
                 <div className="td-portfolio-2-thumb overflow-hidden h-full">
-                  <img className="h-full" width={550} src={item.img} alt={item.title} />
+                  <Image width={500} height={310} className="h-full" src={item.img} alt={item.title} />
                 </div>
                 <div className="td-portfolio-2-content">
                   <div className="dates mb-[10px] flex items-center gap-2">
@@ -65,7 +66,7 @@ const RecentWorks: React.FC = () => {
             <SwiperSlide className="!w-auto" key={item.id}>
               <div className="td-portfolio-2-item relative h-full">
                 <div className="td-portfolio-2-thumb overflow-hidden h-full">
-                  <img className="h-full" width={500} src={item.img} alt={item.title} />
+                  <Image width={500} height={310} className="h-full" src={item.img} alt={item.title} />
                 </div>
                 <div className="td-portfolio-2-content">
                   <div className="dates mb-[10px] flex items-center gap-2">

@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image";
+
 const IntroArea: React.FC = () => {
 
     return (
@@ -10,7 +12,7 @@ const IntroArea: React.FC = () => {
                     <div className="flex flex-wrap">
                         <div className="w-full">
                             <div className="td-service-main-bigthumb fix td-rounded-10 h-[274px] md:h-[350px] lg:h-[700px]">
-                                <img className="w-full h-full object-cover" data-speed=".9" src="/images/services/thumb.jpg" alt="" />
+                                <Image width={1320} height={616} className="w-full h-full object-cover" data-speed=".9" src="/images/services/thumb.jpg" alt="" />
                             </div>
                         </div>
                     </div>

@@ -48,7 +48,9 @@ const Hero: React.FC = () => {
 
       {/* Bottom Thumb */}
       <div className="td-hero-5-bottom-thumb overflow-hidden h-[200px] sm:h-[400px] md:h-[500px] lg:h-[700px] 2xl:!h-[1100px]">
-        <img
+        <Image
+          width={1520}
+          height={506}
           data-speed="0.6"
           className="w-full rounded-2xl object-cover"
           src="/images/hero/thumb.jpg"

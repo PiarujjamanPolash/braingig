@@ -1,44 +1,56 @@
 "use client";
 
-import { useEffect } from "react";
+import { useLayoutEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ScrollPinAnimation = () => {
-  useEffect(() => {
+type ScrollPinAnimationProps = {
+  children: React.ReactNode;
+};
+
+const ScrollPinAnimation: React.FC<ScrollPinAnimationProps> = ({ children }) => {
+  const pinRef = useRef<HTMLDivElement | null>(null);
+  const pathname = usePathname();
+
+  useLayoutEffect(() => {
+    if (!pinRef.current) return;
+
     let ctx: gsap.Context;
+    let matchMediaInstance: gsap.MatchMedia;
 
-    const initPins = () => {
-      ctx?.revert();
+    const timeoutId = setTimeout(() => {
+      ctx = gsap.context(() => {
+        matchMediaInstance = gsap.matchMedia();
 
-      if (window.innerWidth >= 1024) {
-        ctx = gsap.context(() => {
-          const pinSections = document.querySelectorAll(".td-scroll-pin");
-          pinSections.forEach((section) => {
-            ScrollTrigger.create({
-              trigger: section,
-              pin: true,
-              start: "top top",
-              end: "+=280",
-              markers: false,
-            });
+        matchMediaInstance.add("(min-width: 1024px)", () => {
+          ScrollTrigger.create({
+            trigger: pinRef.current,
+            pin: true,
+            start: "top top",
+            end: "+=280",
+            markers: false,
           });
         });
-      }
-    };
 
-    initPins();
-    window.addEventListener("resize", initPins);
+        ScrollTrigger.refresh();
+      }, pinRef);
+    }, 100);
 
     return () => {
-      ctx?.revert(); 
-      window.removeEventListener("resize", initPins);
+      clearTimeout(timeoutId);
+      if (ctx) {
+        ctx.revert();
+      }
+      if (matchMediaInstance) {
+        matchMediaInstance.revert();
+      }
     };
-  }, []);
+  }, [pathname]);
 
-  return null;
+  return <div ref={pinRef}>{children}</div>;
 };
 
 export default ScrollPinAnimation;

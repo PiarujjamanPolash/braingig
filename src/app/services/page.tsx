@@ -1,7 +1,5 @@
 "use client";
 
-import AnimateFadeInLeft from "@/components/animations/AnimateFadeInLeft";
-import ScrollPinAnimation from "@/components/animations/ScrollPinAnimation";
 import ServicesPinAnimation from "@/components/animations/ServicesPinAnimation";
 import TextLineAnimation from "@/components/animations/TextLineAnimation";
 import Brands from "@/components/shared/Brands";
@@ -15,8 +13,6 @@ const ServicesPage = () => {
         <ClientWrapper>
             <div>
                 <TextLineAnimation />
-                <AnimateFadeInLeft />
-                <ScrollPinAnimation />
                 <ServicesPinAnimation />
                 <Breadcrumb
                     subtitle="BEST SERVICE PROVIDE"
