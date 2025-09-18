@@ -2,8 +2,17 @@
 import Accordion from "@/components/shared/Accordion";
 import Image from "next/image";
 import thumb from "../../../public/images/service-details/faq-thumb.jpg"
+import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const FAQ: React.FC = () => {
+    const pathname = usePathname();
+
+  useEffect(() => {
+    if (pathname === "/faq") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [pathname]);
     return (
         <div className="w-[90%] mx-auto mb-[80px]">
             <div className="td-faq-2-area">
@@ -16,7 +25,6 @@ const FAQ: React.FC = () => {
                                 <Image
                                     width={533}
                                     height={747}
-                                    priority
                                     data-speed=".9"
                                     className="td-rounded-10"
                                     src={thumb}

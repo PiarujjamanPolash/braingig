@@ -33,7 +33,7 @@ const RecentWorks: React.FC = () => {
               key={item.id}>
               <div className="td-portfolio-2-item relative h-full">
                 <div className="td-portfolio-2-thumb overflow-hidden h-full">
-                  <Image width={500} height={310} priority className="h-full" src={item.img} alt={item.title} />
+                  <Image width={500} height={310} className="h-full" src={item.img} alt={item.title} />
                 </div>
                 <div className="td-portfolio-2-content">
                   <div className="dates mb-[10px] flex items-center gap-2">
@@ -65,7 +65,7 @@ const RecentWorks: React.FC = () => {
             <SwiperSlide className="!w-auto" key={item.id}>
               <div className="td-portfolio-2-item relative h-full">
                 <div className="td-portfolio-2-thumb overflow-hidden h-full">
-                  <Image width={500} height={310} priority className="h-full" src={item.img} alt={item.title} />
+                  <Image width={500} height={310} className="h-full" src={item.img} alt={item.title} />
                 </div>
                 <div className="td-portfolio-2-content">
                   <div className="dates mb-[10px] flex items-center gap-2">

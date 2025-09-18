@@ -26,7 +26,7 @@ const WorkingProcess: React.FC = () => {
                         <div className="lg:col-span-3 col-span-12 mr-3">
                             <ScrollPinAnimation>
                                 <div className="td-process-thumb pt-[80px] pb-[80px] td-fixed-thumb">
-                                    <Image width={280} height={320} priority className="w-full lg:w-[280px]" src={thumb} alt="thumb" />
+                                    <Image width={280} height={320} className="w-full lg:w-[280px]" src={thumb} alt="thumb" />
                                 </div>
                             </ScrollPinAnimation>
                         </div>

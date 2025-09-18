@@ -35,6 +35,7 @@ const MapArea: React.FC = () => {
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3634.3060884367733!2d88.6031398!3d24.3706532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbef006aa80da1%3A0x688cbfd89873ba7f!2sBrainGig%20LLC!5e0!3m2!1sen!2sbd!4v1756452136790!5m2!1sen!2sbd"
                                         width="300"
                                         height="250"
+                                        loading="lazy"
                                         style={{ border: 0 }}
                                         referrerPolicy="no-referrer-when-downgrade"
                                     ></iframe>
