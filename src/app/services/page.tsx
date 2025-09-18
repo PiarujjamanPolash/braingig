@@ -1,12 +1,12 @@
-"use client";
+import dynamic from "next/dynamic";
 
-import ServicesPinAnimation from "@/components/animations/ServicesPinAnimation";
-import TextLineAnimation from "@/components/animations/TextLineAnimation";
-import Brands from "@/components/shared/Brands";
-import IntroArea from "@/components/services/IntroArea";
-import ServiceShowcasing from "@/components/services/ServiceShowcasing";
-import Breadcrumb from "@/components/shared/Breadcrumb";
-import ClientWrapper from "@/components/wrappers/ClientWrapper";
+const ServicesPinAnimation = dynamic(() => import("@/components/animations/ServicesPinAnimation"));
+const TextLineAnimation = dynamic(() => import("@/components/animations/TextLineAnimation"));
+const IntroArea = dynamic(() => import("@/components/services/IntroArea"));
+const ServiceShowcasing = dynamic(() => import("@/components/services/ServiceShowcasing"));
+const Brands = dynamic(() => import("@/components/shared/Brands"));
+const Breadcrumb = dynamic(() => import("@/components/shared/Breadcrumb"));
+const ClientWrapper = dynamic(() => import("@/components/wrappers/ClientWrapper"));
 
 const ServicesPage = () => {
     return (

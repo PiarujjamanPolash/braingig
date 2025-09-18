@@ -18,8 +18,8 @@ const Footer: React.FC = () => {
           <div className="flex flex-wrap -mx-4">
             {/* Left Section */}
             <div className="w-full lg:w-1/2 px-4 mb-[30px]">
-              <div ref={textRef} className="td-footer-3-widget">
-                <h2 className="td-footer-3-bigtitle text-center lg:text-start">
+              <div className="td-footer-3-widget">
+                <h2 ref={textRef}className="td-footer-3-bigtitle text-center lg:text-start">
                   We Build Websites<br /> that <span>Works!</span>
                 </h2>
               </div>

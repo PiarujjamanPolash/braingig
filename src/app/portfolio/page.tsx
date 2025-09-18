@@ -1,8 +1,8 @@
-"use client";
+import dynamic from "next/dynamic";
 
-import Projects from "@/components/portfolio/Projects";
-import Breadcrumb from "@/components/shared/Breadcrumb";
-import ClientWrapper from "@/components/wrappers/ClientWrapper";
+const Projects = dynamic(() => import("@/components/portfolio/Projects"));
+const Breadcrumb = dynamic(() => import("@/components/shared/Breadcrumb"));
+const ClientWrapper = dynamic(() => import("@/components/wrappers/ClientWrapper"));
 
 const Portfolio = () => {
 

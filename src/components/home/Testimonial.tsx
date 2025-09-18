@@ -1,7 +1,7 @@
 "use client"
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation} from "swiper/modules";
+import { Navigation, Virtual } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { testimonialsData } from "@/utils/fakeData/testimonialsData";
 import Brands from "../shared/Brands";
@@ -18,17 +18,17 @@ const Testimonial: React.FC = () => {
                     <div className="w-full md:w-4/12 lg:w-3/12">
                         <ScrollRevealLeft>
                             <div
-                            className="td-testimonial-left mb-10 scroll-reveal-left"
-                        >
-                            <span className="td-section-subtitle mb-[185px] inline-block">
-                                CLIENTS FEEDBACK
-                            </span>
-                            <Image width={177} height={60} className="mb-5" src={userImage} alt="user Image" />
-                            <p>
-                                Top companies trust us 
-                                <br /> with their websites
-                            </p>
-                        </div>
+                                className="td-testimonial-left mb-10 scroll-reveal-left"
+                            >
+                                <span className="td-section-subtitle mb-[185px] inline-block">
+                                    CLIENTS FEEDBACK
+                                </span>
+                                <Image width={177} height={60} className="mb-5" src={userImage} alt="user Image" />
+                                <p>
+                                    Top companies trust us
+                                    <br /> with their websites
+                                </p>
+                            </div>
                         </ScrollRevealLeft>
                     </div>
 
@@ -44,7 +44,7 @@ const Testimonial: React.FC = () => {
                             <div className="w-full">
                                 <div className="td-testimonial-slide-content lg:ml-6 mb-10">
                                     <Swiper
-                                        modules={[Navigation]}
+                                        modules={[Navigation, Virtual]}
                                         navigation={{
                                             prevEl: ".td-testimonial-prev",
                                             nextEl: ".td-testimonial-next",
@@ -60,76 +60,76 @@ const Testimonial: React.FC = () => {
                                                             <h4 className="mb-3 mt-5">{item.name}</h4>
                                                             <span>{item.position}</span>
                                                         </div>
-                                                        {/* Navigation */}
-                                                        <div className="td-testimonial-navigation mt-4 mb-7">
-                                                            <span className="td-testimonial-prev inline-block cursor-pointer">
-                                                                <svg
-                                                                    width="31"
-                                                                    height="24"
-                                                                    viewBox="0 0 31 24"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M30.8699 12.2679L0.014612 12.4214"
-                                                                        stroke="currentColor"
-                                                                        strokeWidth="1.5"
-                                                                        strokeMiterlimit="10"
-                                                                    />
-                                                                    <path
-                                                                        d="M11.5445 0C11.5445 6.63283 6.38111 12 2.56383e-05 12"
-                                                                        stroke="currentColor"
-                                                                        strokeWidth="1.5"
-                                                                        strokeMiterlimit="10"
-                                                                    />
-                                                                    <path
-                                                                        d="M4.08971e-05 12C6.38112 12 11.5446 17.3671 11.5446 24"
-                                                                        stroke="currentColor"
-                                                                        strokeWidth="1.5"
-                                                                        strokeMiterlimit="10"
-                                                                    />
-                                                                </svg>
-                                                            </span>
-
-                                                            <span className="td-testimonial-next ml-4 inline-block cursor-pointer">
-                                                                <svg
-                                                                    width="31"
-                                                                    height="24"
-                                                                    viewBox="0 0 31 24"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M-0.000234102 12.2679L30.855 12.4214"
-                                                                        stroke="currentColor"
-                                                                        strokeWidth="1.5"
-                                                                        strokeMiterlimit="10"
-                                                                    />
-                                                                    <path
-                                                                        d="M19.3251 0C19.3251 6.63283 24.4886 12 30.8696 12"
-                                                                        stroke="currentColor"
-                                                                        strokeWidth="1.5"
-                                                                        strokeMiterlimit="10"
-                                                                    />
-                                                                    <path
-                                                                        d="M30.8696 12C24.4885 12 19.3251 17.3671 19.3251 24"
-                                                                        stroke="currentColor"
-                                                                        strokeWidth="1.5"
-                                                                        strokeMiterlimit="10"
-                                                                    />
-                                                                </svg>
-                                                            </span>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </SwiperSlide>
                                         ))}
                                     </Swiper>
+                                    {/* Navigation */}
+                                    <div className="td-testimonial-navigation mt-4 mb-7">
+                                        <span className="td-testimonial-prev inline-block cursor-pointer">
+                                            <svg
+                                                width="31"
+                                                height="24"
+                                                viewBox="0 0 31 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M30.8699 12.2679L0.014612 12.4214"
+                                                    stroke="currentColor"
+                                                    strokeWidth="1.5"
+                                                    strokeMiterlimit="10"
+                                                />
+                                                <path
+                                                    d="M11.5445 0C11.5445 6.63283 6.38111 12 2.56383e-05 12"
+                                                    stroke="currentColor"
+                                                    strokeWidth="1.5"
+                                                    strokeMiterlimit="10"
+                                                />
+                                                <path
+                                                    d="M4.08971e-05 12C6.38112 12 11.5446 17.3671 11.5446 24"
+                                                    stroke="currentColor"
+                                                    strokeWidth="1.5"
+                                                    strokeMiterlimit="10"
+                                                />
+                                            </svg>
+                                        </span>
+
+                                        <span className="td-testimonial-next ml-4 inline-block cursor-pointer">
+                                            <svg
+                                                width="31"
+                                                height="24"
+                                                viewBox="0 0 31 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M-0.000234102 12.2679L30.855 12.4214"
+                                                    stroke="currentColor"
+                                                    strokeWidth="1.5"
+                                                    strokeMiterlimit="10"
+                                                />
+                                                <path
+                                                    d="M19.3251 0C19.3251 6.63283 24.4886 12 30.8696 12"
+                                                    stroke="currentColor"
+                                                    strokeWidth="1.5"
+                                                    strokeMiterlimit="10"
+                                                />
+                                                <path
+                                                    d="M30.8696 12C24.4885 12 19.3251 17.3671 19.3251 24"
+                                                    stroke="currentColor"
+                                                    strokeWidth="1.5"
+                                                    strokeMiterlimit="10"
+                                                />
+                                            </svg>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                     <Brands customClass="p-0" />
+                    <Brands customClass="p-0" />
                 </div>
             </div>
         </div>

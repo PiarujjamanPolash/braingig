@@ -1,12 +1,13 @@
 "use client";
 
-import AnimateTwoContent from "@/components/animations/AnimateTwoContent";
-import FaqSearch from "@/components/faq/FaqSearch";
-import Accordion from "@/components/shared/Accordion";
-import Breadcrumb from "@/components/shared/Breadcrumb";
-import ClientWrapper from "@/components/wrappers/ClientWrapper";
+import dynamic from "next/dynamic";
 import {  useRef } from "react";
 
+const AnimateTwoContent = dynamic(() => import("@/components/animations/AnimateTwoContent"));
+const FaqSearch = dynamic(() => import("@/components/faq/FaqSearch"));
+const Accordion = dynamic(() => import("@/components/shared/Accordion"));
+const Breadcrumb = dynamic(() => import("@/components/shared/Breadcrumb"));
+const ClientWrapper = dynamic(() => import("@/components/wrappers/ClientWrapper"));
 
 const FAQ = () => {
     const thumbRef = useRef<HTMLDivElement>(null);

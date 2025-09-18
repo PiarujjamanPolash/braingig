@@ -14,6 +14,7 @@ const bebas = Bebas_Neue({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-bebas",
+  display: "swap",
 });
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -25,6 +26,7 @@ const dmSerif = DM_Serif_Display({
   subsets: ["latin"],
   weight: "400",
   variable: "--td-ff-dm",
+  display: "swap",
 });
 
 export const metadata: Metadata = {

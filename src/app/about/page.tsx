@@ -1,14 +1,17 @@
 "use client";
-import Features from "@/components/about/Features";
-import Hero from "@/components/about/Hero";
-import Team from "@/components/about/Team";
-import AnimateTitle from "@/components/animations/AnimateTitle";
-import TextLineAnimation from "@/components/animations/TextLineAnimation";
-import Testimonial from "@/components/home/Testimonial";
-import ClientWrapper from "@/components/wrappers/ClientWrapper";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
 gsap.registerPlugin(SplitText, ScrollTrigger);
+import dynamic from "next/dynamic";
+
+const Features = dynamic(() => import("@/components/about/Features"));
+const Hero = dynamic(() => import("@/components/about/Hero"));
+const Team = dynamic(() => import("@/components/about/Team"));
+const AnimateTitle = dynamic(() => import("@/components/animations/AnimateTitle"));
+const TextLineAnimation = dynamic(() => import("@/components/animations/TextLineAnimation"));
+const Testimonial = dynamic(() => import("@/components/home/Testimonial"));
+const ClientWrapper = dynamic(() => import("@/components/wrappers/ClientWrapper"));
+
 
 const About = () => {
     return (

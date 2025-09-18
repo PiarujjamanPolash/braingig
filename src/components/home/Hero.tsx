@@ -55,7 +55,6 @@ const Hero: React.FC = () => {
           width={1520}
           height={506}
           priority
-          fetchPriority="high"
           data-speed="0.6"
           className="w-full rounded-2xl !object-contain md:!object-cover lg:!object-contain xl:!object-cover"
           src={heroThumb}
