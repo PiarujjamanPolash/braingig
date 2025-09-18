@@ -1,8 +1,7 @@
-"use client";
+import dynamic from "next/dynamic";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
 gsap.registerPlugin(SplitText, ScrollTrigger);
-import dynamic from "next/dynamic";
 
 const Features = dynamic(() => import("@/components/about/Features"));
 const Hero = dynamic(() => import("@/components/about/Hero"));
