@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 
 const BranchArea = dynamic(() => import("@/components/contact/BranchArea"));
 const MainArea = dynamic(() => import("@/components/contact/MainArea"));
-const MapArea = dynamic(() => import("@/components/contact/MapArea"));
+const MapArea = dynamic(() => import("@/components/contact/MapArea"), { ssr: false });
 const Breadcrumb = dynamic(() => import("@/components/shared/Breadcrumb"));
 const ClientWrapper = dynamic(() => import("@/components/wrappers/ClientWrapper"));
 
