@@ -57,7 +57,7 @@ const Testimonial: React.FC = () => {
                                                     <div className="lg:w-12/12 flex flex-col justify-between">
                                                         <div className="td-testimonial-slide-content">
                                                             <p className="mb-15">{item.review}</p>
-                                                            <h6 className="mb-3 mt-5">{item.name}</h6>
+                                                            <h4 className="mb-3 mt-5">{item.name}</h4>
                                                             <span>{item.position}</span>
                                                         </div>
                                                         {/* Navigation */}

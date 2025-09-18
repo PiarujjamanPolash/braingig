@@ -52,13 +52,14 @@ const Services: React.FC = () => {
 
                                     <div className="lg:w-2/12 w-full">
                                         <div className="td-service-6-btn flex justify-start lg:justify-center items-center mb-0 md:mb-[15px]">
-                                            <Link href={service.path} className="flex items-center justify-center">
+                                            <Link href={service.path} className="flex items-center justify-center" aria-label={service.title}>
                                                 <svg
                                                     width="14"
                                                     height="14"
                                                     viewBox="0 0 14 14"
                                                     fill="none"
                                                     xmlns="http://www.w3.org/2000/svg"
+                                                    aria-hidden="true"
                                                 >
                                                     <path
                                                         d="M1 13L13 1"

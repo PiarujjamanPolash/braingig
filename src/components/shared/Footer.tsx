@@ -35,9 +35,9 @@ const Footer: React.FC = () => {
                   Station Rd, Rajshahi 6100, Bangladesh
                 </Link>
                 <div className="td-footer-3-social flex space-x-4 flex justify-center md:justify-start">
-                  <Link href="https://www.facebook.com/braingigllc" target="_blank"><FaFacebookF /></Link>
-                  <Link href="https://www.linkedin.com/company/99014556" target="_blank"><FaLinkedinIn /></Link>
-                  <Link href="https://www.instagram.com/braingigllc/" target="_blank"><FaInstagram /></Link>
+                  <Link href="https://www.facebook.com/braingigllc" aria-label="Facebook" target="_blank"><FaFacebookF aria-hidden="true" /></Link>
+                  <Link href="https://www.linkedin.com/company/99014556" aria-label="LinkedIn" target="_blank"><FaLinkedinIn aria-hidden="true" /></Link>
+                  <Link href="https://www.instagram.com/braingigllc/" aria-label="Instagram" target="_blank"><FaInstagram aria-hidden="true" /></Link>
                 </div>
               </div>
             </div>

@@ -43,14 +43,14 @@ const AboutUs: React.FC = () => {
 
               {/* Button Group */}
               <div className="td-btn-group mb-[35px]">
-                <Link className="td-btn-circle" href="/about">
-                  <FaArrowRight />
+                <Link className="td-btn-circle" href="/about" aria-label="About Us">
+                  <FaArrowRight aria-hidden="true" />
                 </Link>
                 <Link className="td-btn-2 td-btn-primary" href="/about">
                   ABOUT US
                 </Link>
-                <Link className="td-btn-circle" href="/about">
-                  <FaArrowRight />
+                <Link className="td-btn-circle" href="/about" aria-label="About Us">
+                  <FaArrowRight aria-hidden="true" />
                 </Link>
               </div>
 

@@ -24,7 +24,7 @@ const Accordion: React.FC = () => {
                                     onClick={() => toggleFAQ(item.id)}
                                 >
                                     {item.question}
-                                    <span className="plus-icon"></span>
+                                    <span className="plus-icon" aria-hidden="true"></span>
                                 </button>
                             </h2>
 

@@ -19,9 +19,8 @@ const Hero: React.FC = () => {
                   className="td-hero-5-shape hidden xl:block"
                   src={leafShape}
                   alt="leaf Shape"
-                  width={200}
-                  height={200}
-                  priority
+                  width={150}
+                  height={175}
                 />
                 <h2 className="td-hero-5-title text-center lg:text-start">
                   Our Team Work{" "}
@@ -56,8 +55,9 @@ const Hero: React.FC = () => {
           width={1520}
           height={506}
           priority
+          fetchPriority="high"
           data-speed="0.6"
-          className="w-full rounded-2xl !object-contain md:!object-cover"
+          className="w-full rounded-2xl !object-contain md:!object-cover lg:!object-contain xl:!object-cover"
           src={heroThumb}
           alt="Hero Thumb"
         />

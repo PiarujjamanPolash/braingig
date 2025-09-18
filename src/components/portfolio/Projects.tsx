@@ -30,14 +30,14 @@ const Projects: React.FC = () => {
                         className="col-lg-12 mb-[50px]"
                     >
                         <div className="td-portfolio-filter-btn text-center masonary-menu">
-                            <button
+                            <button type="button"
                                 className={filter === "*" ? "active" : ""}
                                 onClick={() => setFilter("*")}
                             >
                                 SHOW ALL
                             </button>
                             {categories.map((cat) => (
-                                <button
+                                <button type="button"
                                     key={cat}
                                     className={filter === cat ? "active" : ""}
                                     onClick={() => setFilter(cat)}
@@ -78,7 +78,7 @@ const Projects: React.FC = () => {
                                 <Link className="td-btn-circle" href="">
                                     <FaArrowRight />
                                 </Link>
-                                <button onClick={() => setVisibleCount(visibleCount + 10)} className="td-btn-2 td-btn-primary cursor-pointer">
+                                <button type="button" onClick={() => setVisibleCount(visibleCount + 10)} className="td-btn-2 td-btn-primary cursor-pointer">
                                     SEE MORE PROJECT
                                 </button>
                                 <Link className="td-btn-circle" href="">

@@ -4373,7 +4373,7 @@ textarea {
 }
 .td-hero-5-bottom-thumb img {
     height: 1200px !important;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
   .td-hero-5-bottom-thumb {
@@ -4381,7 +4381,7 @@ textarea {
   };
   .td-hero-5-bottom-thumb img {
     height: 600px !important;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 }
 @media (max-width: 575px) {
@@ -4390,7 +4390,7 @@ textarea {
   };
   .td-hero-5-bottom-thumb img {
     height: 470px !important;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 }
 .td-hero-6-title {

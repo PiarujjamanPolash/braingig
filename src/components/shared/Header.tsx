@@ -10,7 +10,6 @@ import logo from '../../../public/images/logos/logo.png'
 
 const Header: React.FC = () => {
     const pathname = usePathname();
-
     const mainMenuRef = useRef<HTMLDivElement>(null);
     const mobileMenuOuterRef = useRef<HTMLDivElement>(null);
 
@@ -104,13 +103,14 @@ const Header: React.FC = () => {
                             <div className="search__wrapper">
                                 {/* Close Button */}
                                 <div className="search__close">
-                                    <button type="button" className="search-close-btn">
+                                    <button type="button" className="search-close-btn" aria-label="Close search">
                                         <svg
                                             width="18"
                                             height="18"
                                             viewBox="0 0 18 18"
                                             fill="none"
                                             xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true"
                                         >
                                             <path
                                                 d="M17 1L1 17"
@@ -143,6 +143,7 @@ const Header: React.FC = () => {
                                             <button
                                                 type="submit"
                                                 className="absolute right-3 top-1/2 -translate-y-1/2"
+                                                aria-label="Search"
                                             >
                                                 <svg
                                                     width="20"
@@ -150,6 +151,7 @@ const Header: React.FC = () => {
                                                     viewBox="0 0 20 20"
                                                     fill="none"
                                                     xmlns="http://www.w3.org/2000/svg"
+                                                    aria-hidden="true"
                                                 >
                                                     <path
                                                         d="M9.55 18.1C14.272 18.1 18.1 14.272 18.1 9.55C18.1 4.82797 14.272 1 9.55 1C4.82797 1 1 4.82797 1 9.55C1 14.272 4.82797 18.1 9.55 18.1Z"
@@ -187,7 +189,7 @@ const Header: React.FC = () => {
                     <div className="container-1750 mx-auto">
                         <div className="flex flex-wrap items-center">
                             {/* Logo */}
-                            <div className="xl:w-2/12 w-4/12">
+                            <div className="xl:w-2/12 w-4/12 min-w-[150px]">
                                 <div className="logo">
                                     <Link className="logo-1" href="/">
                                         <Image
@@ -242,7 +244,7 @@ const Header: React.FC = () => {
                             </div>
 
                             {/* Right section */}
-                            <div className="xl:w-2/12 w-8/12">
+                            <div className="xl:w-2/12 w-8/12 min-w-[160px]">
                                 <div className="td-header-right text-right">
                                     <div className="inline-block ml-5">
                                         <div className="tdmenu-offcanvas-open-btn mobile-nav-toggler">
@@ -324,18 +326,18 @@ const Header: React.FC = () => {
                         <div className="social-links flex justify-center">
                             <ul className="list-wrap">
                                 <li>
-                                    <Link href="https://www.facebook.com/braingigllc" target="_blank">
-                                        <FaFacebook />
+                                    <Link href="https://www.facebook.com/braingigllc" target="_blank" aria-label="Facebook">
+                                        <FaFacebook aria-hidden="true" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="https://www.instagram.com/braingigllc/" target="_blank">
-                                        <FaInstagram />
+                                    <Link href="https://www.instagram.com/braingigllc/" target="_blank" aria-label="Instagram">
+                                        <FaInstagram aria-hidden="true" />
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="https://www.linkedin.com/company/99014556" target="_blank">
-                                        <FaLinkedin />
+                                    <Link href="https://www.linkedin.com/company/99014556" target="_blank" aria-label="Linkedin">
+                                        <FaLinkedin aria-hidden="true" />
                                     </Link>
                                 </li>
                             </ul>

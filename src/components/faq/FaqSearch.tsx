@@ -17,10 +17,12 @@ const FaqSearch: React.FC = () => {
                     <button
                         className="td-faq-main-btn px-[6px] py-[1px]"
                         type="submit"
+                        aria-label="Search FAQ"
                     >
                         <svg
                             width="18"
                             height="18"
+                            aria-hidden="true"
                             viewBox="0 0 18 18"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
