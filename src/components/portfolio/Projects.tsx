@@ -1,6 +1,7 @@
 "use client"
 
 import { portfolioData } from "@/utils/fakeData/portfolioData";
+import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -21,6 +22,9 @@ const Projects: React.FC = () => {
     useEffect(() => {
         setVisibleCount(6);
     }, [filter]);
+    useEffect(() => {
+        ScrollTrigger.refresh();
+    }, [visibleCount]);
 
     return (
         <div className="td-portfolio-filter-area td-portfolio-filter-three">

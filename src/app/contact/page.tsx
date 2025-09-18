@@ -1,3 +1,4 @@
+"use client"
 import dynamic from "next/dynamic";
 
 const BranchArea = dynamic(() => import("@/components/contact/BranchArea"));
