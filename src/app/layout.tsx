@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, DM_Serif_Display, Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import "@/assets/css/main.min.css"
+import "@/assets/css/main.css"
 import Header from "@/components/shared/Header";
 
 const inter = Inter({

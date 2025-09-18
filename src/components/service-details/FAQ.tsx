@@ -39,11 +39,9 @@ const FAQ: React.FC = () => {
                                 <h2 className="td-testimonial-title mb-5 td-text-invert">
                                     Frequently asked <span>questions</span>
                                 </h2>
-
                                 <Accordion />
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
