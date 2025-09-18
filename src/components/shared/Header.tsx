@@ -189,7 +189,7 @@ const Header: React.FC = () => {
                     <div className="container-1750 mx-auto">
                         <div className="flex flex-wrap items-center">
                             {/* Logo */}
-                            <div className="xl:w-2/12 w-4/12 min-w-[150px]">
+                            <div className="xl:w-2/12 w-4/12">
                                 <div className="logo">
                                     <Link className="logo-1" href="/">
                                         <Image
@@ -244,7 +244,7 @@ const Header: React.FC = () => {
                             </div>
 
                             {/* Right section */}
-                            <div className="xl:w-2/12 w-8/12 min-w-[160px]">
+                            <div className="xl:w-2/12 w-8/12">
                                 <div className="td-header-right text-right">
                                     <div className="inline-block ml-5">
                                         <div className="tdmenu-offcanvas-open-btn mobile-nav-toggler">
