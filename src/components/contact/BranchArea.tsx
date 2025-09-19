@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import bdOfficeImg from  "../../../public/images/offices/bd.jpg"
-import USAOfficeImg from  "../../../public/images/offices/usa.jpg"
+import bdOfficeImg from  "../../../public/images/offices/bd.webp"
+import USAOfficeImg from  "../../../public/images/offices/usa.webp"
 const BranchArea: React.FC = () => {
     return (
         <div className="w-[90%] mx-auto">

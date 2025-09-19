@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 import { FaAngleRight, FaFacebook, FaInstagram, FaLinkedin, FaXmark } from "react-icons/fa6";
 import { menuList } from "@/utils/fakeData/menuList";
 import { usePathname } from "next/navigation";
-import logo from '../../../public/images/logos/logo.png'
+import logo from '../../../public/images/logos/logo.webp'
 
 const Header: React.FC = () => {
     const pathname = usePathname();

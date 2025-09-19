@@ -3,7 +3,7 @@
 import { workProcessData } from "@/utils/fakeData/workProcessData";
 import Image from "next/image";
 import ScrollPinAnimation from "../animations/ScrollPinAnimation";
-import thumb from "../../../public/images/working-process/thumb.jpg"
+import thumb from "../../../public/images/working-process/thumb.webp"
 
 const WorkingProcess: React.FC = () => {
     return (

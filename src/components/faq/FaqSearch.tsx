@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import thumb from "../../../public/images/faq/thumb.jpg"
+import thumb from "../../../public/images/faq/thumb.webp"
 const FaqSearch: React.FC = () => {
 
     return (

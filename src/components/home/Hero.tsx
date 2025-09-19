@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import leafShape from "../../../public/images/hero/shape.png"
-import eyeShape from "../../../public/images/hero/eye.svg"
-import heroThumb from "../../../public/images/hero/thumb.jpg"
+import leafShape from "../../../public/images/hero/shape.webp"
+import eyeShape from "../../../public/images/hero/eye-shape.webp"
+import heroThumb from "../../../public/images/hero/thumb.webp"
 const Hero: React.FC = () => {
   return (
     <div className="td-hero-area pt-[150px] lg:pt-[215px] mb-[80px] md:mb-[140px] td-btn-trigger bg-[#D8D9D5]">

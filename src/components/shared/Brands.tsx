@@ -3,7 +3,7 @@ import { clientLogoData } from "@/utils/fakeData/clientLogoData";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 type BrandsProps = {
-  customClass?: string;
+    customClass?: string;
 };
 const Brands = ({ customClass = "p-10" }: BrandsProps) => {
     return (
@@ -14,7 +14,11 @@ const Brands = ({ customClass = "p-10" }: BrandsProps) => {
                         key={id}
                         src={img}
                         alt="company logo"
-                        className={`w-56 sm:w-44 mx-4 object-contain ${isLight ? "filter brightness-[60%]" : ""
+                        className={`w-56 sm:w-44 mx-4 object-contain ${id === 2
+                                ? "mix-blend-difference"
+                                : isLight
+                                    ? "filter brightness-[60%]"
+                                    : ""
                             }`}
                     />
                 ))}

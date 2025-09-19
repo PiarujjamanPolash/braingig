@@ -6,16 +6,15 @@ type DataType = {
 export const clientLogoData: DataType = [
     {
         id: 1,
-        img: "/images/company-logo/company1.png",
+        img: "/images/company-logo/company1.webp",
     },
     {
         id: 2,
-        img: "/images/company-logo/company2.svg",
-        isLight: true
+        img: "/images/company-logo/company2.webp",
     },
     {
         id: 3,
-        img: "/images/company-logo/company3.svg",
+        img: "/images/company-logo/company3.webp",
     },
     {
         id: 4,
@@ -23,12 +22,12 @@ export const clientLogoData: DataType = [
     },
     {
         id: 5,
-        img: "/images/company-logo/company5.png",
+        img: "/images/company-logo/company5.webp",
         isLight: true
     },
     {
         id: 6,
-        img: "/images/company-logo/company6.png",
+        img: "/images/company-logo/company6.webp",
     },
     {
         id: 7,
@@ -36,16 +35,16 @@ export const clientLogoData: DataType = [
     },
     {
         id: 8,
-        img: "/images/company-logo/company8.png",
+        img: "/images/company-logo/company8.webp",
         isLight: true
     },
     {
         id: 9,
-        img: "/images/company-logo/company9.svg",
+        img: "/images/company-logo/company9.webp",
     },
     {
         id: 10,
-        img: "/images/company-logo/company10.jpg",
+        img: "/images/company-logo/company10.webp",
     },
 
 ]

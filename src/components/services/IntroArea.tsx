@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import thumb from "../../../public/images/services/thumb.jpg"
+import thumb from "../../../public/images/services/thumb.webp"
 const IntroArea: React.FC = () => {
 
     return (

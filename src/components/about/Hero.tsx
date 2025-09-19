@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import AnimateTwoContent from "@/components/animations/AnimateTwoContent";
 import Link from "next/link";
-import thumb from "../../../public/images/about/hero-thumb.jpg"
+import thumb from "../../../public/images/about/hero-thumb.webp"
 const Hero: React.FC = () => {
     const thumbRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);

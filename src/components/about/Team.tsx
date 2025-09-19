@@ -11,19 +11,19 @@ export const teamData: TeamType[] = [
         id: 1,
         name: "Piarujjaman Polash",
         role: "Founder & CEO",
-        img: "/images/about/polash.jpeg",
+        img: "/images/about/polash.webp",
     },
     {
         id: 2,
         name: "Fahad Al Faisal",
         role: "Co-Founder & COO",
-        img: "/images/about/fahad.jpeg",
+        img: "/images/about/fahad.webp",
     },
     {
         id: 3,
         name: "Sadman Sakib",
         role: "SEO & Marketing",
-        img: "/images/about/Sadman.jpeg",
+        img: "/images/about/Sadman.webp",
 
 
     },
@@ -31,19 +31,19 @@ export const teamData: TeamType[] = [
         id: 4,
         name: "Shahriar Karim",
         role: "UI/UX Desinger",
-        img: "/images/about/Korim.jpeg",
+        img: "/images/about/Korim.webp",
     },
     {
         id: 5,
         name: "Nusrat Nova",
         role: "Frontend Developer",
-        img: "/images/about/nova.jpeg",
+        img: "/images/about/nova.webp",
     },
     {
         id: 6,
         name: "Mahathir Gunjon",
         role: "WordPress Developer",
-        img: "/images/about/gunjan.jpeg",
+        img: "/images/about/gunjan.webp",
     },
 ];
 const Team: React.FC = () => {

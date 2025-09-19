@@ -1,7 +1,7 @@
 "use client"
 import { featuresData } from "@/utils/fakeData/featuresData";
 import Image from "next/image";
-import shape from "../../../public/images/about/about_page_shape.png"
+import shape from "../../../public/images/about/about-page-shape.webp"
 const Features: React.FC = () => {
 
     return (

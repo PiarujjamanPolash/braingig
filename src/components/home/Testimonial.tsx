@@ -4,10 +4,10 @@ import "swiper/css/navigation";
 import { Navigation, Virtual } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { testimonialsData } from "@/utils/fakeData/testimonialsData";
-import Brands from "../shared/Brands";
-import ScrollRevealLeft from "../animations/ScrollRevealLeft";
+import Brands from "@/components/shared/Brands";
+import ScrollRevealLeft from "@/components/animations/ScrollRevealLeft";
 import Image from "next/image";
-import userImage from "../../../public/images/testimonials/user.png"
+import userImage from "../../../public/images/testimonials/user.webp"
 const Testimonial: React.FC = () => {
 
     return (

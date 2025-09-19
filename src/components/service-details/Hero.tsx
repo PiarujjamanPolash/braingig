@@ -3,8 +3,8 @@
 import { Services } from "@/utils/fakeData/servicesData";
 import Image from "next/image";
 import AnimateFadeInLeft from "../animations/AnimateFadeInLeft";
-import thumb1 from "../../../public/images/service-details/thumb-1.jpg"
-import thumb2 from "../../../public/images/service-details/thumb-2.jpg"
+import thumb1 from "../../../public/images/service-details/thumb-1.webp"
+import thumb2 from "../../../public/images/service-details/thumb-2.webp"
 type HeroProps = {
     service: Services;
 };

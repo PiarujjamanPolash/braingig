@@ -2,9 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
-import thumb1 from "../../../public/images/about/about-sec-thumb1.jpg"
-import thumb2 from "../../../public/images/about/about-sec-thumb2.jpg"
-import shape from "../../../public/images/about/shape.png"
+import thumb1 from "../../../public/images/about/about-sec-thumb1.webp"
+import thumb2 from "../../../public/images/about/about-sec-thumb2.webp"
+import shape from "../../../public/images/about/shape.webp"
 
 const AboutUs: React.FC = () => {
   
