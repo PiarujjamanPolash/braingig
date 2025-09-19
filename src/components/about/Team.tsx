@@ -23,7 +23,7 @@ export const teamData: TeamType[] = [
         id: 3,
         name: "Sadman Sakib",
         role: "SEO & Marketing",
-        img: "/images/about/Sadman.webp",
+        img: "/images/about/sadman.webp",
 
 
     },
@@ -31,7 +31,7 @@ export const teamData: TeamType[] = [
         id: 4,
         name: "Shahriar Karim",
         role: "UI/UX Desinger",
-        img: "/images/about/Korim.webp",
+        img: "/images/about/korim.webp",
     },
     {
         id: 5,
