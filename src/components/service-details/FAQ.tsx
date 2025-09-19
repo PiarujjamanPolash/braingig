@@ -7,12 +7,6 @@ import { usePathname } from "next/navigation";
 
 const FAQ: React.FC = () => {
     const pathname = usePathname();
-
-  useEffect(() => {
-    if (pathname === "/faq") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  }, [pathname]);
     return (
         <div className="w-[90%] mx-auto mb-[80px]">
             <div className="td-faq-2-area">
