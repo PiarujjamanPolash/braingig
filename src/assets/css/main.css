@@ -3130,7 +3130,7 @@ textarea {
   color: var(--td-common-white);
 }
 .td-header-2-btn .icon {
-  display: inline-block;
+  /* display: inline-block; */
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -5801,7 +5801,7 @@ textarea {
 }
 
 .td_image_animetion {
-  visibility: hidden;
+  /* visibility: hidden; */
   overflow: hidden;
 }
 
@@ -6072,7 +6072,7 @@ textarea {
   border-radius: 15px;
   width: 60px;
   height: 44px;
-  display: inline-block;
+  /* display: inline-block; */
   text-align: center;
   line-height: 42px;
   background: #77d400;
@@ -7833,7 +7833,7 @@ textarea {
   height: 44px;
   text-align: center;
   line-height: 40px;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .td-portfolio-3-content .icon:hover {
   background: #85EE00;

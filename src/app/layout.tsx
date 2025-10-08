@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, DM_Serif_Display, Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Bebas_Neue, DM_Serif_Display, Inter, Manrope, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import "@/assets/css/main.css"
 import Header from "@/components/shared/Header";
@@ -28,6 +28,12 @@ const dmSerif = DM_Serif_Display({
   variable: "--td-ff-dm",
   display: "swap",
 });
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--td-ff-dm",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Brain Gig LLC",
@@ -43,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${bebas.variable} ${plusJakarta.variable} ${dmSerif.variable} antialiased`}
+        className={`${inter.variable} ${bebas.variable} ${plusJakarta.variable} ${dmSerif.variable} ${manrope.variable} antialiased`}
       >
         <Header />
         {children}        

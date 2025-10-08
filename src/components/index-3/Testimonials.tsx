@@ -1,0 +1,111 @@
+"use client";
+
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+
+const testimonials = [
+    {
+        name: "@ Sumona Michel",
+        text: `We are excited for our work and how it positively impacts clients. With over 12 years of experience we have been constantly providing solutions. We are committed to delive`,
+        avatar: "/images/index-3/testimonial-author-1.png",
+    },
+    {
+        name: "@ Sumona Michel",
+        text: `We are excited for our work and how it positively impacts clients. With over 12 years of experience we have been constantly providing solutions. We are committed to delive`,
+        avatar: "/images/index-3/testimonial-author-1.png",
+    },
+    {
+        name: "@ Sumona Michel",
+        text: `We are excited for our work and how it positively impacts clients. With over 12 years of experience we have been constantly providing solutions. We are committed to delive`,
+        avatar: "/images/index-3/testimonial-author-1.png",
+    },
+    {
+        name: "@ Sumona Michel",
+        text: `We are excited for our work and how it positively impacts clients. With over 12 years of experience we have been constantly providing solutions. We are committed to delive`,
+        avatar: "/images/index-3/testimonial-author-1.png",
+    },
+];
+
+const Testimonials: React.FC = () => {
+    return (
+        <section className="td-testimonial-3-area td-testimonial-3-spacing fix bg-[#beff01] pt-[155px] px-5 lg:px-0 relative">
+            {/* Big background text */}
+            <h3 className="td-testimonial-3-bigtext hidden md:block">DIGITAL STUDIO</h3>
+
+            <div className="">
+                <div className="container lg:mx-auto flex flex-col md:flex-row">
+                    {/* Left Column */}
+                    <div className="w-full lg:w-1/3">
+                        <div className="td-testimonial-3-title-wrap mb-[70px]">
+                            <span className="td-section-3-subtitle inline-block mb-[15px]">
+                                AROUND THE GLOB
+                            </span>
+                            <h2 className="td-section-3-title mb-[45px]">
+                                Here some <span>feedback</span>
+                            </h2>
+
+                            {/* Navigation */}
+                            <div className="td-testimonial-3-navigation flex gap-4">
+                                <span className="td-testimonial-prev cursor-pointer flex justify-center items-center">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.2473 7.49976H1.25866" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                                        <path d="M7.94873 0C7.94873 4.14553 4.39363 7.5 0.000152359 7.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                                        <path d="M0.000152359 7.49976C4.39363 7.49976 7.94873 10.8542 7.94873 14.9998" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                                    </svg>
+                                </span>
+                                <span className="td-testimonial-next cursor-pointer flex justify-center items-center">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.752686 7.49976H17.7413" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                                        <path d="M11.0513 0C11.0513 4.14553 14.6064 7.5 18.9998 7.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                                        <path d="M18.9998 7.49976C14.6064 7.49976 11.0513 10.8542 11.0513 14.9998" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Right Column */}
+                    <div className="w-full lg:w-2/3">
+                        <Swiper
+                            modules={[Navigation]}
+                            navigation={{
+                                nextEl: ".td-testimonial-next",
+                                prevEl: ".td-testimonial-prev",
+                            }}
+                            breakpoints={{
+                                0: { slidesPerView: 1 },
+                                768: { slidesPerView: 1.5 },
+                                1024: { slidesPerView: 2.5 },
+                                1280: { slidesPerView: 3 },
+                            }}
+                            spaceBetween={30}
+                            className="swiper-container td-testimonial-3-slider"
+                        >
+                            {testimonials.map((item, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className="td-testimonial-3-wrap">
+                                        <span className="mb-15 d-inline-block">{item.name}</span>
+                                        <p className="mb-30">{item.text}</p>
+                                        <span className="td-border mb-[30px]"></span>
+                                        <Image
+                                            className="td-rounded"
+                                            src={item.avatar}
+                                            alt={item.name}
+                                            width={80}
+                                            height={80}
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Testimonials;
