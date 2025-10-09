@@ -2,7 +2,6 @@
 import Accordion from "@/components/shared/Accordion";
 import Image from "next/image";
 import thumb from "../../../public/images/service-details/faq-thumb.webp"
-import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
 const FAQ: React.FC = () => {

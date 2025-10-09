@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, DM_Serif_Display, Inter, Manrope, Plus_Jakarta_Sans } from "next/font/google";
+import { Bebas_Neue, DM_Serif_Display, Inter, Manrope, Plus_Jakarta_Sans, Rethink_Sans } from "next/font/google";
 import "./globals.css";
 import "@/assets/css/main.css"
 import Header from "@/components/shared/Header";
@@ -34,6 +34,12 @@ const manrope = Manrope({
   variable: "--td-ff-dm",
   display: "swap",
 });
+const rethink = Rethink_Sans({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--td-ff-dm",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Brain Gig LLC",
@@ -49,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${bebas.variable} ${plusJakarta.variable} ${dmSerif.variable} ${manrope.variable} antialiased`}
+        className={`${inter.variable} ${bebas.variable} ${plusJakarta.variable} ${dmSerif.variable} ${manrope.variable} ${rethink.variable} antialiased`}
       >
         <Header />
         {children}        

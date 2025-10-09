@@ -1,5 +1,4 @@
 "use client"
-import Brands from '@/components/shared/Brands'
 import Image from 'next/image';
 import Link from 'next/link';
 const Portfolio: React.FC = () => {

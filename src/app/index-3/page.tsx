@@ -9,7 +9,7 @@ import Counter from '@/components/index-3/Counter';
 import ChooseArea from '@/components/index-3/ChooseArea';
 import Testimonials from '@/components/index-3/Testimonials';
 
-const ContactPage = () => {
+const Index3 = () => {
     return (
         <ClientWrapper>
             <Hero />
@@ -24,4 +24,4 @@ const ContactPage = () => {
     );
 };
 
-export default ContactPage;
+export default Index3;
