@@ -6210,8 +6210,8 @@ textarea {
   font-family: var(--td-ff-body);
 }
 .td-testimonial-6-thumb-active {
-  float: right;
-  margin-right: 115px;
+  /* float: right; */
+  /* margin-right: 115px; */
   flex: 0 0 auto;
 }
 .td-testimonial-6-thumb-active .swiper-wrapper {

@@ -1,0 +1,77 @@
+"use client";
+
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+
+// Counter data
+const counterData = [
+  { count: 25, suffix: "k", text: "Happy<br> customers", delay: 0.3 },
+  { count: 11, suffix: "k", text: "Projects<br> completed", delay: 0.5 },
+  { count: 20, suffix: "", text: "Awards <br> achievement", delay: 0.5 },
+  { count: 25, suffix: "", text: "Years of <br> experience", delay: 0.3 },
+];
+
+const Counter: React.FC = () => {
+  // Intersection Observer to start counting when visible
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
+
+  return (
+    <div className="td-counter-area pt-[155px] pb-[140px]" ref={ref}>
+      <div className="container mx-auto">
+        <div className="row align-items-end mb-[70px] flex flex-wrap">
+          <div className="col-lg-8 w-full lg:w-8/12">
+            <div className="td-service-6-title-wrap mb-[30px]">
+              <span className="td-section-6-subtitle mb-[20px] d-inline-block">
+                AWESOME FUNFACT
+              </span>
+              <h2 className="td-section-6-bigtitle td-text-opacity">
+                WHAT WE <br /> ARE ACHIEVE
+              </h2>
+            </div>
+          </div>
+          <div className="col-lg-4 w-full lg:w-4/12">
+            <div className="td-service-6-title-text mr-[80px] mb-[35px]">
+              <p className="td-section-6-text mb-[30px]">
+                We're a digital production studio fueled by passion and innovation.
+              </p>
+              <p className="td-section-6-text">
+                Our mission is to revolutionize creative work for companies with style
+                and substance. Work intersects in a meaningful way lifestyle, and our
+                own
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-12 w-full">
+          <div className="td-counter-6-wrap flex flex-wrap justify-between">
+            {counterData.map((item, idx) => (
+              <div
+                key={idx}
+                className={`td-counter-6-item wow ${
+                  idx % 2 === 0 ? "fadeInLeft" : "fadeInRight"
+                }`}
+                data-wow-delay={`${item.delay}s`}
+                data-wow-duration="1s"
+              >
+                <h3 className="count d-flex align-items-center justify-content-center">
+                  {inView ? (
+                    <CountUp end={item.count} duration={3} />
+                  ) : (
+                    0
+                  )}
+                  {item.suffix}
+                </h3>
+                <span
+                  className="text"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Counter;
