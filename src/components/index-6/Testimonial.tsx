@@ -50,11 +50,11 @@ const testimonialData = {
 const Testimonial: React.FC = () => {
 const thumbsRef = useRef<any>(null);
     return (
-        <div className="td-testimonial-area td-testimonial-6-bg pt-[155px] pb-[100px]">
+        <div className="td-testimonial-area td-testimonial-6-bg pt-[155px] pb-[100px] p-5 md:p-0">
       <div className="container mx-auto">
         <div className="grid grid-cols-12">
           {/* LEFT SIDE - Text & Testimonials */}
-          <div className="col-span-8">
+          <div className="col-span-12 lg:col-span-8">
             <div className="td-testimonial-6-wrap">
               <div className="td-testimonial-6-title-wrap mb-[55px] text-left">
                 <span className="td-section-6-subtitle !text-[#8bea7c] inline-block mb-[15px]">
@@ -85,7 +85,7 @@ const thumbsRef = useRef<any>(null);
           </div>
 
           {/* RIGHT SIDE - Thumbnail Slider */}
-          <div className="col-span-4 flex justify-center items-end">
+          <div className="col-span-12 lg:col-span-4 flex justify-end lg:justify-center items-end mr-[115px] lg:mr-0">
             <div className="td-testimonial-6-slider">
               <Swiper
                 modules={[Navigation, Thumbs]}

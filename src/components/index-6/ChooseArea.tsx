@@ -4,7 +4,7 @@ import Image from "next/image";
 const ChooseArea: React.FC = () => {
 
     return (
-        <div className="td-chose-area pt-[155px]">
+        <div className="td-chose-area pt-[155px] px-5 md:px-0">
             <div className="container mx-auto">
                 <div className="flex flex-wrap">
                     {/* Left text column */}

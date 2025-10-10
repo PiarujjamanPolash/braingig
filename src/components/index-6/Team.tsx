@@ -18,7 +18,7 @@ const teamData = {
 
 const Team: React.FC = () => {
   return (
-    <div className="td-team-area pt-[105px] fix">
+    <div className="td-team-area pt-[105px] fix px-5 md:px-0">
       <div className="container mx-auto mb-[10px]">
         <div className="flex flex-wrap mb-[15px]">
           <div className="lg:w-3/12 w-full">
