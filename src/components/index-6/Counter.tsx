@@ -32,7 +32,7 @@ const Counter: React.FC = () => {
           <div className="col-lg-4 w-full lg:w-4/12">
             <div className="td-service-6-title-text mr-[80px] mb-[35px]">
               <p className="td-section-6-text mb-[30px]">
-                We're a digital production studio fueled by passion and innovation.
+                We&apos;re a digital production studio fueled by passion and innovation.
               </p>
               <p className="td-section-6-text">
                 Our mission is to revolutionize creative work for companies with style

@@ -5,7 +5,6 @@ import thumb from "../../../public/images/service-details/faq-thumb.webp"
 import { usePathname } from "next/navigation";
 
 const FAQ: React.FC = () => {
-    const pathname = usePathname();
     return (
         <div className="w-[90%] mx-auto mb-[80px]">
             <div className="td-faq-2-area">

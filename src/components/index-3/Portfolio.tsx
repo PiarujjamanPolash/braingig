@@ -1,54 +1,59 @@
 "use client"
 import Image from 'next/image';
 import Link from 'next/link';
-const Portfolio: React.FC = () => {
-  const portfolioData = {
-    title: "From listings to maps to monetization — see how we create impactful directory solutions.",
-    description:
-      "Our projects showcase robust directory platforms built to simplify discovery, manage listings, integrate maps, and drive revenue. Every solution is designed to connect people, empower businesses, and deliver measurable impact.",
-    projects: [
-      {
-        tag: "Branding",
-        title: "Zumarcons Firm",
-        img: "/images/index-3/portfolio-1.jpg",
-        link: "portfolio-details.html",
-      },
-      {
-        tag: "Identity",
-        title: "Stellar Vibes",
-        img: "/images/index-3/portfolio-1.jpg",
-        link: "portfolio-details.html",
-      },
-      {
-        tag: "Application",
-        title: "Entherum App",
-        img: "/images/index-3/portfolio-1.jpg",
-        link: "portfolio-details.html",
-      },
-      {
-        tag: "Business",
-        title: "Electrobox Ginny",
-        img: "/images/index-3/portfolio-1.jpg",
-        link: "portfolio-details.html",
-      },
-      {
-        tag: "Agency",
-        title: "Zoik Water",
-        img: "/images/index-3/portfolio-1.jpg",
-        link: "portfolio-details.html",
-      },
-      {
-        tag: "Creative",
-        title: "Tommy Hilfiger",
-        img: "/images/index-3/portfolio-1.jpg",
-        link: "portfolio-details.html",
-      },
-    ],
-    viewAll: {
-      text: "View all project",
-      link: "",
+import SplitTextAnimation from '@/components/animations/index-3/SplitTextAnimation';
+import { useRef } from 'react';
+import FadeInLeftRight from '@/components/animations/index-3/FadeInLeftRight';
+const portfolioData = {
+  title: "From listings to maps to monetization — see how we create impactful directory solutions.",
+  description:
+    "Our projects showcase robust directory platforms built to simplify discovery, manage listings, integrate maps, and drive revenue. Every solution is designed to connect people, empower businesses, and deliver measurable impact.",
+  projects: [
+    {
+      tag: "Branding",
+      title: "Zumarcons Firm",
+      img: "/images/index-3/portfolio-1.jpg",
+      link: "portfolio-details.html",
     },
-  };
+    {
+      tag: "Identity",
+      title: "Stellar Vibes",
+      img: "/images/index-3/portfolio-1.jpg",
+      link: "portfolio-details.html",
+    },
+    {
+      tag: "Application",
+      title: "Entherum App",
+      img: "/images/index-3/portfolio-1.jpg",
+      link: "portfolio-details.html",
+    },
+    {
+      tag: "Business",
+      title: "Electrobox Ginny",
+      img: "/images/index-3/portfolio-1.jpg",
+      link: "portfolio-details.html",
+    },
+    {
+      tag: "Agency",
+      title: "Zoik Water",
+      img: "/images/index-3/portfolio-1.jpg",
+      link: "portfolio-details.html",
+    },
+    {
+      tag: "Creative",
+      title: "Tommy Hilfiger",
+      img: "/images/index-3/portfolio-1.jpg",
+      link: "portfolio-details.html",
+    },
+  ],
+  viewAll: {
+    text: "View all project",
+    link: "",
+  },
+};
+
+const Portfolio: React.FC = () => {
+  const textRef = useRef<HTMLDivElement | null>(null);
 
   const middleIndex = Math.ceil(portfolioData.projects.length / 2);
   const leftColumn = portfolioData.projects.slice(0, middleIndex);
@@ -56,21 +61,20 @@ const Portfolio: React.FC = () => {
 
   return (
     <div className="td-portfolio-area td-portfolio-3-bg pt-[150px] pb-[160px] px-5 md:px-0">
-      <div className="container mx-auto">
+      <div className="container w-[90%] mx-auto">
         {/* Header */}
-        <div className="grid grid-cols-5 pb-[80px] gap-8 lg:gap-0">
+        <div className="grid grid-cols-5 items-center pb-[80px] gap-8 lg:gap-0">
           <div className="col-span-5 lg:col-span-3">
-            <div className="td-portfolio-3-title-wrap">
-              <h2 className="td-section-3-title td-section-3-title-white td-split-text td-split-in-right">
+            <div ref={textRef} className="td-portfolio-3-title-wrap">
+              <h2 className="td-section-3-title td-section-3-title-white">
                 {portfolioData.title}
               </h2>
             </div>
+            <SplitTextAnimation textRef={textRef} direction="right" />
           </div>
           <div className="col-span-5 lg:col-span-2">
             <div
-              className="td-portfolio-3-title-para wow fadeInUp"
-              data-wow-delay=".5s"
-              data-wow-duration="1s"
+              className="td-portfolio-3-title-para"
             >
               <p>{portfolioData.description}</p>
             </div>
@@ -84,20 +88,18 @@ const Portfolio: React.FC = () => {
             {leftColumn.map((item, i) => (
               <div
                 key={i}
-                className="td-portfolio-3-wrap mb-[90px] wow fadeInUp"
-                data-wow-delay={`${0.2 * (i + 1)}s`}
-                data-wow-duration="1s"
+                className="td-portfolio-3-wrap mb-[90px] fade-item-left"
               >
                 <div className="td-portfolio-3-thumb mb-[20px]">
                   <Image
                     className="w-full"
                     src={item.img}
                     alt={item.title}
-                    width={600}
-                    height={400}
+                    width={620}
+                    height={660}
                   />
                 </div>
-                <div className="td-portfolio-3-content flex justify-between align-end">
+                <div className="td-portfolio-3-content flex justify-between items-end">
                   <div className="td-portfolio-3-title">
                     <span className="tag">{item.tag}</span>
                     <h6 className="title mb-0">
@@ -144,9 +146,7 @@ const Portfolio: React.FC = () => {
             {rightColumn.map((item, i) => (
               <div
                 key={i}
-                className="td-portfolio-3-wrap mb-[90px] wow fadeInUp"
-                data-wow-delay={`${0.2 * (i + 1)}s`}
-                data-wow-duration="1s"
+                className="td-portfolio-3-wrap mb-[90px] fade-item-right"
               >
                 <div className="td-portfolio-3-thumb mb-[20px]">
                   <Image
@@ -157,7 +157,7 @@ const Portfolio: React.FC = () => {
                     height={400}
                   />
                 </div>
-                <div className="td-portfolio-3-content flex justify-between align-end">
+                <div className="td-portfolio-3-content flex justify-between items-end">
                   <div className="td-portfolio-3-title">
                     <span className="tag">{item.tag}</span>
                     <h6 className="title mb-0">
@@ -196,9 +196,14 @@ const Portfolio: React.FC = () => {
                   </Link>
                 </div>
               </div>
+
             ))}
           </div>
         </div>
+        <FadeInLeftRight selector=".fade-item-left" direction="left" />
+        <FadeInLeftRight selector=".fade-item-right" direction="right" />
+
+
         {/* View All Button */}
         <div className="flex justify-start text-center">
           <Link href={portfolioData.viewAll.link} className="td-header-2-btn ml-[10px] flex justify-center items-center">

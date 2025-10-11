@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import Brands from "../shared/Brands";
+import type { Swiper as SwiperType } from "swiper/types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs } from "swiper/modules";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 const testimonialData = {
   sectionSubtitle: "OUR SUITABLE PRICING PLANS",
@@ -48,7 +49,7 @@ const testimonialData = {
 };
 
 const Testimonial: React.FC = () => {
-const thumbsRef = useRef<any>(null);
+const thumbsRef = useRef<SwiperType | null>(null);
     return (
         <div className="td-testimonial-area td-testimonial-6-bg pt-[155px] pb-[100px] p-5 md:p-0">
       <div className="container mx-auto">

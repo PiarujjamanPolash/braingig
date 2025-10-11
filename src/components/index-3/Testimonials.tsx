@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -33,10 +33,10 @@ const Testimonials: React.FC = () => {
     return (
         <section className="td-testimonial-3-area td-testimonial-3-spacing fix bg-[#beff01] pt-[155px] px-5 lg:px-0 relative">
             {/* Big background text */}
-            <h3 className="td-testimonial-3-bigtext hidden md:block">DIGITAL STUDIO</h3>
+            <h3 className="td-testimonial-3-bigtext hidden md:block">BRAINGIG</h3>
 
             <div className="">
-                <div className="container lg:mx-auto flex flex-col md:flex-row">
+                <div className="container w-[90%] lg:ml-auto xl:mx-auto flex flex-col md:flex-row gap-4">
                     {/* Left Column */}
                     <div className="w-full lg:w-1/3">
                         <div className="td-testimonial-3-title-wrap mb-[70px]">
@@ -70,7 +70,9 @@ const Testimonials: React.FC = () => {
                     {/* Right Column */}
                     <div className="w-full lg:w-2/3">
                         <Swiper
-                            modules={[Navigation]}
+                            modules={[Navigation, Autoplay]}
+                            autoplay
+                            loop
                             navigation={{
                                 nextEl: ".td-testimonial-next",
                                 prevEl: ".td-testimonial-prev",
@@ -94,8 +96,8 @@ const Testimonials: React.FC = () => {
                                             className="td-rounded"
                                             src={item.avatar}
                                             alt={item.name}
-                                            width={80}
-                                            height={80}
+                                            width={100}
+                                            height={100}
                                         />
                                     </div>
                                 </SwiperSlide>

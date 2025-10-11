@@ -1,31 +1,33 @@
 "use client"
 import Link from 'next/link';
+import { useRef } from 'react';
+import FadeInUp from '@/components/animations/index-3/FadeInUp';
+import Image from 'next/image';
 const services = [
-  { title: "Custom Directory Design", number: "S/01", delay: ".3s" },
-  { title: "Smart Listing Management", number: "S/02", delay: ".5s" },
-  { title: "Advanced Search & Filters", number: "S/03", delay: ".7s" },
-  { title: "Map & Location Tools", number: "S/04", delay: ".3s" },
-  { title: "SEO & Monetization", number: "S/05", delay: ".5s" },
-  { title: "Maintenance & Support", number: "S/06", delay: ".7s" },
+  { title: "Custom <br> Directory Design", number: "S/01", delay: ".3s" },
+  { title: "Smart <br> Listing Management", number: "S/02", delay: ".5s" },
+  { title: "Advanced <br> Search & Filters", number: "S/03", delay: ".7s" },
+  { title: "Map & Location <br> Tools", number: "S/04", delay: ".3s" },
+  { title: "SEO & <br> Monetization", number: "S/05", delay: ".5s" },
+  { title: "Maintenance & <br> Support", number: "S/06", delay: ".7s" },
 ];
 const Partners: React.FC = () => {
+  const serviceRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <div className="td-service-3-area pt-[150px] pb-[130px] grey-bg-3">
-      <div className="container mx-auto px-4">
+      <div className="container w-[90%] mx-auto px-4">
         <div className="flex justify-center">
           <div className="xl:w-8/12">
             <div
-              className="td-service-3-title-wrap ml-16 mb-20 relative wow fadeInUp"
-              data-wow-delay=".3s"
-              data-wow-duration="1s"
+              className="td-service-3-title-wrap ml-16 mb-20 relative"
             >
-              <img
+              <Image width={93} height={98}
                 className="td-service-3-ok"
                 src="/images/index-3/services-ok.png"
                 alt=""
               />
-              <h2 className="td-section-3-title">
+              <h2 ref={serviceRef} className="td-section-3-title">
                 Empowering communities <br /> through{" "}
                 <span>next-gen directories</span>
               </h2>
@@ -39,10 +41,8 @@ const Partners: React.FC = () => {
               key={index}
               className="w-full md:w-1/2 lg:w-1/3 px-4"
             >
-              <div
-                className="td-service-3-wrap mb-[30px] wow fadeInUp"
-                data-wow-delay={item.delay}
-                data-wow-duration="1s"
+              <div ref={serviceRef} 
+                className="td-service-3-wrap mb-[30px]"
               >
                 <div className="td-service-3-shape">
                   <svg width="88" height="12" viewBox="0 0 88 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,10 +64,13 @@ const Partners: React.FC = () => {
                   <h3>
                     <Link
                       href=""
-                    >{item.title}</Link>
+                      dangerouslySetInnerHTML={{ __html: item.title }}
+                    />
                   </h3>
                   <span>{item.number}</span>
                 </div>
+                <FadeInUp targetRef={serviceRef} delay={0.3} duration={1} />
+
               </div>
             </div>
           ))}
