@@ -3,23 +3,23 @@ import Image from 'next/image';
 const counters = [
   {
     shape: "/images/index-3/counter-shape-1.png",
-    count: "11",
+    count: "5",
     suffix: "+",
-    text: "Years of<br> experience",
+    text: "Years of<br> directory expertise",
     animation: "fadeInRight",
   },
   {
     shape: "/images/index-3/counter-shape-1.png",
-    count: "25",
+    count: "10",
     suffix: "K",
-    text: "Paid<br> customers",
+    text: "Listing<br> managed",
     animation: "fadeInUp",
   },
   {
     shape: "/images/index-3/counter-shape-2.png",
-    count: "99",
+    count: "96",
     suffix: "%",
-    text: "Satisfaction<br> rate",
+    text: "user <br> Satisfaction",
     animation: "fadeInLeft",
   },
 ];
@@ -32,10 +32,10 @@ const Counter: React.FC = () => {
           <div className="w-full lg:w-10/12 xl:w-7/12 text-center mb-[70px]">
             <div className="td-counter-3-title-wrap">
               <span className="td-section-3-subtitle inline-block mb-[15px]">
-                OUR STATE
+                OUR IMPACT
               </span>
               <h2 className="td-section-3-title td-split-text td-split-in-right">
-                Bundle with our digital studio <span>experience</span>
+                Building smarter <span>directory platforms</span> for growth
               </h2>
             </div>
           </div>
@@ -60,7 +60,7 @@ const Counter: React.FC = () => {
               </span>
               <h2 className="title">
                 <span className="odometer" data-count={item.count}>
-                  0
+                  {item.count}
                 </span>
                 {item.suffix}
               </h2>

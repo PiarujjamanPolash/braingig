@@ -10,8 +10,8 @@ const About: React.FC = () => {
                     <div className="w-full">
                         <div className="td-about-3-title-wrap mb-28">
                             <h2 className="td-section-3-title td-split-text td-split-in-right text-4xl md:text-5xl font-bold leading-tight">
-                                A company full of young, open <br />
-                                minded <span>wants to bring</span>
+                                A team of innovators shaping <br />
+                                the future of<span>online directories</span>
                             </h2>
                         </div>
                     </div>
@@ -20,16 +20,13 @@ const About: React.FC = () => {
                     <div className="w-full lg:w-5/12">
                         <div className="td-about-3-content lg:mr-28 mb-8">
                             <p className="para pb-14">
-                                We are excited for our work and how it positively impacts clients.
-                                With over of experience <br />
-                                we have been constantly
+                                We build directory platforms that help people find, list, and grow — all in one seamless experience. 
                             </p>
                             <h2 className="title relative inline-block mb-0 text-5xl font-bold">
-                                15 <span>M+</span>
+                                50 <span>k+</span>
                             </h2>
                             <p className="para">
-                                We helped to get companies with <br />
-                                $15M+ funding
+                                We’ve helped thousands of entrepreneurs launch successful listing platforms across multiple industries.
                             </p>
                         </div>
                     </div>
@@ -48,14 +45,14 @@ const About: React.FC = () => {
                     {/* Right List */}
                     <div className="w-full lg:w-3/12 md:w-5/12">
                         <div className="td-about-3-list lg:ml-12 mb-8">
-                            <h4 className="title mb-6 text-xl font-semibold">We specialize in</h4>
+                            <h4 className="title mb-6 text-xl font-semibold">Our Core Expertise</h4>
                             <ul className="list-disc list-inside space-y-1">
-                                <li>One Click Installation</li>
-                                <li>Video Production</li>
-                                <li>Help me Write a Story</li>
-                                <li>Art Design</li>
-                                <li>System & Guides</li>
-                                <li>Development</li>
+                                <li>Custom Directory Website Development</li>
+                                <li>Advanced Search & Filter Integration</li>
+                                <li>Map & Location-Based Listings</li>
+                                <li>Listing Submission & Management System</li>
+                                <li>SEO Optimization & Monetization Setup</li>
+                                <li>Ongoing Maintenance & Support</li>
                             </ul>
                         </div>
                     </div>

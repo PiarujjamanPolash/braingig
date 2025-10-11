@@ -15,8 +15,8 @@ const ChooseArea: React.FC = () => {
               data-wow-duration="1s"
             >
               <h2 className="td-section-3-title">
-                We are result driven, customer oriented{" "}
-                <span>digital media agency</span> with years of combined experience.
+                We create smarter{" "}
+                <span>directory solutions</span> that connect and grow communities.
               </h2>
             </div>
           </div>
@@ -37,19 +37,21 @@ const ChooseArea: React.FC = () => {
           <div className="w-full lg:w-6/12 xl:w-5/12">
             <div className="td-chose-3-list-wrap mr-[110px] mb-[30px]">
               <div className="td-chose-3-list mb-[55px]">
-                <h6 className="mb-[20px]">We drive positive change.</h6>
+                <h6 className="mb-[20px]">We simplify discovery.</h6>
                 <p>
-                  We are excited for our work and how it positively impacts clients. With over of experience
-                  <br />
-                  we have been constantly
+                  Our platforms make it easy for users to find businesses, services, and listings quickly, with advanced search, filters, and maps.
                 </p>
               </div>
               <div className="td-chose-3-list">
-                <h6 className="mb-[20px]">We drive positive change.</h6>
+                <h6 className="mb-[20px]">We empower growth.</h6>
                 <p>
-                  We are excited for our work and how it positively impacts clients. With over of experience
-                  <br />
-                  we have been constantly
+                  From monetization tools to user management, we help directory owners grow their platforms and engage their audience effectively.
+                </p>
+              </div>
+              <div className="td-chose-3-list">
+                <h6 className="mb-[20px]">We ensure satisfaction.</h6>
+                <p>
+                  With intuitive design, reliable performance, and robust support, our directories deliver seamless experiences for both users and businesses..
                 </p>
               </div>
             </div>

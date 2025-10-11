@@ -3,9 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 const Portfolio: React.FC = () => {
   const portfolioData = {
-    title: "Take a look at our digital studio showcases",
+    title: "From listings to maps to monetization — see how we create impactful directory solutions.",
     description:
-      "We are excited for our work and how it positively impacts clients. With years of experience, we have been constantly creating impactful work for our clients.",
+      "Our projects showcase robust directory platforms built to simplify discovery, manage listings, integrate maps, and drive revenue. Every solution is designed to connect people, empower businesses, and deliver measurable impact.",
     projects: [
       {
         tag: "Branding",
@@ -46,43 +46,13 @@ const Portfolio: React.FC = () => {
     ],
     viewAll: {
       text: "View all project",
-      link: "service.html",
+      link: "",
     },
   };
 
-  // ✅ Split projects into two roughly equal columns
   const middleIndex = Math.ceil(portfolioData.projects.length / 2);
   const leftColumn = portfolioData.projects.slice(0, middleIndex);
   const rightColumn = portfolioData.projects.slice(middleIndex);
-
-  const arrowIcon = (
-    <svg
-      width="19"
-      height="15"
-      viewBox="0 0 19 15"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M0.75293 7.49988H17.7416"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeMiterlimit="10"
-      />
-      <path
-        d="M11.0513 0C11.0513 4.14553 14.6064 7.5 18.9998 7.5"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeMiterlimit="10"
-      />
-      <path
-        d="M18.9998 7.49988C14.6064 7.49988 11.0513 10.8543 11.0513 14.9999"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeMiterlimit="10"
-      />
-    </svg>
-  );
 
   return (
     <div className="td-portfolio-area td-portfolio-3-bg pt-[150px] pb-[160px] px-5 md:px-0">

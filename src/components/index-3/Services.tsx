@@ -1,13 +1,12 @@
 "use client"
-import Brands from '@/components/shared/Brands'
 import Link from 'next/link';
 const services = [
-  { title: "Product<br> design", number: "S/01", delay: ".3s" },
-  { title: "Web <br> application", number: "S/02", delay: ".5s" },
-  { title: "Store<br> ecommerce", number: "S/03", delay: ".7s" },
-  { title: "Digital <br> marketing", number: "S/04", delay: ".3s" },
-  { title: "Digital <br> consulting", number: "S/05", delay: ".5s" },
-  { title: "Web <br> development", number: "S/06", delay: ".7s" },
+  { title: "Custom Directory Design", number: "S/01", delay: ".3s" },
+  { title: "Smart Listing Management", number: "S/02", delay: ".5s" },
+  { title: "Advanced Search & Filters", number: "S/03", delay: ".7s" },
+  { title: "Map & Location Tools", number: "S/04", delay: ".3s" },
+  { title: "SEO & Monetization", number: "S/05", delay: ".5s" },
+  { title: "Maintenance & Support", number: "S/06", delay: ".7s" },
 ];
 const Partners: React.FC = () => {
 
@@ -27,8 +26,8 @@ const Partners: React.FC = () => {
                 alt=""
               />
               <h2 className="td-section-3-title">
-                Parody is an award <br /> winning creative digital studio with{" "}
-                <span>visual designers</span>
+                Empowering communities <br /> through{" "}
+                <span>next-gen directories</span>
               </h2>
             </div>
           </div>
@@ -65,7 +64,7 @@ const Partners: React.FC = () => {
                   <h3>
                     <Link
                       href=""
-                    ></Link>
+                    >{item.title}</Link>
                   </h3>
                   <span>{item.number}</span>
                 </div>

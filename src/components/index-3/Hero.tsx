@@ -2,8 +2,8 @@
 
 const Hero: React.FC = () => {
 
-    return (
-        <div
+  return (
+    <div
       className="td-hero-area td-hero-3-spacing fix include-bg bg-[url('/images/index-3/hero-bg.png')]"
     >
       <div className="container mx-auto px-4">
@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
           <div className="w-full mx-auto">
             <div className="td-hero-3-title-wrap">
               <h2 className="td-hero-3-title text-center td-split-text td-split-in-right text-4xl md:text-5xl font-bold leading-tight">
-                Reliable digital <br /> studio <span>experience</span>
+                Explore. List. Grow. <span>All in One Directory.</span>
               </h2>
 
               <div
@@ -51,10 +51,7 @@ const Hero: React.FC = () => {
                   <div className="w-full sm:w-1/2 lg:w-5/12 xl:w-1/3">
                     <div className="td-hero-3-content-para mb-8">
                       <p className="text-gray-700 leading-relaxed">
-                        We are excited for our work and how it positively impacts
-                        clients. With over 12 years of experience we have been
-                        constantly providing solutions. We are committed to
-                        delive
+                        Build your community with a smart directory platform that makes discovery effortless. Add listings, explore services, manage users, and monetize your directory — all with sleek design and powerful features built for growth.
                       </p>
                     </div>
                   </div>
@@ -65,7 +62,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Hero;
