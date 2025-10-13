@@ -17,14 +17,14 @@ const Counter: React.FC = () => {
 
   return (
     <div className="td-counter-area pt-[155px] pb-[140px] px-5 md:px-0" ref={ref}>
-      <div className="container mx-auto">
+      <div className="container w-[90%] mx-auto">
         <div className="row align-items-end mb-[70px] flex flex-wrap">
           <div className="col-lg-8 w-full lg:w-8/12">
-            <div className="td-service-6-title-wrap mb-[30px]">
-              <span className="td-section-6-subtitle mb-[20px] d-inline-block">
+            <div className="td-service-6-title-wrap flex flex-col mb-[30px]">
+              <span className="td-section-6-subtitle mb-[20px] inline-block">
                 AWESOME FUNFACT
               </span>
-              <h2 className="td-section-6-bigtitle td-text-opacity">
+              <h2 className="td-section-6-bigtitle td-text-invert">
                 WHAT WE <br /> ARE ACHIEVE
               </h2>
             </div>

@@ -8,8 +8,8 @@ const services = [
   { title: "Smart <br> Listing Management", number: "S/02", delay: ".5s" },
   { title: "Advanced <br> Search & Filters", number: "S/03", delay: ".7s" },
   { title: "Map & Location <br> Tools", number: "S/04", delay: ".3s" },
-  { title: "SEO & <br> Monetization", number: "S/05", delay: ".5s" },
-  { title: "Maintenance & <br> Support", number: "S/06", delay: ".7s" },
+  { title: "Paid & <br> Promoted Listings", number: "S/05", delay: ".5s" },
+  { title: "Subscription & <br> Monetization", number: "S/06", delay: ".7s" },
 ];
 const Partners: React.FC = () => {
   const serviceRef = useRef<HTMLDivElement | null>(null);
@@ -28,8 +28,8 @@ const Partners: React.FC = () => {
                 alt=""
               />
               <h2 ref={serviceRef} className="td-section-3-title">
-                Empowering communities <br /> through{" "}
-                <span>next-gen directories</span>
+                Next-Gen Directory Services <br />Designed to {" "}
+                <span>Grow Your Business </span>
               </h2>
             </div>
           </div>

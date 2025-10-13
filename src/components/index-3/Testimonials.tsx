@@ -41,10 +41,10 @@ const Testimonials: React.FC = () => {
                     <div className="w-full lg:w-1/3">
                         <div className="td-testimonial-3-title-wrap mb-[70px]">
                             <span className="td-section-3-subtitle inline-block mb-[15px]">
-                                Trusted by users worldwide
+                                Loved by Entrepreneurs Everywhere
                             </span>
                             <h2 className="td-section-3-title mb-[45px]">
-                                Hear what users <span>say about us</span>
+                                Stories of <span>Growth and Success</span>
                             </h2>
 
                             {/* Navigation */}

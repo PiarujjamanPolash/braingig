@@ -28,13 +28,13 @@ const About: React.FC = () => {
                     <div className="lg:col-span-5">
                         <div className="td-about-3-content lg:mr-[110px] mb-[30px]">
                             <p className="para pb-14">
-                                We build directory platforms that help people find, list, and grow — all in one seamless experience.
+                                We create smart directory platforms that simplify listings, discovery, and management while maximizing engagement and opportunities.
                             </p>
                             <h2 className="title relative inline-block mb-0 text-5xl font-bold">
                                 50 <span>k+</span>
                             </h2>
                             <p className="para">
-                                We’ve helped thousands of entrepreneurs launch successful listing platforms across multiple industries.
+                                Trusted by thousands to launch dynamic listing platforms that drive growth.
                             </p>
                         </div>
                     </div>
@@ -60,6 +60,8 @@ const About: React.FC = () => {
                                     <li>Advanced Search & Filter Integration</li>
                                     <li>Map & Location-Based Listings</li>
                                     <li>Listing Submission & Management System</li>
+                                    <li>Paid & Promoted Listings</li>
+                                    <li>Subscription Models</li>
                                     <li>SEO Optimization & Monetization Setup</li>
                                     <li>Ongoing Maintenance & Support</li>
                                 </ul>

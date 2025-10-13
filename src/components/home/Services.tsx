@@ -10,15 +10,15 @@ const Services: React.FC = () => {
             <div className="container mx-auto px-3 sm:px-4 lg:px-6">
                 <div className="flex flex-wrap items-end">
                     
-                    <div className="flex flex-wrap lg:flex-nowrap w-full">
-                        <div className="td-service-6-title-wrap lg:w-8/12 w-full mb-6 lg:mb-0">
-                            <span className="td-section-6-subtitle mb-20 d-inline-block">OUR CORE SERVICES</span>
-                            <h2 className="td-section-6-bigtitle td-text-opacity">
+                    <div className="grid grid-cols-1 lg:grid-cols-12">
+                        <div className="td-service-6-title-wrap col-span-8 flex flex-col mb-6 lg:mb-0">
+                            <span className="td-section-6-subtitle mb-[20px]">OUR CORE SERVICES</span>
+                            <h2 className="td-section-6-bigtitle td-text-invert">
                                 EXPLORE
                                 <br /> OUR SERVICES
                             </h2>
                         </div>
-                        <div className="td-service-6-title-text mr-20 lg:w-4/12 w-full">
+                        <div className="td-service-6-title-text mr-20 col-span-4">
                             <p className="td-section-6-text">
                                 Get expert solutions for every business establishment and growth
                             </p>

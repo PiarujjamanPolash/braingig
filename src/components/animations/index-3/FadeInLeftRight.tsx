@@ -13,7 +13,7 @@ interface AnimateFadeInLeftProps {
   duration?: number;
 }
 
-const AnimateFadeInLeft: React.FC<AnimateFadeInLeftProps> = ({
+const FadeInLeftRight: React.FC<AnimateFadeInLeftProps> = ({
   selector,
   direction,
   delay = 0,
@@ -40,4 +40,4 @@ const AnimateFadeInLeft: React.FC<AnimateFadeInLeftProps> = ({
   return null;
 };
 
-export default AnimateFadeInLeft;
+export default FadeInLeftRight;

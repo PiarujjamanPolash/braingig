@@ -20,7 +20,7 @@ const pricingData = [
     description: "Tailored service for large enterprises",
     price: "$ 8,500/",
     duration: "mo",
-    buttonClass: "price-btn greens",
+    buttonClass: "price-btn greens !text-black",
     features: [
       "API integrations and automation",
       "Dedicated account manager",
@@ -46,13 +46,13 @@ const PricingArea: React.FC = () => {
 
     return (
        <div className="td-pricing-area pt-[155px] pb-[130px] px-5 md:px-0">
-      <div className="container mx-auto">
+      <div className="container w-[90%] mx-auto">
         <div className="flex justify-center">
-            <div className="td-pricing-6-title-wrap text-center mb-[65px]">
+            <div className="td-pricing-6-title-wrap flex flex-col items-center text-center mb-[65px]">
               <span className="td-section-6-subtitle inline-block mb-[15px]">
                 OUR SUITABLE PRICING PLANS
               </span>
-              <h2 className="td-section-6-bigtitle td-text-opacity">
+              <h2 className="td-section-6-bigtitle td-text-invert">
                 CUSTOMIZABLE PRICING OPTIONS
               </h2>
             </div>

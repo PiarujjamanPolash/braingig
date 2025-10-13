@@ -1,3 +1,4 @@
+import TextLineAnimation from "@/components/animations/TextLineAnimation";
 import Services from "@/components/home/Services";
 import About from "@/components/index-6/About";
 import ChooseArea from "@/components/index-6/ChooseArea";
@@ -16,6 +17,7 @@ const Index6 = () => {
 
     return (
         <ClientWrapper>
+            <TextLineAnimation />
         <Hero />
         <About />
         <Services />

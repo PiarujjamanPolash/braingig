@@ -5,14 +5,13 @@ const ChooseArea: React.FC = () => {
 
     return (
         <div className="td-chose-area pt-[155px] px-5 md:px-0">
-            <div className="container mx-auto">
+            <div className="container w-[90%] mx-auto">
                 <div className="flex flex-wrap">
                     {/* Left text column */}
                     <div className="lg:w-7/12 w-full">
                         <div className="td-chose-6-title-wrap">
-                            <h2 className="td-section-6-title mb-[70px] td-text-opacity">
-                                We are result driven, customer oriented digital media agency
-                                with years of combined experience.
+                            <h2 className="td-section-6-title mb-[70px] td-text-invert">
+                                We are result driven, customer oriented digital media agency with years of combined experience.
                             </h2>
                         </div>
                     </div>

@@ -15,8 +15,8 @@ const ChooseArea: React.FC = () => {
               className="td-chose-3-title-wrap mb-[75px]"
             >
               <h2 ref={textRef} className="td-section-3-title">
-                We create smarter{" "}
-                <span>directory solutions</span> that connect and grow communities.
+                We Build {" "}
+                <span>Directory Solutions</span> That Help Businesses Sell and Grow.
               </h2>
             </div>
           </div>
@@ -39,21 +39,21 @@ const ChooseArea: React.FC = () => {
             <div className="col-span-6">
               <div className="td-chose-3-list-wrap mr-[110px] mb-[30px]">
                 <div className="td-chose-3-list mb-[55px]">
-                  <h6 className="mb-[20px]">We simplify discovery.</h6>
+                  <h6 className="mb-[20px]">Simplified Discovery</h6>
                   <p>
-                    Our platforms make it easy for users to find businesses, services, and listings quickly, with advanced search, filters, and maps.
+                    Our platforms make it easy for customers to find businesses, services, and products quickly with advanced search, smart filters, and interactive maps.
                   </p>
                 </div>
                 <div className="td-chose-3-list mb-[55px]">
-                  <h6 className="mb-[20px]">We empower growth.</h6>
+                  <h6 className="mb-[20px]">Boosted Growth</h6>
                   <p>
-                    From monetization tools to user management, we help directory owners grow their platforms and engage their audience effectively.
+                    With premium listings, promoted spots, and subscription options, we help businesses increase visibility and attract more clients.
                   </p>
                 </div>
                 <div className="td-chose-3-list">
-                  <h6 className="mb-[20px]">We ensure satisfaction.</h6>
+                  <h6 className="mb-[20px]">Reliable Performance & Support</h6>
                   <p>
-                    With intuitive design, reliable performance, and robust support, our directories deliver seamless experiences for both users and businesses..
+                    Intuitive design, seamless performance, and ongoing support ensure businesses can manage listings efficiently and deliver an exceptional customer experience.
                   </p>
                 </div>
               </div>

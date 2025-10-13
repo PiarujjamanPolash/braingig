@@ -36,7 +36,7 @@ const Counter: React.FC = () => {
                 OUR IMPACT
               </span>
               <h2 ref={textRef} className="td-section-3-title td-split-text td-split-in-right">
-                Building smarter <span>directory platforms</span> for growth
+                From Listings to Premium Promotions — <span>Platforms</span> That Deliver Results
               </h2>
             </div>
             <SplitTextAnimation textRef={textRef} direction="right" />

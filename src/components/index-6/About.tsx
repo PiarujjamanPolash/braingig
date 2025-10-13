@@ -5,7 +5,7 @@ const About: React.FC = () => {
 
     return (
         <div className="td-about-area pt-[140px] pb-[125px] px-5 md:px-0">
-            <div className="container mx-auto">
+            <div className="container w-[90%] mx-auto">
                 <div className="row">
                     <div className="grid grid-cols-1 lg:grid-cols-12">
                         {/* WHO WE ARE */}
@@ -18,7 +18,7 @@ const About: React.FC = () => {
                         {/* Heading & Paragraph */}
                         <div className="col-span-7">
                             <div className="td-about-6-title-wrap mb-[50px]">
-                                <h2 className="td-section-6-title text-[#063231] mb-[20px] td-text-opacity">
+                                <h2 className="td-section-6-title text-[#063231] mb-[20px] td-text-invert">
                                     We want to bring business & the digital world together.
                                 </h2>
                                 <p className="td-section-6-text">

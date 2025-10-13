@@ -51,8 +51,8 @@ const testimonialData = {
 const Testimonial: React.FC = () => {
 const thumbsRef = useRef<SwiperType | null>(null);
     return (
-        <div className="td-testimonial-area td-testimonial-6-bg pt-[155px] pb-[100px] p-5 md:p-0">
-      <div className="container mx-auto">
+        <div className="td-testimonial-area pb-[100px] td-testimonial-6-bg p-5 md:p-0">
+      <div className="container w-[90%] mx-auto pt-[155px]">
         <div className="grid grid-cols-12">
           {/* LEFT SIDE - Text & Testimonials */}
           <div className="col-span-12 lg:col-span-8">

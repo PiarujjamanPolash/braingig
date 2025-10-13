@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
         <div
             className="td-hero-area td-hero-6-spacing include-bg bg-[url('/images/index-6/hero-bg.jpg')]"
         >
-            <div className="container mx-auto">
+            <div className="container w-[90%] mx-auto">
                 <div className="td-hero-6-top pb-[45px] relative z-[1]">
                     {/* Hero Animated Lines */}
                     <div className="td-hero-6-line">

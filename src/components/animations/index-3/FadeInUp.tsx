@@ -30,10 +30,10 @@ const FadeInUp: React.FC<Props> = ({ targetRef, delay = 0.3, duration = 1 }) => 
       });
     }, targetRef);
 
-    return () => ctx.revert(); // 🔥 cleanup like your other animations
+    return () => ctx.revert();
   }, [targetRef, delay, duration]);
 
-  return null; // ⚡ no JSX rendered
+  return null;
 };
 
 export default FadeInUp;

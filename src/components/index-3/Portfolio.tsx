@@ -5,9 +5,9 @@ import SplitTextAnimation from '@/components/animations/index-3/SplitTextAnimati
 import { useRef } from 'react';
 import FadeInLeftRight from '@/components/animations/index-3/FadeInLeftRight';
 const portfolioData = {
-  title: "From listings to maps to monetization — see how we create impactful directory solutions.",
+  title: "Transforming Listings into Business Opportunities",
   description:
-    "Our projects showcase robust directory platforms built to simplify discovery, manage listings, integrate maps, and drive revenue. Every solution is designed to connect people, empower businesses, and deliver measurable impact.",
+    "Our portfolio demonstrates how directory platforms help businesses get noticed, engage users, and generate results.",
   projects: [
     {
       tag: "Branding",

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import FadeInLeftRight from "@/components/animations/index-3/FadeInLeftRight";
 
 const portfolioItems = [
     {
@@ -11,8 +12,7 @@ const portfolioItems = [
         tag: "Identity",
         title: "Stellar vibes",
         link: "/portfolio-details",
-        delay: ".4s",
-        animation: "fadeInLeft",
+        animation: "fade-item-left",
         extraClass: "mt-[90px] mr-[80px]",
     },
     {
@@ -22,8 +22,7 @@ const portfolioItems = [
         tag: "Identity",
         title: "Stellar vibes",
         link: "/portfolio-details",
-        delay: ".4s",
-        animation: "fadeInRight",
+        animation: "fade-item-right",
         extraClass: "spacing ml-[80px]",
     },
     {
@@ -33,8 +32,7 @@ const portfolioItems = [
         tag: "Identity",
         title: "Stellar vibes",
         link: "/portfolio-details",
-        delay: ".4s",
-        animation: "fadeInLeft",
+        animation: "fade-item-left",
         extraClass: "item-3",
     },
     {
@@ -44,8 +42,7 @@ const portfolioItems = [
         tag: "Identity",
         title: "Stellar vibes",
         link: "/portfolio-details",
-        delay: ".4s",
-        animation: "fadeInRight",
+        animation: "fade-item-right",
         extraClass: "item-4",
     },
     {
@@ -55,8 +52,7 @@ const portfolioItems = [
         tag: "Identity",
         title: "Stellar vibes",
         link: "/portfolio-details",
-        delay: ".4s",
-        animation: "fadeInLeft",
+        animation: "fade-item-left",
         extraClass: "item-5 mr-[px]",
     },
 ];
@@ -64,7 +60,7 @@ const Portfolio: React.FC = () => {
 
     return (
         <div className="td-portfolio-area pt-[150px] pb-[115px] px-5 lg:px-0">
-            <div className="container mx-auto">
+            <div className="container w-[90%] mx-auto">
                 <div className="grid gride-cols-1 lg:grid-cols-12">
                         {/* Section Header */}
                         <div className="col-span-4">
@@ -73,8 +69,8 @@ const Portfolio: React.FC = () => {
                             </div>
                         </div>
                         <div className="col-span-8">
-                            <div className="td-portfolio-6-title-wrap mb-[50px] ml-[80px]">
-                                <h2 className="td-section-6-bigtitle td-text-opacity">
+                            <div className="td-portfolio-6-title-wrap mb-[50px]">
+                                <h2 className="td-section-6-bigtitle td-text-invert">
                                     WE’VE DONE PERFECT WORKS
                                 </h2>
                             </div>
@@ -85,9 +81,7 @@ const Portfolio: React.FC = () => {
                     {portfolioItems.map((item) => (
                         <div key={item.id} className="col-span-6">
                             <div
-                                className={`td-portfolio-6-thumb-wrap ${item.extraClass} mb-[40px] p-relative z-index-1 wow ${item.animation}`}
-                                data-wow-delay={item.delay}
-                                data-wow-duration="1s"
+                                className={`td-portfolio-6-thumb-wrap ${item.extraClass} mb-[40px] p-relative z-index-1 ${item.animation}`}
                             >
                                 <h2 className="td-portfolio-6-transparent">{item.transparent}</h2>
 
@@ -137,6 +131,8 @@ const Portfolio: React.FC = () => {
                         </div>
                     ))}
                 </div>
+                <FadeInLeftRight selector=".fade-item-left" direction="left" />
+        <FadeInLeftRight selector=".fade-item-right" direction="right" />
             </div>
         </div>);
 };
