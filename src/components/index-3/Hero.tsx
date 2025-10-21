@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
       <div className="container w-[90%] mx-auto px-4">
         <div className="td-hero-3-title-wrap">
           <h2 ref={textRef} className="td-hero-3-title text-center text-4xl md:text-5xl font-bold leading-tight">
-            List Smarter. Reach Further. <span>Grow Faster.</span>
+            Build Powerful Directory Websites with <span>Our Expert Services.</span>
           </h2>
 
           <div
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
               <div className="lg:col-span-4">
                 <div className="td-hero-3-content-para mb-8">
                   <p className="text-gray-700 leading-relaxed">
-                    Transform the way your business gets discovered. With a sleek directory system built for visibility and trust, you can showcase your brand, connect with real customers, and make every click count.
+                    Our complete directory website services offer elegant design, smooth navigation, and feature-rich performance to create platforms that engage users and grow your business.
                   </p>
                 </div>
               </div>

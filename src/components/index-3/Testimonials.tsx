@@ -51,16 +51,16 @@ const Testimonials: React.FC = () => {
                             <div className="td-testimonial-3-navigation flex gap-4">
                                 <span className="td-testimonial-prev cursor-pointer flex justify-center items-center">
                                     <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18.2473 7.49976H1.25866" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
-                                        <path d="M7.94873 0C7.94873 4.14553 4.39363 7.5 0.000152359 7.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
-                                        <path d="M0.000152359 7.49976C4.39363 7.49976 7.94873 10.8542 7.94873 14.9998" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                                        <path d="M18.2473 7.49976H1.25866" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" />
+                                        <path d="M7.94873 0C7.94873 4.14553 4.39363 7.5 0.000152359 7.5" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" />
+                                        <path d="M0.000152359 7.49976C4.39363 7.49976 7.94873 10.8542 7.94873 14.9998" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" />
                                     </svg>
                                 </span>
                                 <span className="td-testimonial-next cursor-pointer flex justify-center items-center">
                                     <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0.752686 7.49976H17.7413" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
-                                        <path d="M11.0513 0C11.0513 4.14553 14.6064 7.5 18.9998 7.5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
-                                        <path d="M18.9998 7.49976C14.6064 7.49976 11.0513 10.8542 11.0513 14.9998" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                                        <path d="M0.752686 7.49976H17.7413" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" />
+                                        <path d="M11.0513 0C11.0513 4.14553 14.6064 7.5 18.9998 7.5" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" />
+                                        <path d="M18.9998 7.49976C14.6064 7.49976 11.0513 10.8542 11.0513 14.9998" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" />
                                     </svg>
                                 </span>
                             </div>

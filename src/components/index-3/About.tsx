@@ -14,11 +14,10 @@ const About: React.FC = () => {
         <div className="td-about-area pt-[90px] pb-[95px]">
             <div className="container w-[90%] mx-auto">
                 {/* Title Section */}
-                <div className="w-full">
+                <div className="w-[65%]">
                     <div ref={textRef} className="td-about-3-title-wrap mb-28">
                         <h2 className="td-section-3-title text-4xl md:text-5xl font-bold leading-tight">
-                            A team of innovators shaping <br />
-                            the future of<span>online directories</span>
+                            A Team of Innovators Revolutionizing Online <br /> <span> Directory Platforms </span>
                         </h2>
                     </div>
                 </div>
@@ -28,13 +27,13 @@ const About: React.FC = () => {
                     <div className="lg:col-span-5">
                         <div className="td-about-3-content lg:mr-[110px] mb-[30px]">
                             <p className="para pb-14">
-                                We create smart directory platforms that simplify listings, discovery, and management while maximizing engagement and opportunities.
+                                We build intelligent directory platforms designed to simplify listings, enhance discoverability, and streamline management—all while driving user engagement and business growth.
                             </p>
                             <h2 className="title relative inline-block mb-0 text-5xl font-bold">
                                 50 <span>k+</span>
                             </h2>
                             <p className="para">
-                                Trusted by thousands to launch dynamic listing platforms that drive growth.
+                                Businesses trust our solutions to launch dynamic, feature-rich listing platforms that deliver measurable results.
                             </p>
                         </div>
                     </div>
@@ -56,14 +55,15 @@ const About: React.FC = () => {
                             <div className="td-about-3-list lg:ml-[50px] mb-[30px]">
                                 <h4 className="title mb-[25px] text-xl font-semibold">Our Core Expertise</h4>
                                 <ul className="list-disc list-inside space-y-1">
-                                    <li>Custom Directory Website Development</li>
-                                    <li>Advanced Search & Filter Integration</li>
-                                    <li>Map & Location-Based Listings</li>
-                                    <li>Listing Submission & Management System</li>
-                                    <li>Paid & Promoted Listings</li>
-                                    <li>Subscription Models</li>
-                                    <li>SEO Optimization & Monetization Setup</li>
-                                    <li>Ongoing Maintenance & Support</li>
+                                    <li>Custom Directory Website Design & Development</li>
+                                    <li>Advanced Search, Filters & Smart Categorization</li>
+                                    <li>Interactive Maps & Location-Based Listings</li>
+                                    <li>Listing Submission, Management & Verification System</li>
+                                    <li>Paid, Promoted & Featured Listings</li>
+                                    <li>Flexible Subscription & Membership Models</li>
+                                    <li>Monetization Features for Revenue Growth</li>
+                                    <li>SEO Optimization & Visibility Boost</li>
+                                    <li>Dedicated Support, Maintenance & Platform Upgrades</li>
                                 </ul>
                             </div>
                         </div>

@@ -4,13 +4,53 @@ import { useRef } from 'react';
 import FadeInUp from '@/components/animations/index-3/FadeInUp';
 import Image from 'next/image';
 const services = [
-  { title: "Custom <br> Directory Design", number: "S/01", delay: ".3s" },
-  { title: "Smart <br> Listing Management", number: "S/02", delay: ".5s" },
-  { title: "Advanced <br> Search & Filters", number: "S/03", delay: ".7s" },
-  { title: "Map & Location <br> Tools", number: "S/04", delay: ".3s" },
-  { title: "Paid & <br> Promoted Listings", number: "S/05", delay: ".5s" },
-  { title: "Subscription & <br> Monetization", number: "S/06", delay: ".7s" },
+  { 
+    title: "Custom Directory Design <div class='custom-class'> Tailored for Your Brand</div>", 
+    number: "S/01", 
+    delay: ".3s" 
+  },
+  { 
+    title: "Smart Listing Management <div class='custom-class'> Organize & Optimize Listings</div>", 
+    number: "S/02", 
+    delay: ".5s" 
+  },
+  { 
+    title: "Advanced Search <div class='custom-class'> Find Listings Instantly</div>", 
+    number: "S/03", 
+    delay: ".7s" 
+  },
+  { 
+    title: "Map & Location Tools <div class='custom-class'> Visualize Listings Easily</div>", 
+    number: "S/04", 
+    delay: ".3s" 
+  },
+  { 
+    title: "Paid & Promoted Listings <div class='custom-class'> Boost Your Visibility</div>", 
+    number: "S/05", 
+    delay: ".5s" 
+  },
+  { 
+    title: "Monetization, Subscriptions <div class='custom-class'> Maximize Revenue</div>", 
+    number: "S/06", 
+    delay: ".7s" 
+  },
+  { 
+    title: "SEO Optimization <div class='custom-class'> Rank Higher in Search</div>", 
+    number: "S/07", 
+    delay: ".4s" 
+  },
+  { 
+    title: "Analytics & Insights <div class='custom-class'>Track Performance</div>", 
+    number: "S/08", 
+    delay: ".5s" 
+  },
+  { 
+    title: "Secure & Reliable Platform <div class='custom-class'> Protect Your Data</div>", 
+    number: "S/09", 
+    delay: ".6s" 
+  },
 ];
+
 const Partners: React.FC = () => {
   const serviceRef = useRef<HTMLDivElement | null>(null);
 
@@ -28,8 +68,8 @@ const Partners: React.FC = () => {
                 alt=""
               />
               <h2 ref={serviceRef} className="td-section-3-title">
-                Next-Gen Directory Services <br />Designed to {" "}
-                <span>Grow Your Business </span>
+                Everything You Need to Build, <br />Promote, and Profit {" "}
+                <span>from Your Directory </span>
               </h2>
             </div>
           </div>

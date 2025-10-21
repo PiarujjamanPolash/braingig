@@ -10,17 +10,16 @@ const ChooseArea: React.FC = () => {
       <div className="px-4">
         <div className="container w-[90%] mx-auto flex flex-wrap">
           {/* Title */}
-          <div className="w-[60%]">
+          <div className="w-[70%]">
             <div
               className="td-chose-3-title-wrap mb-[75px]"
             >
-              <h2 ref={textRef} className="td-section-3-title">
-                We Build {" "}
-                <span>Directory Solutions</span> That Help Businesses Sell and Grow.
+              <h2 ref={textRef} className="td-section-3-title fade-in-up">
+                Turn Your Directory into a <span>Growth Engine </span>for Your Business 
               </h2>
             </div>
           </div>
-          <FadeInUp targetRef={textRef} delay={0.3} duration={1} />
+          {/* <FadeInUp targetRef={textRef} delay={0.3} duration={1} /> */}
 
           <div className='grid grid-cols-1 lg:grid-cols-12'>
             {/* Image */}
@@ -39,21 +38,21 @@ const ChooseArea: React.FC = () => {
             <div className="col-span-6">
               <div className="td-chose-3-list-wrap mr-[110px] mb-[30px]">
                 <div className="td-chose-3-list mb-[55px]">
-                  <h6 className="mb-[20px]">Simplified Discovery</h6>
+                  <h6 className="mb-[20px]">Tailored for Your Business Goals</h6>
                   <p>
-                    Our platforms make it easy for customers to find businesses, services, and products quickly with advanced search, smart filters, and interactive maps.
+                    Every business is unique. We create directories that fit your exact needs—whether it’s expanding categories, integrating new features, or scaling to handle high traffic—ensuring your platform evolves as your business grows.
                   </p>
                 </div>
                 <div className="td-chose-3-list mb-[55px]">
-                  <h6 className="mb-[20px]">Boosted Growth</h6>
+                  <h6 className="mb-[20px]">Boost Engagement and Visibility</h6>
                   <p>
-                    With premium listings, promoted spots, and subscription options, we help businesses increase visibility and attract more clients.
+                    Your listings get noticed. With smart search tools, interactive maps, and clear categorization, users find exactly what they need quickly, turning visits into meaningful interactions and keeping your audience coming back.
                   </p>
                 </div>
                 <div className="td-chose-3-list">
-                  <h6 className="mb-[20px]">Reliable Performance & Support</h6>
+                  <h6 className="mb-[20px]">Revenue-Driven Features</h6>
                   <p>
-                    Intuitive design, seamless performance, and ongoing support ensure businesses can manage listings efficiently and deliver an exceptional customer experience.
+                    We help you turn your directory into a profitable platform. With options like premium listings, featured spots, and subscription models, your website isn’t just informative—it’s a growth engine for your business.
                   </p>
                 </div>
               </div>

@@ -59,3 +59,8 @@ body {
 }
 
 
+.custom-class {
+  display: block; /* Forces a new line */
+  font-size: 20px; /* Smaller size */
+  margin-top: 4px; /* Optional spacing */
+}

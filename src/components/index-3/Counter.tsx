@@ -7,21 +7,22 @@ const counters = [
     shape: "/images/index-3/counter-shape-1.png",
     count: "5",
     suffix: "+",
-    text: "Years of<br> directory expertise",
+    text: "Years of expert <br> directory development",
   },
   {
     shape: "/images/index-3/counter-shape-1.png",
-    count: "10",
+    count: "15",
     suffix: "K",
-    text: "Listing<br> managed",
+    text: "Listings<br> successfully managed",
   },
   {
     shape: "/images/index-3/counter-shape-2.png",
-    count: "96",
+    count: "98",
     suffix: "%",
-    text: "user <br> Satisfaction",
+    text: "User<br> satisfaction rate",
   },
 ];
+
 const Counter: React.FC = () => {
   const textRef = useRef<HTMLDivElement | null>(null);
 
@@ -33,10 +34,10 @@ const Counter: React.FC = () => {
           <div className="w-full lg:w-10/12 xl:w-7/12 text-center mb-[70px]">
             <div className="td-counter-3-title-wrap">
               <span className="td-section-3-subtitle inline-block mb-[15px]">
-                OUR IMPACT
+                Our Proven Impact
               </span>
               <h2 ref={textRef} className="td-section-3-title td-split-text td-split-in-right">
-                From Listings to Premium Promotions — <span>Platforms</span> That Deliver Results
+                Directory Platforms <span>Delivering Real </span> Growth and Engagement.
               </h2>
             </div>
             <SplitTextAnimation textRef={textRef} direction="right" />
