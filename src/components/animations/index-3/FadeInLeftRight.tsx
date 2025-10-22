@@ -1,41 +1,39 @@
 "use client";
 
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-interface AnimateFadeInLeftProps {
-  selector: string;
+interface FadeInLeftRightProps {
+  targetRef: React.RefObject<HTMLDivElement | null>;
   direction: "left" | "right";
   delay?: number;
   duration?: number;
 }
 
-const FadeInLeftRight: React.FC<AnimateFadeInLeftProps> = ({
-  selector,
+const FadeInLeftRight: React.FC<FadeInLeftRightProps> = ({
+  targetRef,
   direction,
   delay = 0,
   duration = 1,
 }) => {
-  useLayoutEffect(() => {
-    const elements = gsap.utils.toArray<HTMLElement>(selector);
+  useEffect(() => {
+    if (!targetRef.current) return;
 
-    elements.forEach((el, i) => {
-      gsap.from(el, {
-        opacity: 0,
-        x: direction === "left" ? -50 : 50,
-        duration,
-        delay: delay + i * 0.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: el,
-          start: "top 80%",
-        },
-      });
+    gsap.from(targetRef.current, {
+      opacity: 0,
+      x: direction === "left" ? -50 : 50,
+      duration,
+      delay,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: targetRef.current,
+        start: "top 80%",
+      },
     });
-  }, [selector, direction, delay, duration]);
+  }, [targetRef, direction, delay, duration]);
 
   return null;
 };

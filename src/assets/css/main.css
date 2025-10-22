@@ -6096,7 +6096,8 @@ textarea {
   color: #71cb00;
   position: absolute;
   bottom: -81px;
-  right: -550px;
+  /* right: -550px; */
+  right: -121px;
   margin-bottom: 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -8554,7 +8555,7 @@ textarea {
 .td-counter-3-item {
   background: var(--td-common-white);
   border-radius: 10px;
-  padding: 30px 60px 44px 40px;
+  padding: 30px 40px 44px 40px;
 }
 .td-counter-3-item .title {
   font-family: var(--td-ff-manrope);

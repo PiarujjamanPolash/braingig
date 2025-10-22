@@ -131,8 +131,8 @@ const Portfolio: React.FC = () => {
                         </div>
                     ))}
                 </div>
-                <FadeInLeftRight selector=".fade-item-left" direction="left" />
-        <FadeInLeftRight selector=".fade-item-right" direction="right" />
+                {/* <FadeInLeftRight selector=".fade-item-left" direction="left" />
+        <FadeInLeftRight selector=".fade-item-right" direction="right" /> */}
             </div>
         </div>);
 };

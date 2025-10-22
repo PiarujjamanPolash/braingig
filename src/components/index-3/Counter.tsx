@@ -27,17 +27,16 @@ const Counter: React.FC = () => {
   const textRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <section className="td-counter-3-area grey-bg-3 pt-[155px] pb-[130px]">
+    <section className="td-counter-3-area grey-bg-3 pt-[100px] lg:pt-[155px] pb-[130px]">
       <div className="container w-[90%] mx-auto px-4">
         {/* Title */}
         <div className="flex justify-center">
-          <div className="w-full lg:w-10/12 xl:w-7/12 text-center mb-[70px]">
+          <div className="w-full lg:w-[70%] text-center mb-[70px]">
             <div className="td-counter-3-title-wrap">
               <span className="td-section-3-subtitle inline-block mb-[15px]">
                 Our Proven Impact
               </span>
-              <h2 ref={textRef} className="td-section-3-title td-split-text td-split-in-right">
-                Directory Platforms <span>Delivering Real </span> Growth and Engagement.
+              <h2 ref={textRef} className="td-section-3-title td-split-text td-split-in-right">Directory Platforms <span>Delivering Real </span>Growth and Engagement.
               </h2>
             </div>
             <SplitTextAnimation textRef={textRef} direction="right" />
@@ -45,7 +44,7 @@ const Counter: React.FC = () => {
         </div>
 
         {/* Counter Items */}
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[30px]">
           {counters.map((item, index) => (
             <div
               key={index}

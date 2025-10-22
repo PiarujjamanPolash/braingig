@@ -1,10 +1,9 @@
 "use client"
-import Image from 'next/image';
-import Link from 'next/link';
+
 import SplitTextAnimation from '@/components/animations/index-3/SplitTextAnimation';
 import { useRef, useState } from 'react';
-import FadeInLeftRight from '@/components/animations/index-3/FadeInLeftRight';
 import { portfolioData } from '@/utils/fakeData/portfolioData';
+import PortfolioCard from './PortfolioCard';
 
 const Portfolio: React.FC = () => {
   const textRef = useRef<HTMLDivElement | null>(null);
@@ -13,28 +12,19 @@ const Portfolio: React.FC = () => {
     item.category.includes("Directory")
   );
 
-  // ✅ Pagination: show 6 items initially
   const [visibleCount, setVisibleCount] = useState(6);
-
-  // ✅ Visible projects
   const visibleProjects = directoryProjects.slice(0, visibleCount);
 
-  // ✅ Split projects into two columns
   const middleIndex = Math.ceil(visibleProjects.length / 2);
   const leftColumn = visibleProjects.slice(0, middleIndex);
   const rightColumn = visibleProjects.slice(middleIndex);
 
-  // ✅ Handle "View More"
   const handleViewMore = () => {
     setVisibleCount((prev) => prev + 6);
   };
 
-  // const middleIndex = Math.ceil(portfolioData.projects.length / 2);
-  // const leftColumn = portfolioData.projects.slice(0, middleIndex);
-  // const rightColumn = portfolioData.projects.slice(middleIndex);
-
   return (
-    <div className="td-portfolio-area td-portfolio-3-bg pt-[150px] pb-[160px] px-5 md:px-0">
+    <div className="td-portfolio-area td-portfolio-3-bg pt-[100px] lg:pt-[150px] pb-[160px] px-5 md:px-0">
       <div className="container w-[90%] mx-auto">
         {/* Header */}
         <div className="grid grid-cols-5 items-center pb-[80px] gap-8 lg:gap-0">
@@ -59,123 +49,25 @@ const Portfolio: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-[80px]">
           {/* Left Column */}
           <div>
-            {leftColumn.map((item) => (
-              <div
+            {leftColumn.map((item,index) => (
+              <PortfolioCard
                 key={item.id}
-                className="td-portfolio-3-wrap mb-[90px] fade-item-left"
-              >
-                <div className="td-portfolio-3-thumb mb-[20px]">
-                  <Image
-                    className="w-full"
-                    src={item.img}
-                    alt={item.title}
-                    width={620}
-                    height={660}
-                  />
-                </div>
-                <div className="td-portfolio-3-content flex justify-between items-end">
-                  <div className="td-portfolio-3-title">
-                    <h6 className="title mb-0">
-                      <Link href={item.link} className="underline-white">
-                        {item.title}
-                      </Link>
-                    </h6>
-                  </div>
-                  <Link
-                    className="icon flex justify-center items-center"
-                    href={item.link}
-                    target="_blank"
-                  >
-                    <svg
-                      width="19"
-                      height="15"
-                      viewBox="0 0 19 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.75293 7.49988H17.7416"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeMiterlimit="10"
-                      />
-                      <path
-                        d="M11.0513 0C11.0513 4.14553 14.6064 7.5 18.9998 7.5"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeMiterlimit="10"
-                      />
-                      <path
-                        d="M18.9998 7.49988C14.6064 7.49988 11.0513 10.8543 11.0513 14.9999"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeMiterlimit="10"
-                      />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
+                item={item}
+                direction="left"
+                delayOffset={index * 0.2}
+              />
             ))}
           </div>
 
           {/* Right Column */}
           <div className="pt-0 lg:pt-[140px]">
-            {rightColumn.map((item) => (
-              <div
+            {rightColumn.map((item, index) => (
+              <PortfolioCard
                 key={item.id}
-                className="td-portfolio-3-wrap mb-[90px] fade-item-right"
-              >
-                <div className="td-portfolio-3-thumb mb-[20px]">
-                  <Image
-                    className="w-full"
-                    src={item.img}
-                    alt={item.title}
-                    width={600}
-                    height={400}
-                  />
-                </div>
-                <div className="td-portfolio-3-content flex justify-between items-end">
-                  <div className="td-portfolio-3-title">
-                    <h6 className="title mb-0">
-                      <Link href={item.link} className="underline-white">
-                        {item.title}
-                      </Link>
-                    </h6>
-                  </div>
-                  <Link
-                    className="icon flex justify-center items-center"
-                    href={item.link}
-                    target="_blank"
-                  >
-                    <svg
-                      width="19"
-                      height="15"
-                      viewBox="0 0 19 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.75293 7.49988H17.7416"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeMiterlimit="10"
-                      />
-                      <path
-                        d="M11.0513 0C11.0513 4.14553 14.6064 7.5 18.9998 7.5"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeMiterlimit="10"
-                      />
-                      <path
-                        d="M18.9998 7.49988C14.6064 7.49988 11.0513 10.8543 11.0513 14.9999"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeMiterlimit="10"
-                      />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
+                item={item}
+                direction="right"
+                delayOffset={index * 0.2}
+              />
             ))}
           </div>
         </div>

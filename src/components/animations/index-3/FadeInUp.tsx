@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -13,7 +13,7 @@ interface Props {
 }
 
 const FadeInUp: React.FC<Props> = ({ targetRef, delay = 0.3, duration = 1 }) => {
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (!targetRef.current) return;
 
     const ctx = gsap.context(() => {
@@ -26,6 +26,7 @@ const FadeInUp: React.FC<Props> = ({ targetRef, delay = 0.3, duration = 1 }) => 
         scrollTrigger: {
           trigger: targetRef.current,
           start: "top 90%",
+          toggleActions: "play none none none",
         },
       });
     }, targetRef);

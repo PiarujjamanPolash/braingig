@@ -31,7 +31,7 @@ const testimonials = [
 
 const Testimonials: React.FC = () => {
     return (
-        <section className="td-testimonial-3-area td-testimonial-3-spacing fix bg-[#beff01] pt-[155px] px-5 lg:px-0 relative">
+        <section className="td-testimonial-3-area td-testimonial-3-spacing fix bg-[#beff01] pt-[100px] lg:pt-[155px] px-5 lg:px-0 relative">
             {/* Big background text */}
             <h3 className="td-testimonial-3-bigtext hidden md:block">BRAINGIG</h3>
 

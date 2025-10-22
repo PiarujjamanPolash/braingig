@@ -18,16 +18,16 @@ const Index6 = () => {
     return (
         <ClientWrapper>
             <TextLineAnimation />
-        <Hero />
-        <About />
-        <Services />
-        <Portfolio />
-        <VideoArea />
-        <PricingArea />
-        <Testimonial />
-        <ChooseArea />
-        <Team />
-        <Counter/>
+            <Hero />
+            <About />
+            <Services />
+            <Portfolio />
+            <VideoArea />
+            <PricingArea />
+            <Testimonial />
+            <ChooseArea />
+            <Team />
+            <Counter />
         </ClientWrapper>
     );
 };

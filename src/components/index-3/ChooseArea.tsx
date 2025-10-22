@@ -3,23 +3,23 @@ import Image from 'next/image';
 import FadeInUp from '@/components/animations/index-3/FadeInUp';
 import { useRef } from 'react';
 const ChooseArea: React.FC = () => {
-  const textRef = useRef<HTMLDivElement | null>(null);
+  const titleRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <section className="td-chose-area pt-[150px] pb-[80px]">
+    <section className="td-chose-area pt-[100px] lg:pt-[150px] pb-[80px]">
       <div className="px-4">
         <div className="container w-[90%] mx-auto flex flex-wrap">
           {/* Title */}
-          <div className="w-[70%]">
+          <div className="w-full lg:w-[70%]">
             <div
               className="td-chose-3-title-wrap mb-[75px]"
             >
-              <h2 ref={textRef} className="td-section-3-title fade-in-up">
-                Turn Your Directory into a <span>Growth Engine </span>for Your Business 
+              <h2 ref={titleRef} className="td-section-3-title text-center md:text-start">
+                Turn Your Directory into a <span>Growth Engine </span>for Your Business
               </h2>
+              <FadeInUp targetRef={titleRef} delay={0.3} duration={1} />
             </div>
           </div>
-          {/* <FadeInUp targetRef={textRef} delay={0.3} duration={1} /> */}
 
           <div className='grid grid-cols-1 lg:grid-cols-12'>
             {/* Image */}
