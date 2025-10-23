@@ -78,7 +78,7 @@ const Portfolio: React.FC = () => {
           <div className="flex justify-start text-center mt-10">
             <button
               onClick={handleViewMore}
-              className="td-header-2-btn ml-[10px] flex justify-center items-center"
+              className="td-header-2-btn ml-[10px] flex justify-center items-center cursor-pointer"
             >
               <span className="icon flex justify-center items-center">
                 <svg

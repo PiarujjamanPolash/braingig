@@ -21,7 +21,7 @@ const ServiceItems: React.FC<CardProps> = ({ title, number, delay }) => {
         </div>
         <div className="td-service-3-content flex justify-between items-center">
           <h3>
-            <Link href="#" dangerouslySetInnerHTML={{ __html: title }} />
+            <Link href="#" className="cursor-default" dangerouslySetInnerHTML={{ __html: title }} />
           </h3>
           <span>{number}</span>
         </div>

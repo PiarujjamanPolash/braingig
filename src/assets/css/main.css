@@ -8554,7 +8554,7 @@ textarea {
 .td-counter-3-item {
   background: var(--td-common-white);
   border-radius: 10px;
-  padding: 30px 60px 44px 40px;
+  padding: 30px 40px 44px 40px;
 }
 .td-counter-3-item .title {
   font-family: var(--td-ff-manrope);
