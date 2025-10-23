@@ -57,3 +57,8 @@ body {
 }
 
 
+.custom-class {
+  display: block; 
+  font-size: 20px; 
+  margin-top: 4px;
+}

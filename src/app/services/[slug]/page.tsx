@@ -7,8 +7,17 @@ const Hero = dynamic(() => import("@/components/service-details/Hero"));
 const Partners = dynamic(() => import("@/components/service-details/Partners"));
 const Projects = dynamic(() => import("@/components/service-details/Projects"));
 const ClientWrapper = dynamic(() => import("@/components/wrappers/ClientWrapper"));
-import { servicesData } from "@/utils/fakeData/servicesData"; 
 
+const DirectoryHero = dynamic(() => import("@/components/service-details/directory-service/Hero"));
+const About = dynamic(() => import("@/components/service-details/directory-service/About"));
+const DirectoryPartners = dynamic(() => import("@/components/service-details/directory-service/Partners"));
+const Portfolio = dynamic(() => import("@/components/service-details/directory-service/Portfolio"));
+const Services = dynamic(() => import("@/components/service-details/directory-service/Services"));
+const CounterArea = dynamic(() => import("@/components/service-details/directory-service/CounterArea"));
+const ChooseArea = dynamic(() => import("@/components/service-details/directory-service/ChooseArea"));
+const Testimonials = dynamic(() => import("@/components/service-details/directory-service/Testimonials"));
+
+import { servicesData } from "@/utils/fakeData/servicesData"; 
 
 export async function generateStaticParams() {
     return servicesData.map(service => ({
@@ -22,6 +31,23 @@ const ServicesPage = async ({
 }) => {
     const { slug } = await params
     const service = servicesData.find(s => s.slug === slug);
+    if (slug === "directory-listing-website-development") {
+        return (
+            <ClientWrapper>
+                <div>
+                    <DirectoryHero />
+                    <About />
+                    <DirectoryPartners />
+                    <Services />
+                    <Portfolio />
+                    <CounterArea />
+                    <ChooseArea />
+                    <Testimonials />
+                </div>
+            </ClientWrapper>
+        );
+    }
+
     if (!service) return <p>Service not found</p>;
 
     return (
