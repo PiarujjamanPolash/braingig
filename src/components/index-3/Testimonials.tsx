@@ -5,29 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-
-const testimonials = [
-    {
-        name: "@ Sumona Michel",
-        text: `We are excited for our work and how it positively impacts clients. With over 12 years of experience we have been constantly providing solutions. We are committed to delive`,
-        avatar: "/images/index-3/testimonial-author-1.png",
-    },
-    {
-        name: "@ Sumona Michel",
-        text: `We are excited for our work and how it positively impacts clients. With over 12 years of experience we have been constantly providing solutions. We are committed to delive`,
-        avatar: "/images/index-3/testimonial-author-1.png",
-    },
-    {
-        name: "@ Sumona Michel",
-        text: `We are excited for our work and how it positively impacts clients. With over 12 years of experience we have been constantly providing solutions. We are committed to delive`,
-        avatar: "/images/index-3/testimonial-author-1.png",
-    },
-    {
-        name: "@ Sumona Michel",
-        text: `We are excited for our work and how it positively impacts clients. With over 12 years of experience we have been constantly providing solutions. We are committed to delive`,
-        avatar: "/images/index-3/testimonial-author-1.png",
-    },
-];
+import { testimonialsData } from "@/utils/fakeData/testimonialsData";
 
 const Testimonials: React.FC = () => {
     return (
@@ -86,19 +64,19 @@ const Testimonials: React.FC = () => {
                             spaceBetween={30}
                             className="swiper-container td-testimonial-3-slider"
                         >
-                            {testimonials.map((item, index) => (
+                            {testimonialsData.map((item, index) => (
                                 <SwiperSlide key={index}>
-                                    <div className="td-testimonial-3-wrap">
-                                        <span className="mb-15 d-inline-block">{item.name}</span>
-                                        <p className="mb-30">{item.text}</p>
+                                    <div className="td-testimonial-3-wrap flex flex-col h-auto min-h-[300px]">
+                                        <span className="mb-[15px] inline-block">{item.name}</span>
+                                        <p className="mb-[30px] flex-1">{item.review}</p>
                                         <span className="td-border mb-[30px]"></span>
-                                        <Image
+                                        {/* <Image
                                             className="td-rounded"
                                             src={item.avatar}
                                             alt={item.name}
                                             width={100}
                                             height={100}
-                                        />
+                                        /> */}
                                     </div>
                                 </SwiperSlide>
                             ))}
