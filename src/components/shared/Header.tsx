@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaAngleRight, FaFacebook, FaInstagram, FaLinkedin, FaXmark } from "react-icons/fa6";
 import { menuList } from "@/utils/fakeData/menuList";
 import { usePathname } from "next/navigation";
@@ -12,7 +12,16 @@ const Header: React.FC = () => {
     const pathname = usePathname();
     const mainMenuRef = useRef<HTMLDivElement>(null);
     const mobileMenuOuterRef = useRef<HTMLDivElement>(null);
+    const [isBgWhite, setIsBgWhite] = useState(false);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsBgWhite(window.scrollY > 100);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
     useEffect(() => {
         if (mainMenuRef.current && mobileMenuOuterRef.current) {
             // Clone the main menu into mobile menu
@@ -94,7 +103,7 @@ const Header: React.FC = () => {
 
 
     return (
-        <div className="px-[15px]">
+        <div className={`px-[15px] fixed top-0 left-0 z-10 w-full transition-colors duration-500 ${isBgWhite ? 'bg-white' : 'bg-transparent'}`}>
             {/* Search Popup */}
             <div className="search__popup">
                 <div className="container mx-auto px-4">
