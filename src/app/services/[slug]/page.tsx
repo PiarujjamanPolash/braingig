@@ -17,6 +17,12 @@ const CounterArea = dynamic(() => import("@/components/service-details/directory
 const ChooseArea = dynamic(() => import("@/components/service-details/directory-service/ChooseArea"));
 const Testimonials = dynamic(() => import("@/components/service-details/directory-service/Testimonials"));
 
+const DigitalMarketingHero = dynamic(() => import("@/components/service-details/digital-marketing-service/Hero"));
+const DigitalMarketingAbout = dynamic(() => import("@/components/service-details/digital-marketing-service/About"));
+const WhatYouGet = dynamic(() => import("@/components/service-details/digital-marketing-service/WhatYouGet"));
+
+
+
 import { servicesData } from "@/utils/fakeData/servicesData"; 
 
 export async function generateStaticParams() {
@@ -44,6 +50,25 @@ const ServicesPage = async ({
                     <ChooseArea />
                     <Testimonials />
                 </div>
+            </ClientWrapper>
+        );
+    }
+     if (slug === "digital-marketing-strategy") {
+        return (
+            <ClientWrapper>
+                <TextLineAnimation />
+                <DigitalMarketingHero />
+                <DigitalMarketingAbout />
+                <WhatYouGet />
+                {/* <About6 /> */}
+                {/* <Services6 /> */}
+                {/* <Portfolio6 /> */}
+                {/* <VideoArea /> */}
+                {/* <PricingArea /> */}
+                {/* <Testimonial /> */}
+                {/* <ChooseArea /> */}
+                {/* <Team /> */}
+                {/* <Counter /> */}
             </ClientWrapper>
         );
     }
