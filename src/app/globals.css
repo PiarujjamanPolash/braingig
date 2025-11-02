@@ -62,3 +62,16 @@ body {
   font-size: 20px; 
   margin-top: 4px;
 }
+
+.highlight-service {
+  background-color: #060a2f;
+  transition: background-color 0.6s ease;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.highlight-service .td-service-6-item-title span {
+  color: var(--td-common-white);
+}
+.highlight-service .td-service-6-item-title h3 {
+  color: #fff;
+}

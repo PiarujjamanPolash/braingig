@@ -24,6 +24,7 @@ const WhatYouGet = dynamic(() => import("@/components/service-details/digital-ma
 
 
 import { servicesData } from "@/utils/fakeData/servicesData"; 
+import WhyUs from "@/components/service-details/digital-marketing-service/WhyUs";
 
 export async function generateStaticParams() {
     return servicesData.map(service => ({
@@ -60,6 +61,7 @@ const ServicesPage = async ({
                 <DigitalMarketingHero />
                 <DigitalMarketingAbout />
                 <WhatYouGet />
+                {/* <WhyUs /> */}
                 {/* <About6 /> */}
                 {/* <Services6 /> */}
                 {/* <Portfolio6 /> */}

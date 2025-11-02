@@ -15,6 +15,31 @@ const slides = [
     "/images/service-details/digital-marketing-service/slider-8.jpg",
     "/images/service-details/digital-marketing-service/slider-9.jpg",
 ];
+
+const handleScrollToService = (id: string) => {
+  const services = document.querySelectorAll(".td-service-6-item")
+  services.forEach(service => {
+        service.classList.remove("highlight-service");
+  });
+  const section = document.getElementById(id);
+  if (section) {
+    const headerOffset = 120; // adjust this to match your fixed header height
+    const elementPosition = section.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+
+    // highlight animation
+    section.classList.add("highlight-service");
+  }
+
+  window.history.pushState(null, "", `#${id}`);
+};
+
+
 const Hero: React.FC = () => {
 
     return (
@@ -51,16 +76,16 @@ const Hero: React.FC = () => {
                             <div className="td-hero-6-tag">
                                 <ul>
                                     <li>
-                                        <Link href="">(On-Page SEO)</Link>
+                                        <Link onClick={(e) => { e.preventDefault(); handleScrollToService("service-1"); }} href="">(On-Page SEO)</Link>
                                     </li>
                                     <li>
-                                        <Link href="">(Authority & Off-Page)</Link>
+                                        <Link onClick={(e) => { e.preventDefault(); handleScrollToService("service-2"); }} href="">(Authority & Off-Page)</Link>
                                     </li>
                                     <li>
-                                        <Link href="">(Ads & Creatives)</Link>
+                                        <Link onClick={(e) => { e.preventDefault(); handleScrollToService("service-4"); }} href="">(Ads & Creatives)</Link>
                                     </li>
                                     <li>
-                                        <Link href="">(Content Funnel)</Link>
+                                        <Link onClick={(e) => { e.preventDefault(); handleScrollToService("service-5"); }} href="">(Content Funnel)</Link>
                                     </li>
                                 </ul>
                             </div>

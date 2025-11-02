@@ -11,7 +11,7 @@ const WhatYouGet = () => {
         setOpenId(openId === id ? null : id);
     };
     return (
-        <div className="td-service-6-area w-[90%] mx-auto mb-[120px]">
+        <div id='' className="td-service-6-area w-[90%] mx-auto mb-[120px]">
             <div className="container mx-auto px-3 sm:px-4 lg:px-6">
                 <div className="flex flex-wrap items-end">
 
@@ -32,7 +32,7 @@ const WhatYouGet = () => {
 
                     <div className="w-full pt-[55px]">
                         {digitalMarketingData.map((service, idx) => (
-                            <div
+                            <div id={`service-${service.id}`}
                                 key={service.id}
                                 className="td-service-6-item border-b border-gray-200"
                             >
