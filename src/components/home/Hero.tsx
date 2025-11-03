@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
                     height={100}
                     priority
                   />{" "}
-                  Makes <span>Your Dream </span>Work
+                  Makes <span>Your Dream </span>Work.
                 </h2>
               </div>
             </div>

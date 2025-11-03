@@ -5,13 +5,13 @@ import React, { useRef, useState } from 'react';
 
 const WhatYouGet = () => {
     const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
-    const [openId, setOpenId] = useState(null);
+const [openId, setOpenId] = useState<number | null>(null);
 
-    const toggleAccordion = (id: any) => {
+    const toggleAccordion = (id: number) => {
         setOpenId(openId === id ? null : id);
     };
     return (
-        <div id='' className="td-service-6-area w-[90%] mx-auto mb-[120px]">
+        <div className="td-service-6-area w-[90%] mx-auto mb-[120px]">
             <div className="container mx-auto px-3 sm:px-4 lg:px-6">
                 <div className="flex flex-wrap items-end">
 

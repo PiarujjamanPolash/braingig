@@ -1,5 +1,6 @@
 "use client";
 
+import { faqData } from "@/utils/fakeData/faqData";
 import dynamic from "next/dynamic";
 import {  useRef } from "react";
 
@@ -41,7 +42,7 @@ const FAQ = () => {
                             {/* Right accordion */}
                             <div ref={contentRef} className="lg:col-span-7">
                                 <div className="td-faq-4-wrap-right td-faq-2-wrap-right td-faq-main-wrap-right mb-8">
-                                    <Accordion />
+                                    <Accordion data={faqData} />
                                 </div>
                             </div>
                         </div>

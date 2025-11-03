@@ -20,12 +20,19 @@ const Testimonials = dynamic(() => import("@/components/service-details/director
 const DigitalMarketingHero = dynamic(() => import("@/components/service-details/digital-marketing-service/Hero"));
 const DigitalMarketingAbout = dynamic(() => import("@/components/service-details/digital-marketing-service/About"));
 const WhatYouGet = dynamic(() => import("@/components/service-details/digital-marketing-service/WhatYouGet"));
+const WhyUs = dynamic(() => import("@/components/service-details/digital-marketing-service/WhyUs"));
+const Process = dynamic(() => import("@/components/service-details/digital-marketing-service/Process"));
+const RecentWorks = dynamic(() => import("@/components/home/RecentWorks"));
 
 
 
-import { servicesData } from "@/utils/fakeData/servicesData"; 
-import WhyUs from "@/components/service-details/digital-marketing-service/WhyUs";
-
+import { servicesData } from "@/utils/fakeData/servicesData";
+import CTA from "@/components/service-details/digital-marketing-service/CTA";
+import { faqData } from "@/utils/fakeData/faqData";
+import { digitalMarketingFaq } from "@/utils/fakeData/digitalMarketingFaq";
+import Testimonial from "@/components/service-details/digital-marketing-service/Testimonial";
+import Team from "@/components/service-details/digital-marketing-service/Team";
+import Counter from "@/components/service-details/digital-marketing-service/Counter";
 export async function generateStaticParams() {
     return servicesData.map(service => ({
         slug: service.slug,
@@ -54,23 +61,22 @@ const ServicesPage = async ({
             </ClientWrapper>
         );
     }
-     if (slug === "digital-marketing-strategy") {
+    if (slug === "digital-marketing-strategy") {
         return (
             <ClientWrapper>
                 <TextLineAnimation />
                 <DigitalMarketingHero />
                 <DigitalMarketingAbout />
+                <WhyUs />
                 <WhatYouGet />
-                {/* <WhyUs /> */}
-                {/* <About6 /> */}
-                {/* <Services6 /> */}
-                {/* <Portfolio6 /> */}
-                {/* <VideoArea /> */}
+                <RecentWorks />
+                <CTA />
+                <Process />
                 {/* <PricingArea /> */}
-                {/* <Testimonial /> */}
-                {/* <ChooseArea /> */}
-                {/* <Team /> */}
-                {/* <Counter /> */}
+                <Testimonial />
+                <Team />
+                <Counter />
+                <FAQ data={digitalMarketingFaq} />
             </ClientWrapper>
         );
     }
@@ -85,7 +91,7 @@ const ServicesPage = async ({
                 <Projects service={service} />
                 <Partners />
                 <WorkingProcess />
-                <FAQ />
+                <FAQ data={faqData} />
             </div>
         </ClientWrapper>
     );

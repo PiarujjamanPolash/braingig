@@ -67,7 +67,7 @@ const About: React.FC = () => {
                             </div>
 
                             <div className="td-about-6-author-count">
-                                <div className="flex gap-10">
+                                <div className="flex flex-col md:flex-row gap-10">
                                     <div className="">
                                         <div className="td-about-6-author-single">
                                             <h2 className="mb-[10px]">100%</h2>

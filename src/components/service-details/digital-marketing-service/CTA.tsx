@@ -1,0 +1,36 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+
+const CTA = () => {
+    return (
+        <section className="relative w-full min-h-[60vh] h-[600px] flex items-end justify-start my-20">
+            {/* Background Image */}
+            <Image
+                src="/images/hero/thumb.webp"
+                alt="Background"
+                fill
+                priority
+                className="object-cover object-center -z-10"
+            />
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/60 -z-10"></div>
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-[#212124] to-transparent"></div> */}
+            {/* Content */}
+            <div className="relative z-10 flex flex-col justify-start pl-10 lg:pl-20 pb-5 lg:pb-15">
+                <h2 className="w-full md:[60%] lg:w-[45%] !text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug mb-6">
+                    Contact <strong className='text-[#ff5722]'>Brain Gig</strong> today and start your journey to higher rankings and increased organic traffic.
+                </h2>
+                <Link
+                    href="/contact"
+                    className="w-fit !bg-[#ff5722] hover:!bg-[#d84315] text-white font-semibold py-3 px-8 sm:px-10 sm:py-4 rounded-lg transition duration-300 text-base sm:text-lg"
+                >
+                    I’m Ready To Grow
+                </Link>
+            </div>
+        </section>
+    );
+};
+
+export default CTA;

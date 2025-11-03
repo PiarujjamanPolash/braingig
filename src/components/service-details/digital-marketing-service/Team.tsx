@@ -1,22 +1,13 @@
 "use client";
 
+import { teamData } from "@/components/about/Team";
 import Image from "next/image";
+import Link from "next/link";
 import Marquee from "react-fast-marquee";
 
-// Team data object
-const teamData = {
-  members: [
-    { name: "Liza Olivarez", role: "Engineer", img: "/images/index-6/team-1.jpg", link: "#" },
-    { name: "Laura Leipina", role: "Designer", img: "/images/index-6/team-1.jpg", link: "#" },
-    { name: "Laura Leipina", role: "Designer", img: "/images/index-6/team-1.jpg", link: "#" },
-    { name: "Laura Leipina", role: "Designer", img: "/images/index-6/team-1.jpg", link: "#" },
-    { name: "Liza Olivarez", role: "Engineer", img: "/images/index-6/team-1.jpg", link: "#" },
-    { name: "Richar Handyamn", role: "Designer", img: "/images/index-6/team-1.jpg", link: "#" },
-    { name: "Bob Merly", role: "Developer", img: "/images/index-6/team-1.jpg", link: "#" },
-  ],
-};
-
 const Team: React.FC = () => {
+  const doubledTeamData = [...teamData, ...teamData];
+
   return (
     <div className="td-team-area pt-[105px] fix px-5 md:px-0">
       <div className="container w-[90%] mx-auto mb-[10px]">
@@ -44,23 +35,21 @@ const Team: React.FC = () => {
           pauseOnHover={true}
           className="td-team-6-slider"
         >
-          {teamData.members.map((member, index) => (
-            <div key={index} className="td-team-6-wrap flex-shrink-0 w-48 mx-4">
+          {doubledTeamData.map((member, index) => (
+            <div key={index} className="td-team-6-wrap flex flex-col w-48 mx-4">
               <div className="td-team-6-thumb mb-[20px]">
-                <a href={member.link}>
                   <Image
                     src={member.img}
                     alt={member.name}
                     width={200}
                     height={200}
-                    className="w-full"
+                    className="w-full h-full"
                   />
-                </a>
               </div>
-              <div className="td-team-6-content text-left">
-                <a href={member.link} className="name inline-block mb-[5px]">
+              <div className="td-team-6-content text-left flex-1">
+                <Link href={''} className="name inline-block mb-[5px]">
                   {member.name}
-                </a>
+                </Link>
                 <span className="tag block">{member.role}</span>
               </div>
             </div>

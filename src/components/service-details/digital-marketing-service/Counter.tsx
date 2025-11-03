@@ -1,7 +1,6 @@
 "use client";
 
 import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
 
 // Counter data
 const counterData = [
@@ -12,32 +11,29 @@ const counterData = [
 ];
 
 const Counter: React.FC = () => {
-  // Intersection Observer to start counting when visible
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
+  // const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
 
   return (
-    <div className="td-counter-area pt-[155px] pb-[140px] px-5 md:px-0" ref={ref}>
+    <div className="td-counter-area pt-[155px] pb-[140px] px-5 md:px-0">
       <div className="container w-[90%] mx-auto">
         <div className="row align-items-end mb-[70px] flex flex-wrap">
           <div className="col-lg-8 w-full lg:w-8/12">
             <div className="td-service-6-title-wrap flex flex-col mb-[30px]">
               <span className="td-section-6-subtitle mb-[20px] inline-block">
-                AWESOME FUNFACT
+                DIGITAL MARKETING POWER MOVES
               </span>
               <h2 className="td-section-6-bigtitle td-text-invert">
-                WHAT WE <br /> ARE ACHIEVE
+                DRIVING RESULTS <br /> ONE CLICK AT A TIME
               </h2>
             </div>
           </div>
           <div className="col-lg-4 w-full lg:w-4/12">
             <div className="td-service-6-title-text mr-[80px] mb-[35px]">
               <p className="td-section-6-text mb-[30px]">
-                We&apos;re a digital production studio fueled by passion and innovation.
+                We’re a digital marketing studio that blends creativity with data-driven strategy.
               </p>
               <p className="td-section-6-text">
-                Our mission is to revolutionize creative work for companies with style
-                and substance. Work intersects in a meaningful way lifestyle, and our
-                own
+                Our mission? To help brands grow online with campaigns that captivate, convert, and leave a lasting impact.
               </p>
             </div>
           </div>
@@ -55,11 +51,8 @@ const Counter: React.FC = () => {
                 data-wow-duration="1s"
               >
                 <h3 className="count d-flex align-items-center justify-content-center">
-                  {inView ? (
-                    <CountUp end={item.count} duration={3} />
-                  ) : (
-                    0
-                  )}
+                    <CountUp end={item.count} duration={3} enableScrollSpy/>
+                  
                   {item.suffix}
                 </h3>
                 <span

@@ -1,11 +1,12 @@
-"use client"
+"use client";
 
 import Image from "next/image";
-import Brands from "../shared/Brands";
-import type { Swiper as SwiperType } from "swiper/types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs } from "swiper/modules";
-import { useRef } from "react";
+import { useState } from "react";
+import Brands from "@/components/shared/Brands";
+import type { Swiper as SwiperType } from "swiper/types";
+import { testimonialsData } from "@/utils/fakeData/testimonialsData";
 
 const testimonialData = {
   sectionSubtitle: "OUR SUITABLE PRICING PLANS",
@@ -33,9 +34,11 @@ const testimonialData = {
       name: "Robert T.",
     },
   ],
-  thumbs: ["/images/index-6/testimonial-author-1.png", 
-    "/images/index-6/testimonial-author-1.png", 
-    "/images/index-6/testimonial-author-1.png"],
+  thumbs: [
+    "/images/service-details/digital-marketing-service/testimonial-author-1.png",
+    "/images/service-details/digital-marketing-service/testimonial-author-2.png",
+    "/images/service-details/digital-marketing-service/testimonial-author-3.png",
+  ],
   brands: [
     "logo.png",
     "logo-2.png",
@@ -49,12 +52,12 @@ const testimonialData = {
 };
 
 const Testimonial: React.FC = () => {
-const thumbsRef = useRef<SwiperType | null>(null);
-    return (
-        <div className="td-testimonial-area pb-[100px] td-testimonial-6-bg p-5 md:p-0">
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+
+  return (
+    <div className="td-testimonial-area pb-[100px] td-testimonial-6-bg p-5 md:p-0">
       <div className="container w-[90%] mx-auto pt-[155px]">
         <div className="grid grid-cols-12">
-          {/* LEFT SIDE - Text & Testimonials */}
           <div className="col-span-12 lg:col-span-8">
             <div className="td-testimonial-6-wrap">
               <div className="td-testimonial-6-title-wrap mb-[55px] text-left">
@@ -64,16 +67,16 @@ const thumbsRef = useRef<SwiperType | null>(null);
                 <h2 className="title">{testimonialData.sectionTitle}</h2>
               </div>
 
-              {/* Swiper for testimonial text */}
+              {/* MAIN TESTIMONIAL SWIPER */}
               <Swiper
                 modules={[Navigation, Thumbs]}
-              thumbs={{ swiper: thumbsRef.current }}
+                thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
                 className="td-testimonial-6-content-active"
               >
-                {testimonialData.testimonials.map((item, index) => (
+                {testimonialsData.map((item, index) => (
                   <SwiperSlide key={index}>
                     <div className="td-testimonial-6-text">
-                      <p className="mb-40">{item.text}</p>
+                      <p className="mb-40">{item.review}</p>
                       <div className="td-testimonial-6-author">
                         <span className="position !text-[#8bea7c]">{item.position}</span>
                         <h6 className="name">{item.name}</h6>
@@ -85,27 +88,26 @@ const thumbsRef = useRef<SwiperType | null>(null);
             </div>
           </div>
 
-          {/* RIGHT SIDE - Thumbnail Slider */}
+          {/* THUMBNAIL SWIPER */}
           <div className="col-span-12 lg:col-span-4 flex justify-end lg:justify-center items-end mr-[115px] lg:mr-0">
             <div className="td-testimonial-6-slider">
               <Swiper
                 modules={[Navigation, Thumbs]}
-                navigation
-                onSwiper={(s) => { thumbsRef.current = s; }} // store instance in ref
-              watchSlidesProgress
+                onSwiper={setThumbsSwiper} // <-- set the thumbs swiper instance
+                watchSlidesProgress
                 slidesPerView={3}
                 spaceBetween={10}
                 className="td-testimonial-6-thumb-active"
               >
                 {testimonialData.thumbs.map((img, index) => (
                   <SwiperSlide key={index}>
-                    <div className="td-testimonial-bottom-thumb">
+                    <div className="td-testimonial-bottom-thumb cursor-pointer">
                       <Image
-                        src={`${img}`}
+                        src={img}
                         alt={`testimonial-thumb-${index}`}
                         width={200}
                         height={200}
-                        className="w-auto h-auto"
+                        className="w-auto h-auto rounded-full"
                       />
                     </div>
                   </SwiperSlide>
@@ -123,7 +125,7 @@ const thumbsRef = useRef<SwiperType | null>(null);
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Testimonial;

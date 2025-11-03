@@ -1,9 +1,9 @@
 type DataType = {
     id: number,
-    img: string,
+    img?: string,
     name: string,
     review: string,
-    position: string
+    position?: string
 }[]
 
 export const testimonialsData: DataType = [

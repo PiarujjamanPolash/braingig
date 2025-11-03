@@ -1,9 +1,10 @@
 "use client"
-import { faqData } from "@/utils/fakeData/faqData";
 import { useRef, useState } from "react";
-
-const Accordion: React.FC = () => {
-    const [openId, setOpenId] = useState<string | null>(faqData[1].id);
+interface AccordionProps {
+    data: { id: string; question: string; ans: string }[];
+}
+const Accordion: React.FC<AccordionProps> = ({ data }) => {
+    const [openId, setOpenId] = useState<string | null>(data[1].id);
     const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
     const toggleFAQ = (id: string) => {
         setOpenId(openId === id ? null : id);
@@ -12,7 +13,7 @@ const Accordion: React.FC = () => {
     return (
         <div className="td-faq-4-accordion">
             <div className="accordion">
-                {faqData.map((item, index) => {
+                {data.map((item, index) => {
                     const isOpen = openId === item.id;
                     return (
                         <div key={item.id} className="accordion-items border-b border-gray-200">

@@ -4,8 +4,16 @@ import Image from "next/image";
 import thumb from "../../../public/images/service-details/faq-thumb.webp"
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+type FAQItem = {
+    id: string;
+    question: string;
+    ans: string;
+};
 
-const FAQ: React.FC = () => {
+interface FAQProps {
+    data: FAQItem[];
+}
+const FAQ: React.FC<FAQProps> = ({ data }) => {
     const pathname = usePathname();
     return (
         <div className="w-[90%] mx-auto mb-[80px]">
@@ -33,7 +41,7 @@ const FAQ: React.FC = () => {
                                 <h2 className="td-testimonial-title mb-5 td-text-invert">
                                     Frequently asked <span>questions</span>
                                 </h2>
-                                <Accordion />
+                                <Accordion data={data}/>
                             </div>
                         </div>
                     </div>

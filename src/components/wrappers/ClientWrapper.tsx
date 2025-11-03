@@ -26,7 +26,7 @@ const ClientWrapper = ({ children }: { children: React.ReactNode }) => {
         ignoreMobileResize: true,
       });
       const handleRouteChange = () => {
-        smoother.scrollTo(0, true); // Use smoother's own method to scroll to top
+        smoother.scrollTo(0, true); 
       };
       return () => {
         smoother.kill();
