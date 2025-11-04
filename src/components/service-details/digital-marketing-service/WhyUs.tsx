@@ -29,12 +29,12 @@ const projects = [
         image: "/images/service-details/digital-marketing-service/P2.png",
         strategy: [
             { icon: <FaRegClock />, text: "3 Months Ongoing" },
-            { icon: <FaRegFileAlt />, text: "Blogs" },
-            { icon: <FaLink />, text: "Off-Page SEO" },
+            // { icon: <FaRegFileAlt />, text: "Blogs" },
+            { icon: <FaLink />, text: "blogs + off-page SEO." },
         ],
         results: {
             clicks: { start: 158, end: 608 },
-            impressions: { start: 3830, end: 27900 }, // converted K to number
+            impressions: { start: 3830, end: 27900 },
             avgPosition: { start: 41.8, end: 28.3, gain: 13.5 },
             ctr: { start: 0, end: 2.2 },
             keywords: { start: 0, end: 1248 },
@@ -68,9 +68,9 @@ const WhyUs = () => {
 
             <div className="td-service-pin-items">
                 {projects.map((project) => (
-                <div key={project.id} className="grid grid-cols-1 lg:grid-cols-12 gap-y-4 lg:gap-8 items-center mb-20 td-service-pin-item-panel bg-white">
+                <div key={project.id} className="grid grid-cols-1 xl:grid-cols-12 gap-y-4 xl:gap-8 items-start mb-20 td-service-pin-item-panel bg-white">
 
-                    <div className="md:col-span-8">
+                    <div className="xl:col-span-8">
                         <div className="w-full h-full rounded-lg overflow-hidden bg-white">
                             <Image
                                 src={project.image}
@@ -82,10 +82,10 @@ const WhyUs = () => {
                         </div>
                     </div>
 
-                    <div className="md:col-span-4 flex flex-col md:flex-row lg:flex-col gap-3 lg:gap-8 bg-white">
+                    <div className="xl:col-span-4 flex flex-col md:flex-row xl:flex-col gap-3 xl:gap-8 bg-white">
 
                         {/* Strategy Overview */}
-                        <div className="shadow-md rounded-lg p-6 lg:mr-5 md:w-1/2 lg:w-full">
+                        <div className="shadow-md rounded-lg p-6 xl:mr-5 md:w-1/2 lg:w-full">
                             <h2 className="!text-3xl font-bold mb-4 text-gray-800">Strategy Overview</h2>
                             <div className="flex flex-wrap gap-3 text-gray-700">
                                 {project.strategy.map((item, idx) => (
@@ -97,10 +97,10 @@ const WhyUs = () => {
                         </div>
 
                         {/* Results & Performance */}
-                        <div className="bg-white shadow-md rounded-lg p-6 lg:mr-5 md:w-1/2 lg:w-full">
+                        <div className="bg-white shadow-md rounded-lg p-6 xl:mr-5 md:w-1/2 lg:w-full">
                             <h2 className="!text-3xl font-bold mb-6 text-gray-800">Results & Performance</h2>
                             <div className="space-y-5">
-                                <div className="flex justify-start lg:justify-between items-center gap-3 lg:gap-0">
+                                <div className="flex justify-start xl:justify-between items-center gap-3 xl:gap-0">
                                     <span className="text-gray-600">Clicks:</span>
                                     <span className="text-green-600 font-semibold">
                                         <span className="text-gray-500 mr-2">{project.results.clicks.start} →</span>
