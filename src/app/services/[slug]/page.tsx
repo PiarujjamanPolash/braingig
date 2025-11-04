@@ -33,6 +33,7 @@ import { digitalMarketingFaq } from "@/utils/fakeData/digitalMarketingFaq";
 import Testimonial from "@/components/service-details/digital-marketing-service/Testimonial";
 import Team from "@/components/service-details/digital-marketing-service/Team";
 import Counter from "@/components/service-details/digital-marketing-service/Counter";
+import PricingArea from "@/components/service-details/digital-marketing-service/PricingArea";
 export async function generateStaticParams() {
     return servicesData.map(service => ({
         slug: service.slug,
@@ -72,8 +73,8 @@ const ServicesPage = async ({
                 <RecentWorks />
                 <CTA />
                 <Process />
-                {/* <PricingArea /> */}
                 <Testimonial />
+                <PricingArea />
                 <Team />
                 <Counter />
                 <FAQ data={digitalMarketingFaq} />

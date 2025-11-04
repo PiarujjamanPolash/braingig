@@ -1668,7 +1668,7 @@ textarea {
 .td-section-6-bigtitle {
   font-family: var(--td-ff-rethink);
   font-weight: 800;
-  font-size: 70px;
+  font-size: 100px;
   line-height: 1;
   color: var(--td-theme-3);
 }
@@ -9447,14 +9447,14 @@ textarea {
   }
 }
 .td-pricing-6-list ul li {
-  font-weight: 500;
-  font-size: 17px;
+  /* font-weight: 500; */
+  font-size: 14px;
   color: var(--td-grey-5);
   position: relative;
   padding-left: 20px;
 }
 .td-pricing-6-list ul li:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .td-pricing-6-list ul li::before {
   position: absolute;
