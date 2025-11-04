@@ -34,6 +34,8 @@ const Hero: React.FC = () => {
                   />{" "}
                   Makes <span>Your Dream </span>Work.
                 </h2>
+                <p className="!text-2xl w-[80%] mt-5">Brain Gig, As a premier web design and development agency creating conversion-focused websites. From custom development to ongoing website maintenance services, we handle everything.
+                </p>
               </div>
             </div>
 

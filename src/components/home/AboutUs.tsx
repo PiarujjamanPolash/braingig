@@ -36,9 +36,7 @@ const AboutUs: React.FC = () => {
                 Grow your brand with <span className="inline-block">BrainGig</span>
               </h2>
               <p className="mb-[45px]">
-                We are a visionary marketing and web design agency known for pushing boundaries. Our passion lies in blending innovation with strategy, delivering professional website design and custom website development 
-                that sparks growth and leaves lasting impressions. As a premier web design and development agency creating 
-                conversion-focused websites. From custom development to ongoing website maintenance services, we handle everything.
+                Grow your brand with Brain Gig, a visionary digital marketing agency and web design agency known for pushing boundaries. Our passion lies in blending innovation with strategy, delivering professional website design and custom website development that sparks growth and leaves lasting impressions.
               </p>
 
               {/* Button Group */}

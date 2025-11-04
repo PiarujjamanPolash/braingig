@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 
-const slides = [
+const Images = [
     "/images/service-details/digital-marketing-service/on-page-seo.jpg",
     "/images/service-details/digital-marketing-service/slider-2.webp",
     "/images/service-details/digital-marketing-service/slider-3.jpg",
@@ -15,28 +15,34 @@ const slides = [
     "/images/service-details/digital-marketing-service/slider-8.jpg",
     "/images/service-details/digital-marketing-service/slider-9.jpg",
 ];
+const tags = [
+    { id: "service-1", label: "(SEO)" },
+    { id: "service-2", label: "(Authority)" },
+    { id: "service-4", label: "(Creatives)" },
+    { id: "service-5", label: "(Content Funnel)" },
+];
 
 const handleScrollToService = (id: string) => {
-  const services = document.querySelectorAll(".td-service-6-item")
-  services.forEach(service => {
+    const services = document.querySelectorAll(".td-service-6-item")
+    services.forEach(service => {
         service.classList.remove("highlight-service");
-  });
-  const section = document.getElementById(id);
-  if (section) {
-    const headerOffset = 120;
-    const elementPosition = section.getBoundingClientRect().top + window.pageYOffset;
-    const offsetPosition = elementPosition - headerOffset;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
     });
+    const section = document.getElementById(id);
+    if (section) {
+        const headerOffset = 120;
+        const elementPosition = section.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - headerOffset;
 
-    // highlight animation
-    section.classList.add("highlight-service");
-  }
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+        });
 
-  window.history.pushState(null, "", `#${id}`);
+        // highlight animation
+        section.classList.add("highlight-service");
+    }
+
+    window.history.pushState(null, "", `#${id}`);
 };
 
 
@@ -68,33 +74,54 @@ const Hero: React.FC = () => {
                         </div>
 
                         {/* Tags */}
-                        <div
-                            className="wow fadeInUp"
-                            data-wow-delay=".7s"
-                            data-wow-duration="1s"
-                        >
-                            <div className="td-hero-6-tag">
-                                <ul>
-                                    <li>
-                                        <Link onClick={(e) => { e.preventDefault(); handleScrollToService("service-1"); }} href="">(SEO)</Link>
-                                    </li>
-                                    <li>
-                                        <Link onClick={(e) => { e.preventDefault(); handleScrollToService("service-2"); }} href="">(Authority)</Link>
-                                    </li>
-                                    <li>
-                                        <Link onClick={(e) => { e.preventDefault(); handleScrollToService("service-4"); }} href="">(Creatives)</Link>
-                                    </li>
-                                    <li>
-                                        <Link onClick={(e) => { e.preventDefault(); handleScrollToService("service-5"); }} href="">(Content Funnel)</Link>
-                                    </li>
+                        <div>
+                            <div className="border-t border-white/10 pt-6">
+                                {/* Show in md+ device */}
+                                <ul className="hidden md:flex flex-wrap justify-around pt-6">
+                                    {tags.map((tag) => (
+                                        <li key={tag.id}>
+                                            <Link
+                                                href="#"
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    handleScrollToService(tag.id);
+                                                }}
+                                                className="font-medium text-[20px] !text-white inline-block px-5 py-2.5"
+                                            >
+                                                {tag.label}
+                                            </Link>
+                                        </li>
+                                    ))}
                                 </ul>
+
+                                {/* Only show in small device */}
+                                <div className="block md:hidden pt-6">
+                                    <Marquee gradient={false} speed={40}>
+                                        <ul className="flex gap-6">
+                                            {tags.map((tag) => (
+                                                <li key={tag.id}>
+                                                    <Link
+                                                        href="#"
+                                                        onClick={(e) => {
+                                                            e.preventDefault();
+                                                            handleScrollToService(tag.id);
+                                                        }}
+                                                        className="font-medium text-[20px] !text-white inline-block px-5 py-2.5"
+                                                    >
+                                                        {tag.label}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </Marquee>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Swiper Slider */}
+            {/* Image Marquee */}
             <div
                 className="container-fluid container-1680 wow fadeInUp"
                 data-wow-delay=".9s"
@@ -103,10 +130,10 @@ const Hero: React.FC = () => {
                 <div className="">
                     <Marquee gradient={false} speed={50}>
                         <div className="flex items-start">
-                            {slides.map((src, i) => (
+                            {Images.map((img, i) => (
                                 <div key={i} className="td-hero-6-thumb mx-5">
                                     <Image
-                                        src={src}
+                                        src={img}
                                         alt={`Slide ${i + 1}`}
                                         width={304}
                                         height={390}

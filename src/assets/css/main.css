@@ -4443,7 +4443,7 @@ textarea {
     margin-left: 0;
   }
 }
-.td-hero-6-tag {
+/* .td-hero-6-tag {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 .td-hero-6-tag ul {
@@ -4458,7 +4458,7 @@ textarea {
   color: var(--td-common-white);
   padding: 10px 20px;
   display: inline-block;
-}
+} */
 .td-hero-6-slider .swiper-slide {
   width: auto;
 }
