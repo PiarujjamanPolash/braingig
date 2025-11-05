@@ -1668,29 +1668,29 @@ textarea {
 .td-section-6-bigtitle {
   font-family: var(--td-ff-rethink);
   font-weight: 800;
-  font-size: 100px;
+  /* font-size: 100px; */
   line-height: 1;
   color: var(--td-theme-3);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .td-section-6-bigtitle {
+  /* .td-section-6-bigtitle {
     font-size: 50px;
-  }
+  } */
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
-  .td-section-6-bigtitle {
+  /* .td-section-6-bigtitle {
     font-size: 50px;
-  }
+  } */
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .td-section-6-bigtitle {
+  /* .td-section-6-bigtitle {
     font-size: 50px;
-  }
+  } */
 }
 @media (max-width: 575px) {
-  .td-section-6-bigtitle {
+  /* .td-section-6-bigtitle {
     font-size: 50px;
-  }
+  } */
 }
 .td-section-7-title {
   font-family: var(--td-ff-bellefair);
@@ -4856,7 +4856,7 @@ textarea {
 .td-about-6-author-single h2 {
   font-family: var(--td-ff-rethink);
   font-weight: 700;
-  font-size: 70px;
+  /* font-size: 70px; */
   line-height: 1;
   letter-spacing: -0.04em;
   color: var(--td-theme-3);
@@ -7768,13 +7768,13 @@ textarea {
 .td-portfolio-2-bigtitle {
   font-family: var(--td-ff-dm-sans);
   font-weight: 700;
-  font-size: 400px;
+  font-size: 240px;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
   color: rgba(10, 17, 25, 0.15);
   margin-bottom: -90px;
-  line-height: 0.7;
+  /* line-height: -0.1; */
 }
 .td-services-project-bigtitle {       /* NEW ADDED */
   font-family: var(--td-ff-dm-sans);
@@ -7789,18 +7789,19 @@ textarea {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .td-portfolio-2-bigtitle {
-    font-size: 200px;
+    font-size: 150px;
     margin-bottom: 0px;
+      line-height: 0.5;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .td-portfolio-2-bigtitle {
-    font-size: 150px;
+    font-size: 100px;
   }
 }
 @media (max-width: 575px) {
   .td-portfolio-2-bigtitle {
-    font-size: 110px;
+    font-size: 70px;
   }
 }
 .td-portfolio-3-bg {
@@ -8118,8 +8119,8 @@ textarea {
   -webkit-text-stroke-color: rgba(6, 50, 49, 0.3);
   -webkit-text-stroke-width: 2px;
   position: absolute;
-  top: -125px;
-  left: 0;
+  top: -110px;
+  left: -70;
   z-index: -1;
   transition: all 0.4s ease;
 }
@@ -8127,8 +8128,17 @@ textarea {
   .td-portfolio-6-transparent {
     font-size: 90px;
     top: -70px;
+    left: 0;
   }
 }
+@media (min-width: 576px) and (max-width: 1140px) {
+  .td-portfolio-6-transparent {
+    font-size: 120px;
+    top: -90px;
+    left: -20px;
+  }
+}
+
 .td-portfolio-6-btn {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 40px;
@@ -9412,7 +9422,7 @@ textarea {
 }
 .td-pricing-6-wrap .price {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: -0.01em;
   color: var(--td-theme-3);
 }
@@ -9437,6 +9447,7 @@ textarea {
 .td-pricing-6-wrap .price-btn:hover {
   border-color: var(--td-common-green-2);
   background: var(--td-common-green-2);
+  color: white;
 }
 .td-pricing-6-list {
   padding: 30px 40px 40px 50px;
@@ -9468,7 +9479,7 @@ textarea {
   left: 0;
 }
 .td-pricing-6-top {
-  padding: 45px 80px 40px 50px;
+  padding: 45px 60px 30px 30px;
   border-bottom: 1px solid rgba(6, 50, 49, 0.15);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -9478,7 +9489,7 @@ textarea {
 }
 @media (max-width: 575px) {
   .td-pricing-6-top {
-    padding: 25px 20px 20px 20px;
+    padding: 50px 20px 20px 20px;
   }
 }
 .td-pricing-main-wrap .td-pricing-6-wrap .price {

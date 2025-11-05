@@ -6,19 +6,21 @@ type BrandsProps = {
     customClass?: string;
 };
 const Brands = ({ customClass = "p-10" }: BrandsProps) => {
+    const doubledclientLogoData = [...clientLogoData, ...clientLogoData];
+
     return (
         <div className={`w-full overflow-hidden ${customClass}`}>
             <Marquee gradient={false} speed={50}>
-                {clientLogoData.map(({ id, img, isLight }) => (
+                {doubledclientLogoData.map(({ id, img, isLight }) => (
                     <Image width={110} height={44}
                         key={id}
                         src={img}
                         alt="company logo"
                         className={`w-56 sm:w-44 mx-4 object-contain ${id === 2
-                                ? "mix-blend-difference"
-                                : isLight
-                                    ? "filter brightness-[60%]"
-                                    : ""
+                            ? "mix-blend-difference"
+                            : isLight
+                                ? "filter brightness-[60%]"
+                                : ""
                             }`}
                     />
                 ))}

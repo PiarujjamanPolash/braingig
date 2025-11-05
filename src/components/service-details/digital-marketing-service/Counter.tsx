@@ -14,7 +14,7 @@ const Counter: React.FC = () => {
   // const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
 
   return (
-    <div className="td-counter-area pt-[155px] pb-[140px] px-5 md:px-0">
+    <div className="td-counter-area py-20 lg:py-[120px] px-5 md:px-0">
       <div className="container w-[90%] mx-auto">
         <div className="row align-items-end mb-[70px] flex flex-wrap">
           <div className="col-lg-8 w-full lg:w-8/12">

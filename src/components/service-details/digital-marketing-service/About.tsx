@@ -1,12 +1,11 @@
 "use client"
-
 import Image from "next/image";
-const About: React.FC = () => {
 
+const About: React.FC = () => {
     return (
-        <div className="td-about-area pt-[140px] pb-[125px] px-5 md:px-0">
+        <section className="td-about-area py-20 lg:pt-[140px] lg:pb-[125px] px-5 md:px-0">
             <div className="container w-[90%] mx-auto">
-                <div className="row">
+                <div className="">
                     <div className="grid grid-cols-1 lg:grid-cols-12">
                         {/* WHO WE ARE */}
                         <div className="col-span-5">
@@ -30,12 +29,12 @@ const About: React.FC = () => {
 
 
                     {/* Author Section */}
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
                         {/* Left Image */}
                         <div className="col-span-6">
                             <div className="flex justify-center td-about-6-thumb relative z-[1] mb-[30px]">
                                 <Image
-                                    className="shape td-live-anim-spin hidden lg:inline-block"
+                                    className="shape td-live-anim-spin hidden lg:block"
                                     src="/images/service-details/digital-marketing-service/about-shape-1.png"
                                     alt="shape"
                                     width={140}
@@ -52,49 +51,39 @@ const About: React.FC = () => {
                         </div>
 
                         <div className="col-span-6">
-                            <div className="td-about-6-author mb-[30px]">
-                            <div className="td-about-6-author-top mb-[40px]">
-                                <Image
-                                    className="mb-[25px]"
-                                    src="/images/service-details/digital-marketing-service/about-img-2.png"
-                                    alt="author avatar"
-                                    width={177}
-                                    height={60}
-                                />
-                                <p className="w-[80%] mb-[25px]">
-                                    With passion and purpose, we deliver marketing solutions that make your brand shine.
-                                </p>
-                            </div>
+                            <div className="td-about-6-author">
+                                <div className="hidden md:block td-about-6-author-top mb-[40px]">
+                                    <Image
+                                        className="mb-[25px]"
+                                        src="/images/service-details/digital-marketing-service/about-img-2.png"
+                                        alt="author avatar"
+                                        width={177}
+                                        height={60}
+                                    />
+                                    <p className="w-[80%] mb-[25px]">
+                                        With passion and purpose, we deliver marketing solutions that make your brand shine.
+                                    </p>
+                                </div>
 
-                            <div className="td-about-6-author-count">
-                                <div className="flex flex-col md:flex-row gap-10">
-                                    <div className="">
-                                        <div className="td-about-6-author-single">
+                                <div className="td-about-6-author-count">
+                                    <div className="flex items-center justify-center md:justify-start gap-5 lg:gap-10">
+                                        <div className="td-about-6-author-single text-center md:text-start">
                                             <h2 className="mb-[10px]">100%</h2>
-                                            <p>
-                                                Clients Satisfied and
-                                                <br /> Repeating
-                                            </p>
+                                            <p className="!text-sm md:!text-xl !mb-0">Clients Satisfied and Repeating</p>
                                         </div>
-                                    </div>
-
-                                    <div className="">
-                                        <div className="td-about-6-author-single">
+                                        <div className="td-about-6-author-single text-center md:text-start">
                                             <h2 className="mb-[10px]">125+</h2>
-                                            <p>
-                                                Projects Completed in
-                                                <br /> 24 Countries
+                                            <p className="!text-sm md:!text-xl !mb-0">Projects Completed in 24 Countries
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

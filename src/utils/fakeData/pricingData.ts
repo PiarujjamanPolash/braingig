@@ -97,7 +97,7 @@ export const pricingData = [
     category: "Off-Page",
     package: "Off-Page SEO & Guest Posting (Monthly)",
     price: "Starter — $120/mo",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn",
     sections: [
       {
@@ -117,7 +117,7 @@ export const pricingData = [
     package: "Off-Page SEO & Guest Posting (Monthly)",
     price: "Growth — $200/mo",
     tag: "Most Popular",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn greens !text-black",
     sections: [
       {
@@ -140,7 +140,7 @@ export const pricingData = [
     category: "Off-Page",
     package: "Off-Page SEO & Guest Posting (Monthly)",
     price: "Pro — $300/mo",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn",
     sections: [
       {
@@ -166,7 +166,7 @@ export const pricingData = [
     category: "Ads",
     package: "Social Media Ads & Creative (FB/IG)",
     price: "Starter — $50/mo",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn",
     sections: [
       {
@@ -189,7 +189,7 @@ export const pricingData = [
     category: "Ads",
     package: "Social Media Ads & Creative (FB/IG)",
     price: "Growth — $110/mo",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn greens !text-black",
     sections: [
       {
@@ -213,7 +213,7 @@ export const pricingData = [
     package: "Social Media Ads & Creative (FB/IG)",
     price: "Pro — $150/mo",
     tag: "Most Popular",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn",
     sections: [
       {
@@ -238,7 +238,7 @@ export const pricingData = [
     category: "Social",
     package: "Social Media Creatives",
     price: "Starter — $100/mo",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn",
     sections: [
       {
@@ -256,7 +256,7 @@ export const pricingData = [
     package: "Social Media Creatives",
     price: "Growth — $200/mo",
     tag: "Most Popular",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn greens !text-black",
     sections: [
       {
@@ -276,7 +276,7 @@ export const pricingData = [
     category: "Social",
     package: "Social Media Creatives",
     price: "Pro — $400/mo",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn",
     sections: [
       {
@@ -299,7 +299,7 @@ export const pricingData = [
     category: "Blogs",
     package: "SEO Blogs (Content + Optimization)",
     price: "Starter — $120/mo",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn",
     sections: [
       {
@@ -321,7 +321,7 @@ export const pricingData = [
     package: "SEO Blogs (Content + Optimization)",
     price: "Growth — $240/mo",
     tag: "Most Popular",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn greens !text-black",
     sections: [
       {
@@ -342,7 +342,7 @@ export const pricingData = [
     category: "Blogs",
     package: "SEO Blogs (Content + Optimization)",
     price: "Pro — $360/mo",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn",
     sections: [
       {
@@ -368,7 +368,7 @@ export const pricingData = [
     category: "Bundles",
     package: "Bundled Monthly Plans (Mixed Services)",
     price: "Starter Growth Kit — $480/mo",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn",
     sections: [
       {
@@ -399,7 +399,7 @@ export const pricingData = [
     package: "Bundled Monthly Plans (Mixed Services)",
     price: "Performance Plan — $850/mo",
     tag: "Most Popular",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn greens !text-black",
     sections: [
       {
@@ -428,7 +428,7 @@ export const pricingData = [
     category: "Bundles",
     package: "Bundled Monthly Plans (Mixed Services)",
     price: "Scale Plan — $1,350/mo",
-    duration: "monthly",
+    // duration: "monthly",
     buttonClass: "price-btn",
     sections: [
       {

@@ -5,24 +5,24 @@ import React, { useRef, useState } from 'react';
 
 const WhatYouGet = () => {
     const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
-const [openId, setOpenId] = useState<number | null>(null);
+    const [openId, setOpenId] = useState<number | null>(null);
 
     const toggleAccordion = (id: number) => {
         setOpenId(openId === id ? null : id);
     };
     return (
-        <div className="td-service-6-area w-[90%] mx-auto mb-[120px]">
+        <section className="td-service-6-area w-[90%] mx-auto ">
             <div className="container mx-auto px-3 sm:px-4 lg:px-6">
                 <div className="flex flex-wrap items-end">
 
-                    <div className="flex flex-wrap lg:flex-nowrap justify-center items-center w-full">
-                        <div className="td-service-6-title-wrap lg:w-8/12 w-full mb-6 lg:mb-0">
-                            <span className="td-section-6-subtitle mb-20 d-inline-block uppercase">What you get</span>
-                            <h2 className="td-section-6-bigtitle td-text-opacity">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 justify-center items-center w-full">
+                        <div className="td-service-6-title-wrap lg:col-span-8 w-full mb-6 lg:mb-0">
+                            <span className="td-section-6-subtitle mb-20 uppercase">What you get</span>
+                            <h2 className="!text-[50px] lg:!text-[70px] td-text-opacity">
                                 Digital Marketing Strategy that delivers
                             </h2>
                         </div>
-                        <div className="td-service-6-title-text mr-20 lg:w-4/12 w-full">
+                        <div className="td-service-6-title-text mr-20 lg:col-span-4 w-full">
                             <p className="td-section-6-text !mb-0">
                                 Website SEO Services, Paid Advertising Services, and Social Media Management, aligned.
                             </p>
@@ -115,7 +115,7 @@ const [openId, setOpenId] = useState<number | null>(null);
 
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

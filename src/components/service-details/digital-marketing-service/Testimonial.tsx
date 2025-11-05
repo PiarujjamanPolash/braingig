@@ -2,14 +2,14 @@
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Thumbs } from "swiper/modules";
+import { Autoplay, Navigation, Thumbs } from "swiper/modules";
 import { useState } from "react";
 import Brands from "@/components/shared/Brands";
 import type { Swiper as SwiperType } from "swiper/types";
 import { testimonialsData } from "@/utils/fakeData/testimonialsData";
 
 const testimonialData = {
-  sectionSubtitle: "OUR SUITABLE PRICING PLANS",
+  sectionSubtitle: "WHAT OUR CLIENTS SAY",
   sectionTitle: "CLIENTS FEEDBACK",
   testimonials: [
     {
@@ -55,41 +55,55 @@ const Testimonial: React.FC = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
   return (
-    <div className="td-testimonial-area pb-[100px] td-testimonial-6-bg p-5 md:p-0">
-      <div className="container w-[90%] mx-auto pt-[155px]">
-        <div className="grid grid-cols-12">
-          <div className="col-span-12 lg:col-span-8">
-            <div className="td-testimonial-6-wrap">
-              <div className="td-testimonial-6-title-wrap mb-[55px] text-left">
-                <span className="td-section-6-subtitle !text-[#8bea7c] inline-block mb-[15px]">
-                  {testimonialData.sectionSubtitle}
-                </span>
-                <h2 className="title">{testimonialData.sectionTitle}</h2>
-              </div>
+    <div className="td-testimonial-area pb-10 lg:pb-[100px] td-testimonial-6-bg p-5 md:p-0">
+      <div className="container w-[90%] mx-auto pt-20 lg:pt-[155px]">
 
-              {/* MAIN TESTIMONIAL SWIPER */}
-              <Swiper
-                modules={[Navigation, Thumbs]}
-                thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
-                className="td-testimonial-6-content-active"
-              >
-                {testimonialsData.map((item, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="td-testimonial-6-text">
-                      <p className="mb-40">{item.review}</p>
-                      <div className="td-testimonial-6-author">
-                        <span className="position !text-[#8bea7c]">{item.position}</span>
-                        <h6 className="name">{item.name}</h6>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+        <div className="td-testimonial-6-wrap">
+          <div className="td-testimonial-6-title-wrap mb-[55px] text-left">
+            <span className="td-section-6-subtitle !text-[#8bea7c] inline-block mb-[15px]">
+              {testimonialData.sectionSubtitle}
+            </span>
+            <h2 className="title">{testimonialData.sectionTitle}</h2>
           </div>
 
-          {/* THUMBNAIL SWIPER */}
-          <div className="col-span-12 lg:col-span-4 flex justify-end lg:justify-center items-end mr-[115px] lg:mr-0">
+          {/* MAIN TESTIMONIAL SWIPER */}
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
+            loop
+            slidesPerView={1}
+            breakpoints={{
+              0: {                
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              768: {              
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+            }}
+            spaceBetween={20}
+            className="td-testimonial-6-content-active"
+          >
+            {testimonialsData.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="td-testimonial-6-text">
+                  <div>
+                    <p className="mb-40">{item.review}</p>
+                    <div className="td-testimonial-6-author">
+                      <span className="position !text-[#8bea7c]">{item.position}</span>
+                      <h6 className="name">{item.name}</h6>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+
+      {/* THUMBNAIL SWIPER */}
+      {/* <div className="col-span-12 lg:col-span-4 flex justify-end lg:justify-center items-end mr-[115px] lg:mr-0">
             <div className="td-testimonial-6-slider">
               <Swiper
                 modules={[Navigation, Thumbs]}
@@ -114,15 +128,12 @@ const Testimonial: React.FC = () => {
                 ))}
               </Swiper>
             </div>
-          </div>
-        </div>
-      </div>
+          </div> */}
+
 
       {/* BRAND SLIDER */}
       <div className="pt-[70px]">
-        <div className="container-fluid container-1650">
           <Brands />
-        </div>
       </div>
     </div>
   );

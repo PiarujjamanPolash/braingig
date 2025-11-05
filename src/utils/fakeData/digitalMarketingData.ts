@@ -1,3 +1,26 @@
+import { FaRegFileAlt } from 'react-icons/fa';
+import { FaLink } from 'react-icons/fa6';
+import { FaRegClock } from 'react-icons/fa';
+import { FaSearch, FaLightbulb, FaRocket, FaChartLine, FaExpand } from 'react-icons/fa';
+
+export const imagesData = [
+    "/images/service-details/digital-marketing-service/on-page-seo.jpg",
+    "/images/service-details/digital-marketing-service/slider-2.webp",
+    "/images/service-details/digital-marketing-service/slider-3.jpg",
+    "/images/service-details/digital-marketing-service/slider-4.jpg",
+    "/images/service-details/digital-marketing-service/slider-5.jpg",
+    "/images/service-details/digital-marketing-service/slider-6.jpg",
+    "/images/service-details/digital-marketing-service/slider-7.jpg",
+    "/images/service-details/digital-marketing-service/slider-8.jpg",
+    "/images/service-details/digital-marketing-service/slider-9.jpg",
+];
+export const tagsData = [
+    { id: "service-1", label: "(SEO)" },
+    { id: "service-2", label: "(Authority)" },
+    { id: "service-3", label: "(Ads)" },
+    { id: "service-4", label: "(Creatives)" },
+    { id: "service-5", label: "(Content Funnel)" },
+];
 export const digitalMarketingData = [
   { 
     id: 1,
@@ -59,4 +82,66 @@ export const digitalMarketingData = [
       { title: "Accountable & Scalable:", text: "Transparent reporting keeps your <strong>Digital Marketing Services</strong> measurable and built to scale." }
     ]
   }
+];
+
+export const projectsData = [
+    {
+        id: 1,
+        title: "Project 1",
+        image: "/images/service-details/digital-marketing-service/P1.png",
+        strategy: [
+            { icon: FaRegClock, text: "5 Months" },
+            { icon: FaRegFileAlt, text: "45 Blogs" },
+            { icon: FaLink, text: "On-Page + Off-Page SEO" },
+        ],
+        results: {
+            clicks: { start: 63, end: 5460 },
+            impressions: { start: 912, end: 91100 },
+            avgPosition: { start: 38, end: 20.3, gain: 17.7 },
+            ctr: { start: 0, end: 6 },
+            keywords: { start: 0, end: 1036 },
+        }
+    },
+    {
+        id: 2,
+        title: "Project 2",
+        image: "/images/service-details/digital-marketing-service/P2.png",
+        strategy: [
+            { icon: FaRegClock, text: "3 Months Ongoing" },
+            // { icon: <FaRegFileAlt />, text: "Blogs" },
+            { icon: FaLink, text: "blogs + off-page SEO." },
+        ],
+        results: {
+            clicks: { start: 158, end: 608 },
+            impressions: { start: 3830, end: 27900 },
+            avgPosition: { start: 41.8, end: 28.3, gain: 13.5 },
+            ctr: { start: 0, end: 2.2 },
+            keywords: { start: 0, end: 1248 },
+        }
+    },
+    {
+        id: 3,
+        title: "Project 3",
+        image: "/images/service-details/digital-marketing-service/P3.png",
+        strategy: [
+            { icon: FaRegClock, text: "1 Month" },
+            { icon: FaRegFileAlt, text: "8 Blogs" },
+            { icon: FaLink, text: "Basic + Technical SEO" },
+        ],
+        results: {
+            clicks: { start: 61, end: 113 },
+            impressions: { start: 4900, end: 10200 },
+            avgPosition: { start: 57.9, end: 51.2, gain: 6.7 },
+            ctr: { start: 0, end: 1.1 },
+            keywords: { start: 0, end: 388 },
+        }
+    }
+];
+
+export const processData = [
+  { icon: FaSearch, title: 'Audit' },
+  { icon: FaLightbulb, title: 'Strategy & Plan' },
+  { icon: FaRocket, title: 'Create & Launch' },
+  { icon: FaChartLine, title: 'Measure & Optimize' },
+  { icon: FaExpand, title: 'Scale' },
 ];
