@@ -7,7 +7,9 @@ import { FiMinus, FiPlus } from "react-icons/fi";
 import PricingCard from "./PricingCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 const PricingArea: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState("Bundles");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -26,10 +28,10 @@ const PricingArea: React.FC = () => {
       <div className="">
         <div className="flex justify-center">
           <div className="flex flex-col items-center text-center mb-[65px]">
-            <span className="td-section-6-subtitle mb-[15px]">
+            {/* <span className="td-section-6-subtitle mb-[15px]">
               OUR SUITABLE PRICING PLANS
-            </span>
-            <h2 className="!text-[50px] td-text-invert">
+            </span> */}
+            <h2 className="!text-[50px] td-text-invert-orange">
               CUSTOMIZABLE PRICING OPTIONS
             </h2>
           </div>
@@ -61,21 +63,18 @@ const PricingArea: React.FC = () => {
           {filteredData.map((item, idx) => (
             <PricingCard key={idx} item={item} idx={idx} />
           ))}
-        </div>
-        <div className="container w-[90%] mx-auto xl:hidden">
-          <Swiper
-          modules={[Navigation, Pagination]}
+        </div> 
+        <div className="container w-full lg:w-[90%] mx-auto xl:hidden">
+          <Swiper id="pricing-swiper"
+           modules={[Navigation, Pagination ]}
             spaceBetween={20}
-            slidesPerView={1}
+            slidesPerView={1.2}
+            navigation
             pagination={{ clickable: true }}
-            navigation={{
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    }}
             breakpoints={{
               0: { slidesPerView: 1 },
-              640: { slidesPerView: 1 },
-              1024: { slidesPerView: 2 },
+              640: { slidesPerView: 1.2 },
+              1024: { slidesPerView: 2.2 },
             }}
           >
             {filteredData.map((item, idx) => (
@@ -86,7 +85,7 @@ const PricingArea: React.FC = () => {
           </Swiper>
         </div>
 
-        <div className="container w-[90%] mx-auto lg:mt-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-y-8">
+        <div className="container w-[90%] mx-auto lg:mt-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-y-8 mt-5">
           <div className="flex flex-col border-l-5 border-[#ff5712]">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 ml-3">
               Need something Customized?

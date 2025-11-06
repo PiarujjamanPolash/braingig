@@ -9,7 +9,7 @@ const WhyUs = () => {
     return (
         <section className='container w-[90%] mx-auto'>
             <div className='flex flex-col justify-center items-center gap-5 mb-15 lg:mb-20'>
-                <h3 className='!text-[40px] lg:!text-[50px] font-bold td-text-invert-orange'>Why Us</h3>
+                <h3 className='!text-[40px] lg:!text-[60px] font-bold td-text-invert-orange'>Why Us</h3>
                 <p className='w-[90%] md:w-[80%] lg:w-[50%] !text-lg font-semibold text-center'>You get a complete, easy-to-understand plan, fast execution, and frequent optimization. The result: stronger rankings, lower acquisition costs, and steady pipeline growth.</p>
             </div>
 

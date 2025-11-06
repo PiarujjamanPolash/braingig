@@ -14,16 +14,16 @@ const Team: React.FC = () => {
         <div className="flex flex-wrap mb-[15px]">
           <div className="lg:w-3/12 w-full">
             <div className="td-team-6-subtitle mb-[20px]">
-              <span className="td-section-6-subtitle">WHO WE ARE</span>
+              <span className="td-section-6-subtitle uppercase">Our experts</span>
             </div>
           </div>
-          <div className="lg:w-9/12 w-full">
+          {/* <div className="lg:w-9/12 w-full">
             <div className="td-team-6-title-wrap mb-[50px]">
               <h2 className="td-section-6-bigtitle td-text-invert">
                 EXPERIENCED TEAM MEMBERS
               </h2>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

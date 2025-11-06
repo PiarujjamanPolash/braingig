@@ -55,15 +55,15 @@ const Testimonial: React.FC = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
   return (
-    <div className="td-testimonial-area pb-10 lg:pb-[100px] td-testimonial-6-bg p-5 md:p-0">
+    <div className="td-testimonial-area bg-secondary pb-10 lg:pb-[100px] td-testimonial-6-bg p-5 md:p-0">
       <div className="container w-[90%] mx-auto pt-20 lg:pt-[155px]">
 
         <div className="td-testimonial-6-wrap">
           <div className="td-testimonial-6-title-wrap mb-[55px] text-left">
-            <span className="td-section-6-subtitle !text-[#8bea7c] inline-block mb-[15px]">
-              {testimonialData.sectionSubtitle}
+            <span className="td-section-6-subtitle !text-[#8bea7c]  mb-[15px]">
+              {testimonialData.sectionTitle}
             </span>
-            <h2 className="title">{testimonialData.sectionTitle}</h2>
+            {/* <h2 className="title">{testimonialData.sectionTitle}</h2> */}
           </div>
 
           {/* MAIN TESTIMONIAL SWIPER */}
@@ -89,10 +89,10 @@ const Testimonial: React.FC = () => {
               <SwiperSlide key={index}>
                 <div className="td-testimonial-6-text">
                   <div>
-                    <p className="mb-40">{item.review}</p>
+                    <p className="mb-15 lg:mb-30 !text-white">{item.review}</p>
                     <div className="td-testimonial-6-author">
-                      <span className="position !text-[#8bea7c]">{item.position}</span>
-                      <h6 className="name">{item.name}</h6>
+                      <span className="position !text-white">{item.position}</span>
+                      <h6 className="name !text-white">{item.name}</h6>
                     </div>
                   </div>
                 </div>
@@ -132,7 +132,7 @@ const Testimonial: React.FC = () => {
 
 
       {/* BRAND SLIDER */}
-      <div className="pt-[70px]">
+      <div className="pt-10 lg:pt-[70px]">
           <Brands />
       </div>
     </div>

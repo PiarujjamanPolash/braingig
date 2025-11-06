@@ -58,33 +58,39 @@ const Hero: React.FC = () => {
 
                         {/* Tags */}
                         <div className="border-t border-black/20 pt-6">
-                                <Swiper id="marketing-tag-swiper"
-                                    modules={[Autoplay]}
-                                    spaceBetween={5}      
-                                    slidesPerView={3}      
-                                    loop={true}          
-                                    autoplay={{
-                                        delay: 0,
-                                        disableOnInteraction: false,
-                                        pauseOnMouseEnter: true,
-                                    }}
-                                    speed={8000}
-                                >
-                                    {doubledTagData.map((tag) => (
-                                        <SwiperSlide key={tag.id}>
-                                            <Link
-                                                href="#"
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    handleScrollToService(tag.id);
-                                                }}
-                                                className="font-medium text-[20px] px-5 py-2.5 block text-center border rounded-lg hover:bg-gray-100 transition"
-                                            >
-                                                {tag.label}
-                                            </Link>
-                                        </SwiperSlide>
-                                    ))}
-                                </Swiper>
+                            <Swiper id="marketing-tag-swiper"
+                                modules={[Autoplay]}
+                                spaceBetween={5}
+                                breakpoints={{
+                                    0: { slidesPerView: 1.5 },      // small mobile
+                                    480: { slidesPerView: 1.5 },    // larger phones
+                                    768: { slidesPerView: 2 },      // tablets
+                                    1024: { slidesPerView: 3 },     // desktops
+                                    1280: { slidesPerView: 4 },     // large screens
+                                }}
+                                loop={true}
+                                autoplay={{
+                                    delay: 0,
+                                    disableOnInteraction: false,
+                                    pauseOnMouseEnter: true,
+                                }}
+                                speed={8000}
+                            >
+                                {doubledTagData.map((tag) => (
+                                    <SwiperSlide key={tag.id}>
+                                        <Link
+                                            href="#"
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                handleScrollToService(tag.id);
+                                            }}
+                                            className="font-medium text-[20px] px-5 py-2.5 block text-center border rounded-lg hover:bg-gray-100 transition"
+                                        >
+                                            {tag.label}
+                                        </Link>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
                         </div>
 
                     </div>

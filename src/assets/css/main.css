@@ -255,7 +255,7 @@ textarea::placeholder {
   color: var(--td-grey-1);
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -263,19 +263,19 @@ h5,
 h6 {
   color: var(--td-common-black);
   font-weight: 700;
-  /* font-family: var(--td-ff-heading); */
-  /* line-height: 1.1; */
+  font-family: var(--td-ff-heading);
+  line-height: 1.1;
   text-transform: unset;
-}
+} */
 
-h1 a,
+/* h1 a,
 h2 a,
 h3 a,
 h4 a,
 h5 a,
 h6 a {
   color: inherit;
-}
+} */
 
 /* h1 {
   font-size: 48px;
@@ -5215,7 +5215,7 @@ textarea {
     font-size: 23px;
   }
 }
-.td-service-6-item::before {
+/* .td-service-6-item::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -5235,40 +5235,40 @@ textarea {
   height: 100%;
   top: 0;
   bottom: auto;
-}
-.td-service-6-item:hover .td-service-6-item-title span {
+} */
+/* .td-service-6-item:hover .td-service-6-item-title span {
   color: var(--td-common-white);
 }
 .td-service-6-item:hover .td-service-6-item-title h3 {
   color: #fff;
-}
-.td-service-6-item:hover .td-service-6-text ul li {
+} */
+/* .td-service-6-item:hover .td-service-6-text ul li {
   color: rgba(255, 255, 255, 0.7);
-}
-.td-service-6-item:hover .td-service-6-btn a {
+} */
+/* .td-service-6-item:hover .td-service-6-btn a {
   border: 1px solid var(--td-grey-4);
   background: var(--td-grey-4);
-}
-.td-service-6-item-title {
+} */
+/* .td-service-6-item-title {
   display: flex;
   align-items: center;
-}
-.td-service-6-item-title h3 {
-  /* font-family: var(--td-ff-rethink); */
+} */
+/* .td-service-6-item-title h3 {
+  font-family: var(--td-ff-rethink);
   font-weight: 700;
   font-size: 30px;
-  /* line-height: 107%; */
+  line-height: 107%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--td-grey-4);
   transition: all 0.4s ease;
-}
-.td-service-6-item-title span {
+} */
+/* .td-service-6-item-title span {
   font-weight: 500;
   font-size: 18px;
   color: var(--td-common-black-3);
   transition: all 0.4s ease;
-}
+} */
 .td-service-6-text p {
   font-weight: 500;
   font-size: 17px;
@@ -6166,9 +6166,9 @@ textarea {
 .td-testimonial-5-navigation span:hover {
   color: #787875;
 }
-.td-testimonial-6-bg {
+/* .td-testimonial-6-bg {
   background: var(--td-theme-3);
-}
+} */
 .td-testimonial-6-title-wrap .td-section-6-subtitle {
   color: var(--td-common-green-2);
 }
@@ -7768,13 +7768,13 @@ textarea {
 .td-portfolio-2-bigtitle {
   /* font-family: var(--td-ff-dm-sans); */
   font-weight: 700;
-  font-size: 240px;
+  font-size: 290px;
   /* line-height: 1; */
   text-transform: uppercase;
   text-align: center;
   color: rgba(10, 17, 25, 0.15);
   margin-bottom: -90px;
-  line-height: -0.1;
+  line-height: 0.9;
 }
 .td-services-project-bigtitle {       /* NEW ADDED */
   /* font-family: var(--td-ff-dm-sans); */
