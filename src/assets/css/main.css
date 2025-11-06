@@ -3933,21 +3933,21 @@ textarea {
     font-size: 40px;
   }
 }
-.td-hero-2-title span {
+/* .td-hero-2-title span {
   display: block;
-}
-.td-hero-2-title i {
+} */
+/* .td-hero-2-title i {
   font-size: 18px;
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  /* line-height: 64px; */
+  line-height: 64px;
   text-align: center;
   display: inline-block;
-  background: var(--td-theme-secondary);
+  background: var();
   transform: rotate(-45deg);
   margin-left: 20px;
-}
+} */
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .td-hero-2-title i {
     display: none;

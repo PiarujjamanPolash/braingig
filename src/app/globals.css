@@ -249,3 +249,15 @@ h6 {
 #team-marquee .rfm-marquee-container .rfm-marquee{
   align-items: start;
 }
+.td-hero-2-title i {
+  font-size: 18px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  line-height: 64px;
+  text-align: center;
+  /* display: inline-block; */
+  background: var(--color-secondary);
+  transform: rotate(-45deg);
+  margin-left: 20px;
+}

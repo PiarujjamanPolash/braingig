@@ -9,7 +9,7 @@ import shape from "../../../public/images/about/shape.webp"
 const AboutUs: React.FC = () => {
   
   return (
-    <div className="td-about-area w-[90%] mx-auto">
+    <div className="td-about-area w-[90%] mx-auto pt-20">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left Column */}
