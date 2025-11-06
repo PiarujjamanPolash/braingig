@@ -16,7 +16,7 @@ const TextLineAnimation = () => {
 
     const animationTimeout = setTimeout(() => {
       ctx = gsap.context(() => {
-        const split = new SplitText(".td-text-invert, .td-text-opacity", {
+        const split = new SplitText(".td-text-invert,.td-text-invert-orange, .td-text-opacity", {
           type: "lines",
         });
 

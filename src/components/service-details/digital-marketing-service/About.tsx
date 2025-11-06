@@ -3,28 +3,28 @@ import Image from "next/image";
 
 const About: React.FC = () => {
     return (
-        <section className="td-about-area py-20 lg:pt-[140px] lg:pb-[125px] px-5 md:px-0">
+        <section className="td-about-area py-20 lg:pt-[150px] lg:pb-[100px] px-5 md:px-0">
             <div className="container w-[90%] mx-auto">
                 <div className="">
-                    <div className="grid grid-cols-1 lg:grid-cols-12">
+                    <div className="">
                         {/* WHO WE ARE */}
-                        <div className="col-span-5">
+                        {/* <div className="col-span-5">
                             <div className="td-about-6-subtitle mb-[20px]">
                                 <span className="td-section-6-subtitle">WHO WE ARE</span>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* Heading & Paragraph */}
-                        <div className="col-span-7">
+                        {/* <div className="flex justify-end">
                             <div className="td-about-6-title-wrap mb-[50px]">
-                                <h2 className="td-section-6-title text-[#063231] mb-[20px] td-text-invert">
+                                <h2 className="td-section-6-title text-[#063231] mb-[20px] td-text-invert-orange">
                                     Clarity, Creativity, and Conversion.
                                 </h2>
                                 <p className="td-section-6-text">
                                     We plan, create, and optimize a complete Digital Marketing Strategy that blends content, SEO, paid media, and creative. As a results-driven Digital Marketing Agency, we deliver an Online Marketing Solution built for clarity, scale, and measurable growth.
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
 
@@ -51,6 +51,14 @@ const About: React.FC = () => {
                         </div>
 
                         <div className="col-span-6">
+                            <div className="td-about-6-title-wrap mb-[50px]">
+                                <h2 className="text-[40px] lg:text-[50px] font-bold uppercase mb-[20px] td-text-invert-orange">
+                                    Clarity, Creativity, and Conversion.
+                                </h2>
+                                <p className="text-sm md:text-base lg:text-lg font-semibold text-black">
+                                    We plan, create, and optimize a complete Digital Marketing Strategy that blends content, SEO, paid media, and creative. As a results-driven Digital Marketing Agency, we deliver an Online Marketing Solution built for clarity, scale, and measurable growth.
+                                </p>
+                            </div>
                             <div className="td-about-6-author">
                                 <div className="hidden md:block td-about-6-author-top mb-[40px]">
                                     <Image
@@ -67,13 +75,13 @@ const About: React.FC = () => {
 
                                 <div className="td-about-6-author-count">
                                     <div className="flex items-center justify-center md:justify-start gap-5 lg:gap-10">
-                                        <div className="td-about-6-author-single text-center md:text-start">
-                                            <h2 className="mb-[10px]">100%</h2>
-                                            <p className="!text-sm md:!text-xl !mb-0">Clients Satisfied and Repeating</p>
+                                        <div className="text-center md:text-start">
+                                            <h2 className="!text-secondary text-[40px] mb-[10px]">100%</h2>
+                                            <p className="!text-sm md:!text-base !mb-0">Clients Satisfied and Repeating</p>
                                         </div>
-                                        <div className="td-about-6-author-single text-center md:text-start">
-                                            <h2 className="mb-[10px]">125+</h2>
-                                            <p className="!text-sm md:!text-xl !mb-0">Projects Completed in 24 Countries
+                                        <div className="text-center md:text-start">
+                                            <h2 className="!text-secondary text-[40px] mb-[10px]">125+</h2>
+                                            <p className="!text-sm md:!text-base !mb-0">Projects Completed in 24 Countries
                                             </p>
                                         </div>
                                     </div>

@@ -3,6 +3,8 @@ import { imagesData, tagsData } from "@/utils/fakeData/digitalMarketingData";
 import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const handleScrollToService = (id: string) => {
     const services = document.querySelectorAll(".td-service-6-item")
@@ -31,7 +33,7 @@ const Hero: React.FC = () => {
     const doubledImagesData = [...imagesData, ...imagesData];
     return (
         <section
-            className="td-hero-area td-hero-6-spacing include-bg bg-[url('/images/service-details/digital-marketing-service/hero-bg.jpg')]"
+            className="td-hero-area td-hero-6-spacing include-bg bg-accent"
         >
             <div className="container w-[90%] mx-auto">
                 <div className="td-hero-6-top pb-[45px] relative z-[1]">
@@ -45,40 +47,46 @@ const Hero: React.FC = () => {
 
                     {/* Title Section */}
                     <div className="w-full mx-auto">
-                        <div className="pb-[90px]">
+                        <div className="pb-10 lg:pb-[90px]">
                             <h2
                                 className="td-hero-6-title text-center"
                             >
                                 Marketing That Moves Markets
                             </h2>
-                            <p className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto !text-xl md:!text-3xl text-white text-center mt-10">Transforming ideas into campaigns that connect and convert your ideal audience through expert <strong>Digital Marketing Services.</strong></p>
+                            <p className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto !text-base md:!text-3xl text-black text-center mt-5 lg:mt-10">Transforming ideas into campaigns that connect and convert your ideal audience through expert <strong>Digital Marketing Services.</strong></p>
                         </div>
 
                         {/* Tags */}
-                        <div>
-                            <div className="border-t border-white/10 pt-6">
-                                <div className="flex flex-wrap justify-around pt-6">
-                                    <Marquee gradient={false} speed={40}>
-                                        <ul className="flex gap-6">
-                                            {doubledTagData.map((tag) => (
-                                                <li key={tag.id}>
-                                                    <Link
-                                                        href="#"
-                                                        onClick={(e) => {
-                                                            e.preventDefault();
-                                                            handleScrollToService(tag.id);
-                                                        }}
-                                                        className="font-medium text-[20px] !text-white inline-block px-5 py-2.5"
-                                                    >
-                                                        {tag.label}
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </Marquee>
-                                </div>
-                            </div>
+                        <div className="border-t border-black/20 pt-6">
+                                <Swiper id="marketing-tag-swiper"
+                                    modules={[Autoplay]}
+                                    spaceBetween={5}      
+                                    slidesPerView={3}      
+                                    loop={true}          
+                                    autoplay={{
+                                        delay: 0,
+                                        disableOnInteraction: false,
+                                        pauseOnMouseEnter: true,
+                                    }}
+                                    speed={8000}
+                                >
+                                    {doubledTagData.map((tag) => (
+                                        <SwiperSlide key={tag.id}>
+                                            <Link
+                                                href="#"
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    handleScrollToService(tag.id);
+                                                }}
+                                                className="font-medium text-[20px] px-5 py-2.5 block text-center border rounded-lg hover:bg-gray-100 transition"
+                                            >
+                                                {tag.label}
+                                            </Link>
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
                         </div>
+
                     </div>
                 </div>
             </div>

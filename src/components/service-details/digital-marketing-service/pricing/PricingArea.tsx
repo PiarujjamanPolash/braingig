@@ -6,6 +6,7 @@ import { useState } from "react";
 import { FiMinus, FiPlus } from "react-icons/fi";
 import PricingCard from "./PricingCard";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
 
 const PricingArea: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState("Bundles");
@@ -63,9 +64,14 @@ const PricingArea: React.FC = () => {
         </div>
         <div className="container w-[90%] mx-auto xl:hidden">
           <Swiper
+          modules={[Navigation, Pagination]}
             spaceBetween={20}
             slidesPerView={1}
             pagination={{ clickable: true }}
+            navigation={{
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }}
             breakpoints={{
               0: { slidesPerView: 1 },
               640: { slidesPerView: 1 },

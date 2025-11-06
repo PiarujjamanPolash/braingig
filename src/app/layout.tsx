@@ -4,13 +4,7 @@ import "./globals.css";
 import "@/assets/css/main.css"
 import Header from "@/components/shared/Header";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-body",
-  display: "swap",
-});
-
-const bebas = Bebas_Neue({
+const bebasNeue  = Bebas_Neue({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-bebas",
@@ -20,25 +14,6 @@ const bebas = Bebas_Neue({
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-heading",
-  display: "swap",
-});
-const dmSerif = DM_Serif_Display({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--td-ff-dm",
-  display: "swap",
-});
-const rethink = Rethink_Sans({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--td-ff-dm",
-  display: "swap",
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--td-ff-dm",
   display: "swap",
 });
 
@@ -56,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${bebas.variable} ${plusJakarta.variable} ${dmSerif.variable} ${rethink.variable} ${manrope.variable} antialiased`}
+        className={`${bebasNeue .variable} ${plusJakarta.variable} antialiased`}
       >
         <Header />
         {children}        
