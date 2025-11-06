@@ -16,7 +16,7 @@ const WhyUs = () => {
             <div className="td-service-pin-items">
                 {projectsData.map((project) => (
                     <div key={project.id} className="grid grid-cols-1 xl:grid-cols-12 gap-y-4 xl:gap-5 items-start mb-20 sm:mb-32 td-service-pin-item-panel bg-white">
-                        <div className="xl:col-span-9 relative">
+                        <div className="xl:col-span-9 relative h-full">
                             <h2 className="td-portfolio-6-transparent bg-white">0{project.id}</h2>
                             <div className="w-full h-full rounded-lg overflow-hidden bg-white">
                                 <Image
@@ -24,7 +24,7 @@ const WhyUs = () => {
                                     alt={`${project.title} Illustration`}
                                     width={1000}
                                     height={600}
-                                    className="w-full !h-full object-cover"
+                                    className="w-full object-cover"
                                 />
                             </div>
                         </div>

@@ -19,12 +19,12 @@ const CTA = () => {
             {/* <div className="absolute inset-0 bg-gradient-to-t from-[#212124] to-transparent"></div> */}
             {/* Content */}
             <div className="relative z-10 flex flex-col justify-start p-5 md:pl-20 pb-5 md:pb-15 flex items-center md:items-start">
-                <h2 className="w-full md:[60%] lg:!w-[45%] !text-white text-3xl md:text-4xl md:!text-4xl font-semibold lg:font-bold leading-snug mb-6 text-center md:text-start">
-                    Contact <strong className='text-[#ff5722]'>Brain Gig</strong> today and start your journey to higher rankings and increased organic traffic.
+                <h2 className="w-full sm:w-[70%] lg:!w-[45%] !text-white text-3xl md:text-4xl font-medium lg:font-medium leading-normal tracking-wide mb-6 text-center md:text-start">
+                    Contact <strong className='text-secondary'>Brain Gig</strong> today and start your journey to higher rankings and increased organic traffic.
                 </h2>
                 <Link
                     href="/contact"
-                    className="w-fit !bg-[#ff5722] hover:!bg-[#d84315] text-white font-semibold py-3 px-8 sm:px-10 sm:py-4 rounded-lg transition duration-300 text-base sm:text-lg"
+                    className="w-fit !bg-secondary hover:!bg-[#d84315] text-white font-semibold py-3 px-8 sm:px-10 sm:py-4 rounded-lg transition duration-300 text-base sm:text-lg"
                 >
                     I’m Ready To Grow
                 </Link>

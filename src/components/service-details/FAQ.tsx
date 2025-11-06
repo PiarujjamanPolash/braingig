@@ -38,7 +38,7 @@ const FAQ: React.FC<FAQProps> = ({ data }) => {
                         {/* Right Content */}
                         <div className="w-full">
                             <div className="td-faq-4-wrap-right td-faq-2-wrap-right mb-8">
-                                <h2 className="td-testimonial-title mb-5 td-text-invert">
+                                <h2 className="font-extrabold text-[80px] tracking-normal td-text-invert-orange">
                                     Frequently asked <span>questions</span>
                                 </h2>
                                 <Accordion data={data}/>

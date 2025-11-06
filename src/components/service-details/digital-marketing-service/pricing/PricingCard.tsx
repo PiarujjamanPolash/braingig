@@ -30,23 +30,20 @@ const PricingCard: React.FC<PricingCardProps> = ({ item, idx }) => {
 
   return (
     <div
-      className={`md:col-span-3 lg:col-span-2 wow ${idx === 0 ? "fadeInLeft" : idx === 1 ? "fadeInUp" : "fadeInRight"
-        }`}
-      data-wow-delay=".4s"
-      data-wow-duration="1s"
+      className="md:col-span-3 lg:col-span-2"
     >
       <div className="td-pricing-6-wrap mb-[30px] border rounded-lg shadow-sm flex flex-col h-full">
         {/* Top Section */}
         <div className="td-pricing-6-top relative p-4">
-          <span className="package mb-[20px] inline-block font-semibold">
+          <span className="package text-[26px] mb-[20px] font-semibold">
             {item.package}
           </span>
           {item.tag && (
-            <span className="absolute top-4 right-4 bg-[#FF5722] text-white rounded-md px-2 py-1 text-xs font-semibold shadow-sm">
+            <span className="absolute top-4 right-4 bg-secondary text-white rounded-md px-2 py-1 text-xs font-semibold shadow-sm">
               {item.tag}
             </span>
           )}
-          <h6 className="price mb-[20px]">
+          <h6 className="mt-5 mb-[20px] text-2xl font-medium text-secondary tracking-[-0.01em] leading-relaxed">
             {item.price}
             <span>{item.duration}</span>
           </h6>
@@ -56,12 +53,12 @@ const PricingCard: React.FC<PricingCardProps> = ({ item, idx }) => {
         </div>
 
         {/* Middle Content - flex-1 */}
-        <div className="td-pricing-6-list mt-[30px] flex-1 p-4 overflow-auto">
+        <div className="marketing-pricing-list mt-[30px] flex-1 p-4 overflow-auto leading-loose">
           {item.sections
             .filter((s) => s.title !== "Add-On")
             .map((section, i) => (
               <div key={i} className="mb-[20px]">
-                <h5 className="font-semibold mb-[10px]">{section.title}</h5>
+                <h5 className="text-xl font-medium mb-[10px]">{section.title}</h5>
                 <ul className="list-disc list-inside space-y-1">
                   {section.items.map((feature, j) => (
                     <li key={j}>{feature}</li>

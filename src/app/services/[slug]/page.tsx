@@ -76,7 +76,7 @@ const ServicesPage = async ({
                 <Testimonial />
                 <PricingArea />
                 <Team />
-                <Counter />
+                {/* <Counter /> */}
                 <FAQ data={digitalMarketingFaq} />
             </ClientWrapper>
         );

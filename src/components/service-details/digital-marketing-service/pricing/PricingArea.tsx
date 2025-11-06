@@ -36,6 +36,8 @@ const PricingArea: React.FC = () => {
             </h2>
           </div>
         </div>
+
+        {/* tab */}
         <div className="flex flex-wrap justify-center gap-4 mb-6">
           {categories.map((cat) => (
             <button
@@ -44,15 +46,12 @@ const PricingArea: React.FC = () => {
                 setActiveCategory(cat);
                 setOpenIndex(null);
               }}
-              className={`
-        relative px-4 py-2 font-semibold transition-all duration-300
-        text-gray-700 hover:text-[#FF5722]
-      `}
+              className="relative px-4 py-2 font-semibold transition-all duration-300 text-gray-700 hover:text-secondary"
             >
               {cat}
               {/* Active underline */}
               {activeCategory === cat && (
-                <span className="absolute left-0 bottom-0 w-full h-1 bg-[#FF5722] rounded-full"></span>
+                <span className="absolute left-0 bottom-0 w-full h-1 bg-secondary rounded-full"></span>
               )}
             </button>
           ))}
@@ -86,8 +85,8 @@ const PricingArea: React.FC = () => {
         </div>
 
         <div className="container w-[90%] mx-auto lg:mt-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-y-8 mt-5">
-          <div className="flex flex-col border-l-5 border-[#ff5712]">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 ml-3">
+          <div className="flex flex-col border-l-5 border-secondary">
+            <h2 className="text-2xl md:text-3xl font-medium mb-4 ml-3 leading-normal">
               Need something Customized?
             </h2>
             <p className="text-gray-700 text-lg md:text-xl ml-3 !mb-0">
@@ -96,9 +95,9 @@ const PricingArea: React.FC = () => {
           </div>
           <Link
             href="/contact"
-            className="!bg-[#FF5722] hover:bg-[#E64A19] !text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-300"
+            className="!bg-secondary hover:bg-[#E64A19] !text-white font-semibold px-6 py-4 rounded-lg transition-colors duration-300 capitalize"
           >
-            Contact Us
+            I'm ready to grow
           </Link>
         </div>
       </div>

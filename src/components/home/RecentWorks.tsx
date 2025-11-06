@@ -14,7 +14,7 @@ const RecentWorks: React.FC = () => {
   const secondSliderProjects = shuffledProjects.slice(half);
   return (
     <div className="td-portfolio-area pt-[80px] lg:pt-[125px]">
-      <h2 className="td-portfolio-2-bigtitle td-split-text td-split-in-right uppercse">Portfolio</h2>
+      <h2 className="portfolio-text td-split-text td-split-in-right uppercse">Portfolio</h2>
 
       <div id="recent-works-swiper-1" className="td-portfolio-2-slider-wrap mb-[20px]">
         <Swiper

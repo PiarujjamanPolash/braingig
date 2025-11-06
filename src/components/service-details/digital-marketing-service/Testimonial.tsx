@@ -52,15 +52,14 @@ const testimonialData = {
 };
 
 const Testimonial: React.FC = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
   return (
-    <div className="td-testimonial-area bg-secondary pb-10 lg:pb-[100px] td-testimonial-6-bg p-5 md:p-0">
-      <div className="container w-[90%] mx-auto pt-20 lg:pt-[155px]">
+    <div className="td-testimonial-area bg-secondary pb-5 md:pb-10 p-5 md:p-0">
+      <div className="container w-[90%] mx-auto pt-10 md:pt-15 lg:pt-[100px]">
 
-        <div className="td-testimonial-6-wrap">
+        <div className="">
           <div className="td-testimonial-6-title-wrap mb-[55px] text-left">
-            <span className="td-section-6-subtitle !text-[#8bea7c]  mb-[15px]">
+            <span className="marketing-testimonial-team-subtitle text-blue-900 mb-[15px]">
               {testimonialData.sectionTitle}
             </span>
             {/* <h2 className="title">{testimonialData.sectionTitle}</h2> */}
@@ -82,17 +81,17 @@ const Testimonial: React.FC = () => {
                 spaceBetween: 20,
               },
             }}
-            spaceBetween={20}
+            spaceBetween={50}
             className="td-testimonial-6-content-active"
           >
             {testimonialsData.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="td-testimonial-6-text">
+                <div className="">
                   <div>
-                    <p className="mb-15 lg:mb-30 !text-white">{item.review}</p>
-                    <div className="td-testimonial-6-author">
-                      <span className="position !text-white">{item.position}</span>
-                      <h6 className="name !text-white">{item.name}</h6>
+                    <p className="mb-10 md:mb-15 lg:mb-20 font-medium text-xl sm:text-2xl tracking-[-0.01em]">{item.review}</p>
+                    <div className="td-testimonial-6-author border-t border-white/25 pt-8">
+                      <span className="text-lg font-medium tracking-[-0.01em]">{item.position}</span>
+                      <h6 className="text-[26px] font-medium tracking-[-0.01em]">{item.name}</h6>
                     </div>
                   </div>
                 </div>
@@ -132,7 +131,7 @@ const Testimonial: React.FC = () => {
 
 
       {/* BRAND SLIDER */}
-      <div className="pt-10 lg:pt-[70px]">
+      <div className="md:pt-4 lg:pt-8">
           <Brands />
       </div>
     </div>

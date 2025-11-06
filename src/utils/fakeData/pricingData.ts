@@ -5,7 +5,7 @@ export const pricingData = [
     package: "SEO Core Bundle",
     price: "Starter — $240/",
     duration: "one-time",
-    buttonClass: "price-btn",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -36,7 +36,7 @@ export const pricingData = [
     price: "Growth — $310/",
     tag: "Most Popular",
     duration: "one-time",
-    buttonClass: "price-btn greens !text-black",
+    buttonClass: "marketing-price-btn greens !text-black",
     sections: [
       {
         title: "What we do",
@@ -66,7 +66,7 @@ export const pricingData = [
     package: "SEO Core Bundle",
     price: "Pro — $410/",
     duration: "one-time",
-    buttonClass: "price-btn",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -98,7 +98,7 @@ export const pricingData = [
     package: "Off-Page SEO & Guest Posting (Monthly)",
     price: "Starter — $120/mo",
     // duration: "monthly",
-    buttonClass: "price-btn",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -118,7 +118,7 @@ export const pricingData = [
     price: "Growth — $200/mo",
     tag: "Most Popular",
     // duration: "monthly",
-    buttonClass: "price-btn greens !text-black",
+    buttonClass: "marketing-price-btn greens !text-black",
     sections: [
       {
         title: "What we do",
@@ -141,7 +141,7 @@ export const pricingData = [
     package: "Off-Page SEO & Guest Posting (Monthly)",
     price: "Pro — $300/mo",
     // duration: "monthly",
-    buttonClass: "price-btn",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -167,7 +167,7 @@ export const pricingData = [
     package: "Social Media Ads & Creative (FB/IG)",
     price: "Starter — $50/mo",
     // duration: "monthly",
-    buttonClass: "price-btn",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -190,7 +190,7 @@ export const pricingData = [
     package: "Social Media Ads & Creative (FB/IG)",
     price: "Growth — $110/mo",
     // duration: "monthly",
-    buttonClass: "price-btn greens !text-black",
+    buttonClass: "marketing-price-btn greens !text-black",
     sections: [
       {
         title: "What we do",
@@ -214,7 +214,7 @@ export const pricingData = [
     price: "Pro — $150/mo",
     tag: "Most Popular",
     // duration: "monthly",
-    buttonClass: "price-btn",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -239,7 +239,7 @@ export const pricingData = [
     package: "Social Media Creatives",
     price: "Starter — $100/mo",
     // duration: "monthly",
-    buttonClass: "price-btn",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -257,7 +257,7 @@ export const pricingData = [
     price: "Growth — $200/mo",
     tag: "Most Popular",
     // duration: "monthly",
-    buttonClass: "price-btn greens !text-black",
+    buttonClass: "marketing-price-btn greens !text-black",
     sections: [
       {
         title: "What we do",
@@ -277,7 +277,7 @@ export const pricingData = [
     package: "Social Media Creatives",
     price: "Pro — $400/mo",
     // duration: "monthly",
-    buttonClass: "price-btn",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -300,7 +300,7 @@ export const pricingData = [
     package: "SEO Blogs (Content + Optimization)",
     price: "Starter — $120/mo",
     // duration: "monthly",
-    buttonClass: "price-btn",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -322,7 +322,7 @@ export const pricingData = [
     price: "Growth — $240/mo",
     tag: "Most Popular",
     // duration: "monthly",
-    buttonClass: "price-btn greens !text-black",
+    buttonClass: "marketing-price-btn greens !text-black",
     sections: [
       {
         title: "What we do",
@@ -343,7 +343,7 @@ export const pricingData = [
     package: "SEO Blogs (Content + Optimization)",
     price: "Pro — $360/mo",
     // duration: "monthly",
-    buttonClass: "price-btn",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -369,7 +369,7 @@ export const pricingData = [
     package: "Bundled Monthly Plans (Mixed Services)",
     price: "Starter Growth Kit — $480/mo",
     // duration: "monthly",
-    buttonClass: "price-btn",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -400,7 +400,7 @@ export const pricingData = [
     price: "Performance Plan — $850/mo",
     tag: "Most Popular",
     // duration: "monthly",
-    buttonClass: "price-btn greens !text-black",
+    buttonClass: "marketing-price-btn greens",
     sections: [
       {
         title: "What we do",
@@ -429,7 +429,7 @@ export const pricingData = [
     package: "Bundled Monthly Plans (Mixed Services)",
     price: "Scale Plan — $1,350/mo",
     // duration: "monthly",
-    buttonClass: "price-btn",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",

@@ -47,7 +47,7 @@ const WhatYouGet = () => {
                         {digitalMarketingData.map((service, idx) => (
                             <div id={`service-${service.id}`}
                                 key={service.id}
-                                className="td-service-6-item border-b border-gray-200 hover:rounded-[10px] hover:bg-primary hover:text-white hover:transition-all hover:duration-300 hover:ease-in-out"
+                                className="td-service-6-item border-b border-gray-200 hover:rounded-[10px] hover:bg-primary group hover:text-white hover:transition-all hover:duration-300 hover:ease-in-out"
                             >
                                 <div className="flex flex-col lg:flex-row flex-wrap items-start">
                                     {/* Left side: ID and Title */}
@@ -57,7 +57,7 @@ const WhatYouGet = () => {
                                     >
                                         <div className="mb-[15px] flex items-center justify-between lg:justify-start">
                                             <span className="text-lg font-medium mr-5 md:mr-20 hover:text-white">{service.id}</span>
-                                            <h3 className="text-[30px] text-secondary font-bold hover:text-white">{service.title}</h3>
+                                            <h3 className="text-[30px] text-secondary font-bold">{service.title}</h3>
 
                                             {/* Accordion icon only for visual cue */}
                                             <div className="lg:hidden ml-auto transition-transform duration-300">
@@ -70,7 +70,7 @@ const WhatYouGet = () => {
                                                     strokeWidth="2"
                                                     strokeLinecap="round"
                                                     strokeLinejoin="round"
-                                                    className={`hover:text-white transform transition-transform duration-300 ${openId === service.id ? "rotate-180 text-white" : "rotate-0 text-[#060a2f]"
+                                                    className={`hover:text-white transform transition-transform duration-300 ${openId === service.id ? "rotate-180 text-black" : "rotate-0 text-black"
                                                         }`}
                                                 >
                                                     <line x1="5" y1="10" x2="15" y2="10" />
@@ -84,7 +84,7 @@ const WhatYouGet = () => {
                                     <div className="lg:w-7/12 w-full">
                                         {/* Large screen: always show */}
                                         <div className="hidden lg:block td-service-6-text mb-[15px]">
-                                            <ul className="list-disc list-inside">
+                                            <ul className="list-disc list-inside text-black group-hover:text-white">
                                                 {service.description.map((item, index) => (
                                                     <li key={index} className="mb-2">
                                                         <strong>{item.title} </strong>
@@ -108,8 +108,7 @@ const WhatYouGet = () => {
                                             }}
                                         >
                                             <ul
-                                                className={`list-disc list-inside mb-4 ${openId === service.id ? "text-white/70" : "text-black"
-                                                    }`}
+                                                className="list-disc list-inside mb-4 text-black"
                                             >
                                                 {service.description.map((item, index) => (
                                                     <li key={index} className="mb-2">
