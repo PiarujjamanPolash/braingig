@@ -13,24 +13,24 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="">
-      <div className="td-footer-area pt-[80px] md:pt-[110px] pb-[15px] td-footer-3-bg">
+      <div className="td-footer-area pt-[80px] md:pt-[110px] pb-[15px] bg-accent">
         <div className="container w-[90%] mx-auto">
           <div className="flex flex-wrap -mx-4">
             {/* Left Section */}
             <div className="w-full lg:w-1/2 px-4 mb-[30px]">
               <div className="td-footer-3-widget">
-                <h2 ref={textRef}className="td-footer-3-bigtitle text-center lg:text-start">
-                  We Build Websites<br /> that <span>Works!</span>
+                <h2 ref={textRef}className="text-[40px] lg:text-[60px] tracking-[-0.03em] text-primary text-center lg:text-start">
+                  We Build Websites<br /> that <span className="italic font-base">Works!</span>
                 </h2>
               </div>
               <TextFadeInUp textRef={textRef} />
             </div>
 
             {/* Middle Section */}
-            <div className="w-full lg:w-1/4 md:w-1/2 px-4 mb-[30px] flex justify-center lg:justify-start">
+            <div className="w-full lg:w-1/4 md:w-1/2 px-4 mb-[30px] flex justify-center lg:justify-start text-primary">
               <div className="td-footer-3-widget text-center md:text-start">
-                <h4 className="td-footer-3-title mb-[15px]">Our Headquarter</h4>
-                <Link className="links mb-5 md:mb-[40px] inline-block" href="https://maps.app.goo.gl/gEGMdJo73A6GjNCS9" target="_blank">
+                <h4 className="td-footer-3-title font-medium text-[24px] tracking-[-0.02em] mb-[15px]">Our Headquarter</h4>
+                <Link className="font-normal text-[17px] mb-5 md:mb-[40px] inline-block" href="https://maps.app.goo.gl/gEGMdJo73A6GjNCS9" target="_blank">
                   4th Floor of NRB Bank Building<br />
                   Station Rd, Rajshahi 6100, Bangladesh
                 </Link>
@@ -43,13 +43,13 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Right Section */}
-            <div className="w-full lg:w-1/4 md:w-1/2 px-4 mb-[30px] flex justify-center lg:justify-start mt-7 md:mt-0">
+            <div className="w-full lg:w-1/4 md:w-1/2 px-4 mb-[30px] flex justify-center lg:justify-start mt-7 md:mt-0 text-primary">
               <div className="td-footer-3-widget text-center md:text-end lg:text-start">
-                <h4 className="td-footer-3-title mb-[15px]">Say hello!</h4>
-                <Link className="links links-3 block mb-[5px]" href="mailto:braingigllc@gmail.com" target="_blank">
+                <h4 className="td-footer-3-title font-medium text-[24px] tracking-[-0.02em] mb-[15px]">Say hello!</h4>
+                <Link className="links links-3 text-[rgba(17,34,78,0.65)] text-[17px] block mb-[5px]" href="mailto:braingigllc@gmail.com" target="_blank">
                   braingigllc@gmail.com
                 </Link>
-                <Link className="links-2" href="https://wa.me/+8801701064640" target="_blank">
+                <Link className="font-semibold text-[20px] tracking-[-0.02em]" href="https://wa.me/+8801701064640" target="_blank">
                   +8801701-064640
                 </Link>
               </div>
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <div className="w-full lg:w-1/3 px-4">
-              <div className="td-footer-3-copyright mb-[30px] text-center lg:text-right">
+              <div className="td-footer-3-copyright text-[17px] font-medium text-primary mb-[30px] text-center lg:text-right">
                 <p>
                   © 2025 <Link href="/">BrainGig LLC</Link> All Rights Reserved.
                 </p>

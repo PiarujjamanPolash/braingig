@@ -97,7 +97,7 @@ const PricingArea: React.FC = () => {
             href="/contact"
             className="!bg-secondary hover:bg-[#E64A19] !text-white font-semibold px-6 py-4 rounded-lg transition-colors duration-300 capitalize"
           >
-            I'm ready to grow
+            I&apos;m ready to grow
           </Link>
         </div>
       </div>
