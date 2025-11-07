@@ -52,7 +52,6 @@ const PricingCard: React.FC<PricingCardProps> = ({ item, idx }) => {
           </Link>
         </div>
 
-        {/* Middle Content - flex-1 */}
         <div className="marketing-pricing-list mt-[30px] flex-1 p-4 overflow-auto leading-loose">
           {item.sections
             .filter((s) => s.title !== "Add-On")
@@ -68,7 +67,6 @@ const PricingCard: React.FC<PricingCardProps> = ({ item, idx }) => {
             ))}
         </div>
 
-        {/* Bottom Section - Add-On Button */}
         {/* Bottom Section - Add-On Button */}
         {addOnSection && addOnSection.items.length > 0 && (
           <div className="border-t border-slate-900/15 w-[90%] mx-auto pt-4 mt-4 p-4">

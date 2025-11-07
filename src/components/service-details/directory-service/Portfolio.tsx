@@ -40,7 +40,7 @@ const Portfolio: React.FC = () => {
             <div
               className="td-portfolio-3-title-para"
             >
-              <p>Our projects showcase how directory websites transform simple listings into powerful tools for growth, engagement, and business success.</p>
+              <p className='text-base lg:text-lg font-medium'>Our projects showcase how directory websites transform simple listings into powerful tools for growth, engagement, and business success.</p>
             </div>
           </div>
         </div>

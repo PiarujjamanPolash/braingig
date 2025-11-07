@@ -4,7 +4,6 @@ import { useRef } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import AnimateTwoContent from "@/components/animations/AnimateTwoContent";
 import Link from "next/link";
-import thumb from "../../../public/images/about/hero-thumb.webp"
 const Hero: React.FC = () => {
     const thumbRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -17,9 +16,9 @@ const Hero: React.FC = () => {
             <div className="container mx-auto">
                 <div className="flex flex-wrap -mx-4">
                     <div className="w-full px-4">
-                        <div className="td-about-main-wrapper pb-[90px]">
-                            <h2 className="td-section-page-title td-title-anim text-center">
-                                Driving <span>innovation </span> through <span>strategic consulting </span>
+                        <div className="td-about-main-wrapper pb-10 lg:pb-[90px] flex justify-center">
+                            <h2 className="w-[90%] lg:w-[75%] text-[40px] md:text-[60px] lg:text-[80px] text-secondary td-title-anim text-center">
+                                Driving <span className="italic">innovation </span> through <span className="italic">strategic consulting </span>
                             </h2>
                         </div>
                     </div>
@@ -34,7 +33,7 @@ const Hero: React.FC = () => {
                                 height={519}
                                 priority
                                 className="w-full td-rounded-10"
-                                src={thumb}
+                                src={"/images/about/hero-thumb.webp"}
                                 alt="thumb"
                             />
                         </div>
@@ -44,7 +43,7 @@ const Hero: React.FC = () => {
                         <div ref={contentRef}
                             className="td-about-main-content lg:ml-[110px] mb-10 lg:mb-0"
                         >
-                            <h3 className="td-about-main-title mb-5 lg:mb-5 text-center md:text-start">At <span>BrainGig,</span> we envision a digital landscape where every brand 
+                            <h3 className="text-xl lg:text-[35px] mb-5 lg:mb-5 text-center md:text-start">At <span>BrainGig,</span> we envision a digital landscape where every brand 
                                             thrives with an impactful online presence.</h3>
 
                             <div className="flex flex-col md:flex-row -mx-4">
@@ -57,7 +56,7 @@ const Hero: React.FC = () => {
 
                                 <div className="w-full md:w-12/12 px-4">
                                     <div className="td-about-main-text mt-7 text-center md:text-start">
-                                        <p className="mb-7">
+                                        <p className="text-[15px] lg:text-lg mb-7">
                                             Fueled by our commitment to 
                                             redefine the possibilities of the digital realm, we approach every project with a 
                                             forward-thinking vision. Join us in shaping the future of digital excellence. </p>

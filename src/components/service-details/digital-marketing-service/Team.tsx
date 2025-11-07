@@ -3,7 +3,6 @@
 import { teamData } from "@/components/about/Team";
 import Image from "next/image";
 import Link from "next/link";
-import Marquee from "react-fast-marquee";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,7 +10,7 @@ const Team: React.FC = () => {
   const doubledTeamData = [...teamData];
 
   return (
-    <section className="td-team-area px-5 md:px-0 mb-10 lg:mb-[150px]">
+    <section className="td-team-area px-5 md:px-0 mb-10 mb-15 lg:mb-[150px]">
       <div className="container w-[90%] mx-auto mb-[10px]">
         <div className="flex flex-wrap mb-[15px]">
           <div className="lg:w-3/12 w-full">

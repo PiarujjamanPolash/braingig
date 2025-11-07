@@ -15,49 +15,29 @@ const WhatYouGet = () => {
                 <div className="flex flex-wrap items-end">
 
                     <div className="flex flex-col justify-start w-full">
-                        <h2 className="w-full md:w-[80%] lg:w-[70%]  !text-[40px] lg:!text-[60px] td-text-invert-orange">
+                        <h2 className="w-full md:w-[80%] lg:w-[70%]  !text-[40px] lg:!text-[60px] font-medium tracking-wide td-text-invert-orange">
                                 Digital Marketing Strategy that delivers
                         </h2>
                         <p className="w-[80%] md:w-[70%] lg:w-[50%] text-base lg:text-lg font-semibold !mb-0">
                                 Website SEO Services, Paid Advertising Services, and Social Media Management, aligned.
-                            </p>
-                        {/* <div className="lg:col-span-8 w-full mb-6 lg:mb-0">
-                            <span className="td-section-6-subtitle mb-20 uppercase">What you get</span>
-                        </div>
-                        <div className="td-service-6-title-text mr-20 lg:col-span-4 w-full">
-                            
-                        </div> */}
+                        </p>
                     </div>
-                    {/* <div className="grid grid-cols-1 lg:grid-cols-12 justify-center items-center w-full">
-                        <div className="lg:col-span-8 w-full mb-6 lg:mb-0">
-                            <span className="td-section-6-subtitle mb-20 uppercase">What you get</span>
-                            <h2 className="w-[70%] !text-[40px] lg:!text-[60px] td-text-invert-orange">
-                                Digital Marketing Strategy that delivers
-                            </h2>
-                        </div>
-                        <div className="td-service-6-title-text mr-20 lg:col-span-4 w-full">
-                            <p className="font-semibold !mb-0">
-                                Website SEO Services, Paid Advertising Services, and Social Media Management, aligned.
-                            </p>
-                        </div>
-                    </div> */}
-
 
                     <div className="w-full pt-[55px]">
                         {digitalMarketingData.map((service, idx) => (
                             <div id={`service-${service.id}`}
                                 key={service.id}
-                                className="td-service-6-item border-b border-gray-200 hover:rounded-[10px] hover:bg-primary group hover:text-white hover:transition-all hover:duration-300 hover:ease-in-out"
+                                className="py-8 px-5 border-b border-gray-200 hover:rounded-[10px] hover:bg-primary group hover:text-white hover:transition-all hover:duration-300 hover:ease-in-out"
                             >
-                                <div className="flex flex-col lg:flex-row flex-wrap items-start">
+                                <div className="flex flex-col lg:flex-row flex-wrap items-center">
                                     {/* Left side: ID and Title */}
                                     <div
                                         className="lg:w-5/12 w-full cursor-pointer"
                                         onClick={() => toggleAccordion(service.id)}
                                     >
                                         <div className="mb-[15px] flex items-center justify-between lg:justify-start">
-                                            <span className="text-lg font-medium mr-5 md:mr-20 hover:text-white">{service.id}</span>
-                                            <h3 className="text-[30px] text-secondary font-bold">{service.title}</h3>
+                                            <span className="hidden lg:block text-2xl font-medium mr-5 md:mr-20 hover:text-white">{service.id}</span>
+                                            <h3 className="text-[30px] text-secondary font-medium lg:font-semibold tracking-wide">{service.title}</h3>
 
                                             {/* Accordion icon only for visual cue */}
                                             <div className="lg:hidden ml-auto transition-transform duration-300">
@@ -80,9 +60,7 @@ const WhatYouGet = () => {
                                         </div>
                                     </div>
 
-                                    {/* Right side: Description */}
                                     <div className="lg:w-7/12 w-full">
-                                        {/* Large screen: always show */}
                                         <div className="hidden lg:block td-service-6-text mb-[15px]">
                                             <ul className="list-disc list-inside text-black group-hover:text-white">
                                                 {service.description.map((item, index) => (

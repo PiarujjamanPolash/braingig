@@ -16,8 +16,6 @@ const CTA = () => {
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/60 -z-10"></div>
-            {/* <div className="absolute inset-0 bg-gradient-to-t from-[#212124] to-transparent"></div> */}
-            {/* Content */}
             <div className="relative z-10 flex flex-col justify-start p-5 md:pl-20 pb-5 md:pb-15 flex items-center md:items-start">
                 <h2 className="w-full sm:w-[70%] lg:!w-[45%] !text-white text-3xl md:text-4xl font-medium lg:font-medium leading-normal tracking-wide mb-6 text-center md:text-start">
                     Contact <strong className='text-secondary'>Brain Gig</strong> today and start your journey to higher rankings and increased organic traffic.

@@ -15,7 +15,7 @@ const ContactPage = () => {
                     title={
                         <>
                             Would you like more information? we are
-                            happy <span style={{color: "#ff5722"}}>to help you!</span>
+                            happy <span style={{color: "#F87B1B"}}>to help you!</span>
                         </>
                     }
                 />

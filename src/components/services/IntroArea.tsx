@@ -23,7 +23,7 @@ const IntroArea: React.FC = () => {
                             <div
                                 className="td-service-main-content text-center pt-[80px] lg:pt-[140px] mb-[30px] lg:mb-[60px]"
                             >
-                                <span className="mb-[25px] inline-block">Who we are</span>
+                                <span className="mb-[25px] inline-block !text-secondary">Who we are</span>
                                 <h2>
                                     We provide brilliant ideas to help your startup grow building your
                                     branding with precision
@@ -51,7 +51,7 @@ const IntroArea: React.FC = () => {
                                     >
                                         <div className="td-service-main-strategy mb-[40px] text-center md:text-start">
                                             <h3 className="title mb-[20px]">Brand strategy</h3>
-                                            <p className="text">
+                                            <p className="text text-base lg:text-lg font-semibold">
                                                 Some definitions of marketing highlight marketing&apos;s ability to
                                                 produce
                                             </p>
@@ -63,7 +63,7 @@ const IntroArea: React.FC = () => {
                                     >
                                         <div className="td-service-main-strategy mb-[40px] text-center md:text-start">
                                             <h3 className="title mb-[20px]">Make it creative</h3>
-                                            <p className="text">
+                                            <p className="text text-base lg:text-lg font-semibold">
                                                 Some definitions of marketing highlight marketing&apos;s ability to
                                                 produce
                                             </p>
@@ -74,7 +74,7 @@ const IntroArea: React.FC = () => {
                                         className="w-full"
                                     >
                                         <div className="td-service-main-strategy text-center md:text-start">
-                                            <p className="text">
+                                            <p className="text text-base lg:text-lg font-medium">
                                                 Some definitions of marketing highlight marketing&apos;s ability to
                                                 produce value to shareholders of the firm as well. In this
                                                 context, marketing can be defined as the management process

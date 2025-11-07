@@ -25,13 +25,13 @@ const About: React.FC = () => {
                     {/* Left Content */}
                     <div className="lg:col-span-5">
                         <div className="td-about-3-content lg:mr-[110px] mb-[30px]">
-                            <p className="para pb-14">
+                            <p className="para text-base lg:text-lg font-semibold pb-14">
                                 We build intelligent directory platforms designed to simplify listings, enhance discoverability, and streamline management—all while driving user engagement and business growth.
                             </p>
                             <h2 className="title relative inline-block mb-0 text-5xl font-bold">
                                 50 <span>+</span>
                             </h2>
-                            <p className="para">
+                            <p className="para font-semibold">
                                 Businesses trust our solutions to launch dynamic, feature-rich listing platforms that deliver measurable results.
                             </p>
                         </div>

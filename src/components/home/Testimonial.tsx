@@ -11,7 +11,7 @@ import userImage from "../../../public/images/testimonials/user.webp"
 const Testimonial: React.FC = () => {
 
     return (
-        <div className="td-testimonial-area grey-bg-2 lg:pt-[155px] py-[80px] lg:pb-[120px]">
+        <div className="td-testimonial-area grey-bg-2 lg:py-[80px] py-[60px]">
             <div className="container w-[90%] mx-auto">
                 <div className="flex flex-wrap">
                     {/* Left Section */}
@@ -37,12 +37,12 @@ const Testimonial: React.FC = () => {
                         <div
                             className="td-testimonial-content mb-0 lg:ml-20"
                         >
-                            <h2 className="td-testimonial-title mb-[16px] td-text-invert">
+                            <h2 className="font-medium text-[40px] lg:text-[60px] mb-[16px] td-text-invert-orange">
                                 What Our Clients
                                 <br /> <span>Say About Us</span>
                             </h2>
                             <div className="w-full">
-                                <div className="td-testimonial-slide-content lg:ml-6 mb-10">
+                                <div className="td-testimonial-slide-content mb-10">
                                     <Swiper
                                         modules={[Navigation, Virtual]}
                                         navigation={{
@@ -56,9 +56,9 @@ const Testimonial: React.FC = () => {
                                                 <div className="flex flex-col lg:flex-row gap-10">
                                                     <div className="lg:w-12/12 flex flex-col justify-between">
                                                         <div className="td-testimonial-slide-content">
-                                                            <p className="mb-15">{item.review}</p>
-                                                            <h4 className="mb-3 mt-5">{item.name}</h4>
-                                                            <span>{item.position}</span>
+                                                            <p className="text-lg mb-15">{item.review}</p>
+                                                            <h4 className="font-medium text-[24px] mb-3 mt-5">{item.name}</h4>
+                                                            <span className="font-normal text-[18px]">{item.position}</span>
                                                         </div>
                                                     </div>
                                                 </div>

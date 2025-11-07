@@ -22,7 +22,7 @@ const FAQ: React.FC<FAQProps> = ({ data }) => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
                         {/* Left Image */}
-                        <div className="w-full">
+                        <div className="w-full hidden md:block">
                             <div className="td-faq-2-thumb mb-8 fix td-rounded-10">
                                 <Image
                                     width={533}
@@ -38,7 +38,7 @@ const FAQ: React.FC<FAQProps> = ({ data }) => {
                         {/* Right Content */}
                         <div className="w-full">
                             <div className="td-faq-4-wrap-right td-faq-2-wrap-right mb-8">
-                                <h2 className="font-extrabold text-[80px] tracking-normal td-text-invert-orange">
+                                <h2 className="font-medium text-[40px] lg:text-[60px] tracking-wide td-text-invert-orange">
                                     Frequently asked <span>questions</span>
                                 </h2>
                                 <Accordion data={data}/>

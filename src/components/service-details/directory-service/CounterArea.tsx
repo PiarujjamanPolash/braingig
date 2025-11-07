@@ -34,7 +34,7 @@ const CounterArea: React.FC = () => {
                 <div className="flex justify-center">
                     <div className="w-full lg:w-[70%] text-center mb-[70px]">
                         <div className="td-counter-3-title-wrap">
-                            <span className="td-section-3-subtitle inline-block mb-[15px]">
+                            <span className="td-section-3-subtitle inline-block !text-secondary mb-[15px]">
                                 Our Proven Impact
                             </span>
                             <h2 ref={textRef} className="td-section-3-title td-split-text td-split-in-right">Directory Platforms <span>Delivering Real </span>Growth and Engagement.

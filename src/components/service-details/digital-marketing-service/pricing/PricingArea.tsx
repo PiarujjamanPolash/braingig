@@ -3,13 +3,10 @@
 import { pricingData } from "@/utils/fakeData/pricingData";
 import Link from "next/link";
 import { useState } from "react";
-import { FiMinus, FiPlus } from "react-icons/fi";
 import PricingCard from "./PricingCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+
 const PricingArea: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState("Bundles");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -27,11 +24,8 @@ const PricingArea: React.FC = () => {
     <div className="td-pricing-area py-20 lg:py-[120px] px-5 md:px-0">
       <div className="">
         <div className="flex justify-center">
-          <div className="flex flex-col items-center text-center mb-[65px]">
-            {/* <span className="td-section-6-subtitle mb-[15px]">
-              OUR SUITABLE PRICING PLANS
-            </span> */}
-            <h2 className="!text-[50px] td-text-invert-orange">
+          <div className="flex flex-col items-center text-center mb-8 lg:mb-[65px]">
+            <h2 className="text-[40px] lg:!text-[60px] font-medium tracking-wide td-text-invert-orange">
               CUSTOMIZABLE PRICING OPTIONS
             </h2>
           </div>

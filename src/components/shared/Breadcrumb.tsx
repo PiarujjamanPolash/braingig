@@ -32,7 +32,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
               {subtitle && (
                 <span
                   ref={subtitleRef}
-                  className="subtitle inline-block mb-2 lg:mb-[10px]"
+                  className="text-lg text-secondary font-medium inline-block mb-2 lg:mb-[10px]"
                 >
                   {subtitle}
                 </span>
@@ -40,13 +40,13 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
 
               <h2
                 ref={titleRef}
-                className={`td-section-page-title mb-5`}
+                className={`text-[80px] w-full lg:w-[60%] text-primary mb-5`}
               >
                 {title}
               </h2>
 
               {description && (
-                <p ref={paraRef} className="text">
+                <p ref={paraRef} className="text text-base lg:text-lg font-medium">
                   {description}
                 </p>
               )}

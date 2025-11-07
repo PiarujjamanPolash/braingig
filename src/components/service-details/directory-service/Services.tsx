@@ -1,9 +1,6 @@
 "use client"
-
-import Link from 'next/link';
 import { useRef } from 'react';
 import Image from 'next/image';
-import Card from './ServiceItems';
 import ServiceItems from './ServiceItems';
 import FadeInUp from '@/components/animations/FadeInUp';
 

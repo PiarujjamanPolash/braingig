@@ -11,14 +11,14 @@ type HeroProps = {
 const Hero: React.FC<HeroProps> = ({ service }) => {
 
     return (
-        <div className="w-[90%] mx-auto pt-[150px] lg:pt-[215px]">
+        <div className="w-[90%] mx-auto pt-[150px] lg:pt-[170px]">
             <div className="td-service-area pb-11">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-wrap -mx-4">
                         <div className="w-full lg:w-1/2 px-4">
                             <div className="td-breadcrumb-wrap">
                                 <AnimateFadeInLeft>
-                                    <h2 className="td-section-page-title mb-9">
+                                    <h2 className="text-[40px] lg:text-[80px] font-medium text-secondary mb-9">
                                         {service.title} <span>{service.highlight}</span>
                                     </h2>
                                 </AnimateFadeInLeft>
@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({ service }) => {
                         <div className="w-full lg:w-1/2 px-4">
                             <div className="td-service-hero-wrap">
                                 <div className="td-service-hero-content ml-[110px]">
-                                    <p className="mb-10">
+                                    <p className="text-base lg:text-lg font-bold mb-10">
                                         {service.description}
                                     </p>
                                     <div className="td-service-hero-border mb-15"></div>

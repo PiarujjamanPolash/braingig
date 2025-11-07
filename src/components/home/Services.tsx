@@ -9,20 +9,18 @@ const Services: React.FC = () => {
         <div className="td-service-6-area w-[90%] mx-auto mb-[120px]">
             <div className="container mx-auto px-3 sm:px-4 lg:px-6">
                 <div className="flex flex-wrap items-end">
-                    
-                    <div className="flex flex-wrap lg:flex-nowrap w-full">
+                    <div className="flex flex-col lg:flex-row w-full items-center">
                         <div className="td-service-6-title-wrap lg:w-8/12 w-full mb-6 lg:mb-0">
-                            <span className="td-section-6-subtitle mb-20 d-inline-block">OUR CORE SERVICES</span>
-                            <h2 className="td-section-6-bigtitle td-text-opacity">
-                                EXPLORE
-                                <br /> OUR SERVICES
+                            {/* <span className="td-section-6-subtitle mb-20 d-inline-block">OUR CORE SERVICES</span> */}
+                            <h2 className="w-full md:w-[80%] lg:w-[70%]  !text-[40px] lg:!text-[60px] td-text-invert-orange">
+                                EXPLORE OUR SERVICES
                             </h2>
                         </div>
-                        <div className="td-service-6-title-text mr-20 lg:w-4/12 w-full">
-                            <p className="td-section-6-text">
+                        <div className="td-service-6-title-text text-[#555855] mr-20 lg:w-4/12 w-full">
+                            <p className="td-section-6-text text-lg mb-[30px]">
                                 Get expert solutions for every business establishment and growth
                             </p>
-                            <p className="td-section-6-text">
+                            <p className="td-section-6-text text-lg">
                                 Our mission is to revolutionize creative work for companies with
                                 style and substance. Quality and Effort intersect in a meaningful way.
                             </p>

@@ -13,7 +13,7 @@ const BranchArea: React.FC = () => {
                             <div
                                 className="text-center"
                             >
-                                <h2 className="td-section-page-title mb-[40px] md:mb-[105px]">
+                                <h2 className="text-[40px] lg:text-[60px] td-text-invert-orange mb-[40px] md:mb-[105px]">
                                     Our Branch <span>Office</span>
                                 </h2>
                             </div>

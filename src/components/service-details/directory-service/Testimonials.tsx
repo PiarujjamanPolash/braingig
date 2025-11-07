@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -9,7 +7,7 @@ import { testimonialsData } from "@/utils/fakeData/testimonialsData";
 
 const Testimonials: React.FC = () => {
     return (
-        <section className="td-testimonial-3-area td-testimonial-3-spacing fix bg-[#beff01] pt-[100px] lg:pt-[155px] px-5 lg:px-0 relative">
+        <section className="td-testimonial-3-area td-testimonial-3-spacing fix bg-primary pt-[60px] lg:pt-[100px] px-5 lg:px-0 relative">
             {/* Big background text */}
             <h3 className="td-testimonial-3-bigtext hidden md:block">BRAINGIG</h3>
 
@@ -21,7 +19,7 @@ const Testimonials: React.FC = () => {
                             <span className="td-section-3-subtitle inline-block mb-[15px]">
                                 Loved by Entrepreneurs Everywhere
                             </span>
-                            <h2 className="td-section-3-title mb-[45px]">
+                            <h2 className="td-section-3-title !text-white mb-[40px]">
                                 Stories of <span>Growth and Success</span>
                             </h2>
 

@@ -3,7 +3,7 @@ import { imagesData, tagsData } from "@/utils/fakeData/digitalMarketingData";
 import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const handleScrollToService = (id: string) => {
@@ -49,11 +49,11 @@ const Hero: React.FC = () => {
                     <div className="w-full mx-auto">
                         <div className="pb-10 lg:pb-[90px]">
                             <h2
-                                className="td-hero-6-title text-center"
+                                className="td-hero-6-title text-primary text-center"
                             >
                                 Marketing That Moves Markets
                             </h2>
-                            <p className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto !text-base md:!text-3xl text-black text-center mt-5 lg:mt-10">Transforming ideas into campaigns that connect and convert your ideal audience through expert <strong>Digital Marketing Services.</strong></p>
+                            <p className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto !text-base md:!text-3xl text-primary text-center mt-5 lg:mt-10">Transforming ideas into campaigns that connect and convert your ideal audience through expert <strong>Digital Marketing Services.</strong></p>
                         </div>
 
                         {/* Tags */}
@@ -62,11 +62,11 @@ const Hero: React.FC = () => {
                                 modules={[Autoplay]}
                                 spaceBetween={5}
                                 breakpoints={{
-                                    0: { slidesPerView: 1.5 },      // small mobile
-                                    480: { slidesPerView: 1.5 },    // larger phones
-                                    768: { slidesPerView: 2 },      // tablets
-                                    1024: { slidesPerView: 3 },     // desktops
-                                    1280: { slidesPerView: 4 },     // large screens
+                                    0: { slidesPerView: 1.5 },      
+                                    480: { slidesPerView: 1.5 },    
+                                    768: { slidesPerView: 2 },      
+                                    1024: { slidesPerView: 3 },   
+                                    1280: { slidesPerView: 4 },     
                                 }}
                                 loop={true}
                                 autoplay={{
@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
                                                 e.preventDefault();
                                                 handleScrollToService(tag.id);
                                             }}
-                                            className="font-medium text-[20px] px-5 py-2.5 block text-center border rounded-lg hover:bg-gray-100 transition"
+                                            className="font-medium text-[20px] px-5 py-2.5 block text-center !text-primary border rounded-lg hover:bg-gray-100 transition"
                                         >
                                             {tag.label}
                                         </Link>
@@ -114,6 +114,7 @@ const Hero: React.FC = () => {
                                         width={304}
                                         height={390}
                                         className="w-[196px] h-[260] object-cover rounded-[10px]"
+                                        priority
                                     />
                                 </div>
                             ))}

@@ -22,18 +22,19 @@ const DigitalMarketingAbout = dynamic(() => import("@/components/service-details
 const WhatYouGet = dynamic(() => import("@/components/service-details/digital-marketing-service/WhatYouGet"));
 const WhyUs = dynamic(() => import("@/components/service-details/digital-marketing-service/WhyUs"));
 const Process = dynamic(() => import("@/components/service-details/digital-marketing-service/Process"));
+const CTA = dynamic(() => import("@/components/service-details/digital-marketing-service/CTA"));
+const Testimonial = dynamic(() => import("@/components/service-details/digital-marketing-service/Testimonial"));
+const Team = dynamic(() => import("@/components/service-details/digital-marketing-service/Team"));
+const Counter = dynamic(() => import("@/components/service-details/digital-marketing-service/Counter"));
+const PricingArea = dynamic(() => import("@/components/service-details/digital-marketing-service/pricing/PricingArea"));
 const RecentWorks = dynamic(() => import("@/components/home/RecentWorks"));
 
 
 
 import { servicesData } from "@/utils/fakeData/servicesData";
-import CTA from "@/components/service-details/digital-marketing-service/CTA";
 import { faqData } from "@/utils/fakeData/faqData";
 import { digitalMarketingFaq } from "@/utils/fakeData/digitalMarketingFaq";
-import Testimonial from "@/components/service-details/digital-marketing-service/Testimonial";
-import Team from "@/components/service-details/digital-marketing-service/Team";
-import Counter from "@/components/service-details/digital-marketing-service/Counter";
-import PricingArea from "@/components/service-details/digital-marketing-service/pricing/PricingArea";
+
 export async function generateStaticParams() {
     return servicesData.map(service => ({
         slug: service.slug,
