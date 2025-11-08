@@ -5,14 +5,14 @@ import { FaArrowRight } from "react-icons/fa";
 const Hero: React.FC = () => {
   return (
     <div
-      className="td-hero-area td-btn-trigger td-hero-2-spacing relative z-[1] bg-gradient-to-t from-[#EEEEEE] to-[#CBD99B] text-[#11224E] bg-cover bg-center"
+      className="td-hero-area td-btn-trigger td-hero-2-spacing relative z-[1] bg-gradient-to-t from-secondary/90 to-accent text-[#11224E] bg-cover bg-center"
     >
       <div className="container w-[90%] mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12">
           {/* Left Column */}
           <div className="w-full lg:col-span-7">
             <div className="td-hero-2-title-wrap">
-              <h2 className="font-bold text-[40px] sm:text-[60px] md:text-[70px] lg:text-[80px] xl:text-[100px] leading-[1.14] tracking-[0.02em] text-white mb-[100px]">
+              <h2 className="font-bold text-[40px] sm:text-[60px] md:text-[70px] lg:text-[80px] xl:text-[100px] leading-[1.14] tracking-[0.02em] text-primary mb-[100px]">
                 <span className="flex items-center td-split-text td-split-in-right">
                   Our Team Work
                   <Link href="/contact">
