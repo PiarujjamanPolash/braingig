@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import { faqData } from "@/utils/fakeData/faqData";
 
 const Hero = dynamic(() => import("@/components/home/Hero"));
 const Testimonial = dynamic(() => import("@/components/home/Testimonial"));

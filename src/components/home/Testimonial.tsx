@@ -1,30 +1,27 @@
 "use client"
-import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation, Virtual } from "swiper/modules";
+import Image from "next/image";
+import { Autoplay, Navigation, Virtual } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { testimonialsData } from "@/utils/fakeData/testimonialsData";
 import Brands from "@/components/shared/Brands";
 import ScrollRevealLeft from "@/components/animations/ScrollRevealLeft";
-import Image from "next/image";
-import userImage from "../../../public/images/testimonials/user.webp"
-const Testimonial: React.FC = () => {
 
+const Testimonial: React.FC = () => {
     return (
-        <div className="td-testimonial-area grey-bg-2 lg:py-[80px] py-[60px]">
+        <div className="td-testimonial-area bg-light lg:py-[80px] py-[60px]">
             <div className="container w-[90%] mx-auto">
                 <div className="flex flex-wrap">
                     {/* Left Section */}
-                    <div className="w-full md:w-4/12 lg:w-3/12">
+                    <div className="hidden md:block w-full md:w-4/12 lg:w-3/12">
                         <ScrollRevealLeft>
                             <div
-                                className="td-testimonial-left mb-10 scroll-reveal-left"
+                                className="td-testimonial-left text-primary mb-10 scroll-reveal-left"
                             >
-                                <span className="td-section-subtitle mb-[185px] inline-block">
+                                <span className="td-section-subtitle text-primary mb-[185px] inline-block">
                                     CLIENTS FEEDBACK
                                 </span>
-                                <Image width={177} height={60} className="mb-5" src={userImage} alt="user Image" />
-                                <p>
+                                <Image width={177} height={60} className="mb-5" src={"/images/testimonials/user.webp"} alt="user Image" />
+                                <p className="text-primary">
                                     Top companies trust us
                                     <br /> with their websites
                                 </p>
@@ -41,10 +38,13 @@ const Testimonial: React.FC = () => {
                                 What Our Clients
                                 <br /> <span>Say About Us</span>
                             </h2>
+                            
                             <div className="w-full">
-                                <div className="td-testimonial-slide-content mb-10">
+                                <div className="td-testimonial-slide-content mb-6 lg:mb-10">
                                     <Swiper
-                                        modules={[Navigation, Virtual]}
+                                        modules={[Navigation, Virtual,Autoplay]}
+                                        autoplay
+                                        loop
                                         navigation={{
                                             prevEl: ".td-testimonial-prev",
                                             nextEl: ".td-testimonial-next",
@@ -55,8 +55,8 @@ const Testimonial: React.FC = () => {
                                             <SwiperSlide key={index}>
                                                 <div className="flex flex-col lg:flex-row gap-10">
                                                     <div className="lg:w-12/12 flex flex-col justify-between">
-                                                        <div className="td-testimonial-slide-content">
-                                                            <p className="text-lg mb-15">{item.review}</p>
+                                                        <div className="td-testimonial-slide-content text-primary">
+                                                            <p className="text-lg mb-7 lg:mb-15">{item.review}</p>
                                                             <h4 className="font-medium text-[24px] mb-3 mt-5">{item.name}</h4>
                                                             <span className="font-normal text-[18px]">{item.position}</span>
                                                         </div>
@@ -77,19 +77,19 @@ const Testimonial: React.FC = () => {
                                             >
                                                 <path
                                                     d="M30.8699 12.2679L0.014612 12.4214"
-                                                    stroke="currentColor"
+                                                    stroke="#11224E"
                                                     strokeWidth="1.5"
                                                     strokeMiterlimit="10"
                                                 />
                                                 <path
                                                     d="M11.5445 0C11.5445 6.63283 6.38111 12 2.56383e-05 12"
-                                                    stroke="currentColor"
+                                                    stroke="#11224E"
                                                     strokeWidth="1.5"
                                                     strokeMiterlimit="10"
                                                 />
                                                 <path
                                                     d="M4.08971e-05 12C6.38112 12 11.5446 17.3671 11.5446 24"
-                                                    stroke="currentColor"
+                                                    stroke="#11224E"
                                                     strokeWidth="1.5"
                                                     strokeMiterlimit="10"
                                                 />
@@ -106,19 +106,19 @@ const Testimonial: React.FC = () => {
                                             >
                                                 <path
                                                     d="M-0.000234102 12.2679L30.855 12.4214"
-                                                    stroke="currentColor"
+                                                    stroke="#11224E"
                                                     strokeWidth="1.5"
                                                     strokeMiterlimit="10"
                                                 />
                                                 <path
                                                     d="M19.3251 0C19.3251 6.63283 24.4886 12 30.8696 12"
-                                                    stroke="currentColor"
+                                                    stroke="#11224E"
                                                     strokeWidth="1.5"
                                                     strokeMiterlimit="10"
                                                 />
                                                 <path
                                                     d="M30.8696 12C24.4885 12 19.3251 17.3671 19.3251 24"
-                                                    stroke="currentColor"
+                                                    stroke="#11224E"
                                                     strokeWidth="1.5"
                                                     strokeMiterlimit="10"
                                                 />

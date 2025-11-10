@@ -16,7 +16,7 @@ const Brands = ({ customClass = "p-10" }: BrandsProps) => {
                         key={id}
                         src={img}
                         alt="company logo"
-                        className={`w-56 sm:w-44 mx-4 object-contain ${id === 2
+                        className={`lg:w-56 w-44 h-20 sm:h-25 md:h-30 lg:h-full mx-4 object-contain ${id === 2
                             ? "mix-blend-difference"
                             : isLight
                                 ? "filter brightness-[60%]"

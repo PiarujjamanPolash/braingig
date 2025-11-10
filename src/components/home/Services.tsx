@@ -6,7 +6,7 @@ import React from "react";
 
 const Services: React.FC = () => {
     return (
-        <div className="td-service-6-area w-[90%] mx-auto mb-[120px]">
+        <div className="td-service-6-area w-[90%] mx-auto mb-15 lg:mb-20">
             <div className="container mx-auto px-3 sm:px-4 lg:px-6">
                 <div className="flex flex-wrap items-end">
                     <div className="flex flex-col lg:flex-row w-full items-center">
@@ -17,10 +17,10 @@ const Services: React.FC = () => {
                             </h2>
                         </div>
                         <div className="td-service-6-title-text text-[#555855] mr-20 lg:w-4/12 w-full">
-                            <p className="td-section-6-text text-lg mb-[30px]">
+                            <p className="td-section-6-text text-primary font-medium text-lg mb-[30px]">
                                 Get expert solutions for every business establishment and growth
                             </p>
-                            <p className="td-section-6-text text-lg">
+                            <p className="td-section-6-text text-primary font-medium text-lg">
                                 Our mission is to revolutionize creative work for companies with
                                 style and substance. Quality and Effort intersect in a meaningful way.
                             </p>

@@ -1,5 +1,4 @@
 "use client";
-import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import Link from "next/link";
@@ -13,8 +12,8 @@ const RecentWorks: React.FC = () => {
   const firstSliderProjects = shuffledProjects.slice(0, half);
   const secondSliderProjects = shuffledProjects.slice(half);
   return (
-    <div className="td-portfolio-area pt-[80px] lg:pt-[125px]">
-      <h2 className="portfolio-text td-split-text td-split-in-right uppercse">Portfolio</h2>
+    <div className="td-portfolio-area mt-[60px] lg:mt-[80px]">
+      <h2 className="portfolio-text tracking-wider td-split-text td-split-in-right uppercse">Portfolio</h2>
 
       <div id="recent-works-swiper-1" className="td-portfolio-2-slider-wrap mb-[20px]">
         <Swiper

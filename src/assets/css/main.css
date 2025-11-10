@@ -1401,7 +1401,7 @@ textarea {
 .td-section-subtitle {
   font-weight: 600;
   font-size: 18px;
-  color: var(--td-common-black);
+  /* color: var(--td-common-black); */
 }
 /* .td-section-title {
   font-weight: 800;
@@ -4649,20 +4649,17 @@ textarea {
     	01. about
 ===============================*/
 .td-about-left span {
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--td-common-black);
   margin-bottom: 320px;
   display: inline-block;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .td-about-left span {
-    margin-bottom: 120px;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .td-about-left span {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -5926,8 +5923,8 @@ textarea {
 .td-process-list ul li {
   font-weight: 500;
   font-size: 18px;
-  letter-spacing: -0.02em;
-  color: var(--td-grey-1);
+  /* letter-spacing: -0.02em; */
+  /* color: var(--td-grey-1); */
   position: relative;
   padding-left: 20px;
   margin-bottom: 13px;
@@ -5983,8 +5980,8 @@ textarea {
   font-weight: 600;
   font-size: 18px;
   /* line-height: 30px; */
-  letter-spacing: -0.02em;
-  color: var(--td-common-black);
+  /* letter-spacing: -0.02em; */
+  /* color: var(--td-common-black); */
 }
 .td-testimonial-navigation span {
   transition: all 0.4s ease;

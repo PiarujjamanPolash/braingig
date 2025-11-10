@@ -1,19 +1,17 @@
 "use client";
-
 import { workProcessData } from "@/utils/fakeData/workProcessData";
 import Image from "next/image";
-import ScrollPinAnimation from "../animations/ScrollPinAnimation";
-import thumb from "../../../public/images/working-process/thumb.webp"
+import ScrollPinAnimation from "@/components/animations/ScrollPinAnimation";
 
 const WorkingProcess: React.FC = () => {
     return (
-        <div id="working-process" className="td-process-area py-[80px] lg:pt-[130px] lg:pb-[160px] w-[90%] mx-auto">
+        <div id="working-process" className="td-process-area my-[60px] lg:my-[80px] w-[90%] mx-auto">
             <div className="container mx-auto">
                 <div className="">
                     <div className="w-full">
-                        <div className="td-service-title-wrap pb-[10px] flex flex-col items-center sm:items-start">
-                            <h2 className="text-[60px] md:text-[80px] lg:text-[100px] text-medium mb-0 td-text-invert-orange">BrainGig</h2>
-                            <h3 className="font-normal text-[60px] md:text-[80px] lg:text-[100px] md:ml-[100px] lg:ml-[150px] td-text-invert-orange">Process</h3>
+                        <div className="td-service-title-wrap pb-[10px] flex flex-col items-center">
+                            <h2 className="text-[40px] lg:text-[60px] text-medium mb-0 td-text-invert-orange">The brain gig way</h2>
+                            {/* <h3 className="font-normal text-[60px] md:text-[80px] lg:text-[100px] md:ml-[100px] lg:ml-[150px] td-text-invert-orange">Way</h3> */}
                         </div>
                     </div>
                 </div>
@@ -26,7 +24,7 @@ const WorkingProcess: React.FC = () => {
                         <div className="lg:col-span-3 col-span-12 mr-3">
                             <ScrollPinAnimation>
                                 <div className="td-process-thumb pt-[80px] pb-[80px] td-fixed-thumb">
-                                    <Image width={280} height={320} className="w-full lg:w-[280px]" src={thumb} alt="thumb" />
+                                    <Image width={280} height={320} className="w-full lg:w-[280px]" src={"/images/working-process/thumb.webp"} alt="thumb" />
                                 </div>
                             </ScrollPinAnimation>
                         </div>
@@ -35,13 +33,13 @@ const WorkingProcess: React.FC = () => {
                         <div className="lg:col-span-9 col-span-12">
                             {workProcessData.map((item, index) => (
                                 <div key={item.id} className="grid lg:grid-cols-12 md:grid-cols-12 grid-cols-9">
-                                    <div className="lg:col-span-1 md:col-span-3 col-span-1">
+                                    <div className="lg:col-span-1 md:col-span-3 col-span-1 ">
                                         <div className={`td-process-count ${index === workProcessData.length - 1 ? "no-border" : ""}`}>
-                                            <span>{String(item.id).padStart(2, "0")}</span>
+                                            <span className="!text-primary">{String(item.id).padStart(2, "0")}</span>
                                         </div>
                                     </div>
                                     <div className="lg:col-span-6 md:col-span-4 col-span-8 ml-5 md:ml-0">
-                                        <div className={`td-process-title ${index === workProcessData.length - 1 ? "no-border" : ""}`}>
+                                        <div className={`td-process-title text-primary ${index === workProcessData.length - 1 ? "no-border" : ""}`}>
                                             <h3 className="text-[30px] lg:text-[40px] mb-0">
                                                 {item.title.split(" & ")[0]} <br className="hidden lg:block" /> <span>{item.title.split(" & ")[1] || ""}</span>
                                             </h3>
@@ -50,7 +48,7 @@ const WorkingProcess: React.FC = () => {
                                     <div className="lg:col-span-5 md:col-span-5 col-span-12">
                                         <div className={`td-process-list ${index === workProcessData.length - 1 ? "no-border" : ""}`}>
                                             <ul>
-                                                <li>{item.description}</li>
+                                                <li className="!text-primary">{item.description}</li>
                                             </ul>
                                         </div>
                                     </div>
