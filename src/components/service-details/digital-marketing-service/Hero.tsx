@@ -76,8 +76,8 @@ const Hero: React.FC = () => {
                                 }}
                                 speed={8000}
                             >
-                                {doubledTagData.map((tag) => (
-                                    <SwiperSlide key={tag.id}>
+                                {doubledTagData.map((tag, index) => (
+                                    <SwiperSlide key={`${tag.id}-${index}`}>
                                         <Link
                                             href="#"
                                             onClick={(e) => {

@@ -1,11 +1,47 @@
 "use client"
-import ServicesPinAnimation from '@/components/animations/ServicesPinAnimation';
 import { projectsData } from '@/utils/fakeData/digitalMarketingData';
 import Image from 'next/image';
 import React from 'react';
 import CountUp from 'react-countup';
+import { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const WhyUs = () => {
+    useEffect(() => {
+        const mm = gsap.matchMedia();
+
+        mm.add("(min-width: 991px)", () => {
+            const ctx = gsap.context(() => {
+                const projectPanels = gsap.utils.toArray<HTMLElement>(".td-service-pin-item-panel");
+
+                projectPanels.forEach((section, i) => {
+                    const sectionHeight = section.offsetHeight;
+                    const isLast = i === projectPanels.length - 1;
+
+                    gsap.to(section, {
+                        scrollTrigger: {
+                            trigger: section,
+                            start: "top top+=200",
+                            end: () => {
+                                return `+=${(sectionHeight * (3 - i)) - (i * 130)}`;
+                            },
+                            pin: true,
+                            pinSpacing: isLast,
+                            scrub: true,
+                            markers: false,
+                        },
+                    });
+                });
+            });
+
+            return () => ctx.revert();
+        });
+
+        return () => mm.revert();
+    }, []);
     return (
         <section className='container w-[90%] mx-auto'>
             <div className='flex flex-col justify-center items-center gap-5 mb-15 lg:mb-20'>
@@ -75,7 +111,7 @@ const WhyUs = () => {
                                         </span>
                                     </div>
 
-                                    <div className="flex text-sm md:text-base justify-between md:justify-start lg:justify-between items-center gap-3 lg:gap-0">
+                                    <div className="flex text-sm justify-between md:justify-start lg:justify-between items-center gap-3 lg:gap-0">
                                         <span className="text-gray-600">CTR:</span>
                                         <span className="text-green-600 font-semibold">
                                             <CountUp start={0} end={project.results.ctr.end} duration={1.5} enableScrollSpy decimals={1} />%
@@ -94,7 +130,6 @@ const WhyUs = () => {
                         </div>
                     </div>
                 ))}
-                <ServicesPinAnimation />
             </div>
         </section>
     );

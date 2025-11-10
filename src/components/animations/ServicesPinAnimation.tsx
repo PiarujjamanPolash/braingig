@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -14,20 +13,16 @@ const ServicesPinAnimation: React.FC = () => {
       const ctx = gsap.context(() => {
         const projectPanels = document.querySelectorAll(".td-service-pin-item-panel");
 
-        projectPanels.forEach((section, i) => {
-          const el = section as HTMLElement;
-          const isLast = i === projectPanels.length - 1;
-          const header = document.querySelector("header"); // or your header selector
-const headerHeight = header ? header.offsetHeight : 0;
+        projectPanels.forEach((section) => {
           gsap.to(section, {
             scrollTrigger: {
               trigger: section,
               pin: section,
               scrub: 1,
-              start: `top t0p+=10%`,
-              end: "bottom top+=70%",
+              start: "top top",
+              end: "bottom 100%",
               endTrigger: ".td-service-pin-items",
-              pinSpacing: isLast ? true : false,
+              pinSpacing: false,
               markers: false,
             },
           });
