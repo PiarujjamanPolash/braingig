@@ -13,6 +13,13 @@ const RecentWorks: React.FC = () => {
   const secondSliderProjects = shuffledProjects.slice(half);
   return (
     <div className="td-portfolio-area mt-[60px] lg:mt-[80px]">
+      <div className="flex flex-col justify-center items-center mb-15">
+        <h2 className="font-medium text-[40px] lg:text-[60px] mb-2 td-text-invert-orange">
+          Recent Projects
+        </h2>
+        <p className="text-base md:text-lg font-normal lg:font-semibold w-[90%] md:w-[80%] lg:w-[50%] text-primary text-center">Experience our mastery through a curated portfolio showcasing high-impact solutions developed by a leading web development agency.
+        </p>
+      </div>
       <h2 className="portfolio-text tracking-wider td-split-text td-split-in-right uppercse">Portfolio</h2>
 
       <div id="recent-works-swiper-1" className="td-portfolio-2-slider-wrap mb-[20px]">

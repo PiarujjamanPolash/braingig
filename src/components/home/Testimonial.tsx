@@ -12,7 +12,7 @@ const Testimonial: React.FC = () => {
             <div className="container w-[90%] mx-auto">
                 <div className="flex flex-wrap">
                     {/* Left Section */}
-                    <div className="hidden md:block w-full md:w-4/12 lg:w-3/12">
+                    {/* <div className="hidden md:block w-full md:w-4/12 lg:w-3/12">
                         <ScrollRevealLeft>
                             <div
                                 className="td-testimonial-left text-primary mb-10 scroll-reveal-left"
@@ -27,24 +27,29 @@ const Testimonial: React.FC = () => {
                                 </p>
                             </div>
                         </ScrollRevealLeft>
-                    </div>
+                    </div> */}
 
                     {/* Right Section */}
-                    <div className="w-full md:w-8/12 lg:w-9/12">
+                    <div className="w-full">
                         <div
                             className="td-testimonial-content mb-0 lg:ml-20"
                         >
-                            <h2 className="font-medium text-[40px] lg:text-[60px] mb-[16px] td-text-invert-orange">
-                                What Our Clients
-                                <br /> <span>Say About Us</span>
-                            </h2>
-                            
+                            <div className="flex flex-col justify-center items-center mb-20">
+                                <h2 className="font-medium text-[40px] lg:text-[60px] mb-2 td-text-invert-orange">
+                                    What Our Clients Say About Us
+                                </h2>
+                                <p className="text-base md:text-lg font-normal lg:font-semibold w-[90%] md:w-[80%] lg:w-[50%] text-primary text-center">Hear from visionary clients who chose Brain Gig as their go-to digital agency for design and development agency partners, see the real results and  growth.
+                                </p>
+                            </div>
+
                             <div className="w-full">
                                 <div className="td-testimonial-slide-content mb-6 lg:mb-10">
-                                    <Swiper
-                                        modules={[Navigation, Virtual,Autoplay]}
-                                        autoplay
+                                    <Swiper id="home-testimonial"
+                                        modules={[Navigation, Virtual, Autoplay]}
+                                        // autoplay
+                                        slidesPerView={2}
                                         loop
+                                        spaceBetween={50}
                                         navigation={{
                                             prevEl: ".td-testimonial-prev",
                                             nextEl: ".td-testimonial-next",
@@ -53,12 +58,17 @@ const Testimonial: React.FC = () => {
                                     >
                                         {testimonialsData.map((item, index) => (
                                             <SwiperSlide key={index}>
-                                                <div className="flex flex-col lg:flex-row gap-10">
-                                                    <div className="lg:w-12/12 flex flex-col justify-between">
-                                                        <div className="td-testimonial-slide-content text-primary">
+                                                <div className="flex flex-col lg:flex-row gap-10 h-full">
+                                                    <div className="lg:w-12/12 flex flex-col justify-between  h-full">
+                                                        <div className="td-testimonial-slide-content text-primary  h-full">
                                                             <p className="text-lg mb-7 lg:mb-15">{item.review}</p>
-                                                            <h4 className="font-medium text-[24px] mb-3 mt-5">{item.name}</h4>
-                                                            <span className="font-normal text-[18px]">{item.position}</span>
+                                                            <div className="flex items-center justify-start gap-3">
+                                                                <Image width={70} height={70} src={item.img} className="rounded-full" alt="author"/>
+                                                                <div className="flex flex-col justify-center items-start gap-1">
+                                                                    <h4 className="font-medium text-[24px]">{item.name}</h4>
+                                                                    <span className="font-normal text-[18px]">{item.position}</span>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>

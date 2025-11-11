@@ -88,7 +88,7 @@ export const projectsData = [
     {
         id: 1,
         title: "Project 1",
-        image: "/images/service-details/digital-marketing-service/p1.jpg",
+        image: "/images/service-details/digital-marketing-service/P1.jpg",
         strategy: [
             { icon: FaRegClock, text: "5 Months" },
             { icon: FaRegFileAlt, text: "45 Blogs" },
@@ -105,7 +105,7 @@ export const projectsData = [
     {
         id: 2,
         title: "Project 2",
-        image: "/images/service-details/digital-marketing-service/p2.jpg",
+        image: "/images/service-details/digital-marketing-service/P2.jpg",
         strategy: [
             { icon: FaRegClock, text: "3 Months Ongoing" },
             // { icon: <FaRegFileAlt />, text: "Blogs" },
@@ -122,7 +122,7 @@ export const projectsData = [
     {
         id: 3,
         title: "Project 3",
-        image: "/images/service-details/digital-marketing-service/p3.jpg",
+        image: "/images/service-details/digital-marketing-service/P3.jpg",
         strategy: [
             { icon: FaRegClock, text: "1 Month" },
             { icon: FaRegFileAlt, text: "8 Blogs" },

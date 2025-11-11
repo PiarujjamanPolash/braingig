@@ -2,8 +2,11 @@
 import { workProcessData } from "@/utils/fakeData/workProcessData";
 import Image from "next/image";
 import ScrollPinAnimation from "@/components/animations/ScrollPinAnimation";
+import { useRef } from "react";
 
 const WorkingProcess: React.FC = () => {
+    const imageRef = useRef<HTMLImageElement | null>(null);
+
     return (
         <div id="working-process" className="td-process-area my-[60px] lg:my-[80px] w-[90%] mx-auto">
             <div className="container mx-auto">
@@ -22,11 +25,24 @@ const WorkingProcess: React.FC = () => {
                     <div className="grid lg:grid-cols-12 grid-cols-1">
                         {/* Left Image */}
                         <div className="lg:col-span-3 col-span-12 mr-3">
-                            <ScrollPinAnimation>
+                            {/* <ScrollPinAnimation>
                                 <div className="td-process-thumb pt-[80px] pb-[80px] td-fixed-thumb">
                                     <Image width={280} height={320} className="w-full lg:w-[280px]" src={"/images/working-process/thumb.webp"} alt="thumb" />
                                 </div>
+                            </ScrollPinAnimation> */}
+                            <ScrollPinAnimation imageRef={imageRef}>
+                                <div className="td-process-thumb pt-[80px] pb-[80px] td-fixed-thumb">
+                                    <img data-current-index="0"
+                                        ref={imageRef}
+                                        className="w-full lg:w-[280px]"
+                                        width={280}
+                                        height={320}
+                                        src="/images/working-process/thumb-1.jpg" // initial image
+                                        alt="thumb"
+                                    />
+                                </div>
                             </ScrollPinAnimation>
+
                         </div>
 
                         {/* Right Content */}

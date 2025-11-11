@@ -11,7 +11,7 @@ const AboutUs: React.FC = () => {
           {/* Left Column */}
           <div className="lg:col-span-4">
             <div className="td-about-left mb-[30px]">
-              <span className="text-lg font-semibold text-primary ">WHO WE ARE</span>
+              {/* <span className="text-lg font-semibold text-primary ">WHO WE ARE</span> */}
               <div className="td-about-left-thumb ml-[60px] fix td-rounded-10">
                 <Image
                 data-speed='.9'
@@ -29,7 +29,7 @@ const AboutUs: React.FC = () => {
           <div className="lg:col-span-8">
             <div className="td-about-content lg:mb-[30px]">
               <h2 className="font-normal lg:font-medium text-[40px] lg:text-[60px] leading-none lg:mb-[30px] td-text-invert-orange">
-                Grow your brand with <span className="inline-block">BrainGig</span>
+                About Brain gig
               </h2>
               <p className="text-base lg:text-lg lg:font-semibold mb-4 lg:mb-[45px] text-primary">
                 Grow your brand with Brain Gig, a visionary digital marketing agency and web design agency known for pushing boundaries. Our passion lies in blending innovation with strategy, delivering professional website design and custom website development that sparks growth and leaves lasting impressions.

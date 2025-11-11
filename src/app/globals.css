@@ -69,6 +69,9 @@ h6 {
 #recent-works-swiper-1 .swiper-slide {
   height: auto;
 }
+#home-testimonial .swiper-slide {
+  height: auto;
+}
 
 #recent-works-swiper-2 .swiper-wrapper {
   transition-timing-function: linear !important;
@@ -149,7 +152,7 @@ h6 {
   font-size: 290px;
   text-transform: uppercase;
   text-align: center;
-  color: var(--color-secondary);
+  color: var(--color-light);
   margin-bottom: -90px;
   line-height: 0.9;
 }

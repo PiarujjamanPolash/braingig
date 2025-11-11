@@ -16,7 +16,7 @@ export const clientLogoData: DataType = [
     // },
     {
         id: 3,
-        img: "/images/company-logo/company3.webp",
+        img: "/images/company-logo/company3.png",
     },
     {
         id: 4,
@@ -54,7 +54,8 @@ export const clientLogoData: DataType = [
     },
     {
         id: 12,
-        img: "/images/company-logo/company-12.jpg",
+        img: "/images/company-logo/company-12.png",
+        isLight: true
     },
 
 ]

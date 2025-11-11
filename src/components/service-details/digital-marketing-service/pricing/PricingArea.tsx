@@ -65,7 +65,7 @@ const PricingArea: React.FC = () => {
             navigation
             pagination={{ clickable: true }}
             breakpoints={{
-              0: { slidesPerView: 1 },
+              0: { slidesPerView: 1.2 },
               640: { slidesPerView: 1.2 },
               1024: { slidesPerView: 2.2 },
             }}

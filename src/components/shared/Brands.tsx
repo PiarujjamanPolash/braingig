@@ -11,9 +11,9 @@ const Brands = ({ customClass = "p-10" }: BrandsProps) => {
     return (
         <div className={`w-full overflow-hidden ${customClass}`}>
             <Marquee gradient={false} speed={50}>
-                {doubledclientLogoData.map(({ id, img, isLight }) => (
+                {doubledclientLogoData.map(({ id, img, isLight }, index) => (
                     <Image width={110} height={44}
-                        key={id}
+                        key={`${id}-${index}`}
                         src={img}
                         alt="company logo"
                         className={`lg:w-56 w-44 h-20 sm:h-25 md:h-30 lg:h-full mx-4 object-contain ${id === 2

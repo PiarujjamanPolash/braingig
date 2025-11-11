@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import { faqData } from "@/utils/fakeData/faqData";
+import OurFeatures from "@/components/home/OurFeatures";
 
 const Hero = dynamic(() => import("@/components/home/Hero"));
 const Testimonial = dynamic(() => import("@/components/home/Testimonial"));
@@ -20,6 +21,7 @@ const HomePage = () => {
       <RecentWorks />
       <WorkingProcess />
       <Services />
+      <OurFeatures />
     </ClientWrapper>
   );
 };

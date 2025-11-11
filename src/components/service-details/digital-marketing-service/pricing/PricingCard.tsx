@@ -59,8 +59,8 @@ const PricingCard: React.FC<PricingCardProps> = ({ item, idx }) => {
               <div key={i} className="mb-[20px]">
                 <h5 className="text-xl font-medium mb-[10px]">{section.title}</h5>
                 <ul className="list-disc list-inside space-y-1">
-                  {section.items.map((feature, j) => (
-                    <li key={j}>{feature}</li>
+                  {section.items.map((feature, index) => (
+                    <li key={index}>{feature}</li>
                   ))}
                 </ul>
               </div>
@@ -89,8 +89,8 @@ const PricingCard: React.FC<PricingCardProps> = ({ item, idx }) => {
 
             {showAddOn && (
               <ul className="list-disc list-inside mt-2 space-y-1">
-                {addOnSection.items.map((addon, k) => (
-                  <li key={k} className="text-gray-700">
+                {addOnSection.items.map((addon, index) => (
+                  <li key={index} className="text-gray-700">
                     {addon}
                   </li>
                 ))}

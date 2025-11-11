@@ -20,7 +20,7 @@ const Testimonials = dynamic(() => import("@/components/service-details/director
 const DigitalMarketingHero = dynamic(() => import("@/components/service-details/digital-marketing-service/Hero"));
 const DigitalMarketingAbout = dynamic(() => import("@/components/service-details/digital-marketing-service/About"));
 const WhatYouGet = dynamic(() => import("@/components/service-details/digital-marketing-service/WhatYouGet"));
-const WhyUs = dynamic(() => import("@/components/service-details/digital-marketing-service/WhyUs"));
+const WhyUs = dynamic(() => import("@/components/service-details/digital-marketing-service/why-us/WhyUs"));
 const Process = dynamic(() => import("@/components/service-details/digital-marketing-service/Process"));
 const CTA = dynamic(() => import("@/components/service-details/digital-marketing-service/CTA"));
 const Testimonial = dynamic(() => import("@/components/service-details/digital-marketing-service/Testimonial"));
