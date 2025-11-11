@@ -35,7 +35,7 @@ const About: React.FC = () => {
                             <h2 className="hidden lg:block text-[40px] lg:text-[60px] font-medium tracking-wide uppercase mb-[20px] td-text-invert-orange">
                                 Clarity, Creativity, and Conversion.
                             </h2>
-                            <p className="text-[15px] md:text-base lg:text-lg lg:font-semibold text-black">
+                            <p className="text-[15px] md:text-base lg:text-lg lg:font-semibold">
                                 We plan, create, and optimize a complete Digital Marketing Strategy that blends content, SEO, paid media, and creative. As a results-driven Digital Marketing Agency, we deliver an Online Marketing Solution built for clarity, scale, and measurable growth.
                             </p>
                         </div>

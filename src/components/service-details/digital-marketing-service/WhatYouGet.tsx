@@ -50,7 +50,7 @@ const WhatYouGet = () => {
                                                     strokeWidth="2"
                                                     strokeLinecap="round"
                                                     strokeLinejoin="round"
-                                                    className={`hover:text-white transform transition-transform duration-300 ${openId === service.id ? "rotate-180 text-black" : "rotate-0 text-black"
+                                                    className={`hover:text-white transform transition-transform duration-300 ${openId === service.id ? "rotate-180" : "rotate-0"
                                                         }`}
                                                 >
                                                     <line x1="5" y1="10" x2="15" y2="10" />
@@ -62,7 +62,7 @@ const WhatYouGet = () => {
 
                                     <div className="lg:w-7/12 w-full">
                                         <div className="hidden lg:block td-service-6-text mb-[15px]">
-                                            <ul className="list-disc list-inside text-black group-hover:text-white">
+                                            <ul className="list-disc list-inside group-hover:text-white">
                                                 {service.description.map((item, index) => (
                                                     <li key={index} className="mb-2">
                                                         <strong>{item.title} </strong>
@@ -86,7 +86,7 @@ const WhatYouGet = () => {
                                             }}
                                         >
                                             <ul
-                                                className="list-disc list-inside mb-4 text-black"
+                                                className="list-disc list-inside mb-4"
                                             >
                                                 {service.description.map((item, index) => (
                                                     <li key={index} className="mb-2">

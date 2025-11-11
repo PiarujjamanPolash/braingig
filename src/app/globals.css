@@ -48,7 +48,7 @@ body {
   font-family: var(--font-jakarta);
   line-height: var(--line-height);
   background: #fff;
-  color: #111;
+  color: var(--color-primary);
 }
 
 h1,
@@ -208,7 +208,7 @@ h6 {
 
 .marketing-price-btn.greens {
   background: var(--color-secondary);
-  color: black;
+  color: var(--color-primary);
 }
 
 .marketing-price-btn:hover {

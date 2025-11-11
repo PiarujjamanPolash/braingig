@@ -14,13 +14,18 @@ const Header: React.FC = () => {
     const [isBgWhite, setIsBgWhite] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
-            setIsBgWhite(window.scrollY > 100);
-        };
+    const handleScroll = () => {
+        // true if scrolled more than 100px OR on /about page
+        setIsBgWhite(window.scrollY > 100 || pathname === "/about" || pathname === "/about/");
+    };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    // Run once on mount (to handle /about without scrolling)
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+}, [pathname]);
+
     useEffect(() => {
         if (mainMenuRef.current && mobileMenuOuterRef.current) {
             // Clone the main menu into mobile menu

@@ -67,7 +67,7 @@ const WhyUs = () => {
                         <div className="xl:col-span-3 flex flex-col md:flex-row xl:flex-col gap-3 xl:gap-8 bg-white">
                             {/* Strategy Overview */}
                             <div className="bg-white border border-gray-200 rounded-xl p-6 md:w-1/2 lg:w-full">
-                                <h2 className="!text-xl md:!text-3xl font-semibold text-black mb-5 border-l-4 border-secondary pl-3">Strategy Overview</h2>
+                                <h2 className="!text-xl md:!text-3xl font-semibold mb-5 border-l-4 border-secondary pl-3">Strategy Overview</h2>
                                 <div className="flex flex-wrap gap-3 text-gray-700">
                                     {project.strategy.map((item, idx) => {
                                         const Icon = item.icon;
@@ -83,7 +83,7 @@ const WhyUs = () => {
 
                             {/* Results & Performance */}
                             <div className="bg-white border border-gray-200 rounded-xl p-6 md:w-1/2 lg:w-full">
-                                <h2 className="!text-xl md:!text-3xl font-semibold text-black mb-5 border-l-4 border-secondary pl-3">Results & Performance</h2>
+                                <h2 className="!text-xl md:!text-3xl font-semibold mb-5 border-l-4 border-secondary pl-3">Results & Performance</h2>
                                 {/* <div className="space-y-5">
                                     <div className="flex text-sm md:text-base justify-between md:justify-start lg:justify-between items-center gap-3 lg:gap-0">
                                         <span className="text-gray-600">Clicks:</span>

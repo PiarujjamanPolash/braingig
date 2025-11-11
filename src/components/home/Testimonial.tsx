@@ -60,7 +60,7 @@ const Testimonial: React.FC = () => {
                                             <SwiperSlide key={index}>
                                                 <div className="flex flex-col lg:flex-row gap-10 h-full">
                                                     <div className="lg:w-12/12 flex flex-col justify-between  h-full">
-                                                        <div className="td-testimonial-slide-content text-primary  h-full">
+                                                        <div className="td-testimonial-slide-content flex flex-col justify-between text-primary  h-full">
                                                             <p className="text-lg mb-7 lg:mb-15">{item.review}</p>
                                                             <div className="flex items-center justify-start gap-3">
                                                                 <Image width={70} height={70} src={item.img} className="rounded-full" alt="author"/>

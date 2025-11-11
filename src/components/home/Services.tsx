@@ -1,5 +1,4 @@
 "use client";
-
 import { servicesData } from "@/utils/fakeData/servicesData";
 import Link from "next/link";
 import React from "react";
