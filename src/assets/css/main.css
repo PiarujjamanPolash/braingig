@@ -4140,7 +4140,7 @@ textarea {
 }
 .td-hero-3-spacing {
   padding-top: 200px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .td-hero-3-spacing {
@@ -4165,7 +4165,7 @@ textarea {
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .td-hero-3-shape {
-    top: 0;
+    top: -30%;
     right: 0;
   }
 }

@@ -152,7 +152,7 @@ h6 {
   font-size: 290px;
   text-transform: uppercase;
   text-align: center;
-  color: var(--color-light);
+  color: var(--color-accent);
   margin-bottom: -90px;
   line-height: 0.9;
 }
@@ -269,8 +269,15 @@ h6 {
 .td-faq-2-wrap-right .td-faq-4-accordion .accordion-buttons .plus-icon::after {
   background-color: var(--color-primary);
 }
-.remove-pin-space .pin-spacer{
+/* .remove-pin-space .pin-spacer{
   padding-bottom: 0!important;
   margin-bottom: 140px!important;
-  /* height: 550px!important; */
+  height: 700px!important;
+  width: 100%;
+} */
+
+.td-service-pin-items .pin-spacer:last-child {
+  /* margin-bottom: 200px !important;  */
+  /* padding-bottom: 0 !important;   */
+  /* height: 700px !important;         */
 }

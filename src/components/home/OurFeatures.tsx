@@ -7,32 +7,32 @@ const features = [
     {
         icon: <FaMedal className="text-4xl text-secondary mb-4" />,
         title: 'Uncompromising Quality',
-        desc: 'Bespoke, professional websites that elevate and reflect your brand values.'
+        desc: 'Professional, custom website development that elevates & reflects your brand.'
     },
     {
         icon: <FaBolt className="text-4xl text-secondary mb-4" />,
         title: 'Lightning-Fast',
-        desc: 'Responsive sites optimized for lightning speed and top SEO performance.'
+        desc: 'Responsive web designs are developed for lightning speed loading & SEO excellence.'
     },
     {
         icon: <FaBalanceScale className="text-4xl text-secondary mb-4" />,
         title: 'Transparent Pricing',
-        desc: 'Clear, honest quotes with no hidden fees — integrity first.'
+        desc: 'Transparent, straightforward quotes with zero hidden fees.'
     },
     {
         icon: <FaMobileAlt className="text-4xl text-secondary mb-4" />,
         title: 'Mobile-Optimized',
-        desc: 'Flawless performance and visuals on every device, anywhere.'
+        desc: 'Websites that deliver perfect performance and stunning visuals on every device.'
     },
     {
         icon: <FaTools className="text-4xl text-secondary mb-4" />,
         title: 'Easy to Manage',
-        desc: 'User-friendly CMS for effortless updates and smooth control.'
+        desc: 'User-friendly custom websites built for easy updates and smooth day to day use.'
     },
     {
         icon: <FaSearch className="text-4xl text-secondary mb-4" />,
         title: 'SEO-Friendly',
-        desc: 'Built for lasting visibility and organic traffic growth.'
+        desc: 'Developed as an SEO-optimized website  ensuring long-term visibility & traffic growth.'
     }
 ];
 

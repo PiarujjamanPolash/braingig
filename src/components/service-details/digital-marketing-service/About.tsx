@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About: React.FC = () => {
     return (
-        <section className="td-about-area py-20 lg:pt-[150px] lg:pb-[100px] px-5 md:px-0">
+        <section className="td-about-area py-15 lg:pt-30 lg:pb-20 px-5 md:px-0">
             <div className="container w-[90%] mx-auto">
                 {/* Author Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-20">

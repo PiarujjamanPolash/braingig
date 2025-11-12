@@ -4,6 +4,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { testimonialsData } from "@/utils/fakeData/testimonialsData";
+import Brands from "@/components/shared/Brands";
 
 const Testimonials: React.FC = () => {
     return (
@@ -82,6 +83,10 @@ const Testimonials: React.FC = () => {
                     </div>
                 </div>
             </div>
+            <div className="bg-light">
+                <Brands customClass="p-0" />
+            </div>
+
         </section>
     );
 };
