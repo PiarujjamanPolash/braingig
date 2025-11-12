@@ -16,7 +16,7 @@ const MapArea: React.FC = () => {
                                     <Image 
                                         width={259}
                                         height={71}
-                                        className="mb-[100px]"
+                                        className="mb-10 lg:mb-[100px]"
                                         src={logo}
                                         alt=""
                                     />

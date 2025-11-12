@@ -253,3 +253,24 @@ h6 {
 #team-marquee .rfm-marquee-container .rfm-marquee{
   align-items: start;
 }
+.td-portfolio-filter-btn button.active {
+  /* color: var(--td-common-black); */
+  border-color: var(--color-primary);
+  font-weight: 700;
+}
+.td-portfolio-filter-btn button:hover {
+  /* color: var(--td-common-black); */
+  border-color: var(--color-primary);
+}
+
+.td-faq-2-wrap-right .td-faq-4-accordion .accordion-buttons .plus-icon::before {
+  background-color: var(--color-primary);
+}
+.td-faq-2-wrap-right .td-faq-4-accordion .accordion-buttons .plus-icon::after {
+  background-color: var(--color-primary);
+}
+.remove-pin-space .pin-spacer{
+  padding-bottom: 0!important;
+  margin-bottom: 140px!important;
+  /* height: 550px!important; */
+}

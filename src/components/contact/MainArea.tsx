@@ -6,7 +6,7 @@ const MainArea: React.FC = () => {
 
     return (
         <div className="w-[90%] mx-auto">
-            <div className="td-contact-main pt-[100px] lg:pt-[155px] pb-[60px] lg:pb-[120px]">
+            <div className="td-contact-main py-15 lg:py-20">
                 <div className="container mx-auto">
                     <div className="flex flex-wrap">
                         {/* Left Column */}
@@ -14,9 +14,9 @@ const MainArea: React.FC = () => {
                             <div
                                 className="td-contact-title-wrap mb-[30px]"
                             >
-                                <h2 className="td-contact-main-title text-center lg:text-start">
+                                <h2 className="td-contact-main-title text-5xl font-medium td-text-invert-orange text-center lg:text-start text-secondary">
                                     Let’s talk for <br />
-                                    better <span>result</span>
+                                    better result
                                 </h2>
                             </div>
                         </div>
@@ -24,7 +24,7 @@ const MainArea: React.FC = () => {
                         {/* Right Column */}
                         <div className="w-full lg:w-7/12">
                             <div
-                                className="td-contact-form-box mb-0 md:mb-[30px]"
+                                className="td-contact-form-box"
                             >
                                 <form id="contact-form" action="assets/mail.php" method="POST">
                                     <div className="flex flex-wrap -mx-2">

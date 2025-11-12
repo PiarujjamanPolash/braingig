@@ -35,7 +35,7 @@ const Projects: React.FC = () => {
                     >
                         <div className="td-portfolio-filter-btn text-center masonary-menu">
                             <button type="button"
-                                className={filter === "*" ? "active" : ""}
+                                className={`cursor-pointer ${filter === "*" ? "active" : ""}`}
                                 onClick={() => setFilter("*")}
                             >
                                 SHOW ALL
@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
                             {categories.map((cat) => (
                                 <button type="button"
                                     key={cat}
-                                    className={filter === cat ? "active" : ""}
+                                    className={`cursor-pointer ${filter === cat ? "active" : ""}`}
                                     onClick={() => setFilter(cat)}
                                 >
                                     {cat.charAt(0).toUpperCase() + cat.slice(1)}

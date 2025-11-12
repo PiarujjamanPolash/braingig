@@ -5,7 +5,7 @@ import shape from "../../../public/images/about/about-page-shape.webp"
 const Features: React.FC = () => {
 
     return (
-        <div className="td-about-main-feature-area w-[90%] mx-auto py-[80px] lg:pt-[100px] lg:pb-[165px]">
+        <div className="td-about-main-feature-area w-[90%] mx-auto py-15 lg:py-20">
             <div className="container mx-auto">
                 <div className="w-full xl:w-12/12 px-4">
                     <div className="td-about-main-feature-wrap">

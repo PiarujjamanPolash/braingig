@@ -35,7 +35,7 @@ const Testimonial: React.FC = () => {
                             className="td-testimonial-content mb-0 lg:ml-20"
                         >
                             <div className="flex flex-col justify-center items-center mb-20">
-                                <h2 className="font-medium text-[40px] lg:text-[60px] mb-2 td-text-invert-orange">
+                                <h2 className="font-medium text-[40px] lg:text-[60px] text-center mb-2 td-text-invert-orange">
                                     What Our Clients Say About Us
                                 </h2>
                                 <p className="text-base md:text-lg font-normal lg:font-semibold w-[90%] md:w-[80%] lg:w-[50%] text-primary text-center">Hear from visionary clients who chose Brain Gig as their go-to digital agency for design and development agency partners, see the real results and  growth.
@@ -46,8 +46,16 @@ const Testimonial: React.FC = () => {
                                 <div className="td-testimonial-slide-content mb-6 lg:mb-10">
                                     <Swiper id="home-testimonial"
                                         modules={[Navigation, Virtual, Autoplay]}
-                                        // autoplay
+                                        autoplay
                                         slidesPerView={2}
+                                        breakpoints={{
+                                            640: { 
+                                                slidesPerView: 2,
+                                            },
+                                            0: { 
+                                                slidesPerView: 1,
+                                            },
+                                        }}
                                         loop
                                         spaceBetween={50}
                                         navigation={{
@@ -63,7 +71,7 @@ const Testimonial: React.FC = () => {
                                                         <div className="td-testimonial-slide-content flex flex-col justify-between text-primary  h-full">
                                                             <p className="text-lg mb-7 lg:mb-15">{item.review}</p>
                                                             <div className="flex items-center justify-start gap-3">
-                                                                <Image width={70} height={70} src={item.img} className="rounded-full" alt="author"/>
+                                                                <Image width={70} height={70} src={item.img} className="rounded-full" alt="author" />
                                                                 <div className="flex flex-col justify-center items-start gap-1">
                                                                     <h4 className="font-medium text-[24px]">{item.name}</h4>
                                                                     <span className="font-normal text-[18px]">{item.position}</span>

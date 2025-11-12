@@ -23,12 +23,15 @@ const WhyUs = () => {
                     gsap.to(section, {
                         scrollTrigger: {
                             trigger: section,
-                            start: "top top+=200",
-                            end: () => {
-                                return `+=${(sectionHeight * (3 - i)) - (i * 130)}`;
-                            },
+                            // start: "top top+=200",
+                            // end: () => {
+                            //     return `+=${(sectionHeight * (3 - i)) - (i * 130)}`;
+                            // },
+                            start: `top t0p+=10%`,
+              end: "bottom top+=70%",
+              endTrigger: ".td-service-pin-items",
                             pin: true,
-                            pinSpacing: isLast,
+                            pinSpacing: isLast ? "margin" : false,
                             scrub: true,
                             markers: false,
                         },
@@ -48,7 +51,7 @@ const WhyUs = () => {
                 <p className='w-[90%] md:w-[80%] lg:w-[50%] !text-lg lg:font-semibold text-center'>You get a complete, easy-to-understand plan, fast execution, and frequent optimization. The result: stronger rankings, lower acquisition costs, and steady pipeline growth.</p>
             </div>
 
-            <div className="td-service-pin-items">
+            <div className="td-service-pin-items remove-pin-space">
                 {projectsData.map((project) => (
                     <div key={project.id} className="grid grid-cols-1 xl:grid-cols-12 gap-y-4 xl:gap-5 items-start mb-20 sm:mb-32 td-service-pin-item-panel bg-white">
                         <div className="xl:col-span-9 relative h-full">

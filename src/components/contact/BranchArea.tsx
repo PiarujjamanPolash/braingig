@@ -1,24 +1,17 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import bdOfficeImg from  "../../../public/images/offices/bd.webp"
-import USAOfficeImg from  "../../../public/images/offices/usa.webp"
+import bdOfficeImg from "../../../public/images/offices/bd.webp"
+import USAOfficeImg from "../../../public/images/offices/usa.webp"
 const BranchArea: React.FC = () => {
     return (
         <div className="w-[90%] mx-auto">
-            <div className="td-contact-branch-area pb-[80px] lg:pb-[140px]">
+            <div className="td-contact-branch-area pb-15 lg:pb-20">
                 <div className="container mx-auto">
-                    <div className="flex flex-wrap">
-                        <div className="w-full">
-                            <div
-                                className="text-center"
-                            >
-                                <h2 className="text-[40px] lg:text-[60px] td-text-invert-orange mb-[40px] md:mb-[105px]">
-                                    Our Branch <span>Office</span>
-                                </h2>
-                            </div>
-                        </div>
-
+                    <div className="flex flex-wrap justify-center">
+                            <h2 className="text-[40px] lg:text-[60px] td-text-invert-orange mb-8 md:mb-12">
+                                Our Branch <span>Office</span>
+                            </h2>
                         {/* Branch Items */}
                         <div className="w-full">
                             <div
