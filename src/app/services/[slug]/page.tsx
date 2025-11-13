@@ -72,7 +72,7 @@ const ServicesPage = async ({
                 <WhyUs />
                 <WhatYouGet />
                 <RecentWorks />
-                <CTA />
+                {/* <CTA /> */}
                 <Process />
                 <Testimonial />
                 <PricingArea />

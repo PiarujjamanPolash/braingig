@@ -12,7 +12,7 @@ const RecentWorks: React.FC = () => {
   const firstSliderProjects = shuffledProjects.slice(0, half);
   const secondSliderProjects = shuffledProjects.slice(half);
   return (
-    <div className="td-portfolio-area mt-[60px] lg:mt-[80px]">
+    <div className="td-portfolio-area mt-[60px] lg:mt-[120px] container mx-auto">
       <div className="flex flex-col justify-center items-center mb-10">
         {/* <h2 className="font-medium text-[40px] lg:text-[60px] mb-2 td-text-invert-orange">
           Recent Projects

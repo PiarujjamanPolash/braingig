@@ -6,19 +6,19 @@ import { FaArrowRight } from "react-icons/fa";
 const AboutUs: React.FC = () => {
 
   return (
-    <section className="w-[90%] mx-auto mt-15 lg:my-[120px] mb-15">
+    <section className="container w-[90%] mx-auto mt-15 lg:my-[120px] mb-15">
       <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Left Section */}
-        <div className="text-right w-2/5">
-          <h2 className="text-4xl leading-normal font-jakarta!">
+        <div className="text-center lg:text-right w-full lg:w-2/5">
+          <h2 className="text-3xl lg:text-4xl leading-normal font-jakarta!">
             Grow your brand with
              <br />
-            <span className="text-8xl text-secondary font-bebas! tracking-[8px]">Brain gig</span>
+            <span className="text-7xl lg:text-8xl text-secondary font-bebas! tracking-[8px]">Brain gig</span>
           </h2>
         </div>
 
         {/* Divider (hidden on small screens) */}
-        <div className="hidden md:block w-[2px] h-25 bg-secondary mx-7"></div>
+        <div className="w-40 h-[3px] lg:w-[2px] lg:h-25 bg-secondary mt-2 mb-7 lg:mx-7"></div>
 
         {/* Right Section */}
         <div className="flex-1 px-20">

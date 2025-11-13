@@ -5523,10 +5523,10 @@ textarea {
   letter-spacing: -0.02em;
   color: var(--td-grey-1);
 }
-.td-service-process-item .title {
+/* .td-service-process-item .title {
   font-weight: 600;
   font-size: 26px;
-}
+} */
 .td-service-process-item .para {
   /* line-height: 26px; */
 }

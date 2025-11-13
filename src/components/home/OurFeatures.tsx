@@ -38,7 +38,7 @@ const features = [
 
 const OurFeatures = () => {
     return (
-        <section className="py-16 w-[90%] mx-auto">
+        <section className="mt-15 lg:mt-[120px] container w-[90%] mx-auto">
             {/* <div className="flex flex-col justify-center items-center mb-20">
                 <h2 className="font-medium text-[40px] lg:text-[60px] mb-2 td-text-invert-orange">
                     Our Core Features
@@ -50,7 +50,7 @@ const OurFeatures = () => {
 
                     <div className="flex flex-col mb-20">
                         <h2 className="font-medium text-[40px] lg:text-[60px] mb-2 td-text-invert-orange">
-                            Our Core Services
+                            Our Features
                         </h2>
                         <p className="text-base md:text-lg font-normal lg:font-semibold text-primary ">Hear from visionary clients who chose Brain Gig as their go-to digital agency for design and development agency partners, see the real results and  growth.
                         </p>

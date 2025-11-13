@@ -83,7 +83,7 @@ const Testimonials: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-light w-[80%] mx-auto rounded-md">
+            <div className="bg-light w-[80%] mx-auto rounded-md container mx-auto">
                 <Brands customClass="p-0" />
             </div>
 

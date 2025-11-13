@@ -1,7 +1,6 @@
 "use client";
 import { workProcessData } from "@/utils/fakeData/workProcessData";
 import Image from "next/image";
-import ScrollPinAnimation from "@/components/animations/ScrollPinAnimation";
 import { useRef } from "react";
 
 const WorkingProcess: React.FC = () => {
@@ -30,7 +29,7 @@ const WorkingProcess: React.FC = () => {
                                     <Image width={280} height={320} className="w-full lg:w-[280px]" src={"/images/working-process/thumb.webp"} alt="thumb" />
                                 </div>
                             </ScrollPinAnimation> */}
-                            <ScrollPinAnimation imageRef={imageRef}>
+                            {/* <ScrollPinAnimation imageRef={imageRef}>
                                 <div className="td-process-thumb pt-[80px] pb-[80px] td-fixed-thumb">
                                     <img data-current-index="0"
                                         ref={imageRef}
@@ -41,7 +40,7 @@ const WorkingProcess: React.FC = () => {
                                         alt="thumb"
                                     />
                                 </div>
-                            </ScrollPinAnimation>
+                            </ScrollPinAnimation> */}
 
                         </div>
 

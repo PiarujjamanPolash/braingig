@@ -5,17 +5,18 @@ import React from "react";
 
 const Services: React.FC = () => {
     return (
-        <div className="td-service-6-area w-[90%] mx-auto mb-15 lg:mb-20">
-            <div className="container mx-auto px-3 sm:px-4 lg:px-6">
-                <div className="flex flex-wrap items-end">
-                    <div className="flex flex-col lg:flex-row w-full items-center">
-                        <div className="td-service-6-title-wrap flex justify-center w-full mb-6 lg:mb-0">
-                            {/* <span className="td-section-6-subtitle mb-20 d-inline-block">OUR CORE SERVICES</span> */}
-                            <h2 className="w-full md:w-[80%] lg:w-[70%] text-center  !text-[40px] lg:!text-[60px] td-text-invert-orange">
-                                EXPLORE OUR SERVICES
-                            </h2>
-                        </div>
-                        {/* <div className="td-service-6-title-text text-[#555855] mr-20 lg:w-4/12 w-full">
+        <section className="mt-15 lg:mt-[120px]">
+            <div className="td-service-6-area w-[90%] mx-auto mb-15 lg:mb-20">
+                <div className="container mx-auto px-3 sm:px-4 lg:px-6">
+                    <div className="flex flex-wrap items-end">
+                        <div className="flex flex-col lg:flex-row w-full items-center">
+                            <div className="td-service-6-title-wrap flex justify-center w-full mb-6 lg:mb-0">
+                                {/* <span className="td-section-6-subtitle mb-20 d-inline-block">OUR CORE SERVICES</span> */}
+                                <h2 className="w-full md:w-[80%] lg:w-[70%] text-center  !text-[40px] lg:!text-[60px] td-text-invert-orange">
+                                    EXPLORE OUR SERVICES
+                                </h2>
+                            </div>
+                            {/* <div className="td-service-6-title-text text-[#555855] mr-20 lg:w-4/12 w-full">
                             <p className="td-section-6-text text-primary font-medium text-lg mb-[30px]">
                                 Get expert solutions for every business establishment and growth
                             </p>
@@ -24,65 +25,66 @@ const Services: React.FC = () => {
                                 style and substance. Quality and Effort intersect in a meaningful way.
                             </p>
                         </div> */}
-                    </div>
+                        </div>
 
-                    
-                    <div className="w-full pt-5">
-                        {servicesData.map((service) => (
-                            <div key={service.id} className="td-service-6-item">
-                                <div className="flex flex-col lg:flex-row flex-wrap items-center">
-                                    
-                                    <div className="lg:w-5/12 w-full">
-                                        <div className="td-service-6-item-title mb-[15px] flex items-center">
-                                            <span className="mr-5 md:mr-20">{service.id}</span>
-                                            <h3>
-                                                {service.title}
-                                            </h3>
+
+                        <div className="w-full pt-5">
+                            {servicesData.map((service) => (
+                                <div key={service.id} className="td-service-6-item">
+                                    <div className="flex flex-col lg:flex-row flex-wrap items-center">
+
+                                        <div className="lg:w-5/12 w-full">
+                                            <div className="td-service-6-item-title mb-[15px] flex items-center">
+                                                <span className="mr-5 md:mr-20">{service.id}</span>
+                                                <h3>
+                                                    {service.title}
+                                                </h3>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div className="lg:w-5/12 w-full">
-                                        <div className="td-service-6-text mb-[15px]">
-                                            <p>{service.description}</p>
+                                        <div className="lg:w-5/12 w-full">
+                                            <div className="td-service-6-text mb-[15px]">
+                                                <p>{service.description}</p>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div className="lg:w-2/12 w-full">
-                                        <div className="td-service-6-btn flex justify-start lg:justify-center items-center mb-0 md:mb-[15px]">
-                                            <Link href={service.path} className="flex items-center justify-center" aria-label={service.title}>
-                                                <svg
-                                                    width="14"
-                                                    height="14"
-                                                    viewBox="0 0 14 14"
-                                                    fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    aria-hidden="true"
-                                                >
-                                                    <path
-                                                        d="M1 13L13 1"
-                                                        stroke="#063231"
-                                                        strokeWidth="1.5"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                    />
-                                                    <path
-                                                        d="M1 1H13V13"
-                                                        stroke="#063231"
-                                                        strokeWidth="1.5"
-                                                        strokeLinecap="round"
-                                                        strokeLinejoin="round"
-                                                    />
-                                                </svg>
-                                            </Link>
+                                        <div className="lg:w-2/12 w-full">
+                                            <div className="td-service-6-btn flex justify-start lg:justify-center items-center mb-0 md:mb-[15px]">
+                                                <Link href={service.path} className="flex items-center justify-center" aria-label={service.title}>
+                                                    <svg
+                                                        width="14"
+                                                        height="14"
+                                                        viewBox="0 0 14 14"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            d="M1 13L13 1"
+                                                            stroke="#063231"
+                                                            strokeWidth="1.5"
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                        />
+                                                        <path
+                                                            d="M1 1H13V13"
+                                                            stroke="#063231"
+                                                            strokeWidth="1.5"
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                        />
+                                                    </svg>
+                                                </Link>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -2,6 +2,8 @@ import dynamic from "next/dynamic";
 import { faqData } from "@/utils/fakeData/faqData";
 import OurFeatures from "@/components/home/OurFeatures";
 import Testimonials from "@/components/service-details/directory-service/Testimonials";
+import FAQ from "@/components/service-details/FAQ";
+import CTA from "@/components/home/CTA";
 
 const Hero = dynamic(() => import("@/components/home/Hero"));
 const RecentWorks = dynamic(() => import("@/components/home/RecentWorks"));
@@ -22,6 +24,15 @@ const HomePage = () => {
       <BraingigProcess />
       <Services />
       <OurFeatures />
+      {/* <CTA
+                title="See how Brain Gig can boost your business with our specialized, result-driven approach."
+                buttonText="Schedule Your Free Consultation Today!"
+                link="/subscribe"
+                // optional paragraph
+            /> */}
+            <CTA />
+                            <FAQ data={faqData} />
+            
     </ClientWrapper>
   );
 };
