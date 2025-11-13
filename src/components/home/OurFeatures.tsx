@@ -48,13 +48,13 @@ const OurFeatures = () => {
                 {/* Left Images */}
                 <div className="col-span-5 relative flex flex-col gap-4">
 
-                    <div className="flex flex-col mb-20">
+                    <div className="flex flex-col lg:mb-20">
                         <h2 className="font-medium text-[40px] lg:text-[60px] mb-2 td-text-invert-orange">
                             Our Features
                         </h2>
                         <p className="text-base md:text-lg font-normal lg:font-semibold text-primary ">Hear from visionary clients who chose Brain Gig as their go-to digital agency for design and development agency partners, see the real results and  growth.
                         </p>
-                        <div className="td-btn-group mb-[35px] mt-10">
+                        <div className="td-btn-group mt-5 lg:mb-[35px] lg:mt-10">
                             <Link className="td-btn-circle" href="/about" aria-label="About Us">
                                 <FaArrowRight aria-hidden="true" />
                             </Link>

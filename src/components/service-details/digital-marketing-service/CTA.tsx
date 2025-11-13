@@ -18,7 +18,7 @@ const CTA: React.FC<CTAProps> = ({
     backgroundImage = "/images/service-details/digital-marketing-service/cta-bg-2.jpg"
 }) => {
     return (
-        <section className="relative w-full container min-h-[30vh] lg:min-h-[40vh] mx-auto flex justify-center items-center md:justify-start my-15 lg:my-[120px]">
+        <section className="relative w-full container min-h-[30vh] lg:min-h-[70vh] mx-auto flex justify-center items-center md:justify-start my-15 lg:my-[120px]">
             {/* Background Image */}
             <Image
                 src={backgroundImage}

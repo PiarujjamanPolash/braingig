@@ -6,7 +6,7 @@ const steps = [
         title: "Discover",
         description: "We discuss your vision, needs, and audience to shape your project.",
         icon: <FiSearch size={64} />,
-        mt: "mt-[120px]",
+        mt: "sm:mt-[120px]",
         delay: ".3s",
     },
     {
@@ -22,7 +22,7 @@ const steps = [
         title: "Launch & Support",
         description: "From flawless deployment to ongoing website maintenance services, we ensure seamless performance and growth.",
         icon: <FiActivity size={64} />,
-        mt: "mt-[120px]",
+        mt: "sm:mt-[120px]",
         delay: ".7s",
     },
     {
@@ -43,7 +43,7 @@ const BraingigProcess: React.FC = () => {
                             The braingig way
                         </h2>
 
-                    <div className="flex flex-wrap -mx-0">
+                    <div className="flex flex-wrap -mx-0 gap-6 sm:gap-0">
                         {steps.map((step, index) => (
                             <div
                                 key={index}
