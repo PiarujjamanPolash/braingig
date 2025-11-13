@@ -22,6 +22,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+
 /* @theme {
   --color-primary: #0C2B4E;
   --color-secondary: #1A3D64;
@@ -29,10 +30,13 @@
   --color-light: #F4F4F4;
 } */
 @theme {
-  --color-primary: #060a2f;   
-  --color-secondary: #F87B1B; 
-  --color-accent: #CBD998;    
-  --color-light: #EEEEEE;     
+  --color-primary: #060a2f;
+  --color-secondary: #F87B1B;
+  --color-accent: #CBD998;
+  --color-light: #EEEEEE;
+  --font-jakarta: var(--font-jakarta);
+  --font-bebas: var(--font-bebas);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,6 +73,7 @@ h6 {
 #recent-works-swiper-1 .swiper-slide {
   height: auto;
 }
+
 #home-testimonial .swiper-slide {
   height: auto;
 }
@@ -84,9 +89,11 @@ h6 {
 #partners .swiper-wrapper {
   transition-timing-function: linear !important;
 }
+
 #marketing-tag-swiper .swiper-wrapper {
   transition-timing-function: linear !important;
 }
+
 #marketing-team-swiper .swiper-wrapper {
   transition-timing-function: linear !important;
 }
@@ -117,7 +124,8 @@ h6 {
   border-radius: 10px;
   color: white;
 }
-.highlight-service ul{
+
+.highlight-service ul {
   color: white;
 }
 
@@ -130,21 +138,19 @@ h6 {
 }
 
 
-.td-text-invert-orange > div {
+.td-text-invert-orange>div {
   background-size: 200% 100%;
   background-position-x: 100%;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(
-    to right,
-    var(--color-secondary) 50%,
-    var(--color-light) 50%
-  );
+  background-image: linear-gradient(to right,
+      var(--color-secondary) 50%,
+      var(--color-light) 50%);
 }
 
-#pricing-swiper .swiper-pagination .swiper-pagination-bullet-active{
-  background-color: var(--color-secondary) !important; 
+#pricing-swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-secondary) !important;
 }
 
 .portfolio-text {
@@ -157,20 +163,26 @@ h6 {
   line-height: 0.9;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .portfolio-text{
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (min-width: 576px) and (max-width: 767px),
+(max-width: 575px) {
+  .portfolio-text {
     font-size: 150px;
     margin-bottom: 0px;
-      line-height: 0.5;
+    line-height: 0.5;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .portfolio-text{
+
+@media only screen and (min-width: 576px) and (max-width: 767px),
+(max-width: 575px) {
+  .portfolio-text {
     font-size: 100px;
   }
 }
+
 @media (max-width: 575px) {
-  .portfolio-text{
+  .portfolio-text {
     font-size: 70px;
   }
 }
@@ -183,6 +195,7 @@ h6 {
   position: relative;
   padding-left: 20px;
 }
+
 .marketing-testimonial-team-subtitle::before {
   position: absolute;
   content: "";
@@ -215,6 +228,7 @@ h6 {
   background: var(--color-secondary);
   color: white;
 }
+
 .marketing-price-btn.greens:hover {
   background: #E86F00;
   color: white;
@@ -223,11 +237,13 @@ h6 {
 .marketing-pricing-list {
   padding: 30px 40px 40px 50px;
 }
+
 @media (max-width: 575px) {
   .marketing-pricing-list {
     padding: 25px 20px 20px 20px;
   }
 }
+
 .marketing-pricing-list ul li {
   font-weight: 500;
   font-size: 14px;
@@ -235,9 +251,11 @@ h6 {
   position: relative;
   padding-left: 20px;
 }
+
 .marketing-pricing-list ul li:not(:last-child) {
   margin-bottom: 5px;
 }
+
 .marketing-pricing-list ul li::before {
   position: absolute;
   content: "";
@@ -250,14 +268,16 @@ h6 {
   left: 0;
 }
 
-#team-marquee .rfm-marquee-container .rfm-marquee{
+#team-marquee .rfm-marquee-container .rfm-marquee {
   align-items: start;
 }
+
 .td-portfolio-filter-btn button.active {
   /* color: var(--td-common-black); */
   border-color: var(--color-primary);
   font-weight: 700;
 }
+
 .td-portfolio-filter-btn button:hover {
   /* color: var(--td-common-black); */
   border-color: var(--color-primary);
@@ -266,9 +286,11 @@ h6 {
 .td-faq-2-wrap-right .td-faq-4-accordion .accordion-buttons .plus-icon::before {
   background-color: var(--color-primary);
 }
+
 .td-faq-2-wrap-right .td-faq-4-accordion .accordion-buttons .plus-icon::after {
   background-color: var(--color-primary);
 }
+
 /* .remove-pin-space .pin-spacer{
   padding-bottom: 0!important;
   margin-bottom: 140px!important;

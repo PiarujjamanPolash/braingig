@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 
 const TextLineAnimation = dynamic(() => import("@/components/animations/TextLineAnimation"));
-const WorkingProcess = dynamic(() => import("@/components/home/WorkingProcess"));
+const WorkingProcess = dynamic(() => import("@/components/home/BraingigProcess"));
 const FAQ = dynamic(() => import("@/components/service-details/FAQ"));
 const Hero = dynamic(() => import("@/components/service-details/Hero"));
 const Partners = dynamic(() => import("@/components/service-details/Partners"));

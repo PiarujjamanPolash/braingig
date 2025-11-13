@@ -1,11 +1,11 @@
 import dynamic from "next/dynamic";
 import { faqData } from "@/utils/fakeData/faqData";
 import OurFeatures from "@/components/home/OurFeatures";
+import Testimonials from "@/components/service-details/directory-service/Testimonials";
 
 const Hero = dynamic(() => import("@/components/home/Hero"));
-const Testimonial = dynamic(() => import("@/components/home/Testimonial"));
 const RecentWorks = dynamic(() => import("@/components/home/RecentWorks"));
-const WorkingProcess = dynamic(() => import("@/components/home/WorkingProcess"));
+const BraingigProcess = dynamic(() => import("@/components/home/BraingigProcess"));
 const Services = dynamic(() => import("@/components/home/Services"));
 const AboutUs = dynamic(() => import("@/components/home/AboutUs"));
 const ClientWrapper = dynamic(() => import("@/components/wrappers/ClientWrapper"));
@@ -17,9 +17,9 @@ const HomePage = () => {
       <TextLineAnimation />
       <Hero />
       <AboutUs />
-      <Testimonial />
+      <Testimonials />
       <RecentWorks />
-      <WorkingProcess />
+      <BraingigProcess />
       <Services />
       <OurFeatures />
     </ClientWrapper>
