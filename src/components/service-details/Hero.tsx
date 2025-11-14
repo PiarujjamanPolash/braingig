@@ -22,15 +22,15 @@ const Hero: React.FC<HeroProps> = ({ service }) => {
                                         {service.title} <span>{service.highlight}</span>
                                     </h2>
                                 </AnimateFadeInLeft>
-                                <div className="td-service-hero-thumb-2 fix td-rounded-10 pt-[60px] lg:pt-[105px] mb-7.5">
+                                <div className="td-service-hero-thumb-2 fix td-rounded-10 pt-10 lg:pt-15 mb-7.5">
                                     <Image width={563} height={690} priority data-speed=".9" className="td-rounded-10 object-cover" src={thumb2} alt="thumb 2" />
                                 </div>
                             </div>
                         </div>
                         <div className="w-full lg:w-1/2 px-4">
                             <div className="td-service-hero-wrap">
-                                <div className="td-service-hero-content ml-[110px]">
-                                    <p className="text-base lg:text-lg font-bold mb-10">
+                                <div className="td-service-hero-content ml-[80px]">
+                                    <p className="text-base lg:text-lg font-semibold mb-10">
                                         {service.description}
                                     </p>
                                     <div className="td-service-hero-border mb-15"></div>
@@ -42,7 +42,7 @@ const Hero: React.FC<HeroProps> = ({ service }) => {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="td-service-hero-thumb fix td-rounded-10 pt-[200px]">
+                                <div className="td-service-hero-thumb fix td-rounded-10 pt-[120px]">
                                     <Image width={645} height={430} priority data-speed=".9" className="td-rounded-10" src={thumb1} alt="thumb 1" />
                                 </div>
                             </div>

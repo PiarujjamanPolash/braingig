@@ -303,3 +303,25 @@ only screen and (min-width: 576px) and (max-width: 767px),
   /* padding-bottom: 0 !important;   */
   /* height: 700px !important;         */
 }
+
+.td-about-main-feature-list ul li {
+  font-weight: 400;
+  font-size: 18px;
+  /* line-height: 1;
+  color: var(--td-grey-1); */
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 16px;
+}
+.td-about-main-feature-list ul li::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--color-primary);
+  border-radius: 30px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+

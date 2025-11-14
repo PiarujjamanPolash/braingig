@@ -29,7 +29,7 @@ export const menuList: DataType = [
       { id: 32, label: "eCommerce Website Development", path: "/services/ecommerce-website-development" },
       { id: 33, label: "Directory & Listing Website Development", path: "/services/directory-listing-website-development" },
       { id: 34, label: "SEO & Website Optimization", path: "/services/seo-website-optimization" },
-      { id: 35, label: "Graphic & Brand Design", path: "/services/graphic-brand-design" },
+      { id: 35, label: "Graphic & Brand Design", path: "/services/brand-design" },
       { id: 36, label: "Digital Marketing Strategy", path: "/services/digital-marketing-strategy" },
     ],
   },

@@ -49,7 +49,7 @@ const Features: React.FC = () => {
                     What Sets Us Apart
                 </h2>
 
-                <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mt-5">
+                <div className="grid gap-5 lg:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mt-5">
                     {features.map((item, index) => {
                         const Icon = item.icon;
                         return (

@@ -5,9 +5,9 @@ const HowWeWork = () => {
     return (
         <section className='my-15 lg:my-[120px]'>
             <div className='container w-[90%] mx-auto '>
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 items-center'>
-                    <Image width={600} height={500} src={"/images/about/how-we-work-thumb.jpg"} alt='thumb' className='w-full' />
-                    <div className='lg:ml-10'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 items-center'>
+                    <Image width={600} height={500} src={"/images/about/how-we-work-thumb.jpg"} alt='thumb' className='w-full row-start-2 lg:row-start-auto lg:col-start-1' />
+                    <div className='lg:ml-10 row-start-1 lg:col-start-2 flex flex-col items-center lg:items-start text-center lg:text-start'>
                         <h2 className="font-medium text-[40px] lg:text-[60px] mb-2 td-text-invert-orange">
                             Our Approach
                         </h2>

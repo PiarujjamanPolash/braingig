@@ -20,9 +20,8 @@ const Testimonials = dynamic(() => import("@/components/service-details/director
 const DigitalMarketingHero = dynamic(() => import("@/components/service-details/digital-marketing-service/Hero"));
 const DigitalMarketingAbout = dynamic(() => import("@/components/service-details/digital-marketing-service/About"));
 const WhatYouGet = dynamic(() => import("@/components/service-details/digital-marketing-service/WhatYouGet"));
-const WhyUs = dynamic(() => import("@/components/service-details/digital-marketing-service/why-us/WhyUs"));
+const DigitalMarketingWhyUs = dynamic(() => import("@/components/service-details/digital-marketing-service/why-us/WhyUs"));
 const Process = dynamic(() => import("@/components/service-details/digital-marketing-service/Process"));
-const CTA = dynamic(() => import("@/components/service-details/digital-marketing-service/CTA"));
 const Testimonial = dynamic(() => import("@/components/service-details/digital-marketing-service/Testimonial"));
 const Team = dynamic(() => import("@/components/service-details/digital-marketing-service/Team"));
 const Counter = dynamic(() => import("@/components/service-details/digital-marketing-service/Counter"));
@@ -34,6 +33,10 @@ const RecentWorks = dynamic(() => import("@/components/home/RecentWorks"));
 import { servicesData } from "@/utils/fakeData/servicesData";
 import { faqData } from "@/utils/fakeData/faqData";
 import { digitalMarketingFaq } from "@/utils/fakeData/digitalMarketingFaq";
+import WhyUs from "@/components/service-details/WhyUs";
+import ProcessOverview from "@/components/service-details/ProcessOverview";
+import Benefits from "@/components/service-details/Benefits";
+import CTA from "@/components/service-details/CTA";
 
 export async function generateStaticParams() {
     return servicesData.map(service => ({
@@ -69,7 +72,7 @@ const ServicesPage = async ({
                 <TextLineAnimation />
                 <DigitalMarketingHero />
                 <DigitalMarketingAbout />
-                <WhyUs />
+                <DigitalMarketingWhyUs />
                 <WhatYouGet />
                 <RecentWorks />
                 {/* <CTA /> */}
@@ -90,9 +93,20 @@ const ServicesPage = async ({
             <div>
                 <TextLineAnimation />
                 <Hero service={service} />
+                <WhyUs whyUs={service.whyUs} />
+                <ProcessOverview process={service.process} />
+                <Benefits service={service} />
                 <Projects service={service} />
-                <Partners />
-                <WorkingProcess />
+                {/* <Partners /> */}
+                <Testimonials />
+                {/* <WorkingProcess /> */}
+                {service.cta && (
+                    <CTA
+                        text={service.cta.text}
+                        buttonLabel={service.cta.buttonLabel}
+                        buttonLink={service.cta.buttonLink}
+                    />
+                )}
                 <FAQ data={faqData} />
             </div>
         </ClientWrapper>
