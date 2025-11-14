@@ -31,7 +31,7 @@ const Services: React.FC = () => {
                         <div className="w-full pt-5">
                             {servicesData.map((service) => (
                                 <div key={service.id} className="td-service-6-item">
-                                    <div className="flex flex-col lg:flex-row flex-wrap items-center">
+                                    <div className="flex flex-col lg:flex-row items-center gap-7">
 
                                         <div className="lg:w-5/12 w-full">
                                             <div className="td-service-6-item-title mb-[15px] flex items-center">
@@ -49,7 +49,7 @@ const Services: React.FC = () => {
                                         </div>
 
                                         <div className="lg:w-2/12 w-full">
-                                            <div className="td-service-6-btn flex justify-start lg:justify-center items-center mb-0 md:mb-[15px]">
+                                            <div className="td-service-6-btn flex justify-end lg:justify-center items-center mb-0 md:mb-[15px]">
                                                 <Link href={service.path} className="flex items-center justify-center" aria-label={service.title}>
                                                     <svg
                                                         width="14"

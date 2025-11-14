@@ -52,9 +52,9 @@ const OurFeatures = () => {
                         <h2 className="font-medium text-[40px] lg:text-[60px] mb-2 td-text-invert-orange">
                             Our Features
                         </h2>
-                        <p className="text-base md:text-lg font-normal lg:font-semibold text-primary ">Hear from visionary clients who chose Brain Gig as their go-to digital agency for design and development agency partners, see the real results and  growth.
+                        <p className="text-base md:text-lg font-normal lg:font-semibold text-primary ">From professional website design to ongoing care, we build SEO-optimized websites that load fast, rank well, and drive results.
                         </p>
-                        <div className="td-btn-group mt-5 lg:mb-[35px] lg:mt-10">
+                        {/* <div className="td-btn-group mt-5 lg:mb-[35px] lg:mt-10">
                             <Link className="td-btn-circle" href="/about" aria-label="About Us">
                                 <FaArrowRight aria-hidden="true" />
                             </Link>
@@ -64,7 +64,7 @@ const OurFeatures = () => {
                             <Link className="td-btn-circle" href="/about" aria-label="About Us">
                                 <FaArrowRight aria-hidden="true" />
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                     {/* <Image
                         width={500}

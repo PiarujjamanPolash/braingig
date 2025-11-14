@@ -110,11 +110,11 @@ export const servicesData: Services[] = [
   },
   {
     id: 5,
-    title: "Graphics, UI/UX & Brand Design",
+    title: "UI/UX & Brand Design",
     highlight: "Design",
     description: "World-class UI/UX design and brand visuals meticulously developed to reflect your unique identity and captivate your audience.",
-    path: "/services/graphic-brand-design",
-    slug: "graphic-brand-design",
+    path: "/services/brand-design",
+    slug: "brand-design",
     img: "/images/services/uiux.webp",
     features: [
       "UI/UX Design",

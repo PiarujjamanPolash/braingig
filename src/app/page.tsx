@@ -30,9 +30,14 @@ const HomePage = () => {
                 link="/subscribe"
                 // optional paragraph
             /> */}
-            <CTA />
-                            <FAQ data={faqData} />
-            
+      <CTA
+        text="See how Brain Gig can boost your business with our specialized, result-driven approach."
+        buttonLabel="I'm Ready To Grow"
+        buttonLink="/contact"
+      />
+
+      <FAQ data={faqData} />
+
     </ClientWrapper>
   );
 };

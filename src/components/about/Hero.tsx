@@ -9,21 +9,18 @@ const Hero: React.FC = () => {
     const contentRef = useRef<HTMLDivElement>(null);
 
     return (
-        <div className="td-about-area pt-[100px] w-[90%] mx-auto pb-15 lg:pb-20">
+        <div className="td-about-area pt-[130px] w-[90%] mx-auto">
             <AnimateTwoContent
                 thumbRef={thumbRef as React.RefObject<HTMLElement>}
                 contentRef={contentRef as React.RefObject<HTMLElement>} />
             <div className="container mx-auto">
                 <div className="flex flex-wrap -mx-4">
                     <div className="w-full px-4">
-                        <div className="td-about-main-wrapper pb-10 lg:pb-18 flex justify-center">
+                        {/* <div className="td-about-main-wrapper pb-10 lg:pb-18 flex justify-center">
                             <h2 className="w-[90%] lg:w-[80%] xl:w-full text-[40px] md:text-[60px] lg:text-[80px] text-secondary td-title-anim text-center">
                                 About Brain Gig
                             </h2>
-                            {/* <h2 className="w-[90%] lg:w-[80%] xl:w-full text-[40px] md:text-[60px] lg:text-[80px] text-secondary td-title-anim text-center">
-                                Driving innovation through strategic consulting
-                            </h2> */}
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className="w-full lg:w-5/12 px-4">
@@ -44,9 +41,12 @@ const Hero: React.FC = () => {
 
                     <div className="w-full lg:w-7/12 px-4">
                         <div ref={contentRef}
-                            className="td-about-main-content lg:ml-[110px]"
+                            className="td-about-main-content lg:ml-15"
                         >
-                            <h3 className="text-xl lg:text-[35px] md:mb-5 text-center md:text-start">Trusted Creators of Exceptional Digital Experiences</h3>
+                            <h2 className="font-medium text-[40px] lg:text-[60px] text-secondary">
+                                About brain gig
+                            </h2>
+                            <p className="text-lg lg:text-2xl font-medium md:mb-5 text-center md:text-start">Trusted Creators of Exceptional Digital Experiences</p>
                             {/* <h3 className="text-xl lg:text-[35px] md:mb-5 text-center md:text-start">At <span>BrainGig,</span> we envision a digital landscape where every brand thrives with an impactful online presence.</h3> */}
                             <div className="flex flex-col md:flex-row -mx-4">
                                 <div className="w-full md:w-5/12 px-4">
@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
                                 <div className="w-full md:w-12/12 px-4">
                                     <div className="td-about-main-text mt-7 text-center md:text-start">
                                         <p className="text-[15px] lg:text-lg mb-7">
-                                            From strategic business website development to innovative digital marketing services, we combine creativity and expertise to boost brands and drive growth.
+                                            From strategic <strong>business website development </strong> to innovative <strong>digital marketing services</strong>, we combine creativity and expertise to boost brands and drive growth.
                                         </p>
                                         {/* <p className="text-[15px] lg:text-lg mb-7">
                                             Fueled by our commitment to 

@@ -19,8 +19,9 @@ const Footer: React.FC = () => {
             {/* Left Section */}
             <div className="w-full lg:w-1/2 px-4 mb-[30px]">
               <div className="td-footer-3-widget">
-                <h2 ref={textRef}className="text-[40px] lg:text-[60px] tracking-[-0.03em] text-primary text-center lg:text-start">
-                  We Build Websites<br /> that <span className="italic font-base">Works!</span>
+                <h2 ref={textRef} className="text-[40px] lg:text-[60px] tracking-[-0.03em] text-primary text-center lg:text-start">
+                  Our Team Work, Makes 
+                  <br /> Your <span className="italic font-base">Dream Work!</span>
                 </h2>
               </div>
               <TextFadeInUp textRef={textRef} />

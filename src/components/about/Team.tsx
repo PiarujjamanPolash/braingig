@@ -50,10 +50,17 @@ const Team: React.FC = () => {
 
     return (
         <div className="td-team-area td-team-about-wrap">
-            <div className="2xl:container 2xl:mx-auto mb-15 md:mb-20">
-                <h2 className="font-medium text-[40px] lg:text-[60px] text-center mb-2 td-text-invert-orange">
+            <div className="2xl:container 2xl:mx-auto">
+                {/* <h2 className="font-medium text-[40px] lg:text-[60px] text-center mb-2 td-text-invert-orange">
                     Our Experts
-                </h2>
+                </h2> */}
+                <div className="flex flex-col lg:mb-10 w-[90%] mx-auto">
+                    <h2 className="font-medium text-[40px] lg:text-[60px] td-text-invert-orange">
+                        Our Experts
+                    </h2>
+                    <p className="text-base md:text-lg font-normal lg:font-medium text-primary lg:w-[60%]">Our strength is the synergy of passionate experts. Led by Piarujjaman Polash and Fahad Al Faisal, our team pushes creative boundaries and delivers measurable results, embodying a shared commitment to excellence as your trusted digital marketing and web development partner.
+                    </p>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {teamData.map((member) => (
                         <div key={member.id} className="w-full h-full">

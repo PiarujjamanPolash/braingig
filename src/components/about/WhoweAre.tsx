@@ -3,17 +3,19 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
-const AboutUs: React.FC = () => {
+const WhoWeAre: React.FC = () => {
 
   return (
-    <section className="container w-[90%] mx-auto mt-15 lg:my-[120px] mb-15">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between">
+    <section className="container w-[90%] mx-auto mt-15 lg:my-[130px] mb-15">
+      <div className="flex flex-col lg:flex-row items-center justify-between">
         {/* Left Section */}
         <div className="text-center lg:text-right w-full lg:w-2/5">
-          <h2 className="text-3xl lg:text-4xl font-bold leading-normal font-jakarta!">
-            About
+          <h2 className="text-3xl lg:text-[80px] font-medium leading-none tracking-widest">
+            <span className="text-secondary">Who</span>
              <br />
-            <span className="text-7xl lg:text-8xl font-normal text-secondary font-bebas!">Brain gig</span>
+             we
+             <br />
+             Are
           </h2>
         </div>
 
@@ -22,10 +24,10 @@ const AboutUs: React.FC = () => {
 
         {/* Right Section */}
         <div className="flex-1 px-5 lg:px-20">
-          <p className="mb-4 text-gray-700 leading-6 text-center lg:text-start">
-            Grow your brand with Brain Gig, a visionary digital marketing agency and web design agency known for pushing boundaries.
+          <p className="mb-4 leading-6 text-center font-medium lg:text-start text-base lg:text-lg leading-7">
+            Brain Gig was founded by visionary experts Piarujjaman Polash and Fahad Al Faisal, united by a passion for digital innovation. Fahad’s deep WordPress expertise and Piarujjaman’s visionary leadership drive our focus on <strong>creative digital solutions.</strong> They carefully handpicked a team that shares their dedication to honesty, creativity, and delivering exceptional results. Together, they built Brain Gig as a trusted leader in the digital space.
           </p>
-          <p className="text-gray-700 leading-6 text-center lg:text-start">
+          {/* <p className="text-gray-700 leading-6 text-center lg:text-start">
            Our passion lies in blending innovation with strategy, delivering professional website design and custom website development that sparks growth and leaves lasting impressions.
           </p>
           <div className="td-btn-group mt-[35px] flex items-center justify-center lg:justify-start w-fit mx-auto lg:mx-0">
@@ -38,7 +40,7 @@ const AboutUs: React.FC = () => {
                 <Link className="td-btn-circle" href="/about" aria-label="About Us">
                   <FaArrowRight aria-hidden="true" />
                 </Link>
-              </div>
+              </div> */}
         </div>
       </div>
 
@@ -46,4 +48,4 @@ const AboutUs: React.FC = () => {
   );
 };
 
-export default AboutUs;
+export default WhoWeAre;

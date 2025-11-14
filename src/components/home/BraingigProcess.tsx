@@ -27,8 +27,8 @@ const steps = [
     },
     {
         number: "04",
-        title: "Final result",
-        description: "Modern and unique design practically point of view",
+        title: "Performance & Maintenance",
+        description: "Continuous updates, backups, and optimizations to keep everything fast and stable.",
         icon: <FiCheckCircle size={64} />,
         mt: "",
         delay: ".9s",
