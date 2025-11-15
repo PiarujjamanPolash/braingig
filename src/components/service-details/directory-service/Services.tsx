@@ -61,11 +61,12 @@ const Services: React.FC = () => {
       .map((_, i) => serviceRefs.current[i] || null);
   }
   return (
-    <div className="td-service-3-area pt-[100px] lg:pt-[150px] pb-[130px] grey-bg-3">
+    <section>
+      <div className="td-service-3-area grey-bg-3 py-15 lg:py-20">
       <div className="container w-[90%] mx-auto px-4">
         <div className="flex justify-center">
           <div className="xl:w-8/12">
-            <div className="td-service-3-title-wrap ml-16 mb-20 relative">
+            <div className="td-service-3-title-wrap ml-16 mb-10 relative">
               <Image
                 width={93}
                 height={98}
@@ -89,6 +90,7 @@ const Services: React.FC = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

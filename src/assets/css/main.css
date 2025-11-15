@@ -4504,7 +4504,7 @@ textarea {
 }
 .td-hero-6-line span {
   width: 1px;
-  height: 556px;
+  /* height: 556px; */
   display: inline-block;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(6, 50, 49, 0.1) 100%);
 }
@@ -4752,7 +4752,10 @@ textarea {
   width: 100px;
   height: 100px;
   background: var(--td-common-green);
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   text-align: center;
   /* line-height: 100px; */
@@ -9845,7 +9848,7 @@ textarea {
     right: auto;
     /* left: 20px; */
     top: 0;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
 }
 @media (max-width: 575px) {

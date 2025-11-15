@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
                 thumbRef={thumbRef as React.RefObject<HTMLElement>}
                 contentRef={contentRef as React.RefObject<HTMLElement>} />
             <div className="container mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-5">
 
                     <div className="w-full px-4 md:px-0 lg:row-start-auto lg:col-start-1">
                         <div ref={thumbRef}
@@ -53,11 +53,7 @@ const Hero: React.FC = () => {
                                         <p className="text-[15px] lg:text-lg mb-3 lg:mb-7">
                                             From strategic <strong>business website development </strong> to innovative <strong>digital marketing services</strong>, we combine creativity and expertise to boost brands and drive growth.
                                         </p>
-                                        {/* <p className="text-[15px] lg:text-lg mb-7">
-                                            Fueled by our commitment to 
-                                            redefine the possibilities of the digital realm, we approach every project with a 
-                                            forward-thinking vision. Join us in shaping the future of digital excellence. </p> */}
-                                        <div className="td-btn-group !w-full flex justify-center md:justify-start">
+                                        <div className="td-btn-group w-fit flex justify-center md:justify-start">
                                             <Link className="td-btn-circle" href="/contact">
                                                 <FaArrowRight />
                                             </Link>

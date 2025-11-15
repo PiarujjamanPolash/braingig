@@ -21,14 +21,12 @@ const PricingArea: React.FC = () => {
   );
 
   return (
-    <div className="td-pricing-area py-20 lg:py-[120px] px-5 md:px-0">
-      <div className="">
-        <div className="flex justify-center">
-          <div className="flex flex-col items-center text-center mb-8 lg:mb-[65px]">
+    <section>
+      <div className="td-pricing-area ">
+        <div className="flex justify-center mb-3 lg:mb-5">
             <h2 className="text-[40px] lg:!text-[60px] font-medium tracking-wide td-text-invert-orange">
               CUSTOMIZABLE PRICING OPTIONS
             </h2>
-          </div>
         </div>
 
         {/* tab */}
@@ -95,7 +93,7 @@ const PricingArea: React.FC = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

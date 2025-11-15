@@ -37,17 +37,17 @@ const steps = [
 const BraingigProcess: React.FC = () => {
 
     return (
-        <section className="pt-[120px]">
+        <section>
             <div className="container w-[90%] mx-auto td-service-process-area td-service-2-main-wrap">
                         <h2 className="font-medium text-[40px] text-center lg:text-[60px] mb-7 td-text-invert-orange">
                             The braingig way
                         </h2>
 
-                    <div className="flex flex-wrap -mx-0 gap-6 sm:gap-0">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                         {steps.map((step, index) => (
                             <div
                                 key={index}
-                                className={`w-full sm:w-1/2 lg:w-1/4 px-0 wow fadeInUp ${step.mt}`}
+                                className={`w-full px-0 wow fadeInUp ${step.mt}`}
                                 data-wow-delay={step.delay}
                                 data-wow-duration="1s"
                             >

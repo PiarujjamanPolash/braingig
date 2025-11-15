@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About: React.FC = () => {
     return (
-        <section className="td-about-area py-15 lg:pt-30 lg:pb-20 px-5 md:px-0 ">
+        <section className="td-about-area pt-15 lg:pt-30">
             <div className="container w-[90%] mx-auto">
                 {/* Author Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
@@ -13,13 +13,13 @@ const About: React.FC = () => {
                     {/* Left Image */}
                     <div className="col-span-6">
                         <div className="flex justify-center td-about-6-thumb relative z-[1] mb-[30px]">
-                            <Image
+                            {/* <Image
                                 className="shape td-live-anim-spin hidden lg:block"
                                 src="/images/service-details/digital-marketing-service/about-shape-1.png"
                                 alt="shape"
                                 width={140}
                                 height={140}
-                            />
+                            /> */}
                             <Image
                                 src="/images/service-details/digital-marketing-service/about-thumb.jpg"
                                 alt="about thumb"
@@ -35,12 +35,12 @@ const About: React.FC = () => {
                             <h2 className="hidden lg:block text-[40px] lg:text-[60px] font-medium tracking-wide uppercase mb-[20px] td-text-invert-orange">
                                 Clarity, Creativity, and Conversion.
                             </h2>
-                            <p className="text-[15px] md:text-base lg:text-lg lg:font-semibold">
+                            <p className="text-[15px] md:text-base lg:text-lg lg:font-medium">
                                 We plan, create, and optimize a complete Digital Marketing Strategy that blends content, SEO, paid media, and creative. As a results-driven Digital Marketing Agency, we deliver an Online Marketing Solution built for clarity, scale, and measurable growth.
                             </p>
                         </div>
                         <div className="td-about-6-author">
-                            <div className="hidden md:block td-about-6-author-top mb-[40px]">
+                            <div className="hidden md:block td-about-6-author-top mb-5">
                                 <div className="flex relative -space-x-4">
                                     <Image
                                         className="mb-[25px] h-15 w-15 rounded-full object-cover border border-blue-900"

@@ -49,11 +49,9 @@ export const teamData: TeamType[] = [
 const Team: React.FC = () => {
 
     return (
-        <div className="td-team-area td-team-about-wrap">
+        <section>
+            <div className="td-team-area td-team-about-wrap">
             <div className="2xl:container 2xl:mx-auto">
-                {/* <h2 className="font-medium text-[40px] lg:text-[60px] text-center mb-2 td-text-invert-orange">
-                    Our Experts
-                </h2> */}
                 <div className="flex flex-col items-center lg:items-start text-center lg:text-start mb-5 lg:mb-10 w-[90%] mx-auto">
                     <h2 className="font-medium text-[40px] lg:text-[60px] td-text-invert-orange">
                         Our Experts
@@ -82,6 +80,7 @@ const Team: React.FC = () => {
                 </div>
             </div>
         </div>
+        </section>
 
     );
 };

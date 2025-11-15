@@ -5,8 +5,8 @@ import React from "react";
 
 const Services: React.FC = () => {
     return (
-        <section className="mt-15 lg:mt-[120px]">
-            <div className="td-service-6-area w-[90%] mx-auto mb-15 lg:mb-20">
+        <section>
+            <div className="td-service-6-area w-[90%] mx-auto">
                 <div className="container mx-auto px-3 sm:px-4 lg:px-6">
                     <div className="flex flex-wrap items-end">
                         <div className="flex flex-col lg:flex-row w-full items-center">

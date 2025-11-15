@@ -1,8 +1,14 @@
 @import "tailwindcss";
+
 @import "swiper/css";
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
-
+@layer base {
+  section {
+    @apply pt-[30px] pb-[30px]   
+           lg:pt-[60px] lg:pb-[60px];  
+  }
+}
 :root {
   /* --background: #D8D9D5; */
   --background: #ffffff;
@@ -22,6 +28,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+
 
 /* @theme {
   --color-primary: #0C2B4E;

@@ -6,15 +6,13 @@ import Brands from "@/components/shared/Brands";
 
 const Testimonials: React.FC = () => {
     return (
-        <section className="td-testimonial-3-area td-testimonial-3-spacing bg-primary pt-[60px] lg:pt-[100px] px-5 lg:px-0 relative flex flex-col">
-            {/* Big background text */}
-            {/* <h3 className="td-testimonial-3-bigtext hidden md:block">BRAINGIG</h3> */}
-
-            <div className="container w-[90%] mx-auto">
-                <div className="lg:ml-auto xl:mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <section >
+            <div className="td-testimonial-3-area bg-primary px-5 lg:px-0 relative flex flex-col">
+                <div className="container w-[90%] mx-auto">
+                <div className="lg:ml-auto xl:mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4 pt-[60px] lg:pt-[100px] lg:pb-[50px]">
                 {/* Left Column */}
                 <div className="w-full col-span-4">
-                    <div className="td-testimonial-3-title-wrap mb-5 lg:mb-[70px]">
+                    <div className="td-testimonial-3-title-wrap mb-5 lg:mb-[50px]">
                         <span className="td-section-3-subtitle inline-block mb-[15px]">
                             From idea to impact
                         </span>
@@ -46,7 +44,7 @@ const Testimonials: React.FC = () => {
                 <div className="w-full col-span-8 flex flex-col">
                     <Swiper
                         modules={[Navigation, Autoplay]}
-                        // autoplay
+                        autoplay
                         loop
                         navigation={{
                             nextEl: ".td-testimonial-next",
@@ -96,8 +94,9 @@ const Testimonials: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-light w-[80%] mt-15 lg:mt-0 mx-auto block rounded-md">
+            {/* <div className="bg-light w-[80%] mt-15 lg:mt-0 mx-auto block rounded-md">
                 <Brands customClass="p-0" />
+            </div> */}
             </div>
             </div>
 

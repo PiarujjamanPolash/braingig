@@ -5,8 +5,8 @@ import { FaArrowRight } from "react-icons/fa6";
 const MainArea: React.FC = () => {
 
     return (
-        <div className="w-[90%] mx-auto">
-            <div className="td-contact-main py-15 lg:py-20">
+        <section className="pt-15 lg:pt-30">
+            <div className="w-[90%] mx-auto td-contact-main">
                 <div className="container mx-auto">
                     <div className="flex flex-wrap">
                         {/* Left Column */}
@@ -78,7 +78,7 @@ const MainArea: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

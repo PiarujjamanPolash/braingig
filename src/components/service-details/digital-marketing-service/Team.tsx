@@ -10,7 +10,7 @@ const Team: React.FC = () => {
   const doubledTeamData = [...teamData];
 
   return (
-    <section className="td-team-area px-5 md:px-0 mb-10 mb-15 lg:mb-[150px]">
+    <section className="td-team-area">
       <div className="container w-[90%] mx-auto mb-[10px]">
         <div className="flex flex-wrap mb-[15px]">
           <div className="lg:w-3/12 w-full">

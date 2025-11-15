@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import SplitTextAnimation from "@/components/animations/SplitTextAnimation";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
   const textRef = useRef<HTMLDivElement | null>(null);
@@ -31,7 +32,7 @@ const Hero: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
               {/* Left Column */}
               <div className="lg:col-span-2">
-                <div className="relative mb-8 inline-block">
+                <Link href={'/contact'} className="relative mb-8 inline-block">
                   <Image width={106} height={106}
                     className="likes"
                     src="/images/service-details/directory-service/hero-like.png"
@@ -42,7 +43,7 @@ const Hero: React.FC = () => {
                     src="/images/service-details/directory-service/hero-text.png"
                     alt=""
                   />
-                </div>
+                </Link>
               </div>
               <SplitTextAnimation textRef={textRef} direction="right" />
 

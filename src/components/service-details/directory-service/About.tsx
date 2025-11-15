@@ -10,13 +10,13 @@ const About: React.FC = () => {
     const imageRef = useRef<HTMLDivElement | null>(null);
 
     return (
-        <div className="td-about-area pt-[90px] pb-[95px]">
-            <div className="container w-[90%] mx-auto">
+        <section className="pt-[60px] lg:pt-[120px]">
+            <div className="td-about-area container w-[90%] mx-auto">
                 {/* Title Section */}
                 <div className="w-full lg:w-[65%]">
-                    <div ref={textRef} className="td-about-3-title-wrap mb-28">
+                    <div ref={textRef} className="td-about-3-title-wrap mb-8">
                         <h2 className="td-section-3-title text-4xl md:text-5xl font-bold leading-tight">
-                            A Team of Innovators Revolutionizing Online <br /> <span> Directory Platforms </span>
+                            A Team of Innovators Revolutionizing Online <span> Directory Platforms </span>
                         </h2>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ const About: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

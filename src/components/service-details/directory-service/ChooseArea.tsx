@@ -6,13 +6,13 @@ const ChooseArea: React.FC = () => {
   const titleRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <section className="td-chose-area pt-[100px] lg:pt-[150px] pb-[80px]">
-      <div className="px-4">
+    <section>
+      <div className="td-chose-area px-4">
         <div className="container w-[90%] mx-auto flex flex-wrap">
           {/* Title */}
           <div className="w-full lg:w-[70%]">
             <div
-              className="td-chose-3-title-wrap mb-[75px]"
+              className="td-chose-3-title-wrap mb-8"
             >
               <h2 ref={titleRef} className="td-section-3-title text-center md:text-start">
                 Turn Your Directory into a <span>Growth Engine </span>for Your Business
@@ -38,20 +38,20 @@ const ChooseArea: React.FC = () => {
             {/* List */}
             <div className="col-span-6">
               <div className="td-chose-3-list-wrap mr-[110px] mb-[30px]">
-                <div className="td-chose-3-list mb-[55px]">
-                  <h6 className="mb-[20px]">Tailored for Your Business Goals</h6>
+                <div className="td-chose-3-list mb-10">
+                  <h6 className="mb-2">Tailored for Your Business Goals</h6>
                   <p className='text-base lg:text-lg'>
                     Every business is unique. We create directories that fit your exact needs—whether it’s expanding categories, integrating new features, or scaling to handle high traffic—ensuring your platform evolves as your business grows.
                   </p>
                 </div>
-                <div className="td-chose-3-list mb-[55px]">
-                  <h6 className="mb-[20px]">Boost Engagement and Visibility</h6>
+                <div className="td-chose-3-list mb-10">
+                  <h6 className="mb-2">Boost Engagement and Visibility</h6>
                   <p className='text-base lg:text-lg'>
                     Your listings get noticed. With smart search tools, interactive maps, and clear categorization, users find exactly what they need quickly, turning visits into meaningful interactions and keeping your audience coming back.
                   </p>
                 </div>
                 <div className="td-chose-3-list">
-                  <h6 className="mb-[20px]">Revenue-Driven Features</h6>
+                  <h6 className="mb-2">Revenue-Driven Features</h6>
                   <p className='text-base lg:text-lg'>
                     We help you turn your directory into a profitable platform. With options like premium listings, featured spots, and subscription models, your website isn’t just informative—it’s a growth engine for your business.
                   </p>

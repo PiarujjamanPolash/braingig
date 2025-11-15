@@ -14,17 +14,17 @@ const Header: React.FC = () => {
     const [isBgWhite, setIsBgWhite] = useState(false);
 
     useEffect(() => {
-    const handleScroll = () => {
-        // true if scrolled more than 100px OR on /about page
-        setIsBgWhite(window.scrollY > 100 || pathname === "/about" || pathname === "/about/");
-    };
+        const handleScroll = () => {
+            // true if scrolled more than 100px OR on /about page
+            setIsBgWhite(window.scrollY > 100 || pathname === "/about" || pathname === "/about/");
+        };
 
-    // Run once on mount (to handle /about without scrolling)
-    handleScroll();
+        // Run once on mount (to handle /about without scrolling)
+        handleScroll();
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-}, [pathname]);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [pathname]);
 
     useEffect(() => {
         if (mainMenuRef.current && mobileMenuOuterRef.current) {
@@ -275,7 +275,7 @@ const Header: React.FC = () => {
 
                 {/* Mobile Menu */}
                 <div className="tdmobile__menu td-menu-large">
-                    <nav className="tdmobile__menu-box">
+                    <nav className="tdmobile__menu-box flex flex-col h-full justify-between">
                         {/* Close Button */}
                         <div className="close-btn">
                             <FaXmark />
@@ -314,46 +314,47 @@ const Header: React.FC = () => {
                                 <p>braingigllc@gmail.com</p>
                             </div>
                         </div>
-
-                        {/* Contact Button */}
-                        <div className="mt-7 mx-6">
-                            <Link href='/contact'
-                                onClick={() => {
-                                    document.body.classList.remove("mobile-menu-visible");
-                                }}
-                                className="td-btn td-btn-menu-black w-full inline-block td-btn-switch-animation ml-2.5"
-                            >
-                                <span className="flex items-center justify-center">
-                                    <span className="btn-text">Contact Us</span>
-                                    <span className="btn-icon">
-                                        <FaAngleRight />
+                        <div className="mt-auto">
+                            {/* Contact Button */}
+                            <div className="mt-7 mx-6">
+                                <Link href='/contact'
+                                    onClick={() => {
+                                        document.body.classList.remove("mobile-menu-visible");
+                                    }}
+                                    className="td-btn td-btn-menu-black w-full inline-block td-btn-switch-animation ml-2.5"
+                                >
+                                    <span className="flex items-center justify-center">
+                                        <span className="btn-text">Contact Us</span>
+                                        <span className="btn-icon">
+                                            <FaAngleRight />
+                                        </span>
+                                        <span className="btn-icon">
+                                            <FaAngleRight />
+                                        </span>
                                     </span>
-                                    <span className="btn-icon">
-                                        <FaAngleRight />
-                                    </span>
-                                </span>
-                            </Link>
-                        </div>
+                                </Link>
+                            </div>
 
-                        {/* Social Links */}
-                        <div className="social-links flex justify-center">
-                            <ul className="list-wrap">
-                                <li>
-                                    <Link href="https://www.facebook.com/braingigllc" target="_blank" aria-label="Facebook">
-                                        <FaFacebook aria-hidden="true" />
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="https://www.instagram.com/braingigllc/" target="_blank" aria-label="Instagram">
-                                        <FaInstagram aria-hidden="true" />
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="https://www.linkedin.com/company/99014556" target="_blank" aria-label="Linkedin">
-                                        <FaLinkedin aria-hidden="true" />
-                                    </Link>
-                                </li>
-                            </ul>
+                            {/* Social Links */}
+                            <div className="social-links flex justify-center">
+                                <ul className="list-wrap">
+                                    <li>
+                                        <Link href="https://www.facebook.com/braingigllc" target="_blank" aria-label="Facebook">
+                                            <FaFacebook aria-hidden="true" />
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://www.instagram.com/braingigllc/" target="_blank" aria-label="Instagram">
+                                            <FaInstagram aria-hidden="true" />
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="https://www.linkedin.com/company/99014556" target="_blank" aria-label="Linkedin">
+                                            <FaLinkedin aria-hidden="true" />
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </nav>
                 </div>

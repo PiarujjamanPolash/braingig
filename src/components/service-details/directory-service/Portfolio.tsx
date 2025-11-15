@@ -1,5 +1,4 @@
 "use client"
-
 import { useRef, useState } from 'react';
 import { portfolioData } from '@/utils/fakeData/portfolioData';
 import PortfolioItem from './PortfolioItem';
@@ -24,7 +23,8 @@ const Portfolio: React.FC = () => {
   };
 
   return (
-    <div className="td-portfolio-area td-portfolio-3-bg pt-[100px] lg:pt-[150px] pb-[160px] px-5 md:px-0">
+    <section>
+      <div className="td-portfolio-area td-portfolio-3-bg pt-15 lg:py-[100px] px-5 md:px-0">
       <div className="container w-[90%] mx-auto">
         {/* Header */}
         <div className="grid grid-cols-5 items-center pb-[80px] gap-8 lg:gap-0">
@@ -75,7 +75,7 @@ const Portfolio: React.FC = () => {
 
         {/* View All Button */}
         {visibleCount < directoryProjects.length && (
-          <div className="flex justify-start text-center mt-10">
+          <div className="flex justify-start text-center">
             <button
               onClick={handleViewMore}
               className="td-header-2-btn ml-[10px] flex justify-center items-center cursor-pointer"
@@ -100,6 +100,7 @@ const Portfolio: React.FC = () => {
         )}
       </div>
     </div>
+    </section>
   );
 };
 

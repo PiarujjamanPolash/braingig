@@ -13,8 +13,8 @@ const processData = [
 
 const Process = () => {
   return (
-    <section className="bg-gray-50 py-16 mt-20 mb-[100px]">
-      <div className="text-center">
+    <section>
+      <div className="bg-gray-50 text-center py-10 lg:py-15">
         <h2 className="text-[40px] lg:text-[60px] font-medium tracking-wide mb-12 text-secondary">Our Lean & Clear Process</h2>
         {/* Desktop */}
         <div className="container w-[90%] mx-auto hidden md:block relative md:flex md:flex-row items-center justify-between">

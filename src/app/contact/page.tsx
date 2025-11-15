@@ -2,6 +2,7 @@
 
 import TextLineAnimation from "@/components/animations/TextLineAnimation";
 import BranchArea from "@/components/contact/BranchArea";
+import Hero from "@/components/contact/Hero";
 import MainArea from "@/components/contact/MainArea";
 import MapArea from "@/components/contact/MapArea";
 import Breadcrumb from "@/components/shared/Breadcrumb";
@@ -12,7 +13,7 @@ const ContactPage = () => {
         <ClientWrapper>
             <TextLineAnimation />
             <div>
-                <Breadcrumb
+                {/* <Breadcrumb
                     subtitle="Contact Us"
                     title={
                         <>
@@ -20,9 +21,10 @@ const ContactPage = () => {
                             happy <span style={{color: "#F87B1B"}}>to help you!</span>
                         </>
                     }
-                />
-                <MapArea />
+                /> */}
+                <Hero />
                 <MainArea />
+                <MapArea />
                 <BranchArea />
             </div>
         </ClientWrapper>

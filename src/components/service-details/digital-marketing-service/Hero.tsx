@@ -32,17 +32,17 @@ const Hero: React.FC = () => {
     const doubledTagData = [...tagsData, ...tagsData, ...tagsData];
     const doubledImagesData = [...imagesData, ...imagesData];
     return (
-        <section
-            className="td-hero-area td-hero-6-spacing include-bg bg-accent"
+        <div
+            className="pt-20 md:pt-30 pb-3 lg:min-h-screen lg:flex lg:items-center bg-accent"
         >
             <div className="container w-[90%] mx-auto">
                 <div className="td-hero-6-top pb-[45px] relative z-[1]">
                     {/* Hero Animated Lines */}
                     <div className="td-hero-6-line">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span className="h-[500px] sm:h-[550px] md:h-[600px] lg:h-[700px]"></span>
+                        <span className="h-[500px] sm:h-[550px] md:h-[600px] lg:h-[700px]"></span>
+                        <span className="h-[500px] sm:h-[550px] md:h-[600px] lg:h-[700px]"></span>
+                        <span className="h-[500px] sm:h-[550px] md:h-[600px] lg:h-[700px]"></span>
                     </div>
 
                     {/* Title Section */}
@@ -62,11 +62,11 @@ const Hero: React.FC = () => {
                                 modules={[Autoplay]}
                                 spaceBetween={5}
                                 breakpoints={{
-                                    0: { slidesPerView: 1.5 },      
-                                    480: { slidesPerView: 1.5 },    
-                                    768: { slidesPerView: 2 },      
+                                    0: { slidesPerView: 2 },      
+                                    // 480: { slidesPerView: 1.5 },    
+                                    // 768: { slidesPerView: 2 },      
                                     1024: { slidesPerView: 3 },   
-                                    1280: { slidesPerView: 4 },     
+                                    1280: { slidesPerView: 5 },     
                                 }}
                                 loop={true}
                                 autoplay={{
@@ -96,34 +96,7 @@ const Hero: React.FC = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Image Marquee */}
-            <div
-                className=""
-                data-wow-delay=".9s"
-                data-wow-duration="1s"
-            >
-                <div className="">
-                    <Marquee gradient={false} speed={50}>
-                        <div className="flex items-start">
-                            {doubledImagesData.map((img, i) => (
-                                <div key={i} className="td-hero-6-thumb mx-5">
-                                    <Image
-                                        src={img}
-                                        alt={`Slide ${i + 1}`}
-                                        width={304}
-                                        height={390}
-                                        className="w-[196px] h-[260] object-cover rounded-[10px]"
-                                        priority
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                    </Marquee>
-
-                </div>
-            </div>
-        </section>
+        </div>
     );
 };
 

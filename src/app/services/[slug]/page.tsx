@@ -36,7 +36,8 @@ import { digitalMarketingFaq } from "@/utils/fakeData/digitalMarketingFaq";
 import WhyUs from "@/components/service-details/WhyUs";
 import ProcessOverview from "@/components/service-details/ProcessOverview";
 import Benefits from "@/components/service-details/Benefits";
-import CTA from "@/components/service-details/CTA";
+import Brands from "@/components/shared/Brands";
+import CTA from "@/components/service-details/digital-marketing-service/CTA";
 
 export async function generateStaticParams() {
     return servicesData.map(service => ({
@@ -56,12 +57,13 @@ const ServicesPage = async ({
                 <div>
                     <DirectoryHero />
                     <About />
-                    <DirectoryPartners />
+                    {/* <DirectoryPartners /> */}
                     <Services />
                     <Portfolio />
                     <CounterArea />
                     <ChooseArea />
                     <Testimonials />
+                    <Brands customClass="pt-0 pb-15" />
                 </div>
             </ClientWrapper>
         );
@@ -75,13 +77,19 @@ const ServicesPage = async ({
                 <DigitalMarketingWhyUs />
                 <WhatYouGet />
                 <RecentWorks />
-                {/* <CTA /> */}
                 <Process />
-                <Testimonial />
+                <Testimonials />
                 <PricingArea />
                 <Team />
                 {/* <Counter /> */}
-                <FAQ data={digitalMarketingFaq} />
+                                <FAQ data={digitalMarketingFaq} />
+
+                <CTA
+                    title="Ready to transform your digital presence with expert digital marketing services?"
+                    buttonText="I'm Ready To Grow!"
+                    link="/contact"
+                />
+                <Brands customClass="pt-0 pb-15" />
             </ClientWrapper>
         );
     }
@@ -100,13 +108,13 @@ const ServicesPage = async ({
                 {/* <Partners /> */}
                 <Testimonials />
                 {/* <WorkingProcess /> */}
-                {service.cta && (
+                {/* {service.cta && (
                     <CTA
                         text={service.cta.text}
                         buttonLabel={service.cta.buttonLabel}
                         buttonLink={service.cta.buttonLink}
                     />
-                )}
+                )} */}
                 <FAQ data={faqData} />
             </div>
         </ClientWrapper>

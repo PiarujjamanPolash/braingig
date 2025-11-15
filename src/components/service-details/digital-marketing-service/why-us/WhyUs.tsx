@@ -9,51 +9,18 @@ import StatLine from './StatLine';
 
 gsap.registerPlugin(ScrollTrigger);
 const WhyUs = () => {
-    useEffect(() => {
-        const mm = gsap.matchMedia();
-
-        mm.add("(min-width: 991px)", () => {
-            const ctx = gsap.context(() => {
-                const projectPanels = gsap.utils.toArray<HTMLElement>(".td-service-pin-item-panel");
-
-                projectPanels.forEach((section, i) => {
-                    const sectionHeight = section.offsetHeight;
-                    const isLast = i === projectPanels.length - 1;
-
-                    gsap.to(section, {
-                        scrollTrigger: {
-                            trigger: section,
-                            start: "top top+=200",
-                            end: () => {
-                                return `+=${(sectionHeight * (3 - i)) - (i * 130)}`;
-                            },
-                            pin: true,
-                            pinSpacing: isLast ? "margin" : false,
-                            scrub: true,
-                            markers: false,
-                        },
-                    });
-                });
-            });
-
-            return () => ctx.revert();
-        });
-
-        return () => mm.revert();
-    }, []);
     return (
-        <section className='container w-[90%] mx-auto'>
+        <section className='container w-[90%] mx-auto px-8'>
             <div className='flex flex-col justify-center items-center gap-5 mb-15 lg:mb-20'>
                 <h3 className='!text-[40px] lg:!text-[60px] font-medium tracking-wide td-text-invert-orange'>Why Us</h3>
                 <p className='w-[90%] md:w-[80%] lg:w-[50%] !text-lg lg:font-semibold text-center'>You get a complete, easy-to-understand plan, fast execution, and frequent optimization. The result: stronger rankings, lower acquisition costs, and steady pipeline growth.</p>
             </div>
 
-            <div className="td-service-pin-items">
                 {projectsData.map((project) => (
-                    <div key={project.id} className="grid grid-cols-1 xl:grid-cols-12 gap-y-4 xl:gap-5 items-start mb-20 sm:mb-32 td-service-pin-item-panel bg-white">
+                    <div key={project.id} className="grid grid-cols-1 xl:grid-cols-12 gap-y-4 xl:gap-5 items-start mb-10 lg:mb-15 td-service-pin-item-panel">
                         <div className="xl:col-span-9 relative h-full">
                             <h2 className="td-portfolio-6-transparent bg-white">0{project.id}</h2>
-                            <div className="w-full h-full rounded-lg overflow-hidden bg-white">
+                            <div className="w-full h-full rounded-lg overflow-hidden ">
                                 <Image
                                     src={project.image}
                                     alt={`${project.title} Illustration`}
@@ -165,7 +132,6 @@ const WhyUs = () => {
                         </div>
                     </div>
                 ))}
-            </div>
         </section>
     );
 };

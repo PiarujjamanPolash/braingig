@@ -43,7 +43,7 @@ const features = [
 const Features: React.FC = () => {
 
     return (
-        <section className="my-15 lg:my-[120px] bg-white">
+        <section>
             <div className="container w-[90%] mx-auto px-6">
                 <h2 className="font-medium text-[40px] lg:text-[60px] text-center mb-2 td-text-invert-orange">
                     What Sets Us Apart

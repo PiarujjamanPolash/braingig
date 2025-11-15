@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 const WhoWeAre: React.FC = () => {
 
   return (
-    <section className="container w-[90%] mx-auto my-15 lg:my-[130px]">
+    <section className="container w-[90%] mx-auto lg:pt-[120px]">
       <div className="flex flex-col lg:flex-row items-center justify-between">
         {/* Left Section */}
         <div className="text-center lg:text-right w-full lg:w-2/5">

@@ -3,7 +3,7 @@ import React from 'react';
 
 const HowWeWork = () => {
     return (
-        <section className='my-15 lg:my-[120px]'>
+        <section>
             <div className='container w-[90%] mx-auto '>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 items-center'>
                     <Image width={600} height={500} src={"/images/about/how-we-work-thumb.jpg"} alt='thumb' className='w-full row-start-2 lg:row-start-auto lg:col-start-1' />

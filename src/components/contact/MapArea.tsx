@@ -6,13 +6,13 @@ import logo from "../../../public/images/logos/logo.webp"
 const MapArea: React.FC = () => {
 
     return (
-        <div className="">
+        <section id="meet-us pt-40">
             <div className="td-contact-map-area">
                 <div className="p-0">
                     <div className="flex flex-wrap">
                         <div className="w-full">
                             <div className="td-contact-map relative">
-                                <div className="td-contact-map-wrap">
+                                <div className="td-contact-map-wrap mb-5">
                                     <Image 
                                         width={259}
                                         height={71}
@@ -45,7 +45,7 @@ const MapArea: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -5,8 +5,9 @@ import { ScrollTrigger, SplitText } from "gsap/all";
 import WhoWeAre from "@/components/about/WhoweAre";
 import MissionVision from "@/components/about/MissionVision";
 import HowWeWork from "@/components/about/HowWeWork";
-import Testimonials from "@/components/service-details/directory-service/Testimonials";
-import CTA from "@/components/home/CTA";
+import CTA from "@/components/service-details/digital-marketing-service/CTA";
+import Brands from "@/components/shared/Brands";
+
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
 const Features = dynamic(() => import("@/components/about/Features"));
@@ -14,7 +15,7 @@ const Hero = dynamic(() => import("@/components/about/Hero"));
 const Team = dynamic(() => import("@/components/about/Team"));
 const AnimateTitle = dynamic(() => import("@/components/animations/AnimateTitle"));
 const TextLineAnimation = dynamic(() => import("@/components/animations/TextLineAnimation"));
-const Testimonial = dynamic(() => import("@/components/home/Testimonial"));
+const Testimonials = dynamic(() => import("@/components/service-details/directory-service/Testimonials"));
 const ClientWrapper = dynamic(() => import("@/components/wrappers/ClientWrapper"));
 
 
@@ -28,15 +29,14 @@ const About = () => {
             <MissionVision />
             <Features />
             <Team />
+            <CTA
+                title="See how Brain Gig can boost your business with our specialized, result-driven approach."
+                buttonText="Schedule Your Free Consultation Today!"
+                link="/contact"
+            />
             <HowWeWork />
             <Testimonials />
-            <CTA
-                text="Discover the difference a dedicated <strong>digital marketing agency</strong> can make."
-                buttonLabel="Contact Brain Gig Today"
-                buttonLink="/contact"
-                background="/images/cta-home.avif"
-            />
-
+            <Brands customClass="pt-0" />
         </ClientWrapper>
     );
 };

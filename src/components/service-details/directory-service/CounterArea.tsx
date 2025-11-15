@@ -28,11 +28,12 @@ const CounterArea: React.FC = () => {
     const textRef = useRef<HTMLDivElement | null>(null);
 
     return (
-        <section className="td-counter-3-area grey-bg-3 pt-[100px] lg:pt-[155px] pb-[130px]">
-            <div className="container w-[90%] mx-auto px-4">
+        <section>
+            <div className="td-counter-3-area grey-bg-3 pt-15 lg:py-20">
+                <div className="container w-[90%] mx-auto px-4">
                 {/* Title */}
                 <div className="flex justify-center">
-                    <div className="w-full lg:w-[70%] text-center mb-[70px]">
+                    <div className="w-full lg:w-[70%] text-center mb-8">
                         <div className="td-counter-3-title-wrap">
                             <span className="td-section-3-subtitle inline-block !text-secondary mb-[15px]">
                                 Our Proven Impact
@@ -75,6 +76,7 @@ const CounterArea: React.FC = () => {
                         </div>
                     ))}
                 </div>
+            </div>
             </div>
         </section>
     );
