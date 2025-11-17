@@ -1,12 +1,17 @@
 "use client"
 import { imagesData, tagsData } from "@/utils/fakeData/digitalMarketingData";
+import { Services, servicesData } from "@/utils/fakeData/servicesData";
 import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+type HeroProps = {
+    service: Services;
+};
 
 const handleScrollToService = (id: string) => {
+    
     const services = document.querySelectorAll(".td-service-6-item")
     services.forEach(service => {
         service.classList.remove("highlight-service");
@@ -28,14 +33,14 @@ const handleScrollToService = (id: string) => {
 
     window.history.pushState(null, "", `#${id}`);
 };
-const Hero: React.FC = () => {
-    const doubledTagData = [...tagsData, ...tagsData, ...tagsData];
-    const doubledImagesData = [...imagesData, ...imagesData];
+const Hero: React.FC<HeroProps> = ({ service }) => {
+    const { title, description, tagsData } = service;
+    const doubledTagData = [...(tagsData || []), ...(tagsData || []), ...(tagsData || [])];
     return (
         <div
             className="pt-20 md:pt-30 pb-3 lg:min-h-screen lg:flex lg:items-center bg-accent"
         >
-            <div className="container">
+            <div className="container w-[90%] mx-auto">
                 <div className="td-hero-6-top pb-[45px] relative z-[1]">
                     {/* Hero Animated Lines */}
                     <div className="td-hero-6-line">
@@ -51,9 +56,10 @@ const Hero: React.FC = () => {
                             <h2
                                 className="td-hero-6-title text-primary text-center"
                             >
-                                Marketing That Moves Markets
+                                {title}
+
                             </h2>
-                            <p className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto !text-base md:!text-3xl text-primary text-center mt-5 lg:mt-10">Transforming ideas into campaigns that connect and convert your ideal audience through expert <strong>Digital Marketing Services.</strong></p>
+                            <p className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto !text-base md:!text-3xl text-primary text-center mt-5 lg:mt-10" dangerouslySetInnerHTML={{ __html: description }}></p>
                         </div>
 
                         {/* Tags */}
@@ -62,11 +68,11 @@ const Hero: React.FC = () => {
                                 modules={[Autoplay]}
                                 spaceBetween={5}
                                 breakpoints={{
-                                    0: { slidesPerView: 2 },      
+                                    0: { slidesPerView: 2 },
                                     // 480: { slidesPerView: 1.5 },    
                                     // 768: { slidesPerView: 2 },      
-                                    1024: { slidesPerView: 3 },   
-                                    1280: { slidesPerView: 5 },     
+                                    1024: { slidesPerView: 3 },
+                                    1280: { slidesPerView: 5 },
                                 }}
                                 loop={true}
                                 autoplay={{

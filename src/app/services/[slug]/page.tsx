@@ -72,7 +72,7 @@ const ServicesPage = async ({
         return (
             <ClientWrapper>
                 <TextLineAnimation />
-                <DigitalMarketingHero />
+                {service && <DigitalMarketingHero service={service} />}
                 <DigitalMarketingAbout />
                 <DigitalMarketingWhyUs />
                 <WhatYouGet />
@@ -82,7 +82,7 @@ const ServicesPage = async ({
                 <PricingArea />
                 <Team />
                 {/* <Counter /> */}
-                                <FAQ data={digitalMarketingFaq} />
+                <FAQ data={digitalMarketingFaq} />
 
                 <CTA
                     title="Ready to transform your digital presence with expert digital marketing services?"
