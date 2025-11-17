@@ -1,35 +1,63 @@
 "use client"
 import { digitalMarketingData } from '@/utils/fakeData/digitalMarketingData';
 import React, { useRef, useState } from 'react';
+type DescriptionItem = {
+    title: string;
+    text: string;
+};
 
-const WhatYouGet = () => {
+type ServiceItem = {
+    id: number;
+    title: string;
+    description: DescriptionItem[];
+};
+
+type FeaturesData = {
+    sectionTitle: string;
+    sectionDescription?: string;
+    services: ServiceItem[];
+};
+
+export type Service = {
+    featuresData?: FeaturesData;
+    tagsData?: { id: string; label: string }[];
+};
+
+interface WhatYouGetProps {
+    service: Service;
+}
+const WhatYouGet: React.FC<WhatYouGetProps> = ({ service }) => {
     const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
     const [openId, setOpenId] = useState<number | null>(null);
+
+     if (!service.featuresData) return null;
+    const { featuresData, tagsData } = service;
+    const { sectionTitle, sectionDescription, services } = featuresData;
 
     const toggleAccordion = (id: number) => {
         setOpenId(openId === id ? null : id);
     };
     return (
-        <section className="td-service-6-area w-[90%] mx-auto pt-0 ">
+        <section className="td-service-6-area">
             <div className="container mx-auto px-3 sm:px-4 lg:px-6">
                 <div className="flex flex-wrap items-end">
 
                     <div className="flex flex-col justify-start w-full">
                         <h2 className="w-full md:w-[80%] lg:w-[70%]  !text-[40px] lg:!text-[60px] font-medium tracking-wide td-text-invert-orange">
-                                Digital Marketing Strategy that delivers
+                            {sectionTitle}
                         </h2>
                         <p className="w-[80%] md:w-[70%] lg:w-[50%] text-base lg:text-lg font-semibold !mb-0">
-                                Website SEO Services, Paid Advertising Services, and Social Media Management, aligned.
+                            {sectionDescription}
                         </p>
                     </div>
 
                     <div className="w-full pt-[55px]">
-                        {digitalMarketingData.map((service, idx) => (
+                        {services.map((service, idx) => (
                             <div id={`service-${service.id}`}
                                 key={service.id}
-                                className="py-8 px-5 border-b border-gray-200 hover:rounded-[10px] hover:bg-primary group hover:text-white hover:transition-all hover:duration-300 hover:ease-in-out"
+                                className="py-8 px-5 border-b border-gray-200 hover:rounded-[10px] hover:bg-primary group hover:text-white transition-all duration-500 ease-in-out"
                             >
-                                <div className="flex flex-col lg:flex-row flex-wrap items-center">
+                                <div className="flex flex-col lg:flex-row items-center gap-5">
                                     {/* Left side: ID and Title */}
                                     <div
                                         className="lg:w-5/12 w-full cursor-pointer"

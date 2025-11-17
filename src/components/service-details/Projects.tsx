@@ -23,9 +23,9 @@ const Projects: React.FC<ProjectsProps> = ({ service }) => {
   const firstSliderShuffled = shuffleArray(firstSliderProjects);
   const secondSliderShuffled = shuffleArray(secondSliderProjects);
   return (
-    <div className="td-portfolio-area py-15 lg:py-[120px]">
+    <section className="td-portfolio-area">
       <p className="text-base md:text-lg lg:text-xl tracking-normal font-normal lg:font-semibold w-[90%] md:w-[70%] lg:w-[50%] text-center mx-auto">{service.projectsDescription}</p>
-      <h2 className="td-services-project-bigtitle td-split-text td-split-in-right">{service.projectsTitle}</h2>
+      <h2 className="td-services-project-bigtitle text-accent td-split-text td-split-in-right tracking-widest">{service.projectsTitle}</h2>
 
       <div id="recent-works-swiper-1" className="td-portfolio-2-slider-wrap mb-[20px]">
         <Swiper
@@ -91,7 +91,7 @@ const Projects: React.FC<ProjectsProps> = ({ service }) => {
           ))}
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -37,7 +37,7 @@ import WhyUs from "@/components/service-details/WhyUs";
 import ProcessOverview from "@/components/service-details/ProcessOverview";
 import Benefits from "@/components/service-details/Benefits";
 import Brands from "@/components/shared/Brands";
-import CTA from "@/components/service-details/digital-marketing-service/CTA";
+import CTA from "@/components/service-details/CTA";
 
 export async function generateStaticParams() {
     return servicesData.map(service => ({
@@ -68,55 +68,71 @@ const ServicesPage = async ({
             </ClientWrapper>
         );
     }
-    if (slug === "digital-marketing-strategy") {
-        return (
-            <ClientWrapper>
-                <TextLineAnimation />
-                {service && <DigitalMarketingHero service={service} />}
-                <DigitalMarketingAbout />
-                <DigitalMarketingWhyUs />
-                <WhatYouGet />
-                <RecentWorks />
-                <Process />
-                <Testimonials />
-                <PricingArea />
-                <Team />
-                {/* <Counter /> */}
-                <FAQ data={digitalMarketingFaq} />
+    // if (slug === "digital-marketing-strategy") {
+    //     return (
+    //         <ClientWrapper>
+    //             <TextLineAnimation />
+    //             {service && <DigitalMarketingHero service={service} />}
+    //             <DigitalMarketingAbout />
+    //             <DigitalMarketingWhyUs />
+    //             {service && <WhatYouGet service={service} />}
+    //             <RecentWorks />
+    //             <Process />
+    //             <Testimonials />
+    //             <PricingArea />
+    //             <Team />
+    //             {/* <Counter /> */}
+    //             <FAQ data={digitalMarketingFaq} />
 
-                <CTA
-                    title="Ready to transform your digital presence with expert digital marketing services?"
-                    buttonText="I'm Ready To Grow!"
-                    link="/contact"
-                />
-                <Brands customClass="pt-0 pb-15" />
-            </ClientWrapper>
-        );
-    }
+    //             <CTA
+    //                 title="Ready to transform your digital presence with expert digital marketing services?"
+    //                 buttonText="I'm Ready To Grow!"
+    //                 link="/contact"
+    //             />
+    //             <Brands customClass="pt-0 pb-15" />
+    //         </ClientWrapper>
+    //     );
+    // }
 
     if (!service) return <p>Service not found</p>;
 
     return (
+        // <ClientWrapper>
+        //     <div>
+        //         <TextLineAnimation />
+        //         <Hero service={service} />
+        //         <WhyUs whyUs={service.whyUs} />
+        //         <ProcessOverview process={service.process} />
+        //         <Benefits service={service} />
+        //         <Projects service={service} />
+        //         {/* <Partners /> */}
+        //         <Testimonials />
+        //         {/* <WorkingProcess /> */}
+        //         {/* {service.cta && (
+        //             <CTA
+        //                 text={service.cta.text}
+        //                 buttonLabel={service.cta.buttonLabel}
+        //                 buttonLink={service.cta.buttonLink}
+        //             />
+        //         )} */}
+        //         <FAQ data={faqData} />
+        //     </div>
+        // </ClientWrapper>
         <ClientWrapper>
-            <div>
-                <TextLineAnimation />
-                <Hero service={service} />
-                <WhyUs whyUs={service.whyUs} />
-                <ProcessOverview process={service.process} />
-                <Benefits service={service} />
-                <Projects service={service} />
-                {/* <Partners /> */}
-                <Testimonials />
-                {/* <WorkingProcess /> */}
-                {/* {service.cta && (
-                    <CTA
-                        text={service.cta.text}
-                        buttonLabel={service.cta.buttonLabel}
-                        buttonLink={service.cta.buttonLink}
-                    />
-                )} */}
-                <FAQ data={faqData} />
-            </div>
+            <TextLineAnimation />
+            {service && <DigitalMarketingHero service={service} />}
+            <DigitalMarketingAbout />
+            {slug === "digital-marketing-strategy" && <DigitalMarketingWhyUs />}
+            {service && <WhatYouGet service={service} />}
+            <Projects service={service} />
+            <Process />
+            <Testimonials />
+            {slug === "digital-marketing-strategy" && <PricingArea />}
+            <Team />
+            {/* <Counter /> */}
+            <FAQ data={digitalMarketingFaq} />
+            {service && <CTA service={service} />}
+            <Brands customClass="pt-0 pb-15" />
         </ClientWrapper>
     );
 };

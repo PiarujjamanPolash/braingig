@@ -5,8 +5,8 @@ import { ScrollTrigger, SplitText } from "gsap/all";
 import WhoWeAre from "@/components/about/WhoweAre";
 import MissionVision from "@/components/about/MissionVision";
 import HowWeWork from "@/components/about/HowWeWork";
-import CTA from "@/components/service-details/digital-marketing-service/CTA";
 import Brands from "@/components/shared/Brands";
+import CTA from "@/components/shared/CTA";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 

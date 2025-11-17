@@ -3,8 +3,8 @@ import { faqData } from "@/utils/fakeData/faqData";
 import OurFeatures from "@/components/home/OurFeatures";
 import Testimonials from "@/components/service-details/directory-service/Testimonials";
 import FAQ from "@/components/service-details/FAQ";
-import CTA from "@/components/service-details/digital-marketing-service/CTA";
 import Brands from "@/components/shared/Brands";
+import CTA from "@/components/shared/CTA";
 
 const Hero = dynamic(() => import("@/components/home/Hero"));
 const RecentWorks = dynamic(() => import("@/components/home/RecentWorks"));

@@ -31,8 +31,8 @@ const StatLine: React.FC<StatLineProps> = ({
 
   return (
     <div className="flex text-sm md:text-base justify-between md:justify-start lg:justify-between items-center gap-3 lg:gap-0">
-      <span className="text-gray-600">{label}:</span>
-      <span className="text-green-600 font-semibold">
+      <span className="text-gray-600 whitespace-nowrap">{label}:</span>
+      <span className="text-green-600 font-semibold whitespace-nowrap">
         {showArrow && (
           <span className="text-gray-500 mr-2">
             {safeStart.toLocaleString()} →
