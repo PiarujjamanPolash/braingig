@@ -6,8 +6,8 @@ import { FaArrowRight } from "react-icons/fa";
 const AboutUs: React.FC = () => {
 
   return (
-    <section className="lg:pt-[120px]">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between container w-[90%] mx-auto">
+    <section className="pt-15 lg:pt-30">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between container">
         {/* Left Section */}
         <div className="text-center lg:text-right w-full lg:w-2/5">
           <h2 className="text-3xl lg:text-4xl font-bold leading-normal font-jakarta!">
@@ -18,7 +18,7 @@ const AboutUs: React.FC = () => {
         </div>
 
         {/* Divider (hidden on small screens) */}
-        <div className="w-40 h-[3px] lg:w-[2px] lg:h-25 bg-secondary mt-2 lg:mt-5 mb-7 lg:mx-7"></div>
+        <div className="w-40 h-[3px] lg:w-[2px] lg:h-25 bg-secondary mt-1 lg:mt-5 mb-2 sm:mb-7 lg:mx-7"></div>
 
         {/* Right Section */}
         <div className="flex-1 px-5 lg:px-20">
@@ -28,7 +28,7 @@ const AboutUs: React.FC = () => {
           <p className="text-gray-700 leading-6 text-center lg:text-start">
             Our passion lies in blending innovation with strategy, delivering professional website design and custom website development that sparks growth and leaves lasting impressions.
           </p>
-          <div className="td-btn-group mt-[35px] flex items-center justify-center lg:justify-start w-fit mx-auto lg:mx-0">
+          <div className="td-btn-group mt-3 lg:mt-[35px] flex items-center justify-center lg:justify-start w-fit mx-auto lg:mx-0">
             <Link className="td-btn-circle" href="/about" aria-label="About Us">
               <FaArrowRight aria-hidden="true" />
             </Link>

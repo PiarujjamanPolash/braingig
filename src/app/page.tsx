@@ -32,7 +32,7 @@ const HomePage = () => {
         buttonText="Schedule Your Free Consultation Today!"
         link="/contact"
       />
-      <Brands customClass="pt-0" />
+      <Brands customClass="pt-0 pb-15" />
     </ClientWrapper>
   );
 };

@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
         <div
             className="pt-20 md:pt-30 pb-3 lg:min-h-screen lg:flex lg:items-center bg-accent"
         >
-            <div className="container w-[90%] mx-auto">
+            <div className="container">
                 <div className="td-hero-6-top pb-[45px] relative z-[1]">
                     {/* Hero Animated Lines */}
                     <div className="td-hero-6-line">

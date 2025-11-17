@@ -36,7 +36,7 @@ const About = () => {
             />
             <HowWeWork />
             <Testimonials />
-            <Brands customClass="pt-0" />
+            <Brands customClass="pt-0 pb-15" />
         </ClientWrapper>
     );
 };

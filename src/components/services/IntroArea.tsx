@@ -5,7 +5,7 @@ import thumb from "../../../public/images/services/thumb.webp"
 const IntroArea: React.FC = () => {
 
     return (
-        <div className="w-[90%] mx-auto">
+        <div className="container">
             <div className="td-service-main-area pb-15 lg:pb-20">
                 <div className="container mx-auto px-4">
                     {/* First row */}

@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
     <div
       className="td-hero-area td-hero-3-spacing fix include-bg bg-[url('/images/service-details/directory-service/hero-bg.png')]"
     >
-      <div className="container w-[90%] mx-auto px-4">
+      <div className="container">
         <div className="td-hero-3-title-wrap">
           <h2 ref={textRef} className="td-hero-3-title text-center text-4xl md:text-5xl font-bold leading-tight">
             Build Powerful Directory Websites with <span>Our Expert Services.</span>

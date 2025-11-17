@@ -9,7 +9,7 @@ import ScrollRevealLeft from "@/components/animations/ScrollRevealLeft";
 const Testimonial: React.FC = () => {
     return (
         <div className="td-testimonial-area bg-light lg:py-[80px] py-[60px]">
-            <div className="container w-[90%] mx-auto">
+            <div className="container">
                 <div className="flex flex-wrap">
                     {/* Left Section */}
                     {/* <div className="hidden md:block w-full md:w-4/12 lg:w-3/12">

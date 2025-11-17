@@ -11,7 +11,7 @@ const About: React.FC = () => {
 
     return (
         <section className="pt-[60px] lg:pt-[120px]">
-            <div className="td-about-area container w-[90%] mx-auto">
+            <div className="td-about-area container">
                 {/* Title Section */}
                 <div className="w-full lg:w-[65%]">
                     <div ref={textRef} className="td-about-3-title-wrap mb-8">

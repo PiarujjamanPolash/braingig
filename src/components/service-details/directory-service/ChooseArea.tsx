@@ -8,7 +8,7 @@ const ChooseArea: React.FC = () => {
   return (
     <section>
       <div className="td-chose-area px-4">
-        <div className="container w-[90%] mx-auto flex flex-wrap">
+        <div className="container flex flex-wrap">
           {/* Title */}
           <div className="w-full lg:w-[70%]">
             <div

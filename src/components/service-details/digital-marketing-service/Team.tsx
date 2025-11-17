@@ -11,7 +11,7 @@ const Team: React.FC = () => {
 
   return (
     <section className="td-team-area">
-      <div className="container w-[90%] mx-auto mb-[10px]">
+      <div className="container mb-[10px]">
         <div className="flex flex-wrap mb-[15px]">
           <div className="lg:w-3/12 w-full">
             <div className="td-team-6-subtitle mb-[20px]">

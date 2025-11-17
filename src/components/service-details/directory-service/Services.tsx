@@ -63,7 +63,7 @@ const Services: React.FC = () => {
   return (
     <section>
       <div className="td-service-3-area grey-bg-3 py-15 lg:py-20">
-      <div className="container w-[90%] mx-auto px-4">
+      <div className="container">
         <div className="flex justify-center">
           <div className="xl:w-8/12">
             <div className="td-service-3-title-wrap ml-16 mb-10 relative">

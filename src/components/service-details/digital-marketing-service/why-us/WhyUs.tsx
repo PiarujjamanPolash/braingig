@@ -10,7 +10,7 @@ import StatLine from './StatLine';
 gsap.registerPlugin(ScrollTrigger);
 const WhyUs = () => {
     return (
-        <section className='container w-[90%] mx-auto px-8'>
+        <section className='container'>
             <div className='flex flex-col justify-center items-center gap-5 mb-15 lg:mb-20'>
                 <h3 className='!text-[40px] lg:!text-[60px] font-medium tracking-wide td-text-invert-orange'>Why Us</h3>
                 <p className='w-[90%] md:w-[80%] lg:w-[50%] !text-lg lg:font-semibold text-center'>You get a complete, easy-to-understand plan, fast execution, and frequent optimization. The result: stronger rankings, lower acquisition costs, and steady pipeline growth.</p>

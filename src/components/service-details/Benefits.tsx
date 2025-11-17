@@ -13,7 +13,7 @@ const Benefits: React.FC<BenefitsProps> = ({ service }) => {
 
   return (
     <section className="pt-15 lg:pt-[120px] bg-white">
-      <div className="container w-[90%] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 items-center gap-20">
+      <div className="container grid grid-cols-1 lg:grid-cols-2 items-center gap-20">
         {/* Left Image */}
         <div className="">
           <Image

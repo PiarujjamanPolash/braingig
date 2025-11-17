@@ -6,11 +6,11 @@ import React from "react";
 const Services: React.FC = () => {
     return (
         <section>
-            <div className="td-service-6-area w-[90%] mx-auto">
-                <div className="container mx-auto px-3 sm:px-4 lg:px-6">
+            <div className="td-service-6-area">
+                <div className="container">
                     <div className="flex flex-wrap items-end">
                         <div className="flex flex-col lg:flex-row w-full items-center">
-                            <div className="td-service-6-title-wrap flex justify-center w-full mb-6 lg:mb-0">
+                            <div className="td-service-6-title-wrap flex justify-center w-full mb-4 lg:mb-7">
                                 {/* <span className="td-section-6-subtitle mb-20 d-inline-block">OUR CORE SERVICES</span> */}
                                 <h2 className="w-full md:w-[80%] lg:w-[70%] text-center  !text-[40px] lg:!text-[60px] td-text-invert-orange">
                                     EXPLORE OUR SERVICES
@@ -28,13 +28,13 @@ const Services: React.FC = () => {
                         </div>
 
 
-                        <div className="w-full pt-5">
+                        <div className="w-full">
                             {servicesData.map((service) => (
                                 <div key={service.id} className="td-service-6-item">
-                                    <div className="flex flex-col lg:flex-row items-center gap-7">
+                                    <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-7">
 
                                         <div className="lg:w-5/12 w-full">
-                                            <div className="td-service-6-item-title mb-[15px] flex items-center">
+                                            <div className="td-service-6-item-title mb-2 lg:mb-[15px] flex items-center">
                                                 <span className="mr-5 md:mr-20">{service.id}</span>
                                                 <h3>
                                                     {service.title}
@@ -43,7 +43,7 @@ const Services: React.FC = () => {
                                         </div>
 
                                         <div className="lg:w-5/12 w-full">
-                                            <div className="td-service-6-text mb-[15px]">
+                                            <div className="td-service-6-text mb-2 lg:mb-[15px]">
                                                 <p>{service.description}</p>
                                             </div>
                                         </div>

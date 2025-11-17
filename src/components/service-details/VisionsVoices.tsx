@@ -5,7 +5,7 @@ import Image from "next/image";
 const VisionsVoices: React.FC = () => {
 
     return (
-        <div className="w-[90%] mx-auto">
+        <div className="container">
             {/* td-service-replace-area-start */}
             <div className="td-service-replace-area pt-[120px] pb-[130px]">
                 <div className="container mx-auto">

@@ -17,7 +17,7 @@ const Process = () => {
       <div className="bg-gray-50 text-center py-10 lg:py-15">
         <h2 className="text-[40px] lg:text-[60px] font-medium tracking-wide mb-12 text-secondary">Our Lean & Clear Process</h2>
         {/* Desktop */}
-        <div className="container w-[90%] mx-auto hidden md:block relative md:flex md:flex-row items-center justify-between">
+        <div className="container hidden md:block relative md:flex md:flex-row items-center justify-between">
           <div className="hidden md:block absolute top-[35%] left-0 right-0 h-1 bg-gray-300 z-0"></div>
 
           {processData.map((step, index) => (

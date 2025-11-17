@@ -3,7 +3,7 @@ import Image from "next/image";
 export type TeamType = {
     id: number;
     name: string;
-    role: string;
+    role?: string;
     img: string;
 };
 export const teamData: TeamType[] = [
@@ -45,23 +45,29 @@ export const teamData: TeamType[] = [
         role: "WordPress Developer",
         img: "/images/about/gunjan.webp",
     },
+    {
+        id: 7,
+        name: "buddy",
+        // role: "WordPress Developer",
+        img: "/images/about/buddy.jpeg",
+    },
 ];
 const Team: React.FC = () => {
 
     return (
         <section>
             <div className="td-team-area td-team-about-wrap">
-            <div className="2xl:container 2xl:mx-auto">
-                <div className="flex flex-col items-center lg:items-start text-center lg:text-start mb-5 lg:mb-10 w-[90%] mx-auto">
+            <div className="container">
+                <div className="flex flex-col items-center text-center mb-4 lg:mb-7 w-[90%] mx-auto">
                     <h2 className="font-medium text-[40px] lg:text-[60px] td-text-invert-orange">
                         Our Experts
                     </h2>
-                    <p className="text-base md:text-lg font-normal lg:font-medium text-primary lg:w-[60%]">Our strength is the synergy of passionate experts. Led by Piarujjaman Polash and Fahad Al Faisal, our team pushes creative boundaries and delivers measurable results, embodying a shared commitment to excellence as your trusted digital marketing and web development partner.
+                    <p className="text-base md:text-lg font-normal lg:font-medium text-primary lg:w-[70%]">Our strength is the synergy of passionate experts. Led by Piarujjaman Polash and Fahad Al Faisal, our team pushes creative boundaries and delivers measurable results, embodying a shared commitment to excellence as your trusted digital marketing and web development partner.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="flex flex-wrap justify-center items-center gap-6">
                     {teamData.map((member) => (
-                        <div key={member.id} className="w-full h-full">
+                        <div key={member.id} className="w-full md:[width:calc(50%-12px)] lg:[width:calc(33.333%-16px)] h-full">
                             <div className="td-team-4-wrap p-relative h-full">
                                 <div className="td-team-4-thumb h-full">
                                     <Image width={490} height={490}

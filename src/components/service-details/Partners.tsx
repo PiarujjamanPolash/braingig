@@ -6,7 +6,7 @@ import Brands from "../shared/Brands";
 const Partners: React.FC = () => {
 
     return (
-        <div className="w-[90%] mx-auto">
+        <div className="container">
             <div className="w-full pt-20">
                 <h2 className="uppercase text-[40px] text-center td-text-invert-orange tracking-[5px] font-medium">
                     Top companies trust us with their websites

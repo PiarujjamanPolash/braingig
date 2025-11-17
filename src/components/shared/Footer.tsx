@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="">
       <div className="td-footer-area pt-[80px] md:pt-[110px] pb-[15px] bg-accent">
-        <div className="container w-[90%] mx-auto">
+        <div className="container">
           <div className="flex flex-wrap -mx-4">
             {/* Left Section */}
             <div className="w-full lg:w-1/2 px-4 mb-[30px]">
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Menu */}
-        <div className="container w-[90%] mx-auto">
+        <div className="container">
           <div className="flex flex-wrap justify-center items-center">
             <div className="w-full lg:w-2/3 px-1">
               <div className="td-footer-3-menu mb-[30px] flex justify-center lg:justify-start">

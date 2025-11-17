@@ -20,7 +20,7 @@ const ProcessOverview = ({ process }: { process?: ProcessStep[] }) => {
     if (!process || process.length === 0) return null;
     return (
         <section className="pt-[120px]">
-            <div className="container w-[90%] mx-auto td-service-process-area td-service-2-main-wrap">
+            <div className="container td-service-process-area td-service-2-main-wrap">
                 <h2 className="font-medium text-[40px] text-center lg:text-[60px] mb-7 td-text-invert-orange">
                     Process Overview
                 </h2>

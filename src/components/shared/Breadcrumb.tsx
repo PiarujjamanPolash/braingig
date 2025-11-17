@@ -25,7 +25,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
         titleRef={titleRef as React.RefObject<HTMLElement>}
         paraRef={paraRef as React.RefObject<HTMLElement>}
       />
-      <div className="container w-[90%] mx-auto">
+      <div className="container">
         <div className="flex flex-wrap">
           <div className="w-full lg:w-9/12">
             <div className="td-breadcrumb-wrap flex flex-col items-center md:items-start">

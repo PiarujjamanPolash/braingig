@@ -1,5 +1,7 @@
 "use client"
 import { LuHandshake, LuLayers, LuLightbulb, LuPenTool, LuRadar, LuTrendingUp } from "react-icons/lu";
+import { Autoplay, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 const features = [
     {
         title: "Experienced Marketing Experts",
@@ -41,15 +43,50 @@ const features = [
 
 
 const Features: React.FC = () => {
-
     return (
         <section>
-            <div className="container w-[90%] mx-auto px-6">
-                <h2 className="font-medium text-[40px] lg:text-[60px] text-center mb-2 td-text-invert-orange">
+            <div className="container">
+                <h2 className="font-medium text-[40px] lg:text-[60px] text-center mb-4 lg:mb-7 td-text-invert-orange">
                     What Sets Us Apart
                 </h2>
+                <div className="lg:hidden">
+                    <Swiper id="about-features" 
+                     modules={[Pagination, Autoplay]}
+                        autoplay
+                        loop
+                        pagination={{ clickable: true }}
+                        spaceBetween={20}
+                        slidesPerView={1}
+                        breakpoints={{
+                            480: { slidesPerView: 1.5 },
+                            768: { slidesPerView: 2 },
+                        }}
+                        className='pb-10'
+                    >
+                        {features.map((item, index) => {
+                            const Icon = item.icon;
+                            return (
+                                <SwiperSlide key={index}>
+                                    <div className="p-6 border border-gray-200 rounded-xl hover:shadow-sm transition h-full">
+                                        <Icon className="text-5xl text-secondary mb-4" />
+                                        <h3 className="text-2xl font-medium mb-2">
+                                            {item.title}
+                                        </h3>
 
-                <div className="grid gap-5 lg:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mt-5">
+                                        <p
+                                            className="lg:text-lg"
+                                            dangerouslySetInnerHTML={{
+                                                __html: item.description,
+                                            }}
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                            );
+                        })}
+                    </Swiper>
+                </div>
+
+                <div className="hidden lg:grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     {features.map((item, index) => {
                         const Icon = item.icon;
                         return (

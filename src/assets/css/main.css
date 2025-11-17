@@ -830,10 +830,10 @@ textarea {
   color: var(--td-common-white) !important;
 }
 
-.td-btn-group {
+/* .td-btn-group {
   display: flex;
-  /* width: fit-content; */
-}
+  width: fit-content;
+} */
 .td-btn-group > *:nth-child(1) {
   transform: scale3d(0.5, 0.5, 1);
   margin-inline-end: -52px;
@@ -5308,6 +5308,13 @@ textarea {
   text-align: center;
   /* line-height: 59px; */
   transition: all 0.4s ease;
+}
+@media (max-width: 640px) {
+  .td-service-6-btn a {
+    width: 48px;
+    height: 48px;
+    border-radius: 30px;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .td-service-6-title-text {

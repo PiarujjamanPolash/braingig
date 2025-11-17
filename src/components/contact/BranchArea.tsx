@@ -6,7 +6,7 @@ import USAOfficeImg from "../../../public/images/offices/usa.webp"
 const BranchArea: React.FC = () => {
     return (
         <section>
-            <div className="container w-[90%] mx-auto td-contact-branch-area">
+            <div className="container td-contact-branch-area">
                 <div className="flex flex-wrap justify-center">
                     <h2 className="text-[40px] lg:text-[60px] td-text-invert-orange mb-8 md:mb-12">
                         Our Branch <span>Office</span>

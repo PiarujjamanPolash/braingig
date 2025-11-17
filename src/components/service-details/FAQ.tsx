@@ -16,33 +16,31 @@ const FAQ: React.FC<FAQProps> = ({ data }) => {
     const pathname = usePathname();
     return (
         <section>
-            <div className="w-[90%] mx-auto">
-                <div className="td-faq-2-area">
-                    <div className="container mx-auto px-4">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="td-faq-2-area">
+                <div className="container mx-auto px-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-                            {/* Left Image */}
-                            <div className="w-full hidden md:block">
-                                <div className="td-faq-2-thumb mb-8 fix td-rounded-10">
-                                    <Image
-                                        width={533}
-                                        height={747}
-                                        data-speed=".9"
-                                        className="td-rounded-10"
-                                        src={thumb}
-                                        alt="thumb"
-                                    />
-                                </div>
+                        {/* Left Image */}
+                        <div className="w-full hidden md:block">
+                            <div className="td-faq-2-thumb td-rounded-10">
+                                <Image
+                                    width={533}
+                                    height={747}
+                                    // data-speed=".9"
+                                    className="td-rounded-10 w-full"
+                                    src={thumb}
+                                    alt="thumb"
+                                />
                             </div>
+                        </div>
 
-                            {/* Right Content */}
-                            <div className="w-full">
-                                <div className="td-faq-4-wrap-right td-faq-2-wrap-right mb-8">
-                                    <h2 className="font-medium text-[40px] lg:text-[60px] tracking-wide td-text-invert-orange">
-                                        Frequently asked <span>questions</span>
-                                    </h2>
-                                    <Accordion data={data} />
-                                </div>
+                        {/* Right Content */}
+                        <div className="w-full">
+                            <div className="td-faq-4-wrap-right td-faq-2-wrap-right">
+                                <h2 className="font-medium text-[40px] lg:text-[60px] tracking-wide td-text-invert-orange">
+                                    Frequently asked <span>questions</span>
+                                </h2>
+                                <Accordion data={data} />
                             </div>
                         </div>
                     </div>

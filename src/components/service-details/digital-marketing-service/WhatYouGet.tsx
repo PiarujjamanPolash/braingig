@@ -10,7 +10,7 @@ const WhatYouGet = () => {
         setOpenId(openId === id ? null : id);
     };
     return (
-        <section className="td-service-6-area w-[90%] mx-auto pt-0 ">
+        <section className="td-service-6-area container pt-0 ">
             <div className="container mx-auto px-3 sm:px-4 lg:px-6">
                 <div className="flex flex-wrap items-end">
 

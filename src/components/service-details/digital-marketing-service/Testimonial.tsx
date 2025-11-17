@@ -52,7 +52,7 @@ const Testimonial: React.FC = () => {
 
   return (
     <div className="td-testimonial-area bg-secondary pb-5 md:pb-10 p-5 md:p-0">
-      <div className="container w-[90%] mx-auto pt-10 md:pt-15 lg:pt-[100px]">
+      <div className="container pt-10 md:pt-15 lg:pt-[100px]">
 
         <div className="">
           <div className="td-testimonial-6-title-wrap mb-[55px] text-left">

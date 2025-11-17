@@ -50,12 +50,12 @@ const PricingArea: React.FC = () => {
         </div>
 
 
-        <div className="container w-[90%] mx-auto hidden xl:grid grid-cols-1 xl:grid-cols-6 gap-6">
+        <div className="container hidden xl:grid grid-cols-1 xl:grid-cols-6 gap-6">
           {filteredData.map((item, idx) => (
             <PricingCard key={idx} item={item} idx={idx} />
           ))}
         </div> 
-        <div className="container w-full lg:w-[90%] mx-auto xl:hidden">
+        <div className="container xl:hidden">
           <Swiper id="pricing-swiper"
            modules={[Navigation, Pagination ]}
             spaceBetween={20}
@@ -76,7 +76,7 @@ const PricingArea: React.FC = () => {
           </Swiper>
         </div>
 
-        <div className="container w-[90%] mx-auto lg:mt-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-y-8 mt-5">
+        <div className="container lg:mt-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-y-8 mt-5">
           <div className="flex flex-col border-l-5 border-secondary">
             <h2 className="text-2xl md:text-3xl font-medium mb-4 ml-3 leading-normal">
               Need something Customized?

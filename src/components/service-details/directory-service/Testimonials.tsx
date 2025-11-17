@@ -2,14 +2,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { testimonialsData } from "@/utils/fakeData/testimonialsData";
-import Brands from "@/components/shared/Brands";
 
 const Testimonials: React.FC = () => {
     return (
         <section >
             <div className="td-testimonial-3-area bg-primary px-5 lg:px-0 relative flex flex-col">
-                <div className="container w-[90%] mx-auto">
-                <div className="lg:ml-auto xl:mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4 pt-[60px] lg:pt-[100px] lg:pb-[50px]">
+                <div className="container">
+                <div className="lg:ml-auto xl:mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4 py-15 lg:pt-[100px] lg:pb-[50px]">
                 {/* Left Column */}
                 <div className="w-full col-span-4">
                     <div className="td-testimonial-3-title-wrap mb-5 lg:mb-[50px]">

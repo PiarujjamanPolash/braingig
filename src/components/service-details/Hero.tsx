@@ -11,9 +11,9 @@ type HeroProps = {
 const Hero: React.FC<HeroProps> = ({ service }) => {
 
     return (
-        <div className="w-[90%] mx-auto pt-[150px] lg:pt-[170px]">
+        <div className="pt-[150px] lg:pt-[170px]">
             <div className="td-service-area pb-11">
-                <div className="container mx-auto px-4">
+                <div className="container px-4">
                     <div className="flex flex-wrap -mx-4">
                         <div className="w-full lg:w-1/2 px-4">
                             <div className="td-breadcrumb-wrap">

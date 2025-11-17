@@ -6,7 +6,7 @@ const MainArea: React.FC = () => {
 
     return (
         <section className="pt-15 lg:pt-30">
-            <div className="w-[90%] mx-auto td-contact-main">
+            <div className="container td-contact-main">
                 <div className="container mx-auto">
                     <div className="flex flex-wrap">
                         {/* Left Column */}

@@ -71,6 +71,44 @@ h6 {
   font-family: var(--font-bebas);
   /* letter-spacing: 0.5px; */
 }
+.container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
 
 /* for smooth sliding*/
 #recent-works-swiper-1 .swiper-wrapper {
@@ -107,6 +145,36 @@ h6 {
 
 #team-swiper .swiper-slide {
   height: auto;
+}
+#features-slider .swiper-slide {
+  height: auto;
+}
+#features-slider .swiper-wrapper {
+  padding-bottom: 50px;
+}
+
+#features-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-secondary) !important;
+}
+#process-slider .swiper-slide {
+  height: auto;
+}
+#process-slider .swiper-wrapper {
+  padding-bottom: 50px;
+}
+
+#process-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-secondary) !important;
+}
+#about-features .swiper-slide {
+  height: auto;
+}
+#about-features .swiper-wrapper {
+  padding-bottom: 50px;
+}
+
+#about-features .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-secondary) !important;
 }
 
 /* globals.css or component css */

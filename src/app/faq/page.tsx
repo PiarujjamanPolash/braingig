@@ -19,7 +19,7 @@ const FAQ = () => {
             <AnimateTwoContent 
             thumbRef={thumbRef as React.RefObject<HTMLElement>} 
             contentRef={contentRef as React.RefObject<HTMLElement>}/>
-            <div className="w-[90%] mx-auto">
+            <div className="container">
                 <Breadcrumb
                     subtitle="OUR FAQ"
                     title={

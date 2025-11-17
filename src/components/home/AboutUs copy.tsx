@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 const AboutUs: React.FC = () => {
 
   return (
-    <section className="td-about-area w-[90%] mx-auto mt-15 lg:mt-20 mb-15 lg:mb-20">
+    <section className="td-about-area container mt-15 lg:mt-20 mb-15 lg:mb-20">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-2 lg:gap-15 justify-center items-center">
           {/* Right Column */}

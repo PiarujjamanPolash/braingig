@@ -25,7 +25,7 @@ const Portfolio: React.FC = () => {
   return (
     <section>
       <div className="td-portfolio-area td-portfolio-3-bg pt-15 lg:py-[100px] px-5 md:px-0">
-      <div className="container w-[90%] mx-auto">
+      <div className="container">
         {/* Header */}
         <div className="grid grid-cols-5 items-center pb-[80px] gap-8 lg:gap-0">
           <div className="col-span-5 lg:col-span-3">

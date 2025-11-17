@@ -4,7 +4,7 @@ import Image from "next/image";
 const About: React.FC = () => {
     return (
         <section className="td-about-area pt-15 lg:pt-30">
-            <div className="container w-[90%] mx-auto">
+            <div className="container">
                 {/* Author Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
                     <h2 className="block lg:hidden text-[40px] lg:text-[60px] text-center w-full sm:w-[70%] mx-auto font-bold uppercase mb-[30px] td-text-invert-orange">
