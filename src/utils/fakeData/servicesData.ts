@@ -1,7 +1,5 @@
-import { FaChartLine, FaExpand, FaLightbulb, FaLink, FaRegClock, FaRegFileAlt, FaRocket, FaSearch } from "react-icons/fa";
 import { portfolioData } from "./portfolioData";
 import { IconType } from "react-icons";
-import { FiActivity, FiSearch, FiSettings } from "react-icons/fi";
 
 export type Projects = {
   title: string;
@@ -158,7 +156,7 @@ export const servicesData: Services[] = [
     // ],
     tagsData: [
       { id: "service-1", label: "Custom Website" },
-      { id: "service-2", label: "Responsive Design" },
+      { id: "service-2", label: "Responsive" },
       { id: "service-3", label: "Conversion-Focused" },
       { id: "service-4", label: "SEO Optimized" },
       { id: "service-5", label: "Maintenance" },
@@ -297,7 +295,7 @@ export const servicesData: Services[] = [
     { id: "service-1", label: "Custom Website" },
     { id: "service-2", label: "Conversion-Focused" },
     { id: "service-3", label: "SEO Optimized" },
-    { id: "service-4", label: "Responsive Design" },
+    { id: "service-4", label: "Responsive" },
     { id: "service-5", label: "Maintenance" },
     { id: "service-6", label: "Affordable" }
   ],

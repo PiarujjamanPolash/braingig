@@ -1,16 +1,15 @@
 import dynamic from "next/dynamic";
 import { faqData } from "@/utils/fakeData/faqData";
-import OurFeatures from "@/components/home/OurFeatures";
-import FAQ from "@/components/service-details/FAQ";
-import Brands from "@/components/shared/Brands";
-import CTA from "@/components/shared/CTA";
-import Testimonials from "@/components/shared/Testimonials";
-
 const Hero = dynamic(() => import("@/components/home/Hero"));
 const RecentWorks = dynamic(() => import("@/components/home/RecentWorks"));
 const BraingigProcess = dynamic(() => import("@/components/home/BraingigProcess"));
 const Services = dynamic(() => import("@/components/home/Services"));
 const AboutUs = dynamic(() => import("@/components/home/AboutUs"));
+const Testimonials = dynamic(() => import("@/components/shared/Testimonials"));
+const CTA = dynamic(() => import("@/components/shared/CTA"));
+const Brands = dynamic(() => import("@/components/shared/Brands"));
+const FAQ = dynamic(() => import("@/components/service-details/FAQ"));
+const OurFeatures = dynamic(() => import("@/components/home/OurFeatures"));
 const ClientWrapper = dynamic(() => import("@/components/wrappers/ClientWrapper"));
 const TextLineAnimation = dynamic(() => import("@/components/animations/TextLineAnimation"));
 

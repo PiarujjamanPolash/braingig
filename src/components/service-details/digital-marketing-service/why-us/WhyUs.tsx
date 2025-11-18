@@ -2,7 +2,6 @@
 import { projectsData } from '@/utils/fakeData/digitalMarketingData';
 import Image from 'next/image';
 import React from 'react';
-import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import StatLine from './StatLine';

@@ -64,13 +64,6 @@ const Testimonials: React.FC = () => {
                                             <span className="mb-[15px] inline-block">{item.name}</span>
                                             <p className="mb-15 lg:flex-1">{item.review}</p>
                                             <span className="td-border mb-[30px]"></span>
-                                            {/* <Image
-                                            className="td-rounded"
-                                            src={item.avatar}
-                                            alt={item.name}
-                                            width={100}
-                                            height={100}
-                                        /> */}
                                         </div>
                                     </SwiperSlide>
                                 ))}

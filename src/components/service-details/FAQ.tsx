@@ -2,7 +2,6 @@
 import Accordion from "@/components/shared/Accordion";
 import Image from "next/image";
 import thumb from "../../../public/images/service-details/faq-thumb.webp"
-import { usePathname } from "next/navigation";
 type FAQItem = {
     id: string;
     question: string;
@@ -13,7 +12,6 @@ interface FAQProps {
     data: FAQItem[];
 }
 const FAQ: React.FC<FAQProps> = ({ data }) => {
-    const pathname = usePathname();
     return (
         <section>
             <div className="td-faq-2-area">
@@ -26,7 +24,6 @@ const FAQ: React.FC<FAQProps> = ({ data }) => {
                                 <Image
                                     width={533}
                                     height={747}
-                                    // data-speed=".9"
                                     className="td-rounded-10 w-full"
                                     src={thumb}
                                     alt="thumb"

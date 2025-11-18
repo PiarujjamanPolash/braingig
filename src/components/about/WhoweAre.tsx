@@ -1,10 +1,6 @@
 "use client"
 
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
-
 const WhoWeAre: React.FC = () => {
-
   return (
     <section className="container pt-15 lg:pt-30">
       <div className="flex flex-col lg:flex-row items-center justify-between">

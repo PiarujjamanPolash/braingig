@@ -1,52 +1,102 @@
-"use client";
-
+"use client"
 import { Services } from "@/utils/fakeData/servicesData";
-import Image from "next/image";
-import AnimateFadeInLeft from "../animations/AnimateFadeInLeft";
-import thumb1 from "../../../public/images/service-details/thumb-1.webp"
-import thumb2 from "../../../public/images/service-details/thumb-2.webp"
+import Link from "next/link";
+import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 type HeroProps = {
     service: Services;
 };
-const Hero: React.FC<HeroProps> = ({ service }) => {
 
+const handleScrollToService = (id: string) => {
+    
+    const services = document.querySelectorAll(".highlight-service")
+    services.forEach(service => {
+        service.classList.remove("highlight-service");
+    });
+    const section = document.getElementById(id);
+    if (section) {
+        const headerOffset = 120;
+        const elementPosition = section.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - headerOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+        });
+
+        // highlight animation
+        section.classList.add("highlight-service");
+    }
+
+    window.history.pushState(null, "", `#${id}`);
+};
+const Hero: React.FC<HeroProps> = ({ service }) => {
+    const { title, description, tagsData } = service;
+    const doubledTagData = [...(tagsData || []), ...(tagsData || []), ...(tagsData || [])];
     return (
-        <div className="pt-[150px] lg:pt-[170px]">
-            <div className="td-service-area pb-11">
-                <div className="container px-4">
-                    <div className="flex flex-wrap -mx-4">
-                        <div className="w-full lg:w-1/2 px-4">
-                            <div className="td-breadcrumb-wrap">
-                                <AnimateFadeInLeft>
-                                    <h2 className="text-[40px] lg:text-[80px] font-medium text-secondary mb-9">
-                                        {service.title} <span>{service.highlight}</span>
-                                    </h2>
-                                </AnimateFadeInLeft>
-                                <div className="td-service-hero-thumb-2 fix td-rounded-10 pt-10 lg:pt-15 mb-7.5">
-                                    <Image width={563} height={690} priority data-speed=".9" className="td-rounded-10 object-cover" src={thumb2} alt="thumb 2" />
-                                </div>
-                            </div>
+        <div
+            className="pt-40 pb-3 lg:min-h-screen lg:flex lg:items-center bg-accent"
+        >
+            <div className="container w-[90%] mx-auto">
+                <div className="td-hero-6-top pb-[45px] relative z-[1]">
+                    {/* Hero Animated Lines */}
+                    <div className="td-hero-6-line">
+                        <span className="h-[450px] sm:h-[550px] md:h-[600px] lg:h-[700px]"></span>
+                        <span className="h-[450px] sm:h-[550px] md:h-[600px] lg:h-[700px]"></span>
+                        <span className="h-[450px] sm:h-[550px] md:h-[600px] lg:h-[700px]"></span>
+                        <span className="h-[450px] sm:h-[550px] md:h-[600px] lg:h-[700px]"></span>
+                    </div>
+
+                    {/* Title Section */}
+                    <div className="w-full mx-auto">
+                        <div className="pb-10 lg:pb-[90px]">
+                            <h2
+                                className="td-hero-6-title text-primary text-center"
+                            >
+                                {title}
+
+                            </h2>
+                            <p className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto !text-base md:!text-3xl text-primary text-center mt-5 lg:mt-10" dangerouslySetInnerHTML={{ __html: description }}></p>
                         </div>
-                        <div className="w-full lg:w-1/2 px-4">
-                            <div className="td-service-hero-wrap">
-                                <div className="td-service-hero-content ml-[80px]">
-                                    <p className="text-base lg:text-lg font-semibold mb-10">
-                                        {service.description}
-                                    </p>
-                                    <div className="td-service-hero-border mb-15"></div>
-                                    <div className="td-about-main-feature-list">
-                                        <ul>
-                                            {service.features?.map((feature, id) => (
-                                                <li key={id}>{feature}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="td-service-hero-thumb fix td-rounded-10 pt-[120px]">
-                                    <Image width={645} height={430} priority data-speed=".9" className="td-rounded-10" src={thumb1} alt="thumb 1" />
-                                </div>
-                            </div>
+
+                        {/* Tags */}
+                        <div className="border-t border-black/20 pt-6">
+                            <Swiper id="marketing-tag-swiper"
+                                modules={[Autoplay]}
+                                spaceBetween={5}
+                                breakpoints={{
+                                    0: { slidesPerView: 1 },
+                                    360: { slidesPerView: 1.3 },    
+                                    450: { slidesPerView: 2 },    
+                                    768: { slidesPerView: 3 },      
+                                    1024: { slidesPerView: 4 },
+                                    1280: { slidesPerView: 5 },
+                                }}
+                                loop={true}
+                                autoplay={{
+                                    delay: 0,
+                                    disableOnInteraction: false,
+                                    pauseOnMouseEnter: true,
+                                }}
+                                speed={8000}
+                            >
+                                {doubledTagData.map((tag, index) => (
+                                    <SwiperSlide key={`${tag.id}-${index}`}>
+                                        <Link
+                                            href="#"
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                handleScrollToService(tag.id);
+                                            }}
+                                            className="font-medium text-[20px] px-5 py-2.5 block text-center !text-primary border rounded-lg hover:bg-gray-100 transition whitespace-nowrap"
+                                        >
+                                            {tag.label}
+                                        </Link>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
                         </div>
+
                     </div>
                 </div>
             </div>

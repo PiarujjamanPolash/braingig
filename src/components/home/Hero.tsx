@@ -45,36 +45,6 @@ const Hero: React.FC = () => {
               src="/images/service-details/directory-service/hero-icon.png"
               alt=""
             />
-
-            {/* <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
-              <Link href={'/contact'} className="lg:col-span-2">
-                <div className="relative mb-8 inline-block">
-                  <Image width={106} height={106}
-                    className="likes"
-                    src="/images/service-details/directory-service/hero-like.png"
-                    alt=""
-                  />
-                  <Image width={143} height={143}
-                    className="round-text td-live-anim-spin"
-                    src="/images/service-details/directory-service/hero-text.png"
-                    alt=""
-                  />
-                </div>
-              </Link>
-              <SplitTextAnimation textRef={textRef} direction="right" />
-
-              <div className="hidden sm:block col-span-6">
-                <div className="td-hero-3-border mb-8 block border-b border-gray-300"></div>
-              </div>
-
-              <div className="lg:col-span-4">
-                <div className="td-hero-3-content-para mb-8">
-                  <p className="text-lg font-medium 2xl:text-xl 2xl:font-semibold text-center lg:text-start leading-relaxed">
-                    As a premier web design and development agency creating conversion-focused websites.
-                  </p>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

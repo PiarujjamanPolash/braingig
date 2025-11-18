@@ -2,18 +2,17 @@
 import dynamic from "next/dynamic";
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
-import WhoWeAre from "@/components/about/WhoweAre";
-import MissionVision from "@/components/about/MissionVision";
-import HowWeWork from "@/components/about/HowWeWork";
-import Brands from "@/components/shared/Brands";
-import CTA from "@/components/shared/CTA";
-import Testimonials from "@/components/shared/Testimonials";
-
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
-const Features = dynamic(() => import("@/components/about/Features"));
 const Hero = dynamic(() => import("@/components/about/Hero"));
+const WhoWeAre = dynamic(() => import("@/components/about/WhoweAre"));
+const MissionVision = dynamic(() => import("@/components/about/MissionVision"));
+const Features = dynamic(() => import("@/components/about/Features"));
 const Team = dynamic(() => import("@/components/about/Team"));
+const CTA = dynamic(() => import("@/components/shared/CTA"));
+const HowWeWork = dynamic(() => import("@/components/about/HowWeWork"));
+const Testimonials = dynamic(() => import("@/components/shared/Testimonials"));
+const Brands = dynamic(() => import("@/components/shared/Brands"));
 const AnimateTitle = dynamic(() => import("@/components/animations/AnimateTitle"));
 const TextLineAnimation = dynamic(() => import("@/components/animations/TextLineAnimation"));
 const ClientWrapper = dynamic(() => import("@/components/wrappers/ClientWrapper"));

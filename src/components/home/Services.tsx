@@ -11,23 +11,11 @@ const Services: React.FC = () => {
                     <div className="flex flex-wrap items-end">
                         <div className="flex flex-col lg:flex-row w-full items-center">
                             <div className="td-service-6-title-wrap flex justify-center w-full mb-4 lg:mb-7">
-                                {/* <span className="td-section-6-subtitle mb-20 d-inline-block">OUR CORE SERVICES</span> */}
                                 <h2 className="w-full md:w-[80%] lg:w-[70%] text-center  !text-[40px] lg:!text-[60px] td-text-invert-orange">
                                     EXPLORE OUR SERVICES
                                 </h2>
                             </div>
-                            {/* <div className="td-service-6-title-text text-[#555855] mr-20 lg:w-4/12 w-full">
-                            <p className="td-section-6-text text-primary font-medium text-lg mb-[30px]">
-                                Get expert solutions for every business establishment and growth
-                            </p>
-                            <p className="td-section-6-text text-primary font-medium text-lg">
-                                Our mission is to revolutionize creative work for companies with
-                                style and substance. Quality and Effort intersect in a meaningful way.
-                            </p>
-                        </div> */}
                         </div>
-
-
                         <div className="w-full">
                             {servicesData.map((service) => (
                                 <div key={service.id} className="td-service-6-item">

@@ -61,8 +61,8 @@ const Services: React.FC = () => {
       .map((_, i) => serviceRefs.current[i] || null);
   }
   return (
-    <section>
-      <div className="td-service-3-area grey-bg-3 py-15 lg:py-20">
+    <section className='pb-0'>
+      <div className="td-service-3-area grey-bg-3 py-15 lg:pt-20 lg:pb-[150px]">
       <div className="container">
         <div className="flex justify-center">
           <div className="xl:w-8/12">

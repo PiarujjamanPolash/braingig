@@ -28,8 +28,8 @@ const CounterArea: React.FC = () => {
     const textRef = useRef<HTMLDivElement | null>(null);
 
     return (
-        <section>
-            <div className="td-counter-3-area grey-bg-3 pt-15 lg:py-20">
+        <section className='pt-0'>
+            <div className="td-counter-3-area grey-bg-3 pt-15 lg:pb-20 pt-[150px]">
                 <div className="container w-[90%] mx-auto px-4">
                 {/* Title */}
                 <div className="flex justify-center">
@@ -71,7 +71,7 @@ const CounterArea: React.FC = () => {
                                 {item.suffix}
                             </h2>
                             <span
-                                className="para sm:justify-end text-2xl sm:text-xl"
+                                className="para sm:justify-end text-xl lg:text-lg"
                                 dangerouslySetInnerHTML={{ __html: item.text }}
                             />
                         </div>

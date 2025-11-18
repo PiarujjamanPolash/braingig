@@ -54,7 +54,7 @@ const ServiceShowcasing: React.FC = () => {
                                             )}
 
                                             {/* Buttons */}
-                                            <div className="td-btn-group td-btn-group-border pt-[50px]">
+                                            <div className="td-btn-group flex w-fit td-btn-group-border pt-[50px]">
                                                 <Link className="td-btn-circle" href={service.path}>
                                                     <FaArrowRight />
 

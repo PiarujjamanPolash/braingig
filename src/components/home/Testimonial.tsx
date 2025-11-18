@@ -4,30 +4,12 @@ import { Autoplay, Navigation, Virtual } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { testimonialsData } from "@/utils/fakeData/testimonialsData";
 import Brands from "@/components/shared/Brands";
-import ScrollRevealLeft from "@/components/animations/ScrollRevealLeft";
 
 const Testimonial: React.FC = () => {
     return (
         <div className="td-testimonial-area bg-light lg:py-[80px] py-[60px]">
             <div className="container">
                 <div className="flex flex-wrap">
-                    {/* Left Section */}
-                    {/* <div className="hidden md:block w-full md:w-4/12 lg:w-3/12">
-                        <ScrollRevealLeft>
-                            <div
-                                className="td-testimonial-left text-primary mb-10 scroll-reveal-left"
-                            >
-                                <span className="td-section-subtitle text-primary mb-[185px] inline-block">
-                                    CLIENTS FEEDBACK
-                                </span>
-                                <Image width={177} height={60} className="mb-5" src={"/images/testimonials/user.webp"} alt="user Image" />
-                                <p className="text-primary">
-                                    Top companies trust us
-                                    <br /> with their websites
-                                </p>
-                            </div>
-                        </ScrollRevealLeft>
-                    </div> */}
 
                     {/* Right Section */}
                     <div className="w-full">

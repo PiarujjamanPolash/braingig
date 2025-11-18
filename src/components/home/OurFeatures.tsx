@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { FaMedal, FaBolt, FaBalanceScale, FaMobileAlt, FaTools, FaSearch, FaArrowRight } from 'react-icons/fa';
+import { FaMedal, FaBolt, FaBalanceScale, FaMobileAlt, FaTools, FaSearch } from 'react-icons/fa';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
