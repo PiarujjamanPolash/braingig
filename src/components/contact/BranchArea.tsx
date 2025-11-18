@@ -8,7 +8,7 @@ const BranchArea: React.FC = () => {
         <section>
             <div className="container td-contact-branch-area">
                 <div className="flex flex-wrap justify-center">
-                    <h2 className="text-[40px] lg:text-[60px] td-text-invert-orange mb-8 md:mb-12">
+                    <h2 className="text-[40px] lg:text-[60px] td-text-invert-orange mb-4 md:mb-7">
                         Our Branch <span>Office</span>
                     </h2>
                     {/* Branch Items */}

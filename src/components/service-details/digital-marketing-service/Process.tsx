@@ -4,11 +4,11 @@ import Marquee from 'react-fast-marquee';
 import { FaSearch, FaLightbulb, FaRocket, FaChartLine, FaExpand } from 'react-icons/fa';
 
 const processData = [
-  { icon: <FaSearch size={40} className="text-secondary" />, title: 'Audit' },
-  { icon: <FaLightbulb size={40} className="text-secondary" />, title: 'Strategy & Plan' },
-  { icon: <FaRocket size={40} className="text-secondary" />, title: 'Create & Launch' },
-  { icon: <FaChartLine size={40} className="text-secondary" />, title: 'Measure & Optimize' },
-  { icon: <FaExpand size={40} className="text-secondary" />, title: 'Scale' },
+  { icon: <FaSearch className="text-secondary text-2xl sm:text-3xl md:text-4xl" />, title: 'Audit' },
+  { icon: <FaLightbulb className="text-secondary text-2xl sm:text-3xl md:text-4xl" />, title: 'Strategy & Plan' },
+  { icon: <FaRocket className="text-secondary text-2xl sm:text-3xl md:text-4xl" />, title: 'Create & Launch' },
+  { icon: <FaChartLine className="text-secondary text-2xl sm:text-3xl md:text-4xl" />, title: 'Measure & Optimize' },
+  { icon: <FaExpand className="text-secondary text-2xl sm:text-3xl md:text-4xl" />, title: 'Scale' },
 ];
 
 const Process = () => {
@@ -22,7 +22,7 @@ const Process = () => {
 
           {processData.map((step, index) => (
             <div key={index} className="flex-1 flex flex-col items-center relative z-10">
-              <div className="bg-white p-6 rounded-full shadow-lg hover:scale-105 transform transition duration-300">
+              <div className="bg-white p-4 lg:p-6 rounded-full shadow-lg hover:scale-105 transform transition duration-300">
                 {step.icon}
               </div>
               <h3 className="mt-4 text-2xl font-medium">{step.title}</h3>
@@ -42,10 +42,10 @@ const Process = () => {
                   key={index}
                   className="flex-1 flex flex-col justify-center items-center min-w-[120px]"
                 >
-                  <div className="bg-white p-6 rounded-full shadow-lg hover:scale-105 transform transition duration-300 flex justify-center items-center">
+                  <div className="bg-white p-4 lg:p-6 rounded-full shadow-lg hover:scale-105 transform transition duration-300 flex justify-center items-center">
                     {step.icon}
                   </div>
-                  <h3 className="mt-4 text-xl font-semibold text-center">
+                  <h3 className="mt-4 text-xl font-medium text-center whitespace-nowrap">
                     {step.title}
                   </h3>
                 </div>

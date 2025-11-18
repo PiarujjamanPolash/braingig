@@ -7,12 +7,12 @@ const About: React.FC = () => {
             <div className="container">
                 {/* Author Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-20">
-                    <h2 className="block lg:hidden text-[40px] lg:text-[60px] text-center w-full sm:w-[70%] mx-auto font-bold uppercase mb-[30px] td-text-invert-orange">
+                    <h2 className="block lg:hidden text-[40px] lg:text-[60px] text-center w-full sm:w-[70%] mx-auto font-bold uppercase mb-4 lg:mb-7 td-text-invert-orange">
                         Clarity, Creativity, and Conversion.
                     </h2>
                     {/* Left Image */}
                     <div className="col-span-6">
-                        <div className="flex justify-center td-about-6-thumb relative z-[1] mb-[30px]">
+                        <div className="flex justify-center td-about-6-thumb relative z-[1] mb-5 lg:mb-[30px]">
                             {/* <Image
                                 className="shape td-live-anim-spin hidden lg:block"
                                 src="/images/service-details/digital-marketing-service/about-shape-1.png"
@@ -31,16 +31,16 @@ const About: React.FC = () => {
                     </div>
 
                     <div className="col-span-6">
-                        <div className="td-about-6-title-wrap mb-[50px]">
+                        <div className="td-about-6-title-wrap mb-5 lg:mb-[50px]">
                             <h2 className="hidden lg:block text-[40px] lg:text-[60px] font-medium tracking-wide uppercase mb-[20px] td-text-invert-orange">
                                 Clarity, Creativity, and Conversion.
                             </h2>
-                            <p className="text-[15px] md:text-base lg:text-lg lg:font-medium">
+                            <p className="text-[15px] md:text-base lg:text-lg lg:font-medium text-center lg:text-start">
                                 We plan, create, and optimize a complete Digital Marketing Strategy that blends content, SEO, paid media, and creative. As a results-driven Digital Marketing Agency, we deliver an Online Marketing Solution built for clarity, scale, and measurable growth.
                             </p>
                         </div>
                         <div className="td-about-6-author">
-                            <div className="hidden md:block td-about-6-author-top mb-5">
+                            <div className="hidden lg:block td-about-6-author-top mb-5">
                                 <div className="flex relative -space-x-4">
                                     <Image
                                         className="mb-[25px] h-15 w-15 rounded-full object-cover border border-blue-900"
@@ -70,12 +70,12 @@ const About: React.FC = () => {
                             </div>
 
                             <div className="td-about-6-author-count">
-                                <div className="flex items-center justify-center md:justify-start gap-5 lg:gap-10">
-                                    <div className="text-center md:text-start">
+                                <div className="flex items-center justify-center lg:justify-start gap-5 lg:gap-10">
+                                    <div className="text-center lg:text-start">
                                         <h2 className="!text-secondary text-[40px] mb-[10px]">100%</h2>
                                         <p className="!text-sm md:!text-base !mb-0">Clients Satisfied and Repeating</p>
                                     </div>
-                                    <div className="text-center md:text-start">
+                                    <div className="text-center lg:text-start">
                                         <h2 className="!text-secondary text-[40px] mb-[10px]">125+</h2>
                                         <p className="!text-sm md:!text-base !mb-0">Projects Completed in 24 Countries
                                         </p>

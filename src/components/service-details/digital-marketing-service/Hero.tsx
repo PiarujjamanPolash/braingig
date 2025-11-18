@@ -1,9 +1,6 @@
 "use client"
-import { imagesData, tagsData } from "@/utils/fakeData/digitalMarketingData";
 import { Services, servicesData } from "@/utils/fakeData/servicesData";
-import Image from "next/image";
 import Link from "next/link";
-import Marquee from "react-fast-marquee";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 type HeroProps = {
@@ -68,10 +65,10 @@ const Hero: React.FC<HeroProps> = ({ service }) => {
                                 modules={[Autoplay]}
                                 spaceBetween={5}
                                 breakpoints={{
-                                    0: { slidesPerView: 2 },
-                                    // 480: { slidesPerView: 1.5 },    
-                                    // 768: { slidesPerView: 2 },      
-                                    1024: { slidesPerView: 3 },
+                                    0: { slidesPerView: 1 },
+                                    360: { slidesPerView: 2 },    
+                                    768: { slidesPerView: 3 },      
+                                    1024: { slidesPerView: 4 },
                                     1280: { slidesPerView: 5 },
                                 }}
                                 loop={true}
@@ -90,7 +87,7 @@ const Hero: React.FC<HeroProps> = ({ service }) => {
                                                 e.preventDefault();
                                                 handleScrollToService(tag.id);
                                             }}
-                                            className="font-medium text-[20px] px-5 py-2.5 block text-center !text-primary border rounded-lg hover:bg-gray-100 transition"
+                                            className="font-medium text-[20px] px-5 py-2.5 block text-center !text-primary border rounded-lg hover:bg-gray-100 transition whitespace-nowrap"
                                         >
                                             {tag.label}
                                         </Link>

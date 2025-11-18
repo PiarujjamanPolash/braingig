@@ -6,7 +6,7 @@ import logo from "../../../public/images/logos/logo.webp"
 const MapArea: React.FC = () => {
 
     return (
-        <section id="meet-us pt-40">
+        <section id="meet-us" className="lg:pt-40">
             <div className="td-contact-map-area">
                 <div className="p-0">
                     <div className="flex flex-wrap">

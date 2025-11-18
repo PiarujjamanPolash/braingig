@@ -63,7 +63,7 @@ const ServicesPage = async ({
                     <CounterArea />
                     <ChooseArea />
                     <Testimonials />
-                    <Brands customClass="pt-0 pb-15" />
+                    <Brands customClass="pt-[30px] pb-15" />
                 </div>
             </ClientWrapper>
         );

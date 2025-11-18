@@ -58,9 +58,10 @@ const CounterArea: React.FC = () => {
                                     alt=""
                                     width={226}
                                     height={201}
+                                    className='hidden sm:block'
                                 />
                             </span>
-                            <h2 className="title">
+                            <h2 className="title mb-20 sm:mb-[180px]">
                                 <CountUp
                                     end={item.count}
                                     duration={2.5}
@@ -70,7 +71,7 @@ const CounterArea: React.FC = () => {
                                 {item.suffix}
                             </h2>
                             <span
-                                className="para"
+                                className="para sm:justify-end text-2xl sm:text-xl"
                                 dangerouslySetInnerHTML={{ __html: item.text }}
                             />
                         </div>

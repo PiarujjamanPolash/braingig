@@ -36,7 +36,7 @@ export const pricingData = [
     price: "Growth — $310/",
     tag: "Most Popular",
     duration: "one-time",
-    buttonClass: "marketing-price-btn greens !text-primary",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -118,7 +118,7 @@ export const pricingData = [
     price: "Growth — $200/mo",
     tag: "Most Popular",
     // duration: "monthly",
-    buttonClass: "marketing-price-btn greens !text-primary",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -190,7 +190,7 @@ export const pricingData = [
     package: "Social Media Ads & Creative (FB/IG)",
     price: "Growth — $110/mo",
     // duration: "monthly",
-    buttonClass: "marketing-price-btn greens !text-primary",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -257,7 +257,7 @@ export const pricingData = [
     price: "Growth — $200/mo",
     tag: "Most Popular",
     // duration: "monthly",
-    buttonClass: "marketing-price-btn greens !text-primary",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -322,7 +322,7 @@ export const pricingData = [
     price: "Growth — $240/mo",
     tag: "Most Popular",
     // duration: "monthly",
-    buttonClass: "marketing-price-btn greens !text-primary",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",
@@ -400,7 +400,7 @@ export const pricingData = [
     price: "Performance Plan — $850/mo",
     tag: "Most Popular",
     // duration: "monthly",
-    buttonClass: "marketing-price-btn greens",
+    buttonClass: "marketing-price-btn",
     sections: [
       {
         title: "What we do",

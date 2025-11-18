@@ -41,9 +41,9 @@ const Hero: React.FC = () => {
                             </h2>
                             <p className="text-lg lg:text-2xl font-medium md:mb-5 text-center md:text-start">Trusted Creators of Exceptional Digital Experiences</p>
                             <div className="flex flex-col md:flex-row -mx-4">
-                                <div className="w-full md:w-5/12 px-4">
+                                <div className="w-full md:w-5/12 pl-4">
                                     <div className="td-about-main-bigtext text-center md:text-start">
-                                        <h2 className="m-0! p-0! leading-[0.9] lg:leading-none lg:leading-normal">5</h2>
+                                        <h2 className="mt-3 md:mt-0 leading-[0.9] lg:leading-none lg:leading-normal">5</h2>
                                         <span>Years of experience</span>
                                     </div>
                                 </div>

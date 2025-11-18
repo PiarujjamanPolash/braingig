@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 const handleScrollToService = (id: string) => {
-    const services = document.querySelectorAll(".td-service-6-item")
+    const services = document.querySelectorAll(".highlight-service")
     services.forEach(service => {
         service.classList.remove("highlight-service");
     });

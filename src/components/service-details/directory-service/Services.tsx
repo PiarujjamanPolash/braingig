@@ -70,7 +70,7 @@ const Services: React.FC = () => {
               <Image
                 width={93}
                 height={98}
-                className="td-service-3-ok"
+                className="td-service-3-ok hidden md:block"
                 src="/images/service-details/directory-service/service-ok.png"
                 alt=""
               />

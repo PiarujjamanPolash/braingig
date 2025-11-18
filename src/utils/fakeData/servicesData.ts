@@ -161,8 +161,8 @@ export const servicesData: Services[] = [
       { id: "service-2", label: "Responsive Design" },
       { id: "service-3", label: "Conversion-Focused" },
       { id: "service-4", label: "SEO Optimized" },
-      { id: "service-5", label: "Website Maintenance" },
-      { id: "service-6", label: "Affordable Solutions" },
+      { id: "service-5", label: "Maintenance" },
+      { id: "service-6", label: "Affordable" },
     ],
 
     featuresData: {
@@ -294,12 +294,12 @@ export const servicesData: Services[] = [
     //   }
     // ],
     tagsData: [
-    { id: "service-1", label: "Custom Website Design" },
-    { id: "service-2", label: "Conversion Optimization" },
-    { id: "service-3", label: "SEO Optimization" },
+    { id: "service-1", label: "Custom Website" },
+    { id: "service-2", label: "Conversion-Focused" },
+    { id: "service-3", label: "SEO Optimized" },
     { id: "service-4", label: "Responsive Design" },
-    { id: "service-5", label: "Website Maintenance" },
-    { id: "service-6", label: "Affordable Solutions" }
+    { id: "service-5", label: "Maintenance" },
+    { id: "service-6", label: "Affordable" }
   ],
 
   featuresData: {

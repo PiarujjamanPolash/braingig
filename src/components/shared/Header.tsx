@@ -316,7 +316,7 @@ const Header: React.FC = () => {
                         </div>
                         <div className="mt-auto">
                             {/* Contact Button */}
-                            <div className="mt-7 mx-6">
+                            <div className="hidden xl:block mt-7 mx-6">
                                 <Link href='/contact'
                                     onClick={() => {
                                         document.body.classList.remove("mobile-menu-visible");

@@ -78,7 +78,7 @@ const Projects: React.FC = () => {
                 {visibleCount < filteredData.length && (
                     <div className="w-full">
                         <div className="flex justify-center mt-12">
-                            <div className="td-btn-group">
+                            <div className="td-btn-group flex w-fit">
                                 <Link className="td-btn-circle" href="">
                                     <FaArrowRight />
                                 </Link>

@@ -244,7 +244,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
   .portfolio-text {
     font-size: 150px;
-    margin-bottom: 0px;
+    margin-bottom: -2%;
     line-height: 0.5;
   }
 }

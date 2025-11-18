@@ -42,28 +42,28 @@ const WhatYouGet: React.FC<WhatYouGetProps> = ({ service }) => {
             <div className="container mx-auto px-3 sm:px-4 lg:px-6">
                 <div className="flex flex-wrap items-end">
 
-                    <div className="flex flex-col justify-start w-full">
-                        <h2 className="w-full md:w-[80%] lg:w-[70%]  !text-[40px] lg:!text-[60px] font-medium tracking-wide td-text-invert-orange">
+                    <div className="flex flex-col items-start">
+                        <h2 className="lg:w-[70%] !text-[40px] lg:!text-[60px] font-medium tracking-wide td-text-invert-orange">
                             {sectionTitle}
                         </h2>
-                        <p className="w-[80%] md:w-[70%] lg:w-[50%] text-base lg:text-lg font-semibold !mb-0">
+                        <p className="w-[90%] md:w-[80%] lg:w-[50%] text-base lg:text-lg font-semibold !mb-0">
                             {sectionDescription}
                         </p>
                     </div>
 
-                    <div className="w-full pt-[55px]">
+                    <div className="w-full pt-5 lg:pt-[55px]">
                         {services.map((service, idx) => (
                             <div id={`service-${service.id}`}
                                 key={service.id}
-                                className="py-8 px-5 border-b border-gray-200 hover:rounded-[10px] hover:bg-primary group hover:text-white transition-all duration-500 ease-in-out"
+                                className="py-3 px-5 lg:py-8 border-b border-gray-200 hover:rounded-[10px] hover:bg-primary group hover:text-white transition-all duration-500 ease-in-out"
                             >
-                                <div className="flex flex-col lg:flex-row items-center gap-5">
+                                <div className="flex flex-col lg:flex-row items-center lg:gap-5">
                                     {/* Left side: ID and Title */}
                                     <div
                                         className="lg:w-5/12 w-full cursor-pointer"
                                         onClick={() => toggleAccordion(service.id)}
                                     >
-                                        <div className="mb-[15px] flex items-center justify-between lg:justify-start">
+                                        <div className="mb-[15px] flex items-center justify-between lg:justify-start gap-5">
                                             <span className="hidden lg:block text-2xl font-medium mr-5 md:mr-20 hover:text-white">{service.id}</span>
                                             <h3 className="text-[30px] text-secondary font-medium lg:font-semibold tracking-wide">{service.title}</h3>
 
