@@ -10,15 +10,13 @@ const MainArea: React.FC = () => {
                 <div className="container mx-auto">
                     <div className="flex flex-wrap">
                         {/* Left Column */}
-                        <div className="w-full lg:w-5/12">
-                            <div
-                                className="td-contact-title-wrap flex justify-center lg:justify-start mb-4"
-                            >
-                                <h2 className="td-contact-main-title text-5xl font-medium td-text-invert-orange text-center lg:text-start text-secondary">
-                                    Let’s talk for <br />
-                                    better result
-                                </h2>
-                            </div>
+                        <div
+                            className="w-full lg:w-5/12 td-contact-title-wrap flex justify-center lg:justify-start mb-4"
+                        >
+                            <h2 className="td-contact-main-title w-full text-5xl font-medium td-text-invert-orange text-center lg:text-start text-secondary">
+                                Let’s talk for <br />
+                                better result
+                            </h2>
                         </div>
 
                         {/* Right Column */}
@@ -30,17 +28,17 @@ const MainArea: React.FC = () => {
                                     <div className="flex flex-wrap -mx-2">
                                         <div className="w-full px-2 mb-[25px]">
                                             <label htmlFor="name" className="block mb-2 text-lg lg:text-2xl font-medium">Name</label>
-                                            <input className="td-input placeholder:text-gray-400!" name="name" id="name" type="text" placeholder="Enter your name"/>
+                                            <input className="td-input placeholder:text-gray-400!" name="name" id="name" type="text" placeholder="Enter your name" />
                                         </div>
 
                                         <div className="w-full md:w-6/12 px-2 mb-[25px]">
                                             <label htmlFor="email" className="block mb-2 text-lg lg:text-2xl font-medium">Email</label>
-                                            <input className="td-input placeholder:text-gray-400!" name="email" id="email" type="text" placeholder="Enter your email"/>
+                                            <input className="td-input placeholder:text-gray-400!" name="email" id="email" type="text" placeholder="Enter your email" />
                                         </div>
 
                                         <div className="w-full md:w-6/12 px-2 mb-[25px]">
                                             <label htmlFor="phone" className="block mb-2 text-lg lg:text-2xl font-medium">Phone</label>
-                                            <input className="td-input placeholder:text-gray-400!" name="phone" id="phone" type="text" placeholder="Enter your number"/>
+                                            <input className="td-input placeholder:text-gray-400!" name="phone" id="phone" type="text" placeholder="Enter your number" />
                                         </div>
 
                                         {/* <div className="w-full px-2 mb-[25px]">

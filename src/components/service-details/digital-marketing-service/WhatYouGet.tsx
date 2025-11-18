@@ -30,7 +30,7 @@ const WhatYouGet: React.FC<WhatYouGetProps> = ({ service }) => {
     const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
     const [openId, setOpenId] = useState<number | null>(null);
 
-     if (!service.featuresData) return null;
+    if (!service.featuresData) return null;
     const { featuresData, tagsData } = service;
     const { sectionTitle, sectionDescription, services } = featuresData;
 
@@ -40,13 +40,12 @@ const WhatYouGet: React.FC<WhatYouGetProps> = ({ service }) => {
     return (
         <section className="td-service-6-area">
             <div className="container mx-auto px-3 sm:px-4 lg:px-6">
-                <div className="flex flex-wrap items-end">
-
-                    <div className="flex flex-col items-start">
-                        <h2 className="lg:w-[70%] !text-[40px] lg:!text-[60px] font-medium tracking-wide td-text-invert-orange">
+                <div className="flex flex-col items-center md:items-start">
+                    <div className="flex flex-col items-center md:items-start w-full">
+                        <h2 className="block w-fit md:w-[90%] lg:w-[80%] !text-[40px] lg:!text-[60px] font-medium tracking-wide td-text-invert-orange">
                             {sectionTitle}
                         </h2>
-                        <p className="w-[90%] md:w-[80%] lg:w-[50%] text-base lg:text-lg font-semibold !mb-0">
+                        <p className="w-[90%] md:w-[80%] lg:w-[50%] text-base lg:text-lg text-center md:text-start font-semibold !mb-0">
                             {sectionDescription}
                         </p>
                     </div>

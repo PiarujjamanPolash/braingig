@@ -7,6 +7,7 @@ import MissionVision from "@/components/about/MissionVision";
 import HowWeWork from "@/components/about/HowWeWork";
 import Brands from "@/components/shared/Brands";
 import CTA from "@/components/shared/CTA";
+import Testimonials from "@/components/shared/Testimonials";
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
@@ -15,7 +16,6 @@ const Hero = dynamic(() => import("@/components/about/Hero"));
 const Team = dynamic(() => import("@/components/about/Team"));
 const AnimateTitle = dynamic(() => import("@/components/animations/AnimateTitle"));
 const TextLineAnimation = dynamic(() => import("@/components/animations/TextLineAnimation"));
-const Testimonials = dynamic(() => import("@/components/service-details/directory-service/Testimonials"));
 const ClientWrapper = dynamic(() => import("@/components/wrappers/ClientWrapper"));
 
 

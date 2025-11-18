@@ -5,10 +5,10 @@ import { testimonialsData } from "@/utils/fakeData/testimonialsData";
 
 const Testimonials: React.FC = () => {
     return (
-        <section className="pt-0" >
+        <section>
             <div className="td-testimonial-3-area bg-primary px-5 lg:px-0 relative flex flex-col">
                 <div className="container">
-                    <div className="lg:ml-auto xl:mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4 py-15 lg:py-[150px] lg:pb-[100px]">
+                    <div className="lg:ml-auto xl:mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4 py-15 lg:pt-[100px] lg:pb-[50px]">
                         {/* Left Column */}
                         <div className="w-full col-span-4">
                             <div className="td-testimonial-3-title-wrap mb-5 lg:mb-[50px]">
