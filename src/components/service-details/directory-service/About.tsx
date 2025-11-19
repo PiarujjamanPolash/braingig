@@ -37,7 +37,7 @@ const About: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="lg:col-span-7 flex flex-col md:flex-row">
+                    <div className="lg:col-span-7 flex flex-col md:flex-row gap-5 lg:gap-0">
                         {/* Middle Image */}
                         <div className="fix">
                             <div ref={imageRef} className="td-about-3-thumb mb-[30px] mr-5">
