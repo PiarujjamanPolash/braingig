@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
             </Link>
             <SplitTextAnimation textRef={textRef} direction="right" />
             <Image width={178} height={172}
-              className="td-hero-3-shape w-[50px] md:w-[70px] 2xl:w-auto absolute top-[15%] sm:top-[10%] md:top-[5%] right-0 lg:right-[10%] 2xl:top-[-30%] 2xl:right-[4%]"
+              className="w-[50px] md:w-[70px] 2xl:w-auto absolute top-[15%] sm:top-[10%] md:top-[5%] right-0 lg:right-[10%] 2xl:top-[-30%] 2xl:right-[4%]"
               src="/images/service-details/directory-service/hero-icon.png"
               alt=""
             />

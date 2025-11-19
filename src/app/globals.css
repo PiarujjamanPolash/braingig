@@ -109,6 +109,9 @@ h6 {
     max-width: 1320px;
   }
 }
+#smooth-content {
+  will-change: transform;
+}
 
 /* for smooth sliding*/
 #recent-works-swiper-1 .swiper-wrapper {

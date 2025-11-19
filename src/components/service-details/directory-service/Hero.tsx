@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
     >
       <div className="container">
         <div className="td-hero-3-title-wrap">
-          <h2 ref={textRef} className="td-hero-3-title text-center text-4xl md:text-5xl font-bold leading-tight">
+          <h2 ref={textRef} className="td-hero-3-title text-center font-bold leading-tight">
             Build Powerful Directory Websites with <span>Our Expert Services.</span>
           </h2>
 

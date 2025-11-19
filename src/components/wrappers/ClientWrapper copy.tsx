@@ -14,45 +14,38 @@ const ClientWrapper = ({ children }: { children: React.ReactNode }) => {
   const smoothWrapperRef = useRef<HTMLDivElement | null>(null);
   const smoothContentRef = useRef<HTMLDivElement | null>(null);
 
-  // Initialize ScrollSmoother
   useEffect(() => {
     if (smoothWrapperRef.current && smoothContentRef.current) {
       const smoother = ScrollSmoother.create({
         wrapper: smoothWrapperRef.current,
         content: smoothContentRef.current,
-        smooth: 0.8,           // lower = faster interpolation
+        smooth: 2,
         effects: true,
-        smoothTouch: 0.3,
-        normalizeScroll: true,  // delta-based scroll for high-refresh monitors
-        ignoreMobileResize: false,
+        smoothTouch: 0.1,
+        normalizeScroll: false,
+        ignoreMobileResize: true,
       });
-
-      return () => smoother.kill();
+      const handleRouteChange = () => {
+        smoother.scrollTo(0, true); 
+      };
+      return () => {
+        smoother.kill();
+      };
     }
   }, []);
-
-  // Scroll to top on route change
-  useEffect(() => {
-    const scrollToTop = () => {
-      const smoother = ScrollSmoother.get();
-      if (smoother) {
-        smoother.scrollTo(0, false); // false = no autoKill animation
-        ScrollTrigger.update();       // ensure GSAP updates scroll position instantly
-      } else {
-        window.scrollTo(0, 0);       // fallback
-      }
-    };
-
-    scrollToTop();
+useEffect(() => {
+    // This effect runs whenever the pathname changes
+    // It forces the page to scroll to the top
+    const smoother = ScrollSmoother.get();
+    if (smoother) {
+      smoother.scrollTo(0, true);
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, [pathname]);
-
   return (
     <div ref={smoothWrapperRef} id="smooth-wrapper">
-      <div
-        ref={smoothContentRef}
-        id="smooth-content"
-        style={{ willChange: "transform" }} // enable GPU acceleration
-      >
+      <div ref={smoothContentRef} id="smooth-content">
         {children}
         <Footer />
       </div>
