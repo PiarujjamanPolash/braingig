@@ -47,8 +47,8 @@ export const teamData: TeamType[] = [
     },
     {
         id: 7,
-        name: "buddy",
-        // role: "WordPress Developer",
+        name: "Buddy",
+        role: "Peace Officer",
         img: "/images/about/buddy.jpeg",
     },
 ];

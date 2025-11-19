@@ -12,7 +12,7 @@ const MapArea: React.FC = () => {
                     <div className="flex flex-wrap">
                         <div className="w-full">
                             <div className="td-contact-map relative">
-                                <div className="td-contact-map-wrap mb-5">
+                                <div className="td-contact-map-wrap">
                                     <Image 
                                         width={259}
                                         height={71}

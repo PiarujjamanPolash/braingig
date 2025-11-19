@@ -21,7 +21,6 @@ const Team: React.FC = () => {
         </div>
       </div>
 
-      {/* Marquee Slider */}
       <div className="container-fluid overflow-hidden">
         <Swiper id="marketing-team-swiper"
           modules={[Autoplay]}
