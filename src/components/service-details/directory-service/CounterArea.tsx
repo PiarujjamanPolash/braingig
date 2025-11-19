@@ -46,7 +46,7 @@ const CounterArea: React.FC = () => {
                 </div>
 
                 {/* Counter Items */}
-                <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[30px]">
+                <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-[30px]">
                     {counters.map((item, index) => (
                         <div
                             key={index}
