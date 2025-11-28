@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../public/images/logos/logo.webp"
+import logo from "../../../public/images/logos/new-logo-blue.png"
 const MapArea: React.FC = () => {
 
     return (

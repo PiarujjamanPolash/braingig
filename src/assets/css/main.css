@@ -9829,7 +9829,8 @@ textarea {
   width: 350px;
   border-radius: 10px;
   background: #F87B1B;
-  padding: 60px 30px 50px 60px;
+  /* padding: 60px 30px 50px 60px; */
+  padding: 40px;
   position: absolute;
   right: 300px;
   top: -120px;
