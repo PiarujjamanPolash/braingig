@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const MainArea: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -11,8 +12,6 @@ const MainArea: React.FC = () => {
         message: ''
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [responseMessage, setResponseMessage] = useState('');
-    const [responseType, setResponseType] = useState<'success' | 'error' | ''>('');
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -25,8 +24,6 @@ const MainArea: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        setResponseMessage('');
-        setResponseType('');
 
         try {
             const response = await fetch('/api/contact', {
@@ -40,8 +37,7 @@ const MainArea: React.FC = () => {
             const data = await response.json();
 
             if (response.ok) {
-                setResponseMessage('Your message has been sent successfully!');
-                setResponseType('success');
+                toast.success('Your message has been sent successfully!');
                 setFormData({
                     name: '',
                     email: '',
@@ -49,12 +45,10 @@ const MainArea: React.FC = () => {
                     message: ''
                 });
             } else {
-                setResponseMessage(data.error || 'Failed to send message. Please try again.');
-                setResponseType('error');
+                toast.error(data.error || 'Failed to send message. Please try again.');
             }
         } catch (error) {
-            setResponseMessage('An error occurred. Please try again later.');
-            setResponseType('error');
+            toast.error('An error occurred. Please try again later.');
         } finally {
             setIsSubmitting(false);
         }
@@ -156,14 +150,6 @@ const MainArea: React.FC = () => {
                                                 </span>
                                             </button>
                                         </div>
-                                        
-                                        {responseMessage && (
-                                            <div className={`w-full px-2 pt-[20px]`}>
-                                                <p className={`ajax-response ${responseType === 'success' ? 'text-green-600' : 'text-red-600'}`}>
-                                                    {responseMessage}
-                                                </p>
-                                            </div>
-                                        )}
                                     </div>
                                 </form>
                             </div>
