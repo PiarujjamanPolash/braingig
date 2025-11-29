@@ -229,12 +229,12 @@ const Header: React.FC = () => {
                                                     <li
                                                         key={menu.id}
                                                         className={`${menu.children ? "menu-item-has-children" : ""} ${menu.path === "/"
-                                                            ? pathname === "/"
-                                                                ? "active"
-                                                                : ""
-                                                            : pathname.startsWith(menu.path)
-                                                                ? "active"
-                                                                : ""
+                                                                ? pathname === "/" 
+                                                                    ? "active"
+                                                                    : ""
+                                                                : pathname.startsWith(menu.path) 
+                                                                    ? "active"
+                                                                    : ""
                                                             }`}
                                                     >
                                                         <Link href={menu.path}>{menu.label}</Link>

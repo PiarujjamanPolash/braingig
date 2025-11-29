@@ -18,12 +18,12 @@ export const menuList: DataType = [
   {
     id: 2,
     label: "About Us",
-    path: "/about/",
+    path: "/about",
   },
   {
     id: 3,
     label: "Our Services",
-    path: "/services/",
+    path: "/services",
     children: [
       { id: 31, label: "Business Website Development", path: "/services/business-website-development" },
       { id: 32, label: "eCommerce Website Development", path: "/services/ecommerce-website-development" },
@@ -36,11 +36,11 @@ export const menuList: DataType = [
   {
     id: 4,
     label: "Portfolio",
-    path: "/portfolio/",
+    path: "/portfolio",
   },
   {
     id: 6,
     label: "Contact Us",
-    path: "/contact/",
+    path: "/contact",
   },
 ];
