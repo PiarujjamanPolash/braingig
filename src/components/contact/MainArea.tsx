@@ -1,8 +1,64 @@
 "use client";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
+import { useState } from "react";
 
 const MainArea: React.FC = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [responseMessage, setResponseMessage] = useState('');
+    const [responseType, setResponseType] = useState<'success' | 'error' | ''>('');
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setResponseMessage('');
+        setResponseType('');
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setResponseMessage('Your message has been sent successfully!');
+                setResponseType('success');
+                setFormData({
+                    name: '',
+                    email: '',
+                    phone: '',
+                    message: ''
+                });
+            } else {
+                setResponseMessage(data.error || 'Failed to send message. Please try again.');
+                setResponseType('error');
+            }
+        } catch (error) {
+            setResponseMessage('An error occurred. Please try again later.');
+            setResponseType('error');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
 
     return (
         <section className="pt-15 lg:pt-30">
@@ -24,21 +80,47 @@ const MainArea: React.FC = () => {
                             <div
                                 className="td-contact-form-box"
                             >
-                                <form id="contact-form" action="assets/mail.php" method="POST">
+                                <form id="contact-form" onSubmit={handleSubmit}>
                                     <div className="flex flex-wrap -mx-2">
                                         <div className="w-full px-2 mb-[25px]">
                                             <label htmlFor="name" className="block mb-2 text-lg lg:text-2xl font-medium">Name</label>
-                                            <input className="td-input placeholder:text-gray-400!" name="name" id="name" type="text" placeholder="Enter your name" />
+                                            <input 
+                                                className="td-input placeholder:text-gray-400!" 
+                                                name="name" 
+                                                id="name" 
+                                                type="text" 
+                                                placeholder="Enter your name"
+                                                value={formData.name}
+                                                onChange={handleChange}
+                                                required
+                                            />
                                         </div>
 
                                         <div className="w-full md:w-6/12 px-2 mb-[25px]">
                                             <label htmlFor="email" className="block mb-2 text-lg lg:text-2xl font-medium">Email</label>
-                                            <input className="td-input placeholder:text-gray-400!" name="email" id="email" type="text" placeholder="Enter your email" />
+                                            <input 
+                                                className="td-input placeholder:text-gray-400!" 
+                                                name="email" 
+                                                id="email" 
+                                                type="email" 
+                                                placeholder="Enter your email"
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                                required
+                                            />
                                         </div>
 
                                         <div className="w-full md:w-6/12 px-2 mb-[25px]">
                                             <label htmlFor="phone" className="block mb-2 text-lg lg:text-2xl font-medium">Phone</label>
-                                            <input className="td-input placeholder:text-gray-400!" name="phone" id="phone" type="text" placeholder="Enter your number" />
+                                            <input 
+                                                className="td-input placeholder:text-gray-400!" 
+                                                name="phone" 
+                                                id="phone" 
+                                                type="tel" 
+                                                placeholder="Enter your number"
+                                                value={formData.phone}
+                                                onChange={handleChange}
+                                            />
                                         </div>
 
                                         {/* <div className="w-full px-2 mb-[25px]">
@@ -55,21 +137,33 @@ const MainArea: React.FC = () => {
                                                 cols={30}
                                                 rows={10}
                                                 placeholder="Tell us how we can help you…"
+                                                value={formData.message}
+                                                onChange={handleChange}
+                                                required
                                             ></textarea>
                                         </div>
 
                                         <div className="w-full px-2 flex justify-center lg:justify-start">
-                                            <button type="submit" className="td-btn-group flex w-fit">
-                                                <Link href={''} className="td-btn-circle">
+                                            <button type="submit" disabled={isSubmitting} className="td-btn-group flex w-fit">
+                                                <span className="td-btn-circle">
                                                     <FaArrowRight />
-                                                </Link>
-                                                <Link href={''} className="td-btn-2 td-btn-primary">Send message</Link>
-                                                <Link href={''} className="td-btn-circle">
+                                                </span>
+                                                <span className="td-btn-2 td-btn-primary">
+                                                    {isSubmitting ? 'Sending...' : 'Send message'}
+                                                </span>
+                                                <span className="td-btn-circle">
                                                     <FaArrowRight />
-                                                </Link>
+                                                </span>
                                             </button>
-                                            <p className="ajax-response pt-[20px]"></p>
                                         </div>
+                                        
+                                        {responseMessage && (
+                                            <div className={`w-full px-2 pt-[20px]`}>
+                                                <p className={`ajax-response ${responseType === 'success' ? 'text-green-600' : 'text-red-600'}`}>
+                                                    {responseMessage}
+                                                </p>
+                                            </div>
+                                        )}
                                     </div>
                                 </form>
                             </div>
