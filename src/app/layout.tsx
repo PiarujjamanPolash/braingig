@@ -4,6 +4,7 @@ import "./globals.css";
 import "@/assets/css/main.css"
 import Header from "@/components/shared/Header";
 import { Toaster } from "react-hot-toast";
+import Script from "next/script";
 
 const bebasNeue  = Bebas_Neue({
   weight: "400",
@@ -31,6 +32,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-M0E65B3S7Y"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-M0E65B3S7Y');
+          `}
+        </Script>
+      </head>
       <body
         className={`${bebasNeue .variable} ${plusJakarta.variable} antialiased`}
       >
