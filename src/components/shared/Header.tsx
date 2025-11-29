@@ -294,23 +294,23 @@ const Header: React.FC = () => {
                         {/* Sidebar Info */}
                         <div className="offCanvas__side-info mb-7 hidden xl:block mx-6">
                             <div className="contact-list mb-7">
-                                <h4>Office Address</h4>
-                                <h5 className="mt-7">Bangladesh</h5>
+                                <h4 className="tracking-wide">Office Address</h4>
+                                <h5 className="tracking-wide">Bangladesh</h5>
                                 <p>
                                     166(4th floor), Alokar Mor, Station Rd, Rajshahi 6100
                                 </p>
 
-                                <h5 className="mt-5">Sheridan</h5>
+                                <h5 className="tracking-wide mt-5">Sheridan</h5>
                                 <p>
                                     30 N Gould St, Sheridan, WY 82801, USA
                                 </p>
                             </div>
                             <div className="contact-list mb-7">
-                                <h4>Phone Number</h4>
-                                <p>+8801701-064640</p>
+                                <h4 className="tracking-wide">Phone Number</h4>
+                                <p>+1 (307) 999-4766</p>
                             </div>
                             <div className="contact-list mb-7">
-                                <h4>Email Address</h4>
+                                <h4 className="tracking-wide">Email Address</h4>
                                 <p>braingigllc@gmail.com</p>
                             </div>
                         </div>

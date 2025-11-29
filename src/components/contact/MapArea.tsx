@@ -21,7 +21,7 @@ const MapArea: React.FC = () => {
                                         alt=""
                                     />
                                     <h6 className="mb-[25px]">Contact info:</h6>
-                                    <Link href="https://wa.me/+8801701064640">+880 1701-064640</Link>
+                                    <Link href="">+1 (307) 999-4766</Link>
                                     <Link className="mb-[10px] block" href="mailto:braingigllc@gmail.com">
                                         braingigllc@gmail.com
                                     </Link>

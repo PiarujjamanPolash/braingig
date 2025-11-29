@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                   braingigllc@gmail.com
                 </Link>
                 <Link className="font-semibold text-[20px] tracking-[-0.02em]" href="https://wa.me/+8801701064640" target="_blank">
-                  +8801701-064640
+                  +1 (307) 999-4766
                 </Link>
               </div>
             </div>

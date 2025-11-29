@@ -79,8 +79,8 @@ const BranchArea: React.FC = () => {
                                 </div>
                                 <div className="w-full sm:w-1/2 lg:w-3/12 px-2">
                                     <div className="td-contact-branch-number ml-[40px] mb-[20px]">
-                                        <Link className="mb-[30px] block" href="https://wa.me/+8801701064640">
-                                            +8801701064640
+                                        <Link className="mb-[30px] block" href="">
+                                            +1 (307) 999-4766
                                         </Link>
                                         <Link className="link block" href="mailto:braingigllc@gmail.com">
                                             braingigllc@gmail.com

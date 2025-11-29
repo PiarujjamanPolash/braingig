@@ -90,7 +90,7 @@ const OurFeatures = () => {
                                 >
                                     <div className="flex flex-col items-center">
                                         {feature.icon}
-                                        <h3 className="text-lg font-medium text-primary mb-2 tracking-wide">{feature.title}</h3>
+                                        <h3 className="text-xl font-medium text-primary mb-2 tracking-wide">{feature.title}</h3>
                                         <p className="text-gray-600 text-sm text-primary">{feature.desc}</p>
                                     </div>
                                 </div>
