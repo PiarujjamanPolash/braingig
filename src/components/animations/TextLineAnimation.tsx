@@ -12,15 +12,21 @@ const TextLineAnimation = () => {
   const pathname = usePathname();
 
   useLayoutEffect(() => {
-    let ctx = gsap.context(() => {}); 
+    let ctx = gsap.context(() => {});
+    let splitInstance: SplitText | null = null;
 
     const animationTimeout = setTimeout(() => {
       ctx = gsap.context(() => {
-        const split = new SplitText(".td-text-invert,.td-text-invert-orange, .td-text-opacity", {
-          type: "lines",
-        });
+        splitInstance = new SplitText(
+          ".td-text-invert, .td-text-invert-orange, .td-text-opacity",
+          {
+            type: "lines",
+            tag: "span",
+            linesClass: "split-line",
+          }
+        );
 
-        split.lines.forEach((line) => {
+        splitInstance.lines.forEach((line) => {
           gsap.fromTo(
             line,
             { backgroundPositionX: "100%" },
@@ -39,10 +45,14 @@ const TextLineAnimation = () => {
 
         ScrollTrigger.refresh();
       });
-    }, 100); 
+    }, 100);
 
     return () => {
-      clearTimeout(animationTimeout); 
+      clearTimeout(animationTimeout);
+
+      try {
+        if (splitInstance) splitInstance.revert();
+      } catch {}
       ctx.revert();
     };
   }, [pathname]);

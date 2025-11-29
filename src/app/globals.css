@@ -216,7 +216,7 @@ h6 {
 }
 
 
-.td-text-invert-orange>div {
+/* .td-text-invert-orange>div {
   background-size: 200% 100%;
   background-position-x: 100%;
   color: transparent;
@@ -225,6 +225,23 @@ h6 {
   background-image: linear-gradient(to right,
       var(--color-secondary) 50%,
       var(--color-light) 50%);
+} */
+.split-line {
+  display: block;
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* For orange */
+.td-text-invert-orange .split-line {
+  background-image: linear-gradient(
+    to right,
+    var(--color-secondary) 50%,
+    var(--color-light) 50%
+  );
 }
 
 #pricing-swiper .swiper-pagination .swiper-pagination-bullet-active {
@@ -403,3 +420,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   transform: translateY(-50%);
 }
 
+.split-line {
+  display: block;
+  background-size: 200% 100%; /* or whatever your gradient needs */
+}

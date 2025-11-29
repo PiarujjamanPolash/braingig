@@ -38,7 +38,7 @@ const IntroArea: React.FC = () => {
                             <div
                                 className="td-service-main-expreance mb-[30px] text-center lg:text-start"
                             >
-                                <h2 className="expreance mb-0">5</h2>
+                                <h2 className="text-[160px] text-secondary mb-0 leading-none">5</h2>
                                 <span className="year">YEARS OF WORK EXPERIENCE</span>
                             </div>
                         </div>

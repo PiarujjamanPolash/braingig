@@ -63,7 +63,7 @@ const MainArea: React.FC = () => {
                         <div
                             className="w-full lg:w-5/12 td-contact-title-wrap flex justify-center lg:justify-start mb-4"
                         >
-                            <h2 className="td-contact-main-title w-full text-5xl font-medium td-text-invert-orange text-center lg:text-start text-secondary">
+                            <h2 className="td-contact-main-title w-full text-[40px] lg:text-[60px] font-medium td-text-invert-orange text-center lg:text-start text-secondary">
                                 Let’s talk for <br />
                                 better result
                             </h2>
@@ -117,11 +117,6 @@ const MainArea: React.FC = () => {
                                             />
                                         </div>
 
-                                        {/* <div className="w-full px-2 mb-[25px]">
-                                            <label htmlFor="website" className="block mb-2 text-lg lg:text-2xl font-medium">Website</label>
-                                            <input className="td-input placeholder:text-gray-400!" name="website" id="website" type="text" placeholder="Enter your website"/>
-                                        </div> */}
-
                                         <div className="w-full px-2 mb-[30px]">
                                             <label htmlFor="message" className="block mb-2 text-lg lg:text-2xl font-medium">Message</label>
                                             <textarea
@@ -138,7 +133,7 @@ const MainArea: React.FC = () => {
                                         </div>
 
                                         <div className="w-full px-2 flex justify-center lg:justify-start">
-                                            <button type="submit" disabled={isSubmitting} className="td-btn-group flex w-fit">
+                                            <button type="submit" disabled={isSubmitting} className="td-btn-group flex w-fit cursor-pointer">
                                                 <span className="td-btn-circle">
                                                     <FaArrowRight />
                                                 </span>

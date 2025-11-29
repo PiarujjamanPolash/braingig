@@ -1,5 +1,4 @@
 "use client";
-
 import TextLineAnimation from "@/components/animations/TextLineAnimation";
 import BranchArea from "@/components/contact/BranchArea";
 import Hero from "@/components/contact/Hero";

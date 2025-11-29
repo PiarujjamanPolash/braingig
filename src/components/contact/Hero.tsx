@@ -22,7 +22,7 @@ const handleScrollToService = (id: string) => {
 
 const Hero = () => {
     return (
-        <div className="py-20 lg:py-30 bg-accent">
+        <div className="py-20 lg:py-40 bg-accent">
             <div className='flex flex-col items-center justify-center text-center px-6'>
                 <h3 className="w-full md:w-[80%] lg:w-[60%] mt-4 text-[40px] lg:text-[60px] text-primary">
                     Would you like more information? We are happy <span className='text-secondary'>to help you!</span>
